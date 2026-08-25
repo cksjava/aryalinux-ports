@@ -19,15 +19,6 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
 fi
 cd "${_tops[0]}"
 # --- commands from BLFS ---
-./configure --prefix=/usr --sysconfdir=/etc
-make -C lib/isc
-make -C lib/dns
-make -C lib/ns
-make -C lib/isccfg
-make -C lib/isccc
-make -C bin/dig
-make -C bin/nsupdate
-make -C bin/rndc
 make -C lib/isc      install
 make -C lib/dns      install
 make -C lib/ns       install

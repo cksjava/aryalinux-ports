@@ -22,6 +22,7 @@ cd "${_tops[0]}"
 sed '/mktemp/s/-t //' -i make-ca
 make install
 install -vdm755 /etc/ssl/local
+
 # Drop leftover BLFS *example* override certs from earlier broken installs
 # (Makebelieve is documentation-only; empty PEMs also break p11-kit anchors).
 rm -f /etc/ssl/local/Disabled_Makebelieve_CA_Root.pem
