@@ -22,7 +22,6 @@ depends:
   required: []
   recommended:
   - curl
-  - rustc
 bootscripts: []
 systemd_units: []
 provides: []

@@ -19,6 +19,7 @@ cd "${_tops[0]}"
             --with-gitconfig=/etc/gitconfig \
             --with-python=python3           \
             --with-libpcre2
+export NO_RUST=1
 make
 
 make html
