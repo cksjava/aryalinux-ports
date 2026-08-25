@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,40 +12,22 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
-sed -e '/^CLOBBER/s/false/true/'         \
-    -e 's|TWDB="${prefix}|TWDB="/var|'   \
-    -e '/TWMAN/ s|${prefix}|/usr/share|' \
-    -e '/TWDOCS/s|${prefix}/doc/tripwire|/usr/share/doc/tripwire-2.4.3.7|' \
-    -i installer/install.cfg
-
-find . -name Makefile.am | xargs                           \
+find . -name Makefile.am | xargs \
     sed -i 's/^[[:alpha:]_]*_HEADERS.*=/noinst_HEADERS =/'
-
 sed '/dist/d' -i man/man?/Makefile.am
 autoreconf -fi
-
 ./configure --prefix=/usr --sysconfdir=/etc/tripwire
 make CPPFLAGS=-std=c++11
-
 sed -e 's@installer/install.sh@& -n -s <site-password> -l <local-password>@' \
     -i Makefile
-
 sed '/-t 0/,+3d' -i installer/install.sh
-
 make install
-cp -v policy/*.txt /usr/share/doc/tripwire-2.4.3.7
-
 twadmin --create-polfile --site-keyfile /etc/tripwire/site.key \
     /etc/tripwire/twpol.txt
 tripwire --init
-
 tripwire --check > /etc/tripwire/report.txt
-
 twprint --print-report -r /var/lib/tripwire/report/<report-name.twr>
-
 tripwire --update --twrfile /var/lib/tripwire/report/<report-name.twr>
-
 twadmin --create-polfile /etc/tripwire/twpol.txt
 tripwire --init

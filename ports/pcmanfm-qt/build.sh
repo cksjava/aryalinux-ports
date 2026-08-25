@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,25 +12,19 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 if [   -e /opt/kf6/lib/libLayerShellQtInterface.so -a \
      ! -e /usr/lib/libLayerShellQtInterface.so ]; then
-
     ln -sv /opt/kf6/lib/libLayerShellQtInterface.so \
            /usr/lib/libLayerShellQtInterface.so
 fi
-
 mkdir build
 cd    build
-
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
-      -D CMAKE_BUILD_TYPE=Release  \
+      -D CMAKE_BUILD_TYPE=Release \
       ..
 make
-
 make install
-
 sed -e '/Categories=/s/=/=System;FileTools;/' \
     -e '/Name=/s/=.*/=File Manager PCManFM-Qt'/ \
     -i /usr/share/applications/pcmanfm-qt.desktop

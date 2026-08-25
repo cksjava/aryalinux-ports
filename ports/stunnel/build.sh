@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,12 +12,10 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 groupadd -g 51 stunnel
 useradd -c "stunnel Daemon" -d /var/lib/stunnel \
         -g stunnel -s /bin/false -u 51 stunnel
-
 -----BEGIN PRIVATE KEY-----
 <many encrypted lines of private key>
 -----END PRIVATE KEY-----
@@ -28,38 +25,27 @@ useradd -c "stunnel Daemon" -d /var/lib/stunnel \
 -----BEGIN DH PARAMETERS-----
 <encrypted lines of dh parms>
 -----END DH PARAMETERS-----
-
-./configure --prefix=/usr        \
-            --sysconfdir=/etc    \
+./configure --prefix=/usr \
+            --sysconfdir=/etc \
             --localstatedir=/var
 make
-
-make docdir=/usr/share/doc/stunnel-5.80 install
-
+make install
 install -v -m644 tools/stunnel.service /usr/lib/systemd/system
-
 Common Name (FQDN of your server) [localhost]:
-
 make cert
-
 install -v -m750 -o stunnel -g stunnel -d /var/lib/stunnel/run
 chown stunnel:stunnel /var/lib/stunnel
-
 cat > /etc/stunnel/stunnel.conf << "EOF"
 ; File: /etc/stunnel/stunnel.conf
-
 ; Note: The pid and output locations are relative to the chroot location.
-
 pid    = /run/stunnel.pid
 chroot = /var/lib/stunnel
 client = no
 setuid = stunnel
 setgid = stunnel
 cert   = /etc/stunnel/stunnel.pem
-
 ;debug = 7
 ;output = stunnel.log
-
 ;[https]
 ;accept  = 443
 ;connect = 80
@@ -67,11 +53,8 @@ cert   = /etc/stunnel/stunnel.pem
 ;; Microsoft implementations do not use SSL close-notify alert and thus
 ;; they are vulnerable to truncation attacks
 ;TIMEOUTclose = 0
-
 EOF
-
 [<service>]
 accept  = <hostname:portnumber>
 connect = <hostname:portnumber>
-
 systemctl enable stunnel

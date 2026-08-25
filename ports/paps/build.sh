@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,15 +12,12 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -i -r 's/g_utf8_(next|offset)/(char*) &/' src/paps.cc
 patch -Np1 -i ../paps-0.8.0-fmt_fix-1.patch
-
-./configure --prefix=/usr           \
-            --disable-Werror        \
+./configure --prefix=/usr \
+            --disable-Werror \
             --mandir=/usr/share/man \
             CXX="g++ -std=gnu++17"
 make
-
 make install

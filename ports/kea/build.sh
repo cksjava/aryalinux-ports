@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,40 +12,31 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -e "/asio_wrapper/a#include <boost/asio/deadline_timer.hpp>" \
-    -i src/lib/asiolink/interval_timer.cc                        \
-       src/lib/asiodns/io_fetch.cc                               \
+    -i src/lib/asiolink/interval_timer.cc \
+       src/lib/asiodns/io_fetch.cc \
        src/lib/asiodns/tests/io_fetch_unittest.cc
-sed -e "/lexical_cast.hpp/a #include <boost/static_assert.hpp>"  \
-    -i src/lib/log/logger_level_impl.cc                          \
+sed -e "/lexical_cast.hpp/a #include <boost/static_assert.hpp>" \
+    -i src/lib/log/logger_level_impl.cc \
        src/lib/dns/rdataclass.cc
-
 sed -e 's/^[ ]*\(::X509_NAME\)/const \1/' \
     -i src/lib/asiolink/openssl_tls.h
-
 mkdir build
 cd    build
-
-meson setup ..             \
-      --prefix=/usr        \
-      --sysconfdir=/etc    \
+meson setup .. \
+      --prefix=/usr \
+      --sysconfdir=/etc \
       --localstatedir=/var \
-      --buildtype=release  \
-      -D crypto=openssl    \
+      --buildtype=release \
+      -D crypto=openssl \
       -D runstatedir=/run
-
 ninja
-
 ninja install
-
 sed -e "s:\${prefix}/::" -i /usr/sbin/keactrl
 sed -e "s:\${prefix}//etc:/etc:" -i /etc/kea/keactrl.conf
-
 install -dm0750 /var/lib/kea
 install -dm0750 /var/log/kea
-
 cat > /etc/kea/kea-ctrl-agent.conf << "EOF"
 // Begin /etc/kea/kea-ctrl-agent.conf
 {
@@ -69,7 +59,6 @@ cat > /etc/kea/kea-ctrl-agent.conf << "EOF"
         "socket-name": "/run/kea/kea-ddns-ctrl-socket"
       }
     },
-
     "loggers": [
       {
         "name": "kea-ctrl-agent",
@@ -87,7 +76,6 @@ cat > /etc/kea/kea-ctrl-agent.conf << "EOF"
 }
 // End /etc/kea/kea-ctrl-agent.conf
 EOF
-
 cat > /etc/kea/kea-dhcp4.conf << "EOF"
 // Begin /etc/kea/kea-dhcp4.conf
 {
@@ -96,18 +84,15 @@ cat > /etc/kea/kea-dhcp4.conf << "EOF"
     "interfaces-config": {
       "interfaces": [ "eth0", "eth2" ]
     },
-
     "control-socket": {
       "socket-type": "unix",
       "socket-name": "/run/kea/kea4-ctrl-socket"
     },
-
     "lease-database": {
       "type": "memfile",
       "lfc-interval": 3600,
       "name": "/var/lib/kea/kea-leases4.csv"
     },
-
     "expired-leases-processing": {
       "reclaim-timer-wait-time": 10,
       "flush-reclaimed-timer-wait-time": 25,
@@ -116,18 +101,15 @@ cat > /etc/kea/kea-dhcp4.conf << "EOF"
       "max-reclaim-time": 250,
       "unwarned-reclaim-cycles": 5
     },
-
     "renew-timer": 900,
     "rebind-timer": 1800,
     "valid-lifetime": 3600,
-
     // Enable DDNS - Kea will dynamically update the BIND DNS server
     "ddns-send-updates" : true,
     "ddns-qualifying-suffix": "your.domain.tld",
     "dhcp-ddns" : {
       "enable-updates": true
     },
-
     "subnet4": [
       {
         "id": 1001,   // Each subnet requires a unique numeric id
@@ -153,7 +135,6 @@ cat > /etc/kea/kea-dhcp4.conf << "EOF"
         ]
       }
     ],
-
     "loggers": [
       {
         "name": "kea-dhcp4",
@@ -171,7 +152,6 @@ cat > /etc/kea/kea-dhcp4.conf << "EOF"
 }
 // End /etc/kea/kea-dhcp4.conf
 EOF
-
 cat > /etc/kea/kea-dhcp-ddns.conf << "EOF"
 // Begin /etc/kea/kea-dhcp-ddns.conf
 {
@@ -182,7 +162,6 @@ cat > /etc/kea/kea-dhcp-ddns.conf << "EOF"
       "socket-type": "unix",
       "socket-name": "/run/kea/kea-ddns-ctrl-socket"
     },
-
     "tsig-keys": [
       {
         "name"      : "rndc-key",
@@ -190,7 +169,6 @@ cat > /etc/kea/kea-dhcp-ddns.conf << "EOF"
         "secret"    : "1FU5hD7faYaajQCjSdA54JkTPQxbbPrRnzOKqHcD9cM="
       }
     ],
-
     "forward-ddns" : {
       "ddns-domains" : [
         {
@@ -205,7 +183,6 @@ cat > /etc/kea/kea-dhcp-ddns.conf << "EOF"
         }
       ]
     },
-
     "reverse-ddns" : {
       "ddns-domains" : [
         {
@@ -220,7 +197,6 @@ cat > /etc/kea/kea-dhcp-ddns.conf << "EOF"
         }
       ]
     },
-
     "loggers": [
       {
         "name": "kea-dhcp-ddns",

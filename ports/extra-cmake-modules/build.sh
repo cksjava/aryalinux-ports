@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,21 +12,15 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -i '/"lib64"/s/64//' kde-modules/KDEInstallDirsCommon.cmake
-
 sed -e '/PACKAGE_INIT/i set(SAVE_PACKAGE_PREFIX_DIR "${PACKAGE_PREFIX_DIR}")' \
     -e '/^include/a set(PACKAGE_PREFIX_DIR "${SAVE_PACKAGE_PREFIX_DIR}")' \
     -i ECMConfig.cmake.in
-
 mkdir build
 cd    build
-
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
-      -D BUILD_WITH_QT6=ON         \
-      -D DOC_INSTALL_DIR=/usr/share/doc/extra-cmake-modules-6.29.0 \
+      -D BUILD_WITH_QT6=ON \
       ..
 make
-
 make install

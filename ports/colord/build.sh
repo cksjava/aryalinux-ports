@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,29 +12,22 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 groupadd -g 71 colord
 useradd -c "Color Daemon Owner" -d /var/lib/colord -u 71 \
         -g colord -s /bin/false colord
-
 mkdir build
 cd    build
-
-meson setup ..                  \
-      --prefix=/usr             \
-      --buildtype=release       \
-      -D daemon_user=colord     \
-      -D vapi=true              \
-      -D systemd=true           \
-      -D libcolordcompat=true   \
+meson setup .. \
+      --prefix=/usr \
+      --buildtype=release \
+      -D daemon_user=colord \
+      -D vapi=true \
+      -D systemd=true \
+      -D libcolordcompat=true \
       -D argyllcms_sensor=false \
-      -D bash_completion=false  \
-      -D docs=false             \
+      -D bash_completion=false \
+      -D docs=false \
       -D man=false
 ninja
-
-meson configure -D man=true
-ninja
-
 ninja install

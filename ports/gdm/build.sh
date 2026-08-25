@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,28 +12,21 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 groupadd -g 21 gdm
-
 mkdir build
 cd    build
-
-meson setup ..             \
-      --prefix=/usr        \
-      --buildtype=release  \
+meson setup .. \
+      --prefix=/usr \
+      --buildtype=release \
       -D gdm-xsession=true \
       -D run-dir=/run/gdm
 ninja
-
 ninja install
-
 ln -s /dev/null /etc/udev/rules.d/61-gdm.rules
-
 systemctl enable gdm
-
-su gdm -s /bin/bash                                                \
-       -c "dbus-run-session                                        \
+su gdm -s /bin/bash \
+       -c "dbus-run-session \
              gsettings set org.gnome.settings-daemon.plugins.power \
-                           sleep-inactive-ac-type                  \
+                           sleep-inactive-ac-type \
                            nothing"

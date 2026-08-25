@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,7 +12,6 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 cat > app-7.md5 << "EOF"
 36936e5bcf04b982ea87b4556d082061  iceauth-1.0.11.tar.xz
@@ -50,13 +48,11 @@ ee94a7722c8b9e37a28f1ac0fc371454  xwd-1.0.10.tar.xz
 e24406c671ab09a7ab0e13a7d1ef2752  xwininfo-1.1.7.tar.xz
 53d99fe7077b162b0cb87189f7ed71ce  xwud-1.0.8.tar.xz
 EOF
-
 mkdir app
 cd app
 grep -v '^#' ../app-7.md5 | awk '{print $2}' | wget -i- -c \
     -B https://www.x.org/pub/individual/app/
 md5sum -c ../app-7.md5
-
 as_root()
 {
   if   [ $EUID = 0 ];        then $*
@@ -64,11 +60,8 @@ as_root()
   else                            su -c \\"$*\\"
   fi
 }
-
 export -f as_root
-
 bash -e
-
 for package in $(grep -v '^#' ../app-7.md5 | awk '{print $2}')
 do
   packagedir=${package%.tar.?z*}
@@ -80,7 +73,5 @@ do
   popd
   rm -rf $packagedir
 done
-
 exit
-
 as_root rm -f $XORG_PREFIX/bin/xkeystone

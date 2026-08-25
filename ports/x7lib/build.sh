@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,7 +12,6 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 cat > lib-7.md5 << "EOF"
 6ad67d4858814ac24e618b8072900664  xtrans-1.6.0.tar.xz
@@ -49,13 +47,11 @@ fa0faa5b6a8e726186c535d73712ccea  libxkbfile-1.2.0.tar.xz
 9805be7e18f858bed9938542ed2905dc  libxshmfence-1.3.3.tar.xz
 53b72ce969745f8d3e41175d6549ce0b  libXpresent-1.0.2.tar.xz
 EOF
-
 mkdir lib
 cd lib
 grep -v '^#' ../lib-7.md5 | awk '{print $2}' | wget -i- -c \
     -B https://www.x.org/pub/individual/lib/
 md5sum -c ../lib-7.md5
-
 as_root()
 {
   if   [ $EUID = 0 ];        then $*
@@ -63,14 +59,9 @@ as_root()
   else                            su -c \\"$*\\"
   fi
 }
-
 export -f as_root
-
 grep -A9 summary *make_check.log
-
 bash -e
-
 exit
-
 ln -sv $XORG_PREFIX/lib/X11 /usr/lib/X11
 ln -sv $XORG_PREFIX/include/X11 /usr/include/X11

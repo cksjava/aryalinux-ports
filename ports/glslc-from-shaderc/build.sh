@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,21 +12,16 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed '/build-version/d'   -i glslc/CMakeLists.txt
 sed '/third_party/d'     -i CMakeLists.txt
 sed 's|SPIRV|glslang/&|' -i libshaderc_util/src/compiler.cc
-
 echo '"2026.3"' > glslc/src/build-version.inc
-
 mkdir build
 cd    build
-
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
-      -D CMAKE_BUILD_TYPE=Release  \
-      -D SHADERC_SKIP_TESTS=ON     \
+      -D CMAKE_BUILD_TYPE=Release \
+      -D SHADERC_SKIP_TESTS=ON \
       -G Ninja ..
 ninja glslc/glslc
-
 install -vm755 glslc/glslc /usr/bin

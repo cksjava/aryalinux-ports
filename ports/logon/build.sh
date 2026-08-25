@@ -3,9 +3,7 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 # config / no-tarball port — book commands only
-
 # --- commands from BLFS ---
 b   Insert the baudrate of the current line.
 d   Insert the current date.

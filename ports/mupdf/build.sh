@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,7 +12,6 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 cat > user.make << EOF
 USE_SYSTEM_BROTLI := yes
@@ -30,18 +28,13 @@ USE_SYSTEM_GLUT := yes
 USE_SYSTEM_CURL := yes
 USE_SYSTEM_GUMBO := no
 EOF
-
 export XCFLAGS=-fPIC
 make build=release shared=yes verbose=yes
 unset XCFLAGS
-
-make prefix=/usr                         \
-     shared=yes                          \
-     docdir=/usr/share/doc/mupdf-1.26.12 \
+make prefix=/usr \
+     shared=yes \
      install
-
 ln -sfv libmupdf.so.26.12 /usr/lib/libmupdf.so.26
 ln -sfv libmupdf.so.26   /usr/lib/libmupdf.so
 chmod 755 /usr/lib/libmupdf.so.26.12
-
 ln -sfv mupdf-x11 /usr/bin/mupdf

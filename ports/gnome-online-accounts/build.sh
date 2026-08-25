@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,24 +12,16 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 mkdir build
 cd    build
-
-meson setup                                            \
-      --prefix=/usr                                    \
-      --buildtype=release                              \
-      -D documentation=false                           \
-      -D kerberos=false                                \
+meson setup \
+      --prefix=/usr \
+      --buildtype=release \
+      -D documentation=false \
+      -D kerberos=false \
       -D google_client_secret=5ntt6GbbkjnTVXx-MSxbmx5e \
       -D google_client_id=595013732528-llk8trb03f0ldpqq6nprjp1s79596646.apps.googleusercontent.com \
       ..
 ninja
-
-meson configure -D documentation=true
-sed "s/project_name()/& + '-' + meson.project_version()/" \
-    -i ../doc/meson.build
-ninja
-
 ninja install

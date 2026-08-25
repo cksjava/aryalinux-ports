@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,18 +12,15 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
-./configure --prefix=/usr                   \
-            --infodir=/usr/share/info       \
-            --mandir=/usr/share/man         \
-            --disable-pam                   \
+./configure --prefix=/usr \
+            --infodir=/usr/share/info \
+            --mandir=/usr/share/man \
+            --disable-pam \
             --enable-socket-dir=/run/screen \
-            --with-pty-group=5              \
+            --with-pty-group=5 \
             --with-system_screenrc=/etc/screenrc
-
 sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%" {etc,doc}/*
 make
-
 make install
 install -m 644 etc/etcscreenrc /etc/screenrc

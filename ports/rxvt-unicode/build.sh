@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,31 +12,22 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed '/interpolation/,+7d' -i src/rxvtutil.h
-
 ./configure --prefix=/usr --enable-everything
 make
-
 make install
-
 cat >> /etc/X11/app-defaults/URxvt << "EOF"
 ! Use the specified colour as the windows background colour [default white]
 URxvt*background: black
-
 ! Use the specified colour as the windows foreground colour [default black]
 URxvt*foreground: yellow
-
 ! Select the fonts to be used. This is a comma separated list of font names
 URxvt*font: xft:Monospace:pixelsize=18
-
 ! Comma-separated list(s) of perl extension scripts (default: "default")
 URxvt*perl-ext: matcher
-
 ! Specifies the program to be started with a URL argument. Used by
 URxvt*url-launcher: firefox
-
 ! When clicked with the mouse button specified in the "matcher.button" resource
 ! (default 2, or middle), the program specified in the "matcher.launcher"
 ! resource (default, the "url-launcher" resource, "sensible-browser") will be
@@ -45,14 +35,10 @@ URxvt*url-launcher: firefox
 ! Below, default modified to mouse left button.
 URxvt*matcher.button:     1
 EOF
-
 xrdb -query
-
 xrdb -merge ~/.Xresources
-
 # Start the urxvtd daemon
 urxvtd -q -f -o &
-
 cat > /usr/share/applications/urxvt.desktop << "EOF"
 [Desktop Entry]
 Encoding=UTF-8
@@ -67,5 +53,4 @@ Categories=GTK;Utility;TerminalEmulator;
 #StartupNotify=true
 Keywords=console;command line;execute;
 EOF
-
 update-desktop-database -q

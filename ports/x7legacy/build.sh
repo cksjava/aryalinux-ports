@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,7 +12,6 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 cat > legacy.dat << "EOF"
 e09b61567ab4a4d534119bba24eddfb1 util/ bdftopcf-1.1.1.tar.xz
@@ -24,14 +22,12 @@ e09b61567ab4a4d534119bba24eddfb1 util/ bdftopcf-1.1.1.tar.xz
 fe2c44307639062d07c6e9f75f4d6a13 font/ font-isas-misc-1.0.4.tar.xz
 145128c4b5f7820c974c8c5b9f6ffe94 font/ font-misc-misc-1.1.3.tar.xz
 EOF
-
 mkdir legacy
 cd    legacy
 grep -v '^#' ../legacy.dat | awk '{print $2$3}' | wget -i- -c \
      -B https://www.x.org/pub/individual/
 grep -v '^#' ../legacy.dat | awk '{print $1 " " $3}' > ../legacy.md5
 md5sum -c ../legacy.md5
-
 as_root()
 {
   if   [ $EUID = 0 ];        then $*
@@ -39,11 +35,8 @@ as_root()
   else                            su -c \\"$*\\"
   fi
 }
-
 export -f as_root
-
 bash -e
-
 for package in $(grep -v '^#' ../legacy.md5 | awk '{print $3}')
 do
   packagedir=${package%.tar.?z*}
@@ -56,5 +49,4 @@ do
   rm -rf $packagedir
   as_root /sbin/ldconfig
 done
-
 exit

@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,18 +12,14 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -i 's/FORMAT_ELF/UNIX64 \&\& FORMAT_ELF/' source/common/x86/cpu-a.asm
-
 mkdir bld
 cd    bld
-
-cmake -D CMAKE_INSTALL_PREFIX=/usr        \
-      -D GIT_ARCHETYPE=1                  \
-      -W no-author                        \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D GIT_ARCHETYPE=1 \
+      -W no-author \
       ../source
 make
-
 make install
 rm -vf /usr/lib/libx265.a

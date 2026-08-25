@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,30 +12,23 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -i '/install_man/,$d' meson.build
-
 mkdir build
 cd    build
-
-meson setup ..              \
+meson setup .. \
       --prefix=$XORG_PREFIX \
-      --buildtype=release   \
+      --buildtype=release \
       -D xkb_output_dir=/var/lib/xkb
 ninja
-
 mkdir tools
 pushd tools
-
 git clone https://gitlab.freedesktop.org/mesa/piglit.git --depth 1
 cat > piglit/piglit.conf << EOF
 [xts]
 path=$(pwd)/xts
 EOF
-
 git clone https://gitlab.freedesktop.org/xorg/test/xts --depth 1
-
 export DISPLAY=:22
 ../hw/vfb/Xvfb $DISPLAY &
 VFB_PID=$!
@@ -46,8 +38,6 @@ make
 kill $VFB_PID
 unset DISPLAY VFB_PID
 popd
-
 XTEST_DIR=$(pwd)/tools/xts PIGLIT_DIR=$(pwd)/tools/piglit
 ninja install
-
 install -vm755 hw/vfb/Xvfb /usr/bin

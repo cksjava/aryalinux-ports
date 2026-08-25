@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,27 +12,20 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 mkdir build
 cd    build
-
-meson setup                \
-      --prefix=/usr        \
-      --buildtype=release  \
-      -D gtk_doc=false     \
-      -D tests=false       \
+meson setup \
+      --prefix=/usr \
+      --buildtype=release \
+      -D gtk_doc=false \
+      -D tests=false \
       ..
 ninja
-
 ninja install
-
 systemctl enable power-profiles-daemon
-
 powerprofilesctl
-
 powerprofilesctl set performance
-
 gov=performance
 for CPUFREQ in /sys/devices/system/cpu/cpufreq/policy*/scaling_governor; do
   echo -n ${gov} > ${CPUFREQ}

@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,23 +12,13 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 mkdir build
 cd    build
-
-meson setup --prefix=/usr            \
-            --buildtype=release      \
-            --wrap-mode=nofallback   \
+meson setup --prefix=/usr \
+            --buildtype=release \
+            --wrap-mode=nofallback \
             -D introspection=enabled \
             ..
 ninja
-
-meson configure -D man-pages=true
-ninja
-
-sed "/docs_dir =/s@\$@ / 'pango-1.58.2'@" -i ../docs/meson.build
-meson configure -D documentation=true
-ninja
-
 ninja install

@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,20 +12,17 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 mkdir build
 cd    build
-
-cmake -D CMAKE_INSTALL_PREFIX=/usr             \
-      -D CMAKE_BUILD_TYPE=Release              \
-      -D BUILD_TESTING=OFF                     \
-      -D BUILD_SHARED_LIBS=ON                  \
-      -D JPEGXL_ENABLE_SKCMS=OFF               \
-      -D JPEGXL_ENABLE_SJPEG=OFF               \
-      -D JPEGXL_ENABLE_PLUGINS=OFF             \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release \
+      -D BUILD_TESTING=OFF \
+      -D BUILD_SHARED_LIBS=ON \
+      -D JPEGXL_ENABLE_SKCMS=OFF \
+      -D JPEGXL_ENABLE_SJPEG=OFF \
+      -D JPEGXL_ENABLE_PLUGINS=OFF \
       -D JPEGXL_INSTALL_JARDIR=/usr/share/java \
       -G Ninja ..
 ninja
-
 ninja install

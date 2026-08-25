@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,15 +12,12 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -i "/stdio/a #include <string.h>" src/fill_test.c
-
-LIBS=-lm                         \
-./configure --prefix=/usr        \
-            --without-doxygen    \
+LIBS=-lm \
+./configure --prefix=/usr \
+            --without-doxygen \
             --with-cpuflags=none \
-            --docdir=/usr/share/doc/gavl-1.4.0
+            --
 make
-
 make install

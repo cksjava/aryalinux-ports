@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,13 +12,7 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 patch -Np1 -i ../efivar-39-upstream_fixes-1.patch
-
 make ENABLE_DOCS=0
-
 make install ENABLE_DOCS=0 LIBDIR=/usr/lib
-
-install -vm644 docs/efivar.1 /usr/share/man/man1
-install -vm644 docs/*.3      /usr/share/man/man3

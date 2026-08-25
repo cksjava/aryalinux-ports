@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,33 +12,25 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 python3 -m venv --system-site-packages testenv
 source testenv/bin/activate
-
-./configure --prefix=/usr           \
-            --sysconfdir=/etc       \
-            --localstatedir=/var    \
+./configure --prefix=/usr \
+            --sysconfdir=/etc \
+            --localstatedir=/var \
             --mandir=/usr/share/man \
             --disable-static
 make
-
 bin/tests/system/ifconfig.sh up
-
 pip3 install cryptography \
-             dnspython    \
-             h2           \
-             hypothesis   \
+             dnspython \
+             h2 \
+             hypothesis \
 deactivate
-
 bin/tests/system/ifconfig.sh down
-
 make install
-
 groupadd -g 20 named
 useradd -c "BIND Owner" -g named -s /bin/false -u 20 named
-
 install -d -m770 -o named -g named /srv/named
 cd       /srv/named
 mkdir -p dev etc/named/{slave,pz} usr/lib/engines var/run/named
@@ -47,15 +38,12 @@ mknod /srv/named/dev/null c 1 3
 mknod /srv/named/dev/urandom c 1 9
 chmod 666 /srv/named/dev/{null,urandom}
 cp /etc/localtime etc
-
 rndc-confgen -a -b 512 -t /srv/named
-
 cat >> /srv/named/etc/named.conf << "EOF"
 options {
     directory "/etc/named";
     pid-file "/var/run/named.pid";
     statistics-file "/var/run/named.stats";
-
 };
 zone "." {
     type hint;
@@ -65,21 +53,17 @@ zone "0.0.127.in-addr.arpa" {
     type master;
     file "pz/127.0.0";
 };
-
 // Bind 9 now logs by default through syslog (except debug).
 // These are the default logging rules.
-
 logging {
     category default { default_syslog; default_debug; };
     category unmatched { null; };
-
   channel default_syslog {
       syslog daemon;                      // send to syslog's daemon
                                           // facility
       severity info;                      // only send priority info
                                           // and higher
   };
-
   channel default_debug {
       file "named.run";                   // write to named.run in
                                           // the working directory
@@ -90,20 +74,17 @@ logging {
       severity dynamic;                   // log at the server's
                                           // current debug level
   };
-
   channel default_stderr {
       stderr;                             // writes to stderr
       severity info;                      // only send priority info
                                           // and higher
   };
-
   channel null {
       null;                               // toss anything sent to
                                           // this channel
   };
 };
 EOF
-
 cat > /srv/named/etc/named/pz/127.0.0 << "EOF"
 $TTL 3D
 @      IN      SOA     ns.local.domain. hostmaster.local.domain. (
@@ -115,7 +96,6 @@ $TTL 3D
                 NS      ns.local.domain.
 1               PTR     localhost.
 EOF
-
 cat > /srv/named/etc/named/root.hints << "EOF"
 .                       6D  IN      NS      A.ROOT-SERVERS.NET.
 .                       6D  IN      NS      B.ROOT-SERVERS.NET.
@@ -157,18 +137,13 @@ L.ROOT-SERVERS.NET.     6D  IN      AAAA    2001:500:9f::42
 M.ROOT-SERVERS.NET.     6D  IN      A       202.12.27.33
 M.ROOT-SERVERS.NET.     6D  IN      AAAA    2001:dc3::35
 EOF
-
 cp /etc/resolv.conf /etc/resolv.conf.bak
 cat > /etc/resolv.conf << "EOF"
 search <yourdomain.com>
 nameserver 127.0.0.1
 EOF
-
 chown -R named:named /srv/named
-
 systemctl start named
-
 dig -x 127.0.0.1
-
 dig www.linuxfromscratch.org
 dig www.linuxfromscratch.org

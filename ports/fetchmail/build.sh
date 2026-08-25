@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,19 +12,14 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 useradd -c "Fetchmail User" -d /dev/null -g nogroup \
         -s /bin/false -u 38 fetchmail
-
 ./configure --prefix=/usr
 make
-
 make install
 chown -v fetchmail:nogroup /usr/bin/fetchmail
-
 cat > ~/.fetchmailrc << "EOF"
-
 # The logfile needs to exist when fetchmail is invoked, otherwise it will
 # dump the details to the screen. As with all logs, you will need to rotate
 # or clear it from time to time.
@@ -33,11 +27,9 @@ set logfile fetchmail.log
 set no bouncemail
 # You probably want to set your local username as the postmaster
 set postmaster <username>
-
 poll SERVERNAME :
     user <isp_username> pass <password>;
     mda "/usr/bin/procmail -f %F -d %T";
 EOF
-
 touch ~/fetchmail.log
 chmod -v 0600 ~/.fetchmailrc

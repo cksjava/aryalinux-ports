@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,14 +12,11 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
-make DEBUG=-DNDEBUG     \
-     INSTALL_USER=root  \
+make DEBUG=-DNDEBUG \
+     INSTALL_USER=root \
      INSTALL_GROUP=root \
      LOCAL_CONFIGURE_OPTIONS="--localstatedir=/var"
-
-make PKG_DOC_DIR=/usr/share/doc/xfsprogs-7.1.1 install
-make PKG_DOC_DIR=/usr/share/doc/xfsprogs-7.1.1 install-dev
-
+make install
+make install-dev
 rm -rfv /usr/lib/libhandle.{a,la}

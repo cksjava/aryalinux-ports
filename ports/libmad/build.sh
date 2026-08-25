@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,24 +12,19 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 patch -Np1 -i ../libmad-0.15.1b-fixes-1.patch
 sed "s@AM_CONFIG_HEADER@AC_CONFIG_HEADERS@g" -i configure.ac
 touch NEWS AUTHORS ChangeLog
 autoreconf -fi
-
 ./configure --prefix=/usr --disable-static
 make
-
 make install
-
 cat > /usr/lib/pkgconfig/mad.pc << "EOF"
 prefix=/usr
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
-
 Name: mad
 Description: MPEG audio decoder
 Requires:

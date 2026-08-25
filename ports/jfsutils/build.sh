@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,14 +12,10 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 patch -Np1 -i ../jfsutils-1.1.15-gcc10_fix-1.patch
-
 sed -i "/unistd.h/a#include <sys/types.h>"    fscklog/extract.c
 sed -i "/ioctl.h/a#include <sys/sysmacros.h>" libfs/devices.c
-
 ./configure
 make
-
 make install

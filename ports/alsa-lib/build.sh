@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,18 +12,8 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 ./configure
 make
-
-make doc
-
 make install
 tar -C /usr/share/alsa --strip-components=1 -xf ../alsa-ucm-conf-1.2.16.1.tar.bz2
-
-install -v -d -m755 /usr/share/doc/alsa-lib-1.2.16.1/html/search
-install -v -m644 doc/doxygen/html/*.* \
-                /usr/share/doc/alsa-lib-1.2.16.1/html
-install -v -m644 doc/doxygen/html/search/* \
-                /usr/share/doc/alsa-lib-1.2.16.1/html/search

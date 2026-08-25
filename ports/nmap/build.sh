@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,21 +12,15 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -ri Makefile.in \
-    -e 's#-m build#& --no-isolation#'  \
+    -e 's#-m build#& --no-isolation#' \
     -e '/pip install/s#(ZENMAP|NDIFF)DIR\)/#&dist/*.whl#'
-
 sed 's/, "setuptools-gettext"//' -i zenmap/pyproject.toml
-
 sed '/py-modules/s/f"/&, "Version"/' -i ndiff/pyproject.toml
-
 ./configure --prefix=/usr
 make
-
-sed -e '/import imp/d'                \
+sed -e '/import imp/d' \
     -e 's/^ndiff = .*$/import ndiff/' \
     -i ndiff/ndifftest.py
-
 make install

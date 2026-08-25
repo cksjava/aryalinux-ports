@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,33 +12,26 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 mkdir build
 cd    build
-
-cmake -D CMAKE_INSTALL_PREFIX=/usr   \
-      -D CMAKE_BUILD_TYPE=Release    \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release \
       -D CMAKE_SKIP_INSTALL_RPATH=ON \
-      -D SDL2COMPAT_STATIC=OFF       \
-      -D SDL2COMPAT_TESTS=OFF        \
+      -D SDL2COMPAT_STATIC=OFF \
+      -D SDL2COMPAT_TESTS=OFF \
       -W no-author -G Ninja ..
-
 ninja
-
 ninja install
 rm -vf /usr/lib/libSDL2_test.a
-
 mkdir ../build-tests
 cd    ../build-tests
-
-cmake -D CMAKE_INSTALL_PREFIX=/usr   \
-      -D CMAKE_BUILD_TYPE=Release    \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release \
       -D CMAKE_SKIP_INSTALL_RPATH=ON \
       -D SDL2COMPAT_INSTALL_TESTS=ON \
-      -D SDL2COMPAT_STATIC=OFF       \
-      -D SDL2COMPAT_TESTS=ON         \
+      -D SDL2COMPAT_STATIC=OFF \
+      -D SDL2COMPAT_TESTS=ON \
       -W no-author -G Ninja ..
-
 ninja
 DESTDIR=$PWD/TESTS ninja install

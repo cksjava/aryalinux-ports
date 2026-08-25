@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,21 +12,17 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 patch -Np1 -i ../mlt-7.40.0-ffmpeg-9.0.patch
-
 mkdir build
 cd    build
-
 cmake -D CMAKE_INSTALL_PREFIX=/usr \
-      -D CMAKE_BUILD_TYPE=Release  \
-      -D MOD_SOX=OFF               \
-      -D MOD_MOVIT=OFF             \
-      -D MOD_VIDSTAB=OFF           \
-      -D MOD_JACKRACK=OFF          \
-      -D MOD_RUBBERBAND=OFF        \
+      -D CMAKE_BUILD_TYPE=Release \
+      -D MOD_SOX=OFF \
+      -D MOD_MOVIT=OFF \
+      -D MOD_VIDSTAB=OFF \
+      -D MOD_JACKRACK=OFF \
+      -D MOD_RUBBERBAND=OFF \
       -W no-author ..
 make
-
 make install

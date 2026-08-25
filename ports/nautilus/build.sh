@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,24 +12,14 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 rm -fv /usr/lib/libnautilus-extension.so.4
-
 mkdir build
 cd    build
-
-meson setup --prefix=/usr       \
+meson setup --prefix=/usr \
             --buildtype=release \
             -D selinux=disabled \
             ..
-
 ninja
-
-sed "/docdir =/s@\$@ / 'nautilus-50.2.2'@" -i ../meson.build
-meson configure -D docs=true
-ninja
-
 ninja install
-
 glib-compile-schemas /usr/share/glib-2.0/schemas

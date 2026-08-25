@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,17 +12,9 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -i -e '/cat./d' documentation/Makefile
-
 ./configure --prefix=/usr --enable-shared
 make
-
-make -C documentation html
-
-make docdir=/usr/share/doc/fltk-1.3.11 install
+make install
 rm -fv /usr/lib/libfltk*.a
-
-make -C test          docdir=/usr/share/doc/fltk-1.3.9 install-linux
-make -C documentation docdir=/usr/share/doc/fltk-1.3.9 install-linux

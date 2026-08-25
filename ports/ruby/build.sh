@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,20 +12,16 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
-./configure --prefix=/usr         \
-            --disable-rpath       \
-            --enable-shared       \
-            --without-valgrind    \
-            --without-baseruby    \
+./configure --prefix=/usr \
+            --disable-rpath \
+            --enable-shared \
+            --without-valgrind \
+            --without-baseruby \
             ac_cv_func_qsort_r=no \
-            --docdir=/usr/share/doc/ruby-4.0.6
+            --
 make
-
 make capi
-
 XDG_DATA_HOME=/tmp make install
-
 cd /path/to/web/app
 bundle update rake

@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,18 +12,14 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 mkdir build
 cd    build
-
-cmake -D CMAKE_INSTALL_PREFIX=/usr        \
-      -D CMAKE_BUILD_TYPE=RELEASE         \
-      -D ENABLE_STATIC=FALSE              \
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=RELEASE \
+      -D ENABLE_STATIC=FALSE \
       -D CMAKE_INSTALL_DEFAULT_LIBDIR=lib \
-      -D CMAKE_SKIP_INSTALL_RPATH=ON      \
-      -D CMAKE_INSTALL_DOCDIR=/usr/share/doc/libjpeg-turbo-3.2.0 \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON \
       ..
 make
-
 make install

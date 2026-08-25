@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,21 +12,16 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 mkdir build
 cd    build
-
-meson setup --prefix=/usr            \
-            --buildtype=release      \
-            -D apidocs=false         \
+meson setup --prefix=/usr \
+            --buildtype=release \
+            -D apidocs=false \
             -D bash-completion=false \
             -D stemming=false   ..
 ninja
-
 ninja install
-mv -v /usr/share/doc/appstream{,-1.1.6}
-
 install -vdm755 /usr/share/metainfo
 cat > /usr/share/metainfo/org.linuxfromscratch.lfs.xml << EOF
 <?xml version="1.0" encoding="UTF-8"?>
@@ -47,7 +41,6 @@ cat > /usr/share/metainfo/org.linuxfromscratch.lfs.xml << EOF
   <developer id='linuxfromscratch.org'>
     <name>The Linux From Scratch Editors</name>
   </developer>
-
   <releases>
     <release version="13.0" type="stable" date="2026-03-05">
       <description>
@@ -55,14 +48,12 @@ cat > /usr/share/metainfo/org.linuxfromscratch.lfs.xml << EOF
         Linux kernel 6.18, and six security updates.</p>
       </description>
     </release>
-
     <release version="12.4" type="stable" date="2025-09-01">
       <description>
         <p>Now contains Binutils 2.45, GCC-15.2.0, Glibc-2.42,
         Linux kernel 6.16, and twelve security updates.</p>
       </description>
     </release>
-
     <release version="12.3" type="stable" date="2025-03-05">
       <description>
         <p>Now contains Binutils 2.44, GCC-14.2.0, Glibc-2.41, and

@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,17 +12,13 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
-./configure --prefix=/usr                \
+./configure --prefix=/usr \
             --with-cups-rundir=/run/cups \
-            --without-rcdir              \
-            --disable-static             \
-            --docdir=/usr/share/doc/cups-browsed-2.1.1
+            --without-rcdir \
+            --disable-static \
+            --
 make
-
 make install
-
 install -v -m644 daemon/cups-browsed.service /lib/systemd/system/cups-browsed.service
-
 systemctl enable cups-browsed

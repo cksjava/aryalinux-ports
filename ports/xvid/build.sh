@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,21 +12,12 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -i '/typedef int bool;/d' src/encoder.h
-
 cd build/generic
 sed -i 's/^LN_S=@LN_S@/& -f -v/' platform.inc.in
-
 ./configure --prefix=/usr
 make
-
 sed -i '/libdir.*STATIC_LIB/ s/^/#/' Makefile
 make install
-
 chmod -v 755 /usr/lib/libxvidcore.so.4.3
-install -v -m755 -d /usr/share/doc/xvidcore-1.3.7/examples
-install -v -m644 ../../doc/* /usr/share/doc/xvidcore-1.3.7
-install -v -m644 ../../examples/* \
-    /usr/share/doc/xvidcore-1.3.7/examples

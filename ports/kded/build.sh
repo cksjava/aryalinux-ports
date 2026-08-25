@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,7 +12,6 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 export KF6_PREFIX="${KF6_PREFIX:-/opt/kf6}"
 export QT6DIR="${QT6DIR:-/opt/qt6}"
@@ -23,11 +21,11 @@ mkdir build
 cd build
 cmake -D CMAKE_INSTALL_PREFIX=$KF6_PREFIX \
             -D CMAKE_INSTALL_LIBEXECDIR=libexec \
-            -D CMAKE_PREFIX_PATH=$QT6DIR        \
-            -D CMAKE_SKIP_INSTALL_RPATH=ON      \
-            -D CMAKE_BUILD_TYPE=Release         \
-            -D BUILD_TESTING=OFF                \
-            -D BUILD_PYTHON_BINDINGS=OFF        \
+            -D CMAKE_PREFIX_PATH=$QT6DIR \
+            -D CMAKE_SKIP_INSTALL_RPATH=ON \
+            -D CMAKE_BUILD_TYPE=Release \
+            -D BUILD_TESTING=OFF \
+            -D BUILD_PYTHON_BINDINGS=OFF \
             -W no-author ..
       make
       make install

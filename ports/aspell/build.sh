@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,30 +12,15 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 ./configure --prefix=/usr
 make
-
 make install
 ln -svfn aspell-0.60 /usr/lib/aspell
-
-install -v -m755 -d /usr/share/doc/aspell-0.60.8.2/aspell{,-dev}.html
-
-install -v -m644 manual/aspell.html/* \
-    /usr/share/doc/aspell-0.60.8.2/aspell.html
-
-install -v -m644 manual/aspell-dev.html/* \
-    /usr/share/doc/aspell-0.60.8.2/aspell-dev.html
-
 install -v -m 755 scripts/ispell /usr/bin/
-
 install -v -m 755 scripts/spell /usr/bin/
-
 tar xf ../aspell6-en-2020.12.07-0.tar.bz2
 cd aspell6-en-2020.12.07-0
-
 ./configure
 make
-
 make install

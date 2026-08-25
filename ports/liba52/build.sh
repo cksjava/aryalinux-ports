@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,16 +12,12 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
-./configure --prefix=/usr           \
+./configure --prefix=/usr \
             --mandir=/usr/share/man \
-            --enable-shared         \
-            --disable-static        \
+            --enable-shared \
+            --disable-static \
             CFLAGS="${CFLAGS:--g -O3} -fPIC"
 make
-
 make install
 cp liba52/a52_internal.h /usr/include/a52dec
-install -v -m644 -D doc/liba52.txt \
-    /usr/share/doc/liba52-0.8.0/liba52.txt

@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,27 +12,19 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 mkdir build
 cd    build
-
-meson setup ..                 \
-      --prefix=/usr            \
-      --buildtype=release      \
+meson setup .. \
+      --prefix=/usr \
+      --buildtype=release \
       --default-library=shared \
       -D python=disabled
 ninja
-
 ninja install
-
 pushd ../Documentation
   latexmk -bibtex --pdf dtc-paper
   latexmk -bibtex --pdf dtc-paper -c
 popd
-
-cp -R ../Documentation -T /usr/share/doc/dtc-1.8.1
-
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir ..
-
 pip3 install --no-index --find-links dist --no-user libfdt

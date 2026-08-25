@@ -3,56 +3,43 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 # config / no-tarball port — book commands only
-
 # --- commands from BLFS ---
 mkdir -pv ~/.config/fontconfig
 cat > ~/.config/fontconfig/fonts.conf << "EOF"
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
 <fontconfig>
-
   <match target="font" >
     <!-- autohint was the old automatic hinter when hinting was patent
     protected, so turn it off to ensure any hinting information in the font
     itself is used, this is the default -->
     <edit mode="assign" name="autohint">  <bool>false</bool></edit>
-
     <!-- hinting is enabled by default -->
     <edit mode="assign" name="hinting">   <bool>true</bool></edit>
-
     <!-- for the lcdfilter see https://www.spasche.net/files/lcdfiltering/ -->
     <edit mode="assign" name="lcdfilter"> <const>lcddefault</const></edit>
-
     <!-- options for hintstyle:
     hintfull: is supposed to give a crisp font that aligns well to the
     character-cell grid but at the cost of its proper shape. However, anything
     using Pango >= 1.44 will not support full hinting, Pango now uses harfbuzz
     for hinting. Apps which use Skia (e.g. Chromium, Firefox) should not be
     affected by this.
-
     hintmedium: is reported to be broken.
     hintslight is the default: - supposed to be more fuzzy but retains shape.
-
     hintnone: seems to turn hinting off.
     The variations are marginal and results vary with different fonts -->
     <edit mode="assign" name="hintstyle"> <const>hintslight</const></edit>
-
     <!-- antialiasing is on by default and really helps for faint characters
     and also for 'xft:' fonts used in rxvt-unicode -->
     <edit mode="assign" name="antialias"> <bool>true</bool></edit>
-
     <!-- subpixels are usually rgb, see
     http://www.lagom.nl/lcd-test/subpixel.php -->
     <edit mode="assign" name="rgba">      <const>rgb</const></edit>
-
     <!-- thanks to the Arch wiki for the lcd and subpixel links -->
   </match>
-
 </fontconfig>
 EOF
-
 cat > /etc/fonts/conf.d/70-no-bitmaps.conf << "EOF"
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
@@ -67,7 +54,6 @@ cat > /etc/fonts/conf.d/70-no-bitmaps.conf << "EOF"
  </selectfont>
 </fontconfig>
 EOF
-
 cat > /etc/fonts/conf.d/09-texlive.conf << "EOF"
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
@@ -76,7 +62,6 @@ cat > /etc/fonts/conf.d/09-texlive.conf << "EOF"
   <dir>/opt/texlive/2025/texmf-dist/fonts/truetype/paratype</dir>
 </fontconfig>
 EOF
-
 mkdir -pv ~/.config/fontconfig/conf.d
 cat >  ~/.config/fontconfig/conf.d/35-prefer-nimbus-for-timesnew.conf << "EOF"
 <?xml version='1.0'?>
@@ -93,7 +78,6 @@ cat >  ~/.config/fontconfig/conf.d/35-prefer-nimbus-for-timesnew.conf << "EOF"
     </alias>
 </fontconfig>
 EOF
-
 cat > /etc/fonts/local.conf << "EOF"
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
@@ -126,7 +110,6 @@ cat > /etc/fonts/local.conf << "EOF"
     </alias>
 </fontconfig>
 EOF
-
 <match target="pattern">
        <test qual="any" name="lang" compare="contains">
            <string>zh-cn</string>
@@ -139,7 +122,6 @@ EOF
            <string>AR PL UMing CN</string>
        </edit>
    </match>
-
 <match target="pattern">
        <test qual="any" name="lang" compare="contains">
            <string>zh-cn</string>

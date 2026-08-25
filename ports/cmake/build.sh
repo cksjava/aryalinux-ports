@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,17 +12,14 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
-
-./bootstrap --prefix=/usr        \
-            --system-libs        \
-            --mandir=/share/man  \
-            --no-system-jsoncpp  \
-            --no-system-cppdap   \
+./bootstrap --prefix=/usr \
+            --system-libs \
+            --mandir=/share/man \
+            --no-system-jsoncpp \
+            --no-system-cppdap \
             --no-system-librhash \
-            --docdir=/share/doc/cmake-4.4.2
+            --
 make
-
 make install

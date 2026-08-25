@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,18 +12,16 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
-./configure --prefix=/usr      \
-            --sysconfdir=/etc  \
-            --with-python3     \
-            --without-escrow   \
-            --without-gtk-doc  \
-            --without-lvm      \
+./configure --prefix=/usr \
+            --sysconfdir=/etc \
+            --with-python3 \
+            --without-escrow \
+            --without-gtk-doc \
+            --without-lvm \
             --without-lvm_dbus \
-            --without-nvdimm   \
-            --without-tools    \
+            --without-nvdimm \
+            --without-tools \
             --without-smartmontools
 make
-
 make install

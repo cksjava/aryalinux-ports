@@ -3,7 +3,6 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
-
 rm -rf "$ALPS_WORK/$ALPS_NAME"
 mkdir -p "$ALPS_WORK/$ALPS_NAME"
 tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
@@ -13,15 +12,10 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
   exit 1
 fi
 cd "${_tops[0]}"
-
 # --- commands from BLFS ---
 sed -i 's|/doc/valgrind||' docs/Makefile.in
-
-./configure --prefix=/usr \
-            --datadir=/usr/share/doc/valgrind-3.27.1
+./configure --prefix=/usr
 make
-
 sed -e 's@prereq:.*@prereq: false@' \
     -i {helgrind,drd}/tests/pth_cond_destroy_busy.vgtest
-
 make install
