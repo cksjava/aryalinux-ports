@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: encode-jis2k
+version: '0.05'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Encode::JIS2K-0.05
+tarball: Encode-JIS2K-0.05.tar.gz
+url: https://www.cpan.org/authors/id/D/DA/DANKOGAI/Encode-JIS2K-0.05.tar.gz
+md5: 06acd9e878d41ffc354258e265db2875
+summary: The Encode::JIS2K module provides JIS X 0212 (aka JIS 2000) Encodings.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

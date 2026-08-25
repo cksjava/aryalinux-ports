@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libxcvt
+version: 0.1.3
+page_kind: single_package
+section: x
+page: libxcvt
+title: libxcvt-0.1.3
+tarball: libxcvt-0.1.3.tar.xz
+url: https://www.x.org/pub/individual/lib/libxcvt-0.1.3.tar.xz
+md5: 7fb9c51d33a680f724f34da41768b1d0
+summary: libxcvt is a library providing a standalone version of the X server implementation
+  of the VESA CVT standard timing modelines generator. It is meant to be a direct
+  replacement to the version formerly provided by the Xorg server.
+download_size: 12 KB
+disk_space: 440 KB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - xorg-build-environment
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 448000

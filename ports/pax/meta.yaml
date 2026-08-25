@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: pax
+version: '20240817'
+page_kind: single_package
+section: general
+page: pax
+title: Pax-20240817
+tarball: paxmirabilis-20240817.tgz
+url: http://www.mirbsd.org/MirOS/dist/mir/cpio/paxmirabilis-20240817.tgz
+md5: 9a723154a4201a0892b7ff815b6753b5
+summary: pax is an archiving utility created by POSIX and defined by the POSIX.1-2001
+  standard. Rather than sort out the incompatible options that have crept up between
+  tar and cpio, along with their implementations across various versions of UNIX,
+  the IEEE designed a new archive utility. The name “pax” is an acronym for portable
+  archive exchange. Furthermore, “pax” means “peace” in Latin, so its name impl
+download_size: 180 KB
+disk_space: 1.6 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 298000

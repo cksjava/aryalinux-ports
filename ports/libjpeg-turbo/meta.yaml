@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: libjpeg-turbo
+version: 3.2.0
+page_kind: single_package
+section: general
+page: libjpeg
+title: libjpeg-turbo-3.2.0
+tarball: libjpeg-turbo-3.2.0.tar.gz
+url: https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/3.2.0/libjpeg-turbo-3.2.0.tar.gz
+md5: a80f9f1c735b57d3cdd66daed1ba6bb4
+summary: libjpeg-turbo is a fork of the original IJG libjpeg which uses SIMD to accelerate
+  baseline JPEG compression and decompression. libjpeg is a library that implements
+  JPEG image encoding, decoding and transcoding.
+download_size: 2.5 MB
+disk_space: 59 MB (with tests)
+sbu: 0.6 SBU (with tests; both using parallelism=4)
+depends:
+  required:
+  - cmake
+  recommended:
+  - nasm
+  - yasm
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 229000

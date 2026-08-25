@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: neon
+version: 0.37.1
+page_kind: single_package
+section: basicnet
+page: neon
+title: neon-0.37.1
+tarball: neon-0.37.1.tar.gz
+url: https://notroj.github.io/neon/neon-0.37.1.tar.gz
+md5: 5e661a69b52d26d8baab0e61a783d419
+summary: neon is an HTTP and WebDAV client library, with a C interface.
+download_size: 960 KB
+disk_space: 84 MB (with tests)
+sbu: less than 0.1 SBU (add 0.4 SBU for tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 408000

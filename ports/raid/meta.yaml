@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: raid
+version: '0'
+page_kind: configuration
+section: postlfs
+page: raid
+title: About RAID
+tarball: ''
+url: ''
+md5: ''
+summary: The storage technology known as RAID (Redundant Array of Independent Disks)
+  combines multiple physical disks into a logical unit. The drives can generally be
+  combined to provide data redundancy or to extend the size of logical units beyond
+  the capability of the physical disks or both. The technology also allows for providing
+  hardware maintenance without powering down the system.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 73000

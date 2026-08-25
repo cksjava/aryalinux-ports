@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: appstream
+version: 1.1.6
+page_kind: single_package
+section: general
+page: appstream
+title: AppStream-1.1.6
+tarball: AppStream-1.1.6.tar.xz
+url: https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.6.tar.xz
+md5: cc07d222289ec963be208c3757bde6a9
+summary: The AppStream package contains a library and tool that is useful for retrieving
+  software metadata and making it easily accessible to programs which need it.
+download_size: 2.8 MB
+disk_space: 42 MB
+sbu: 0.2 SBU (add 0.3 SBU for tests)
+depends:
+  required:
+  - curl
+  - itstool
+  - libfyaml
+  - libxml2
+  - libxslt
+  - wayland
+  recommended:
+  - docbook-xsl-ns
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 101000

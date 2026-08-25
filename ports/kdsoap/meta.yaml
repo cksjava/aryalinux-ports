@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: kdsoap
+version: 2.3.0
+page_kind: single_package
+section: basicnet
+page: kdsoap
+title: kdsoap-2.3.0
+tarball: kdsoap-2.3.0.tar.gz
+url: https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.3.0/kdsoap-2.3.0.tar.gz
+md5: fba550a6bd3b7f2e5da606f039e3e470
+summary: The kdsoap is Qt-based client-side and server-side SOAP component. It can
+  be used to create client applications for web services and also provides the means
+  to create web services without the need for any further component such as a dedicated
+  web server.
+download_size: 1.1 MB
+disk_space: 27 MB
+sbu: 0.3 SBU (Using parallelism=4)
+depends:
+  required:
+  - qt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 394000

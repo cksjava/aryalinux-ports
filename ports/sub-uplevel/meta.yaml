@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: sub-uplevel
+version: '0.2800'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Sub::Uplevel-0.2800
+tarball: Sub-Uplevel-0.2800.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz
+md5: 6c6a174861fd160e8d5871a86df00baf
+summary: Sub::Uplevel allows you to fool a caller that it is running in a higher stack
+  frame.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kcrash
+version: 6.29.0
+page_kind: kde_batch
+section: kde
+page: frameworks6
+title: kcrash-6.29.0
+tarball: kcrash-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/kcrash-6.29.0.tar.xz
+md5: eb5be13f4db87848f962f45beadb8911
+summary: KDE batch package from frameworks6.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 24
+book_order: 548025

@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: post-install
+version: '0'
+page_kind: configuration
+section: lxqt
+page: post-install
+title: LXQt Desktop Final Instructions
+tarball: ''
+url: ''
+md5: ''
+summary: Please follow these instructions before starting LXQt for the first time.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 710000

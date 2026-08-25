@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: btrfs-progs
+version: '7.1'
+page_kind: single_package
+section: postlfs
+page: btrfs-progs
+title: btrfs-progs-7.1
+tarball: btrfs-progs-v7.1.tar.xz
+url: https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v7.1.tar.xz
+md5: 5dbaaf17567022405d6fc9d0d185e812
+summary: The btrfs-progs package contains administration and debugging tools for the
+  B-tree file system (btrfs).
+download_size: 4.8 MB
+disk_space: 70 MB (transient files created during tests need up to 10 GB)
+sbu: 0.3 SBU (with parallelism=4; add 5.0 SBU for tests, up to 14 SBU on slow disks)
+depends:
+  required:
+  - lzo
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 67000

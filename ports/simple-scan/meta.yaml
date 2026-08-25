@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: simple-scan
+version: '50.0'
+page_kind: single_package
+section: pst
+page: simple-scan
+title: Simple-scan-50.0
+tarball: simple-scan-50.0.tar.xz
+url: https://download.gnome.org/sources/simple-scan/50/simple-scan-50.0.tar.xz
+md5: fa447328d9e91e5624be2511f626ce06
+summary: The Simple-scan package contains a modern document scanning application.
+  It captures images using SANE, and supports the latest color management and graphics
+  standards.
+download_size: 1.2 MB
+disk_space: 19 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - colord
+  - itstool
+  - libadwaita
+  - libwebp
+  - sane
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 842000

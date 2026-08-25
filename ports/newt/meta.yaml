@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: newt
+version: 0.52.25
+page_kind: single_package
+section: general
+page: newt
+title: newt-0.52.25
+tarball: newt-0.52.25.tar.gz
+url: https://releases.pagure.org/newt/newt-0.52.25.tar.gz
+md5: cca66ed1d8774fb9e3f6a33525de416d
+summary: Newt is a programming library for color text mode, widget based user interfaces.
+  It can be used to add stacked windows, entry widgets, checkboxes, radio buttons,
+  labels, plain text fields, scrollbars, etc., to text mode user interfaces. Newt
+  is based on the S-Lang library.
+download_size: 176 KB
+disk_space: 3.0 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - popt
+  - slang
+  recommended:
+  - gpm
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 241000

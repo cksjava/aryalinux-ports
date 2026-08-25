@@ -1,0 +1,36 @@
+format: alps-port-v1
+name: networkmanager
+version: 1.58.1
+page_kind: single_package
+section: basicnet
+page: networkmanager
+title: NetworkManager-1.58.1
+tarball: NetworkManager-1.58.1.tar.xz
+url: https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/releases/1.58.1/downloads/NetworkManager-1.58.1.tar.xz
+md5: 7b06b1dd7b56adffc1dbbf3d04bedf8e
+summary: 'NetworkManager is a set of co-operative tools that make networking simple
+  and straightforward. Whether you use WiFi, wired, 3G, or Bluetooth, NetworkManager
+  allows you to quickly move from one network to another: Once a network has been
+  configured and joined once, it can be detected and re-joined automatically the next
+  time it''s available.'
+download_size: 6.2 MB
+disk_space: 327 MB (with tests and documentation)
+sbu: 0.7 SBU (with tests, using parallelism=4)
+depends:
+  required:
+  - libndp
+  recommended:
+  - curl
+  - glib
+  - iptables
+  - libpsl
+  - nss
+  - pygobject
+  - systemd
+  - vala
+  - wpa_supplicant
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 383000

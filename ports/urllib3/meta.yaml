@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: urllib3
+version: 2.7.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Urllib3-2.7.0
+tarball: urllib3-2.7.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-2.7.0.tar.gz
+md5: e79707b798a66c8165c9c441440f4e80
+summary: The Urllib3 module is a powerful, user-friendly HTTP client for Python. It
+  brings many critical features that are missing from the Python standard libraries.
+download_size: 424 KB
+disk_space: 3.5 MB (add 123 MB for tests)
+sbu: less than 0.1 SBU (0.6 SBU for tests)
+depends:
+  required:
+  - hatch_vcs
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

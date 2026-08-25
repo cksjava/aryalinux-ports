@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: xfce4-pulseaudio-plugin
+version: 0.5.1
+page_kind: single_package
+section: xfce
+page: xfce4-pulseaudio-plugin
+title: xfce4-pulseaudio-plugin-0.5.1
+tarball: xfce4-pulseaudio-plugin-0.5.1.tar.xz
+url: https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.5/xfce4-pulseaudio-plugin-0.5.1.tar.xz
+md5: 186a097794ced3612713c2098ec0b51c
+summary: The Xfce4 Pulseaudio Plugin is a plugin for the Xfce panel which provides
+  a convenient way to adjust the audio volume of the PulseAudio sound system and to
+  an auto mixer tool like pavucontrol. It can optionally handle multimedia keys for
+  controlling the audio volume.
+download_size: 120 KB
+disk_space: 3.4 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - libnotify
+  - pulseaudio
+  - xfce4-panel
+  recommended:
+  - keybinder-3.0
+  - libcanberra
+  - libxfce4windowing
+  - pavucontrol
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 671000

@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: wireless-tools
+version: '29'
+page_kind: single_package
+section: basicnet
+page: wireless_tools
+title: Wireless Tools-29
+tarball: wireless_tools.29.tar.gz
+url: https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
+md5: e06c222e186f7cc013fd272d023710cb
+summary: The Wireless Extension (WE) is a generic API in the Linux kernel allowing
+  a driver to expose configuration and statistics specific to common Wireless LANs
+  to userspace. A single set of tools can support all the variations of Wireless LANs,
+  regardless of their type, as long as the driver supports Wireless Extensions. WE
+  parameters may also be changed on the fly without restarting the driver (or Lin
+download_size: 288 KB
+disk_space: 2.0 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch
+  filename: wireless_tools-29-fix_iwlist_scanning-1.patch
+book_order: 378000

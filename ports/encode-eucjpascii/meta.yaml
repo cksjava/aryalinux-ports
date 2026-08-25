@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: encode-eucjpascii
+version: '0.03'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Encode::EUCJPASCII-0.03
+tarball: Encode-EUCJPASCII-0.03.tar.gz
+url: https://www.cpan.org/authors/id/N/NE/NEZUMI/Encode-EUCJPASCII-0.03.tar.gz
+md5: 5daa65f55b7c2050bb0713d9e95f239d
+summary: Encode::EUCJPASCII provides an eucJP-open (Extended Unix Code, Japanese)
+  mapping.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

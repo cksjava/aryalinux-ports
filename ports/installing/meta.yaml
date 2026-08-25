@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: installing
+version: '0'
+page_kind: configuration
+section: x
+page: installing
+title: Graphical Environments
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains instructions to build and configure a graphical user
+  environment.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 439000

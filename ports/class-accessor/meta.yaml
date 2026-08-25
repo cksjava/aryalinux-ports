@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: class-accessor
+version: '0.51'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Class::Accessor-0.51
+tarball: Class-Accessor-0.51.tar.gz
+url: https://www.cpan.org/authors/id/K/KA/KASEI/Class-Accessor-0.51.tar.gz
+md5: 1f1e5990f87cad7659b292fed7dc0407
+summary: Class::Accessor generates accessors/mutators for your class.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

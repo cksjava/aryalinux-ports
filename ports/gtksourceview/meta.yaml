@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: gtksourceview
+version: 3.24.11
+page_kind: single_package
+section: x
+page: gtksourceview
+title: gtksourceview-3.24.11
+tarball: gtksourceview-3.24.11.tar.xz
+url: https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz
+md5: b748da426a7d64e1304f0c532b0f2a67
+summary: The GtkSourceView package contains libraries used for extending the GTK+
+  text functions to include syntax highlighting.
+download_size: 1.4 MB
+disk_space: 80 MB (with tests)
+sbu: 0.2 SBU (using parallelism=4; with tests)
+depends:
+  required:
+  - gtk
+  recommended:
+  - glib
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 491000

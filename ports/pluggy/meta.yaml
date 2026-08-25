@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: pluggy
+version: 1.6.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Pluggy-1.6.0
+tarball: pluggy-1.6.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/p/pluggy/pluggy-1.6.0.tar.gz
+md5: 54391218af778acb006c2d915085d469
+summary: The Pluggy package gives users the ability to extend or modify the behaviour
+  of a host program by installing a plugin for that program. The plugin code will
+  run as part of normal program execution, changing or enhancing certain aspects of
+  it. In essence, pluggy enables function hooking so a user can build “pluggable”
+  systems.
+download_size: 68 KB
+disk_space: 588 KB (add 18 MB for tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended:
+  - setuptools_scm
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

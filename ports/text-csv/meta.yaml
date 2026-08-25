@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: text-csv
+version: '2.06'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Text::CSV-2.06
+tarball: Text-CSV-2.06.tar.gz
+url: https://www.cpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-2.06.tar.gz
+md5: 620284340dfd1787c89666d22adfd463
+summary: Text::CSV is a comma-separated values manipulator, using XS (eXternal Subroutine
+  - for subroutines written in C or C++) or pure perl.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - text-csv_xs
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

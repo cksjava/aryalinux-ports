@@ -1,0 +1,61 @@
+format: alps-port-v1
+name: meta-lxqt
+version: '1'
+page_kind: meta
+section: meta
+page: meta-lxqt
+title: meta-lxqt
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: install BLFS ports from section ''lxqt'''
+depends:
+  required: []
+  recommended: []
+members:
+- libdbusmenu-lxqt
+- libfm-extra
+- libfm-qt
+- liblxqt
+- libqtxdg
+- libsysstat
+- lximage-qt
+- lxqt-about
+- lxqt-admin
+- lxqt-archiver
+- lxqt-build-tools
+- lxqt-config
+- lxqt-globalkeys
+- lxqt-kconfig
+- lxqt-kidletime
+- lxqt-kwayland
+- lxqt-kwindowsystem
+- lxqt-layer-shell-qt
+- lxqt-libkscreen
+- lxqt-menu-data
+- lxqt-notificationd
+- lxqt-openssh-askpass
+- lxqt-panel
+- lxqt-policykit
+- lxqt-powermanagement
+- lxqt-qtplugin
+- lxqt-runner
+- lxqt-session
+- lxqt-solid
+- lxqt-sudo
+- lxqt-themes
+- lxqt-wayland-session
+- menu-cache
+- muparser
+- obconf-qt
+- pavucontrol-qt
+- pcmanfm-qt
+- qps
+- qterminal
+- qtermwidget
+- qtxdg-tools
+- screengrab
+- xdg-desktop-portal-lxqt
+bootscripts: []
+provides: []
+conflicts: []

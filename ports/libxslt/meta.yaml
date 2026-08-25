@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libxslt
+version: 1.1.45
+page_kind: single_package
+section: general
+page: libxslt
+title: libxslt-1.1.45
+tarball: libxslt-1.1.45.tar.xz
+url: https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.45.tar.xz
+md5: 84bb3f6ba7f5ee98af5dcd72e828c73e
+summary: The libxslt package contains XSLT libraries used for extending libxml2 libraries
+  to support XSLT files.
+download_size: 1.5 MB
+disk_space: 33 MB (with tests)
+sbu: 0.1 SBU (with tests)
+depends:
+  required:
+  - libxml2
+  recommended:
+  - docbook-xml
+  - docbook-xsl-nons
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 176000

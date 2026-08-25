@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: unicode-linebreak
+version: '2019.001'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Unicode::LineBreak-2019.001
+tarball: Unicode-LineBreak-2019.001.tar.gz
+url: https://www.cpan.org/authors/id/N/NE/NEZUMI/Unicode-LineBreak-2019.001.tar.gz
+md5: 003d6da7a13700e069afed9238c864b9
+summary: 'Unicode::LineBreak provides a UAX #14 Unicode Line Breaking Algorithm.'
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - mime-charset
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

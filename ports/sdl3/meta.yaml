@@ -1,0 +1,47 @@
+format: alps-port-v1
+name: sdl3
+version: 3.4.14
+page_kind: single_package
+section: multimedia
+page: sdl3
+title: SDL3-3.4.14
+tarball: SDL3-3.4.14.tar.gz
+url: https://www.libsdl.org/release/SDL3-3.4.14.tar.gz
+md5: 32968d1180d29903e70cd3f7fc38470b
+summary: The Simple DirectMedia Layer Version 3 (SDL3 for short) is a cross-platform
+  library designed to make it easy to write multimedia software, such as games and
+  emulators.
+download_size: 15 MB
+disk_space: 121 MB (add 105 MB for tests)
+sbu: 0.3 SBU (Using parallelism=4; add 0.3 SBU for tests)
+depends:
+  required:
+  - cmake
+  recommended:
+  - alsa-lib
+  - libusb
+  - libxkbcommon
+  - mesa
+  - pipewire
+  - pulseaudio
+  - vulkan-loader
+  ignore_for_order:
+  - libxkbcommon
+  - mesa
+  - pipewire
+  - vulkan-loader
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/SDL3-3.4.14-upstream_fixes-1.patch
+  filename: SDL3-3.4.14-upstream_fixes-1.patch
+book_order: 798000
+cycle_policy:
+  install_before:
+  - libxkbcommon
+  - mesa
+  - pipewire
+  - vulkan-loader

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: test-requiresinternet
+version: '0.05'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::RequiresInternet-0.05
+tarball: Test-RequiresInternet-0.05.tar.gz
+url: https://cpan.metacpan.org/authors/id/M/MA/MALLEN/Test-RequiresInternet-0.05.tar.gz
+md5: 0ba9f1cff4cf90ed2618c2eddfd525d8
+summary: Test::RequiresInternet is intended to easily test network connectivity before
+  functional tests begin to connect to non-local Internet resources.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

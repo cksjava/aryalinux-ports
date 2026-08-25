@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: lxqt-archiver
+version: 1.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-archiver
+title: lxqt-archiver-1.4.0
+tarball: lxqt-archiver-1.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-archiver/releases/download/1.4.0/lxqt-archiver-1.4.0.tar.xz
+md5: 8be174a519f9fe5512a4809671b040ce
+summary: The lxqt-archiver package is a simple and lightweight desktop-agnostic Qt
+  file archiver.
+download_size: 204 KB
+disk_space: 11 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - libfm-qt
+  - liblxqt
+  - json-glib
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 713000

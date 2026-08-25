@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: sub-quote
+version: '2.006009'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Sub::Quote-2.006009
+tarball: Sub-Quote-2.006009.tar.gz
+url: https://cpan.metacpan.org/authors/id/H/HA/HAARG/Sub-Quote-2.006009.tar.gz
+md5: 8f4600b812f6106a1f907ee47a87bd1d
+summary: Sub::Quote provides ways to generate subroutines from strings.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

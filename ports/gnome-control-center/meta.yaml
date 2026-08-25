@@ -1,0 +1,38 @@
+format: alps-port-v1
+name: gnome-control-center
+version: '50.4'
+page_kind: single_package
+section: gnome
+page: gnome-control-center
+title: gnome-control-center-50.4
+tarball: gnome-control-center-50.4.tar.xz
+url: https://download.gnome.org/sources/gnome-control-center/50/gnome-control-center-50.4.tar.xz
+md5: 47918b0fd914e9d90b34f1e3ab783962
+summary: The GNOME Control Center package contains the GNOME settings manager.
+download_size: 6.8 MB
+disk_space: 146 MB (with tests)
+sbu: 0.6 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - accountsservice
+  - colord-gtk
+  - cups
+  - gnome-online-accounts
+  - gnome-settings-daemon
+  - gsound
+  - libadwaita
+  - libgtop
+  - libpwquality
+  - mit-kerberos-v5
+  - modemmanager
+  - samba
+  - shared-mime-info
+  - udisks
+  recommended:
+  - bolt
+  - ibus
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 615000

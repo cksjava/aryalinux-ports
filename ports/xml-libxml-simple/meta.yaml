@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: xml-libxml-simple
+version: '1.01'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: XML::LibXML::Simple-1.01
+tarball: XML-LibXML-Simple-1.01.tar.gz
+url: https://www.cpan.org/authors/id/M/MA/MARKOV/XML-LibXML-Simple-1.01.tar.gz
+md5: faad5ed26cd83998f6514be199c56c38
+summary: The XML::LibXML::Simple module is a rewrite of XML::Simple to use the XML::LibXML
+  parser for XML structures, instead of the plain Perl or SAX parsers.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - xml-libxml
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

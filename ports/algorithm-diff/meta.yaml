@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: algorithm-diff
+version: '1.201'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Algorithm::Diff-1.201
+tarball: Algorithm-Diff-1.201.tar.gz
+url: https://cpan.metacpan.org/authors/id/R/RJ/RJBS//Algorithm-Diff-1.201.tar.gz
+md5: 2eaae910f5220261ee2bbdfc4a8df2c2
+summary: Algorithm::Diff computes 'intelligent' differences between two files or lists.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

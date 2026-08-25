@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: xdg-dbus-proxy
+version: 0.1.8
+page_kind: single_package
+section: general
+page: xdg-dbus-proxy
+title: xdg-dbus-proxy-0.1.8
+tarball: xdg-dbus-proxy-0.1.8.tar.xz
+url: https://github.com/flatpak/xdg-dbus-proxy/releases/download/0.1.8/xdg-dbus-proxy-0.1.8.tar.xz
+md5: 1a7b7a5f82653163495e82f7c9da7a36
+summary: The xdg-dbus-proxy package contains a filtering proxy for D-Bus connections.
+  This is useful for forwarding data in and out of a sandbox.
+download_size: 48 KB
+disk_space: 1.2 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - glib
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 276000

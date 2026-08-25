@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: creat-comm
+version: '0'
+page_kind: configuration
+section: appendices
+page: creat-comm
+title: Creative Commons License
+tarball: ''
+url: ''
+md5: ''
+summary: Attribution-NonCommercial-ShareAlike 2.0
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 872000

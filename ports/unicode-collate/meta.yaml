@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: unicode-collate
+version: '1.31'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Unicode::Collate-1.31
+tarball: Unicode-Collate-1.31.tar.gz
+url: https://www.cpan.org/authors/id/S/SA/SADAHIRO/Unicode-Collate-1.31.tar.gz
+md5: ee4d960d057c5e5b02ebb49d0286db8f
+summary: Unicode::Collate provides a Unicode collation algorithm.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

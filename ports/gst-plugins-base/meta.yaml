@@ -1,0 +1,41 @@
+format: alps-port-v1
+name: gst-plugins-base
+version: 1.28.6
+page_kind: single_package
+section: multimedia
+page: gst10-plugins-base
+title: gst-plugins-base-1.28.6
+tarball: gst-plugins-base-1.28.6.tar.xz
+url: https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.28.6.tar.xz
+md5: cd0b2bd13e8196d5bfb20459c12a5d9b
+summary: The GStreamer Base Plug-ins is a well-groomed and well-maintained collection
+  of GStreamer plug-ins and elements, spanning the range of possible types of elements
+  one would want to write for GStreamer. You will need at least one of Good, Bad,
+  Ugly or Libav plugins for GStreamer applications to function properly.
+download_size: 2.5 MB
+disk_space: 122 MB (with tests)
+sbu: 0.9 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - gstreamer
+  recommended:
+  - alsa-lib
+  - cdparanoia-iii
+  - glib
+  - iso-codes
+  - libgudev
+  - libjpeg-turbo
+  - libogg
+  - libvorbis
+  - mesa
+  - pango
+  ignore_for_order:
+  - mesa
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 761000
+cycle_policy:
+  install_before:
+  - mesa

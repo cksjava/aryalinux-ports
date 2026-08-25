@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: sysutils
+version: '0'
+page_kind: configuration
+section: general
+page: sysutils
+title: System Utilities
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains mainly hardware utilities. It also contains some applications
+  used by other applications in the book for installation or configuration purposes.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 278000

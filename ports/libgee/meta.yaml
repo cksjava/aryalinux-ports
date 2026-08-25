@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libgee
+version: 0.20.8
+page_kind: single_package
+section: gnome
+page: libgee
+title: libgee-0.20.8
+tarball: libgee-0.20.8.tar.xz
+url: https://download.gnome.org/sources/libgee/0.20/libgee-0.20.8.tar.xz
+md5: e8e37df1c7a93aa5ba08be12ae7e7cad
+summary: The libgee package is a collection library providing GObject based interfaces
+  and classes for commonly used data structures.
+download_size: 676 KB
+disk_space: 32 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required:
+  - glib
+  - vala
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 595000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libusb
+version: 1.0.30
+page_kind: single_package
+section: general
+page: libusb
+title: libusb-1.0.30
+tarball: libusb-1.0.30.tar.bz2
+url: https://github.com/libusb/libusb/releases/download/v1.0.30/libusb-1.0.30.tar.bz2
+md5: b0b0bacc2c6919515db8e863f0517db8
+summary: The libusb package contains a library used by some applications for USB device
+  access.
+download_size: 644 KB
+disk_space: 7.8 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 171000

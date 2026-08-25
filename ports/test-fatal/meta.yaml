@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: test-fatal
+version: '0.018'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::Fatal-0.018
+tarball: Test-Fatal-0.018.tar.gz
+url: https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Test-Fatal-0.018.tar.gz
+md5: 51a097a5e0af012569b890441e6533c8
+summary: The Test::Fatal module provides simple helpers for testing code which throws
+  exceptions.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - try-tiny
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

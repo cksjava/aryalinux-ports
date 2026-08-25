@@ -1,0 +1,39 @@
+format: alps-port-v1
+name: gimp
+version: 3.2.4
+page_kind: multi_package
+section: xsoft
+page: gimp
+title: Gimp-3.2.4
+tarball: gimp-3.2.4.tar.xz
+url: https://download.gimp.org/gimp/v3.2/gimp-3.2.4.tar.xz
+md5: 4a5a233cf24e599bbf73084a3583e29f
+summary: The Gimp package contains the GNU Image Manipulation Program which is useful
+  for photo retouching, image composition and image authoring.
+download_size: 34 MB
+disk_space: 639 MB (173 MB installed)
+sbu: 1.4 SBU (Using parallelism=4)
+depends:
+  required:
+  - appstream
+  - gegl
+  - gexiv2
+  - glib-networking
+  - harfbuzz
+  - libmypaint
+  - librsvg
+  - tiff
+  - little-cms
+  - mypaint-brushes
+  recommended:
+  - graphviz
+  - ghostscript
+  - iso-codes
+  - libgudev
+  - pygobject
+  - xdg-utils
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 734000

@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: parted
+version: '3.7'
+page_kind: single_package
+section: postlfs
+page: parted
+title: parted-3.7
+tarball: parted-3.7.tar.xz
+url: https://ftpmirror.gnu.org/parted/parted-3.7.tar.xz
+md5: b56ec0cf7bc89d61da1585f88fc8ef5e
+summary: The Parted package is a disk partitioning and partition resizing tool.
+download_size: 1.9 MB
+disk_space: 35 MB (additional 3 MB for the tests and additional 2 MB for optional
+  PDF and Postscript documentation)
+sbu: 0.3 SBU (additional 3.6 SBU for the tests)
+depends:
+  required: []
+  recommended:
+  - lvm2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 77000

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: glslang
+version: 16.5.0
+page_kind: single_package
+section: x
+page: glslang
+title: glslang-16.5.0
+tarball: glslang-16.5.0.tar.gz
+url: https://github.com/KhronosGroup/glslang/archive/16.5.0/glslang-16.5.0.tar.gz
+md5: 79e949d6d50cc167e7d5307afb04c41a
+summary: The Glslang package contains an frontend and validator for OpenGL, OpenGL
+  ES, and Vulkan shaders.
+download_size: 4.4 MB
+disk_space: 191 MB (with tests)
+sbu: 0.4 SBU (with parallelism=4; with tests)
+depends:
+  required:
+  - cmake
+  - spirv-tools
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 482000

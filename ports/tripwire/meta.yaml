@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: tripwire
+version: 2.4.3.7
+page_kind: single_package
+section: postlfs
+page: tripwire
+title: Tripwire-2.4.3.7
+tarball: tripwire-open-source-2.4.3.7.tar.gz
+url: https://github.com/Tripwire/tripwire-open-source/releases/download/2.4.3.7/tripwire-open-source-2.4.3.7.tar.gz
+md5: a5cf1bc2f235f5d8ca458f00548db6ee
+summary: The Tripwire package contains programs used to verify the integrity of the
+  files on a given system.
+download_size: 980 KB
+disk_space: 29 MB
+sbu: 1.6 SBU (scripting install)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 64000

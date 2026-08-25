@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: html-parser
+version: '3.85'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: HTML::Parser-3.85
+tarball: HTML-Parser-3.85.tar.gz
+url: https://www.cpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.85.tar.gz
+md5: 400384681da1452493d36f036d9f387b
+summary: The HTML::Parser distribution is a collection of modules that parse and extract
+  information from HTML documents.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - html-tagset
+  - http-message
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

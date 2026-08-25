@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: gstreamer
+version: 1.28.6
+page_kind: single_package
+section: multimedia
+page: gstreamer10
+title: gstreamer-1.28.6
+tarball: gstreamer-1.28.6.tar.xz
+url: https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.28.6.tar.xz
+md5: 3d16d7912727ea85ab90b9e5f3bc6e8a
+summary: gstreamer is a streaming media framework that enables applications to share
+  a common set of plugins for tasks such as video encoding and decoding, audio encoding
+  and decoding, audio and video filters, audio visualisation, web streaming and anything
+  else that streams in real-time or otherwise. This package only provides base functionality
+  and libraries. You may need at least gst-plugins-base-1.28.6
+download_size: 1.9 MB
+disk_space: 73 MB (with tests)
+sbu: 0.3 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - glib
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 760000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: webencodings
+version: 0.5.1
+page_kind: python_module
+section: general
+page: python-dependencies
+title: webencodings-0.5.1
+tarball: webencodings-0.5.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/w/webencodings/webencodings-0.5.1.tar.gz
+md5: 32f6e261d52e57bf7e1c4d41546d15b8
+summary: The webencodings module is a Python implementation of the WHATWG Encoding
+  standard.
+download_size: 12 KB
+disk_space: 164 KB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

@@ -1,0 +1,35 @@
+format: alps-port-v1
+name: mupdf
+version: 1.26.12
+page_kind: single_package
+section: pst
+page: mupdf
+title: MuPDF-1.26.12
+tarball: mupdf-1.26.12-source.tar.gz
+url: https://www.mupdf.com/downloads/archive/mupdf-1.26.12-source.tar.gz
+md5: d10eb7e1ef0f4a44f5c14a29b9d6f906
+summary: MuPDF is a lightweight PDF and XPS viewer.
+download_size: 62 MB
+disk_space: 295 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - xorg-libraries
+  - a-graphical-environment
+  recommended:
+  - brotli
+  - freeglut
+  - harfbuzz
+  - libjpeg-turbo
+  - openjpeg
+  - curl
+  ignore_for_order:
+  - freeglut
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 862000
+cycle_policy:
+  install_before:
+  - freeglut

@@ -1,0 +1,60 @@
+format: alps-port-v1
+name: meta-python-dependencies
+version: '1'
+page_kind: meta
+section: meta
+page: python-dependencies
+title: meta-python-dependencies
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: all ports from BLFS python-dependencies.html'
+depends:
+  required: []
+  recommended: []
+members:
+- alabaster
+- babel
+- certifi
+- chardet
+- charset-normalizer
+- commonmark
+- hatch-fancy-pypi-readme
+- hatch_vcs
+- hatchling
+- idna
+- imagesize
+- iniconfig
+- markdown
+- maturin
+- meson_python
+- msgpack
+- pathspec
+- pluggy
+- poetry-core
+- pyproject-metadata
+- pyproject_hooks
+- pytz
+- roman-numerals
+- semantic_version
+- setuptools_rust
+- setuptools_scm
+- smartypants
+- snowballstemmer
+- sphinxcontrib-applehelp
+- sphinxcontrib-devhelp
+- sphinxcontrib-htmlhelp
+- sphinxcontrib-jquery
+- sphinxcontrib-jsmath
+- sphinxcontrib-qthelp
+- sphinxcontrib-serializinghtml
+- tomlkit
+- trove-classifiers
+- typogrify
+- urllib3
+- uv_build
+- vcs_versioning
+- webencodings
+bootscripts: []
+provides: []
+conflicts: []

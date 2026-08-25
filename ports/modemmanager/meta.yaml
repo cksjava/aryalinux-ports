@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: modemmanager
+version: 1.24.2
+page_kind: single_package
+section: general
+page: ModemManager
+title: ModemManager-1.24.2
+tarball: ModemManager-1.24.2.tar.gz
+url: https://gitlab.freedesktop.org/mobile-broadband/ModemManager/-/archive/1.24.2/ModemManager-1.24.2.tar.gz
+md5: b72860c54670f362e947edba160fa98e
+summary: ModemManager provides a unified high level API for communicating with mobile
+  broadband modems, regardless of the protocol used to communicate with the actual
+  device.
+download_size: 2.0 MB
+disk_space: 59 MB (with tests)
+sbu: 0.3 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - libgudev
+  - libxslt
+  recommended:
+  - glib
+  - libmbim
+  - libqmi
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 296000

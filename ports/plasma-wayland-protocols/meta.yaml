@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: plasma-wayland-protocols
+version: 1.21.0
+page_kind: single_package
+section: kde
+page: plasma-wayland-protocols
+title: plasma-wayland-protocols-1.21.0
+tarball: plasma-wayland-protocols-1.21.0.tar.xz
+url: https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.21.0.tar.xz
+md5: 9a2f58d154a6cb514f60c59311e14559
+summary: This package provides a custom set of Wayland protocol definitions for KDE.
+download_size: 52 KB
+disk_space: 1.2 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - extra-cmake-modules
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 544000

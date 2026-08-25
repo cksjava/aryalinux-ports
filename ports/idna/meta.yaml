@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: idna
+version: '3.18'
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Idna-3.18
+tarball: idna-3.18.tar.gz
+url: https://files.pythonhosted.org/packages/source/i/idna/idna-3.18.tar.gz
+md5: 64359467ec86d86e398b1ae614e5718c
+summary: The Idna module provides support for the Internationalized Domain Names in
+  Applications (IDNA) protocol as specified in RFC 5891.
+download_size: 196 KB
+disk_space: 4.8 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

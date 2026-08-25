@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: kmix
+version: 26.04.3
+page_kind: single_package
+section: kde
+page: kmix
+title: KMix-26.04.3
+tarball: kmix-26.04.3.tar.xz
+url: https://download.kde.org/stable/release-service/26.04.3/src/kmix-26.04.3.tar.xz
+md5: 926f4efced16041ff3da03bbd008b676
+summary: The KMix package contains a KDE Frameworks-based Sound Mixer that integrates
+  nicely with Plasma.
+download_size: 1.1 MB
+disk_space: 25 MB
+sbu: 0.2 SBU (using parallelism=4)
+depends:
+  required:
+  - kde-frameworks
+  recommended:
+  - alsa-lib
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 555000

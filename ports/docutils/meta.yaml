@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: docutils
+version: '0.23'
+page_kind: python_module
+section: general
+page: python-modules
+title: docutils-0.23
+tarball: docutils-0.23.tar.gz
+url: https://files.pythonhosted.org/packages/source/d/docutils/docutils-0.23.tar.gz
+md5: 39d10acfd1fc81b87f5de84418b88be9
+summary: docutils is a set of Python modules and programs for processing plaintext
+  docs into formats such as HTML, XML, or LaTeX.
+download_size: 2.2 MB
+disk_space: 15 MB (with tests)
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

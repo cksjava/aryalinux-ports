@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: wayfire-plugins-extra
+version: 0.11.2
+page_kind: single_package
+section: x
+page: wayfire-plugins-extra
+title: wayfire-plugins-extra-0.11.2
+tarball: wayfire-plugins-extra-0.11.2.tar.xz
+url: https://github.com/WayfireWM/wayfire-plugins-extra/releases/download/v0.11.2/wayfire-plugins-extra-0.11.2.tar.xz
+md5: 7cfee99a510fe890276fe92e2bd41f07
+summary: The wayfire-plugins-extra package provides more plugins for wayfire-0.11.0
+  that you may want or need. For example, for focus follows mouse, you will need the
+  follow-focus plugin from this package.
+download_size: 64 KB
+disk_space: 15 MB
+sbu: 0.1 SBU (with parallelism=4)
+depends:
+  required:
+  - cairo
+  - libevdev
+  - wayfire
+  - wayland-protocols
+  recommended:
+  - boost
+  - glibmm
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 470000

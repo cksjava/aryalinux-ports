@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: dovecot
+version: 2.4.4
+page_kind: single_package
+section: server
+page: dovecot
+title: Dovecot-2.4.4
+tarball: dovecot-2.4.4.tar.gz
+url: https://www.dovecot.org/releases/2.4/dovecot-2.4.4.tar.gz
+md5: 1cfdb796f726dff687b6431a3b6012c3
+summary: Dovecot is an Internet Message Access Protocol (IMAP) and Post Office Protocol
+  (POP) server, written primarily with security in mind. Dovecot aims to be lightweight,
+  fast and easy to set up as well as highly configurable and easily extensible with
+  plugins.
+download_size: 7.9 MB
+disk_space: 253 MB
+sbu: 4.8 SBU
+depends:
+  required:
+  - libtirpc
+  - linux-pam
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 428000

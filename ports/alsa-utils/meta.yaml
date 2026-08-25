@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: alsa-utils
+version: 1.2.16
+page_kind: single_package
+section: multimedia
+page: alsa-utils
+title: alsa-utils-1.2.16
+tarball: alsa-utils-1.2.16.tar.bz2
+url: https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.16.tar.bz2
+md5: 570a1627d47b70ad683ef9f2429ddfca
+summary: The ALSA Utilities package contains various utilities which are useful for
+  controlling your sound card.
+download_size: 1.6 MB
+disk_space: 22 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - alsa-lib
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 749000

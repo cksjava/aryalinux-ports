@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: http-date
+version: '6.08'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: HTTP::Date-6.08
+tarball: HTTP-Date-6.08.tar.gz
+url: https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Date-6.08.tar.gz
+md5: 5955c394ed659bf4cd41fbd526c42ec1
+summary: HTTP::Date provides functions to deal with the date formats used by the HTTP
+  protocol and also with some other date formats.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - timedate
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

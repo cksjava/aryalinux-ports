@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: gcc
+version: 16.2.0
+page_kind: single_package
+section: general
+page: gcc
+title: GCC-16.2.0
+tarball: gcc-16.2.0.tar.xz
+url: https://ftpmirror.gnu.org/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz
+md5: 19b777fb19ea4982731392481306f0d3
+summary: 'The GCC package contains the GNU Compiler Collection. This page describes
+  the installation of compilers for the following languages: C, C++, Fortran, Objective
+  C, Objective C++, Go, and Modula2. Since C and C++ are installed in LFS, this page
+  is either for upgrading C and C++, or for installing additional compilers.'
+download_size: 102 MB
+disk_space: 12 GB (4.1 GB installed with all listed languages; add 2 GB for tests)
+sbu: 19 SBU (add 40 SBU for tests; both with parallelism=8)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 327000

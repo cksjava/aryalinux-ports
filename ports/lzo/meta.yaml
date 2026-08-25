@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: lzo
+version: '2.10'
+page_kind: single_package
+section: general
+page: lzo
+title: LZO-2.10
+tarball: lzo-2.10.tar.gz
+url: https://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
+md5: 39d3f3f9c55c87b1e5d6888e1420f4b5
+summary: LZO is a data compression library which is suitable for data decompression
+  and compression in real-time. This means it favors speed over compression ratio.
+download_size: 588 KB
+disk_space: 12 MB
+sbu: 0.3 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 181000

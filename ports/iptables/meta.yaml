@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: iptables
+version: 1.8.13
+page_kind: single_package
+section: postlfs
+page: iptables
+title: iptables-1.8.13
+tarball: iptables-1.8.13.tar.xz
+url: https://www.netfilter.org/projects/iptables/files/iptables-1.8.13.tar.xz
+md5: 81b5edf500e2672bfbc744581ff7dc3e
+summary: iptables is a userspace command line program used to configure the Linux
+  2.4 and later kernel packet filtering ruleset.
+download_size: 640 KB
+disk_space: 16 MB
+sbu: 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units:
+- iptables
+provides: []
+conflicts: []
+book_order: 47000

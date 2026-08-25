@@ -1,0 +1,35 @@
+format: alps-port-v1
+name: gnome-desktop
+version: '44.5'
+page_kind: single_package
+section: gnome
+page: gnome-desktop
+title: gnome-desktop-44.5
+tarball: gnome-desktop-44.5.tar.xz
+url: https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.5.tar.xz
+md5: d99550c41db721f4a7f302bd95eef5c2
+summary: The GNOME Desktop package contains a library that provides an API shared
+  by several applications on the GNOME Desktop.
+download_size: 748 KB
+disk_space: 19 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - gsettings-desktop-schemas
+  - iso-codes
+  - libseccomp
+  - xkeyboard-config
+  recommended:
+  - gtk
+  - bubblewrap
+  - glib
+  ignore_for_order:
+  - gtk
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 592000
+cycle_policy:
+  install_before:
+  - gtk

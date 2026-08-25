@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: add-pkgs
+version: '0'
+page_kind: configuration
+section: kde
+page: add-pkgs
+title: Further KDE packages
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter did not provide instructions for all of the available packages
+  in the KDE Software Compilation (KDE Gear). The included packages were selected
+  based on what most people would want to use on a standard desktop computer.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 568000

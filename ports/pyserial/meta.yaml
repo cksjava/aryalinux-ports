@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: pyserial
+version: '3.5'
+page_kind: python_module
+section: general
+page: python-modules
+title: pySerial-3.5
+tarball: pyserial-3.5.tar.gz
+url: https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz
+md5: 1cf25a76da59b530dbfc2cf99392dc83
+summary: The pySerial module encapsulates access to the serial port.
+download_size: 156 KB
+disk_space: 2.1 MB (add 0.2 MB for tests)
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - setuptools_scm
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

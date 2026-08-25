@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libgpg-error
+version: '1.61'
+page_kind: single_package
+section: general
+page: libgpg-error
+title: libgpg-error-1.61
+tarball: libgpg-error-1.61.tar.bz2
+url: https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.61.tar.bz2
+md5: c89a8c6825cb64c527d5c1c0fb36f245
+summary: The libgpg-error package contains a library that defines common error values
+  for all GnuPG components.
+download_size: 1.1 MB
+disk_space: 15 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 144000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: applications
+version: '0'
+page_kind: configuration
+section: gnome
+page: applications
+title: GNOME Applications
+tarball: ''
+url: ''
+md5: ''
+summary: These packages are desktop applications and assorted utilities from the GNOME
+  project. Feel free to install them on an as needed or as desired basis.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 623000

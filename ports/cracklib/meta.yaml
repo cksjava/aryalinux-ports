@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: cracklib
+version: 2.10.3
+page_kind: multi_package
+section: postlfs
+page: cracklib
+title: CrackLib-2.10.3
+tarball: cracklib-2.10.3.tar.xz
+url: https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz
+md5: e8ea2b86de774fc09fdd0f2829680b19
+summary: The CrackLib package contains a library used to enforce strong passwords
+  by comparing user selected passwords to words in chosen word lists.
+download_size: 456 KB
+disk_space: 5.0 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 40000

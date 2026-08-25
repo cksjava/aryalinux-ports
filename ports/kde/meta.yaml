@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kde
+version: '0'
+page_kind: configuration
+section: kde
+page: kde
+title: KDE
+tarball: ''
+url: ''
+md5: ''
+summary: KDE is a comprehensive desktop environment with a huge number of applications
+  written for it and a huge amount of users. It is based on the Qt framework.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 537000

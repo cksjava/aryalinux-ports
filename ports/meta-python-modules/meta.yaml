@@ -1,0 +1,53 @@
+format: alps-port-v1
+name: meta-python-modules
+version: '1'
+page_kind: meta
+section: meta
+page: python-modules
+title: meta-python-modules
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: all ports from BLFS python-modules.html'
+depends:
+  required: []
+  recommended: []
+members:
+- asciidoc
+- blueprint-compiler
+- build
+- cachecontrol
+- cssselect
+- cython
+- dbus-python
+- dbusmock
+- docutils
+- doxypypy
+- doxyqml
+- gi-docgen
+- html5lib
+- lxml
+- mako
+- numpy
+- psutil
+- py3c
+- pyatspi2
+- pycairo
+- pygdbmi
+- pygments
+- pygobject
+- pyparsing
+- pyserial
+- pytest
+- pyxdg
+- pyyaml
+- recommonmark
+- requests
+- scour
+- sentry-sdk
+- six
+- sphinx
+- sphinx_rtd_theme
+bootscripts: []
+provides: []
+conflicts: []

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: usbutils
+version: 019
+page_kind: single_package
+section: general
+page: usbutils
+title: usbutils-019
+tarball: usbutils-019.tar.xz
+url: https://kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
+md5: 67a8eb4782540058d0648f83ecabdf6c
+summary: The USB Utils package contains utilities used to display information about
+  USB buses in the system and the devices connected to them.
+download_size: 120 KB
+disk_space: 1.9 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - libusb
+  recommended:
+  - hwdata
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 319000

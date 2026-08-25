@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libqalculate
+version: 5.12.0
+page_kind: single_package
+section: general
+page: libqalculate
+title: libqalculate-5.12.0
+tarball: libqalculate-5.12.0.tar.gz
+url: https://github.com/Qalculate/libqalculate/releases/download/v5.12.0/libqalculate-5.12.0.tar.gz
+md5: 46f93f638b6ce747f17dba955f95c9cf
+summary: The libqalculate package contains a library that provides functions for a
+  multi-purpose calculator.
+download_size: 3.5 MB
+disk_space: 240 MB (with tests)
+sbu: 0.6 SBU (With tests; both using parallelism=8)
+depends:
+  required:
+  - curl
+  - icu
+  - libxml2
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 159000

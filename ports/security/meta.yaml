@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: security
+version: '0'
+page_kind: configuration
+section: postlfs
+page: security
+title: Security
+tarball: ''
+url: ''
+md5: ''
+summary: 'Security takes many forms in a computing environment. After some initial
+  discussion, this chapter gives examples of three different types of security: access,
+  prevention and detection.'
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 37000

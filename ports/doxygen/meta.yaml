@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: doxygen
+version: 1.18.0
+page_kind: single_package
+section: general
+page: doxygen
+title: Doxygen-1.18.0
+tarball: doxygen-1.18.0.src.tar.gz
+url: https://doxygen.nl/files/doxygen-1.18.0.src.tar.gz
+md5: 09a61abc2ae853b4a5185201a1ab07fd
+summary: The Doxygen package contains a documentation system for C++, C, Java, Objective-C,
+  Corba IDL and to some extent PHP, C# and D. It is useful for generating HTML documentation
+  and/or an off-line reference manual from a set of documented source files. There
+  is also support for generating output in RTF, PostScript, hyperlinked PDF, compressed
+  HTML, and Unix man pages. The documentation is extracted di
+download_size: 9.5 MB
+disk_space: 436 MB (with tests)
+sbu: 1.2 SBU (with tests; both using parallelism=4)
+depends:
+  required:
+  - cmake
+  - git
+  recommended:
+  - qt
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 325000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: exempi
+version: 2.6.6
+page_kind: single_package
+section: general
+page: exempi
+title: Exempi-2.6.6
+tarball: exempi-2.6.6.tar.xz
+url: https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz
+md5: f955e63dbd7b91c016f802c678e0e773
+summary: Exempi is an implementation of XMP (Adobe's Extensible Metadata Platform).
+download_size: 2.7 MB
+disk_space: 319 MB (add 245 MB for tests)
+sbu: 0.4 SBU (add 0.5 SBU for tests; both using parallelism=4)
+depends:
+  required:
+  - boost
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 113000

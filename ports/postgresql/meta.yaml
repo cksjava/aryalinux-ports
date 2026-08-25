@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: postgresql
+version: '18.6'
+page_kind: single_package
+section: server
+page: postgresql
+title: PostgreSQL-18.6
+tarball: postgresql-18.6.tar.bz2
+url: https://ftp.postgresql.org/pub/source/v18.6/postgresql-18.6.tar.bz2
+md5: 6143c18ab91bdfcaa056a61861814cde
+summary: PostgreSQL is an advanced object-relational database management system (ORDBMS),
+  derived from the Berkeley Postgres database management system.
+download_size: 22 MB
+disk_space: 349 MB (with tests)
+sbu: 1.0 SBU (with parallelism=4, add 0.1 SBU for tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units:
+- postgresql
+provides: []
+conflicts: []
+book_order: 435000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: spectacle
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: spectacle-6.7.4
+tarball: spectacle-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/spectacle-6.7.4.tar.xz
+md5: 49398c5c4d5cef31ffb07b4cc36a4a8e
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 55
+book_order: 578056

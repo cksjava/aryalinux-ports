@@ -1,0 +1,38 @@
+format: alps-port-v1
+name: tigervnc
+version: 1.16.2
+page_kind: single_package
+section: xsoft
+page: tigervnc
+title: Tigervnc-1.16.2
+tarball: tigervnc-1.16.2.tar.gz
+url: https://github.com/TigerVNC/tigervnc/archive/v1.16.2/tigervnc-1.16.2.tar.gz
+md5: 61c6b4af2bc925c7ef4110b8a52d3d2f
+summary: Tigervnc is an advanced VNC (Virtual Network Computing) implementation. It
+  allows creation of an Xorg server not tied to a physical console and also provides
+  a client for viewing of the remote graphical desktop.
+download_size: 2.1 MB
+disk_space: 154 MB
+sbu: 0.6 SBU (Using parallelism=4)
+depends:
+  required:
+  - cmake
+  - fltk
+  - libgcrypt
+  - libjpeg-turbo
+  - pixman
+  - linux-pam
+  - xorg-applications
+  - xinit
+  - xorg-legacy-fonts
+  recommended:
+  - imagemagick-7.1.2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required file
+  url: https://www.x.org/pub/individual/xserver/xorg-server-21.1.24.tar.xz
+  filename: xorg-server-21.1.24.tar.xz
+book_order: 739000

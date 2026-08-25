@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: logon
+version: '0'
+page_kind: configuration
+section: postlfs
+page: logon
+title: Customizing your Logon with /etc/issue
+tarball: ''
+url: ''
+md5: ''
+summary: When you first boot up your new LFS system, the logon screen will be nice
+  and plain (as it should be in a bare-bones system). Many people however, will want
+  their system to display some information in the logon message. This can be accomplished
+  using the file /etc/issue.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 36000

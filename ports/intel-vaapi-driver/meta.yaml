@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: intel-vaapi-driver
+version: 2.4.1
+page_kind: single_package
+section: multimedia
+page: intel-vaapi-driver
+title: intel-vaapi-driver-2.4.1
+tarball: intel-vaapi-driver-2.4.1.tar.bz2
+url: https://github.com/intel/intel-vaapi-driver/releases/download/2.4.1/intel-vaapi-driver-2.4.1.tar.bz2
+md5: 073fce0f409559109ad2dd0a6531055d
+summary: The intel-vaapi-driver package contains a VA API driver for Intel GPUs that
+  are provided with Haswell CPUs and earlier.
+download_size: 2.8 MB
+disk_space: 97 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - libva
+  - xorg-build-environment
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 769000

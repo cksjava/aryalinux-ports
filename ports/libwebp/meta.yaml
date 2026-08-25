@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: libwebp
+version: 1.6.0
+page_kind: single_package
+section: general
+page: libwebp
+title: libwebp-1.6.0
+tarball: libwebp-1.6.0.tar.gz
+url: https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.6.0.tar.gz
+md5: cceb6447180f961473b181c9ef38b630
+summary: The libwebp package contains a library and support programs to encode and
+  decode images in WebP format.
+download_size: 4.1 MB
+disk_space: 41 MB
+sbu: 0.3 SBU
+depends:
+  required: []
+  recommended:
+  - libjpeg-turbo
+  - libpng
+  - tiff
+  - sdl2-compat
+  ignore_for_order:
+  - sdl2-compat
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 239000
+cycle_policy:
+  install_before:
+  - sdl2-compat

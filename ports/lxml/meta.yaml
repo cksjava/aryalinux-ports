@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: lxml
+version: 6.1.1
+page_kind: python_module
+section: general
+page: python-modules
+title: lxml-6.1.1
+tarball: lxml-6.1.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/l/lxml/lxml-6.1.1.tar.gz
+md5: 6bbd3674ecba1340b08c9180afef1829
+summary: lxml provides Python bindings for libxslt-1.1.45 and libxml2-2.15.3.
+download_size: 4.1 MB
+disk_space: 134 MB
+sbu: 0.8 SBU
+depends:
+  required:
+  - libxslt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

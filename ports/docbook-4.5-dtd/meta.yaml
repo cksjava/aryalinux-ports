@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: docbook-4.5-dtd
+version: '4.5'
+page_kind: single_package
+section: pst
+page: docbook-4.5-dtd
+title: docbook-4.5-dtd
+tarball: docbook-4.5.zip
+url: https://archive.docbook.org/sgml/4.5/docbook-4.5.zip
+md5: 07c581f4bbcba6d3aac85360a19f95f7
+summary: The DocBook-4.5 SGML DTD package contains document type definitions for verification
+  of SGML data files against the DocBook rule set. These are useful for structuring
+  books and software documentation to a standard allowing you to utilize transformations
+  already written for that standard.
+download_size: 70 KB
+disk_space: 784 KB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - sgml-common
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 846000

@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: faad2
+version: 2.11.3
+page_kind: single_package
+section: multimedia
+page: faad2
+title: FAAD2-2.11.3
+tarball: faad2-2.11.3.tar.gz
+url: https://github.com/knik0/faad2/archive/2.11.3/faad2-2.11.3.tar.gz
+md5: f2276d23bbf7f580e5950ec770406232
+summary: FAAD2 is a decoder for a lossy sound compression scheme specified in MPEG-2
+  Part 7 and MPEG-4 Part 3 standards and known as Advanced Audio Coding (AAC).
+download_size: 644 KB
+disk_space: 11 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 755000

@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: at
+version: 3.2.5
+page_kind: single_package
+section: general
+page: at
+title: at-3.2.5
+tarball: at_3.2.5.orig.tar.gz
+url: https://anduin.linuxfromscratch.org/BLFS/at/at_3.2.5.orig.tar.gz
+md5: ca3657a1c90d7c3d252e0bc17feddc6e
+summary: The at package provides delayed job execution and batch processing. It is
+  required for Linux Standards Base (LSB) conformance.
+download_size: 130 KB
+disk_space: 1.9 MB (including tests)
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - mta
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 282000

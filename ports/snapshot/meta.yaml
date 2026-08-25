@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: snapshot
+version: '50.0'
+page_kind: single_package
+section: gnome
+page: snapshot
+title: Snapshot-50.0
+tarball: snapshot-50.0.tar.xz
+url: https://download.gnome.org/sources/snapshot/50/snapshot-50.0.tar.xz
+md5: e3f37e058449601e2813e91b486c307f
+summary: The Snapshot package contains a program that takes pictures and videos from
+  a Webcam.
+download_size: 7.9 MB
+disk_space: 1.0 GB (5.6 MB installed)
+sbu: 1.1 SBU (Using parallelism-4)
+depends:
+  required:
+  - libadwaita
+  - gst-plugins-bad
+  - gst-plugins-rs
+  - pipewire
+  - xdg-desktop-portal-gnome
+  - xdg-user-dirs
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 644000

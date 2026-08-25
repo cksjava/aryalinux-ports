@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: ibus
+version: 1.5.34
+page_kind: single_package
+section: general
+page: ibus
+title: ibus-1.5.34
+tarball: ibus-1.5.34.tar.gz
+url: https://github.com/ibus/ibus/archive/1.5.34/ibus-1.5.34.tar.gz
+md5: 7504f9c694d12e3cfe1e9e358f84c21f
+summary: ibus is an Intelligent Input Bus. It is a new input framework for the Linux
+  OS. It provides a fully featured and user friendly input method user interface.
+download_size: 1.8 MB
+disk_space: 116 MB (with tests)
+sbu: 0.5 SBU (Using parallelism=4; add 1.4 SBU for tests)
+depends:
+  required:
+  - iso-codes
+  - vala
+  recommended:
+  - dconf
+  - gtk
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 263000

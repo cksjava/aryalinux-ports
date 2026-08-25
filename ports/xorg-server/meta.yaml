@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: xorg-server
+version: 21.1.24
+page_kind: single_package
+section: x
+page: xorg-server
+title: Xorg-Server-21.1.24
+tarball: xorg-server-21.1.24.tar.xz
+url: https://www.x.org/pub/individual/xserver/xorg-server-21.1.24.tar.xz
+md5: 19c2d104a6c9ba85b4896ef75b2d1084
+summary: The Xorg Server is the core of the X Window system.
+download_size: 4.9 MB
+disk_space: 199 MB (with tests)
+sbu: 0.3 SBU (using parallelism=4; with tests)
+depends:
+  required:
+  - libxcvt
+  - pixman
+  - xorg-fonts
+  - xkeyboard-config
+  recommended:
+  - libepoxy
+  - libtirpc
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Optional patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/xorg-server-21.1.24-tearfree_backport-1.patch
+  filename: xorg-server-21.1.24-tearfree_backport-1.patch
+book_order: 459000

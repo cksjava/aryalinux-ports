@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: qps
+version: 2.13.0
+page_kind: single_package
+section: lxqt
+page: qps
+title: qps-2.13.0
+tarball: qps-2.13.0.tar.xz
+url: https://github.com/lxqt/qps/releases/download/2.13.0/qps-2.13.0.tar.xz
+md5: 554ada593b7d19f6d3a81cc493682a14
+summary: The qps package contains a Qt process manager.
+download_size: 472 KB
+disk_space: 11 MB
+sbu: 0.5 SBU
+depends:
+  required:
+  - liblxqt
+  - xdg-utils
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 716000

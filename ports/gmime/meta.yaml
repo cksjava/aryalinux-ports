@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: gmime
+version: 3.2.15
+page_kind: single_package
+section: general
+page: gmime3
+title: GMime-3.2.15
+tarball: gmime-3.2.15.tar.xz
+url: https://github.com/jstedfast/gmime/releases/download/3.2.15/gmime-3.2.15.tar.xz
+md5: f7d6b4ad3253e73c72237fde5bced617
+summary: 'The GMime package contains a set of utilities for parsing and creating messages
+  using the Multipurpose Internet Mail Extension (MIME) as defined by the applicable
+  RFCs. See the GMime web site for the RFCs resourced. This is useful as it provides
+  an API which adheres to the MIME specification as closely as possible while also
+  providing programmers with an extremely easy to use interface to the API '
+download_size: 2.1 MB
+disk_space: 23 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required:
+  - glib
+  - libgpg-error
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 120000

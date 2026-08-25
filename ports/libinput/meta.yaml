@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libinput
+version: 1.31.3
+page_kind: x11_driver
+section: x
+page: x7driver
+title: libinput-1.31.3
+tarball: libinput-1.31.3.tar.gz
+url: https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.31.3/libinput-1.31.3.tar.gz
+md5: 022aa3838b0cf8b932c0e4a4dbeac150
+summary: libinput is a library that handles input devices for display servers and
+  other applications that need to directly deal with input devices.
+download_size: 1.2 MB
+disk_space: 15 MB (add 47 MB for documentation and tests)
+sbu: 0.1 SBU (add 0.1 SBU for documentation and 0.3 SBU for minor tests)
+depends:
+  required:
+  - libevdev
+  - mtdev
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 460000

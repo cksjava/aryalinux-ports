@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: soundtouch
+version: 2.4.1
+page_kind: single_package
+section: multimedia
+page: soundtouch
+title: SoundTouch-2.4.1
+tarball: soundtouch-2.4.1.tar.gz
+url: https://www.surina.net/soundtouch/soundtouch-2.4.1.tar.gz
+md5: 6e8732dea92b6e65fc4ee75528ab0524
+summary: The SoundTouch package contains an open-source audio processing library that
+  allows changing the sound tempo, pitch and playback rate parameters independently
+  from each other.
+download_size: 592 KB
+disk_space: 8.4 MB
+sbu: 0.2 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 800000

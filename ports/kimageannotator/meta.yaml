@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kimageannotator
+version: 0.7.2
+page_kind: single_package
+section: x
+page: kimageannotator
+title: kImageAnnotator-0.7.2
+tarball: kImageAnnotator-0.7.2.tar.gz
+url: https://github.com/ksnip/kImageAnnotator/archive/v0.7.2/kImageAnnotator-0.7.2.tar.gz
+md5: 12811a2611613152b8dccc266a8f4804
+summary: kImageAnnotator is a tool for annotating images.
+download_size: 268 KB
+disk_space: 32 MB
+sbu: 0.5 SBU (Using parallelism=4)
+depends:
+  required:
+  - kcolorpicker
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 496000

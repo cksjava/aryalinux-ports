@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: xml-simple
+version: '2.25'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: XML::Simple-2.25
+tarball: XML-Simple-2.25.tar.gz
+url: https://www.cpan.org/authors/id/G/GR/GRANTM/XML-Simple-2.25.tar.gz
+md5: bb841dce889a26c89a1c2739970e9fbc
+summary: XML::Simple provides an easy API to read and write XML (especially config
+  files). It is deprecated and its use is discouraged.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - xml-parser
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

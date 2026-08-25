@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: fribidi
+version: 1.0.16
+page_kind: single_package
+section: general
+page: fribidi
+title: FriBidi-1.0.16
+tarball: fribidi-1.0.16.tar.xz
+url: https://github.com/fribidi/fribidi/releases/download/v1.0.16/fribidi-1.0.16.tar.xz
+md5: 333ad150991097a627755b752b87f9ff
+summary: The FriBidi package is an implementation of the Unicode Bidirectional Algorithm
+  (BIDI). This is useful for supporting Arabic and Hebrew alphabets in other packages.
+download_size: 1.1 MB
+disk_space: 22 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 213000

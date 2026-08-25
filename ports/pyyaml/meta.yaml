@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: pyyaml
+version: 6.0.3
+page_kind: python_module
+section: general
+page: python-modules
+title: PyYAML-6.0.3
+tarball: pyyaml-6.0.3.tar.gz
+url: https://files.pythonhosted.org/packages/source/P/PyYAML/pyyaml-6.0.3.tar.gz
+md5: dbc6f815cd75160ccf12e470be1c8d6e
+summary: PyYAML is a Python module that implements the next generation YAML parser
+  and emitter.
+download_size: 128 KB
+disk_space: 8.6 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended:
+  - cython
+  - libyaml
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

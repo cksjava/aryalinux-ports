@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: pulseaudio-qt
+version: 1.8.1
+page_kind: single_package
+section: kde
+page: pulseaudio-qt
+title: pulseaudio-qt-1.8.1
+tarball: pulseaudio-qt-1.8.1.tar.xz
+url: https://download.kde.org/stable/pulseaudio-qt/pulseaudio-qt-1.8.1.tar.xz
+md5: fa37fbba12097a6ff276f0a29ddec20f
+summary: This package is a Qt-based wrapper for PulseAudio-17.0. It allows for querying
+  and manipulating various PulseAudio objects, including Sinks, Sources, and Streams.
+  It does not wrap the full feature set of libpulse, but rather only what is needed
+  for KDE.
+download_size: 44 KB
+disk_space: 8.5 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - kde-frameworks
+  - pulseaudio
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 571000

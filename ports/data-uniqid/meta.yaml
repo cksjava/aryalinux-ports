@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: data-uniqid
+version: '0.12'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Data::Uniqid-0.12
+tarball: Data-Uniqid-0.12.tar.gz
+url: https://www.cpan.org/authors/id/M/MW/MWX/Data-Uniqid-0.12.tar.gz
+md5: 6bab3b5da09fedfdf60ce2629a7367db
+summary: Data::Uniqid provides three simple routines for generating unique IDs.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

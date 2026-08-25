@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kservice
+version: 6.29.0
+page_kind: kde_batch
+section: kde
+page: frameworks6
+title: kservice-6.29.0
+tarball: kservice-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/kservice-6.29.0.tar.xz
+md5: 52d2f3b7108240e1a745a6dd2058eb72
+summary: KDE batch package from frameworks6.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 30
+book_order: 548031

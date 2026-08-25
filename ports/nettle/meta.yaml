@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: nettle
+version: '4.0'
+page_kind: single_package
+section: postlfs
+page: nettle
+title: Nettle-4.0
+tarball: nettle-4.0.tar.gz
+url: https://ftpmirror.gnu.org/nettle/nettle-4.0.tar.gz
+md5: 144401453f9f35e53938bcacfc59800e
+summary: The Nettle package contains a low-level cryptographic library that is designed
+  to fit easily in many contexts.
+download_size: 2.5 MB
+disk_space: 106 MB (with tests)
+sbu: 0.3 SBU (with tests; both using parallelism=4)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 54000

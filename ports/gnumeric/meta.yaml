@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: gnumeric
+version: 1.12.61
+page_kind: single_package
+section: xsoft
+page: gnumeric
+title: Gnumeric-1.12.61
+tarball: gnumeric-1.12.61.tar.xz
+url: https://download.gnome.org/sources/gnumeric/1.12/gnumeric-1.12.61.tar.xz
+md5: 8c6cbffb41eb2a8ffb97708e21482d7f
+summary: The Gnumeric package contains a spreadsheet program which is useful for mathematical
+  analysis.
+download_size: 17 MB
+disk_space: 254 MB (add 7 MB for tests)
+sbu: 1.9 SBU (add 2.6 SBU for tests; both using parallelism=4)
+depends:
+  required:
+  - goffice
+  - itstool
+  recommended:
+  - adwaita-icon-theme
+  - gnome-icon-theme
+  - yelp
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 722000

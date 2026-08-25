@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: audiofile
+version: 0.3.6
+page_kind: single_package
+section: multimedia
+page: audiofile
+title: AudioFile-0.3.6
+tarball: audiofile-0.3.6.tar.xz
+url: https://download.gnome.org/sources/audiofile/0.3/audiofile-0.3.6.tar.xz
+md5: 235dde14742317328f0109e9866a8008
+summary: The AudioFile package contains the audio file libraries and two sound file
+  support programs useful to support basic sound file formats.
+download_size: 520 KB
+disk_space: 18 MB
+sbu: 0.6 SBU
+depends:
+  required:
+  - alsa-lib
+  recommended:
+  - flac
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/audiofile-0.3.6-consolidated_patches-1.patch
+  filename: audiofile-0.3.6-consolidated_patches-1.patch
+book_order: 752000

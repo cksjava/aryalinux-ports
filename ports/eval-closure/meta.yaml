@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: eval-closure
+version: '0.14'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Eval::Closure-0.14
+tarball: Eval-Closure-0.14.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DO/DOY/Eval-Closure-0.14.tar.gz
+md5: ceeb1fc579ac9af981fa6b600538c285
+summary: Eval::Closure safely and cleanly creates closures via string eval.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - test-fatal
+  - test-requires
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

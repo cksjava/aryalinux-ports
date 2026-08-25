@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: net-ssleay
+version: '1.96'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Net::SSLeay-1.96
+tarball: Net-SSLeay-1.96.tar.gz
+url: https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.96.tar.gz
+md5: 63772ad94b874b5f0f025c2a4285f82f
+summary: Net::SSLeay is a Perl extension for using OpenSSL.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

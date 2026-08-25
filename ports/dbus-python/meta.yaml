@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: dbus-python
+version: 1.4.0
+page_kind: python_module
+section: general
+page: python-modules
+title: D-Bus Python-1.4.0
+tarball: dbus-python-1.4.0.tar.xz
+url: https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.4.0.tar.xz
+md5: edca335d1c80f338e3255455eb876b72
+summary: D-Bus Python provides Python bindings to the D-Bus API interface.
+download_size: 168 KB
+disk_space: 1.7 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - dbus
+  - glib
+  - meson_python
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

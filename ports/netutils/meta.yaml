@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: netutils
+version: '0'
+page_kind: configuration
+section: basicnet
+page: netutils
+title: Networking Utilities
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains some tools that come in handy when the network needs
+  investigating.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 380000

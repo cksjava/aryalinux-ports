@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: exo
+version: 4.20.0
+page_kind: single_package
+section: xfce
+page: exo
+title: Exo-4.20.0
+tarball: exo-4.20.0.tar.bz2
+url: https://archive.xfce.org/src/xfce/exo/4.20/exo-4.20.0.tar.bz2
+md5: f059ec3d8686d4b322c42d19ebec0366
+summary: Exo is a support library used in the Xfce desktop. It also has some helper
+  applications that are used throughout Xfce.
+download_size: 1.1 MB
+disk_space: 14 MB (with tests)
+sbu: 0.1 SBU (with tests)
+depends:
+  required:
+  - gtk
+  - libxfce4ui
+  - libxfce4util
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 650000

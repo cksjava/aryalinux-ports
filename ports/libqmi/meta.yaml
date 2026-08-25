@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libqmi
+version: 1.38.0
+page_kind: single_package
+section: general
+page: libqmi
+title: libqmi-1.38.0
+tarball: libqmi-1.38.0.tar.gz
+url: https://gitlab.freedesktop.org/mobile-broadband/libqmi/-/archive/1.38.0/libqmi-1.38.0.tar.gz
+md5: 4ed2c13150611007f56f84b896449d46
+summary: The libqmi package contains a GLib-based library for talking to WWAN modems
+  and devices which speak the Qualcomm MSM Interface (QMI) protocol.
+download_size: 4.2 MB
+disk_space: 75 MB (with tests)
+sbu: 0.4 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - glib
+  - libgudev
+  recommended:
+  - libmbim
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 160000

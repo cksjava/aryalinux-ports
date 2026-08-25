@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: clone-pp
+version: '1.08'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Clone::PP-1.08
+tarball: Clone-PP-1.08.tar.gz
+url: https://cpan.metacpan.org/authors/id/N/NE/NEILB/Clone-PP-1.08.tar.gz
+md5: 62f9547aec61768af85b00bd2c3e5547
+summary: Clone:PP recursively copies Perl datatypes, allowing for a deep copy of a
+  given Perl data structure.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

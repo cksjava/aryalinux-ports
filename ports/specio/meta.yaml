@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: specio
+version: '0.53'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Specio-0.53
+tarball: Specio-0.53.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Specio-0.53.tar.gz
+md5: 2665608c5ca3d502146bfe9207831838
+summary: Specio provides classes for representing type constraints and coercion, along
+  with syntax sugar for declaring them.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - clone
+  - clone-pp
+  - devel-stacktrace
+  - module-runtime
+  - role-tiny
+  - sub-quote
+  - try-tiny
+  recommended:
+  - mro-compat
+  - test-fatal
+  - test-needs
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

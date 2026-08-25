@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: python
+version: 3.11.1
+page_kind: single_package
+section: general
+page: python311
+title: Python-3.11.1
+tarball: Python-3.11.1.tar.xz
+url: https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+md5: 4efe92adf28875c77d3b9b2e8d3bc44a
+summary: The Python 3.11 package contains an older version of the Python development
+  environment. This is only needed for building seamonkey-2.53.24 because its build
+  system has not been updated to support Python-3.14.7.
+download_size: 19 MB
+disk_space: 301 MB
+sbu: 1.1 SBU (Using parallelism=4)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch for OpenSSL-4
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.11.1-openssl_4_fixes-1.patch
+  filename: Python-3.11.1-openssl_4_fixes-1.patch
+book_order: 343000

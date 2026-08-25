@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: icewm
+version: 4.1.0
+page_kind: single_package
+section: x
+page: icewm
+title: IceWM-4.1.0
+tarball: icewm-4.1.0.tar.gz
+url: https://github.com/ice-wm/icewm/archive/4.1.0/icewm-4.1.0.tar.gz
+md5: 0b02f3c3068b9e865a7538c6f476529a
+summary: IceWM is a window manager with the goals of speed, simplicity, and not getting
+  in the user's way.
+download_size: 2.6 MB
+disk_space: 62 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - cmake
+  - imlib2
+  - a-graphical-environment
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 524000

@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
+if [[ ${#_tops[@]} -ne 1 ]]; then
+  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
+  exit 1
+fi
+cd "${_tops[0]}"
+
+# --- commands from BLFS ---
+groupadd -g 48 rsyncd
+useradd -c "rsyncd Daemon" -m -d /home/rsync -g rsyncd \
+    -s /bin/false -u 48 rsyncd
+
+./configure --prefix=/usr    \
+            --disable-xxhash \
+            --without-included-zlib
+make
+
+doxygen
+
+make install
+
+install -v -m755 -d          /usr/share/doc/rsync-3.5.0/api
+install -v -m644 dox/html/*  /usr/share/doc/rsync-3.5.0/api
+
+cat > /etc/rsyncd.conf << "EOF"
+# This is a basic rsync configuration file
+# It exports a single module without user authentication.
+
+motd file = /home/rsync/welcome.msg
+use chroot = yes
+
+[localhost]
+    path = /home/rsync
+    comment = Default rsync module
+    read only = yes
+    list = yes
+    uid = rsyncd
+    gid = rsyncd
+
+EOF
+
+systemctl stop rsyncd
+systemctl disable rsyncd
+systemctl enable rsyncd.socket
+systemctl start rsyncd.socket

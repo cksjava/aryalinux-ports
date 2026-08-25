@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: rasqal
+version: 0.9.33
+page_kind: single_package
+section: general
+page: rasqal
+title: Rasqal-0.9.33
+tarball: rasqal-0.9.33.tar.gz
+url: https://download.librdf.org/source/rasqal-0.9.33.tar.gz
+md5: 1f5def51ca0026cd192958ef07228b52
+summary: Rasqal is a C library that handles Resource Description Framework (RDF) query
+  language syntaxes, query construction, and execution of queries returning results
+  as bindings, boolean, RDF graphs/triples or syntaxes.
+download_size: 1.6 MB
+disk_space: 22 MB (additional 4 MB for the tests)
+sbu: 0.3 SBU (additional 0.7 SBU for the tests)
+depends:
+  required:
+  - raptor
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 302000

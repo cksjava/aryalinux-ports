@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: prog
+version: '0'
+page_kind: configuration
+section: general
+page: prog
+title: Programming
+tarball: ''
+url: ''
+md5: ''
+summary: A base LFS system can be used as a development platform, however the base
+  system only includes language support for C, C++, Perl, and Python. This chapter
+  provides instructions to build many popular programming environments to greatly
+  expand your system's development capabilities.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 320000

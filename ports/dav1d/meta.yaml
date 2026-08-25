@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: dav1d
+version: 1.5.4
+page_kind: single_package
+section: multimedia
+page: dav1d
+title: dav1d-1.5.4
+tarball: dav1d-1.5.4.tar.gz
+url: https://code.videolan.org/videolan/dav1d/-/archive/1.5.4/dav1d-1.5.4.tar.gz
+md5: af9b8fdb97f436a76b73425ed16b6239
+summary: The dav1d package contains an AV1 decoder.
+download_size: 1.7 MB
+disk_space: 26 MB (with tests)
+sbu: 0.3 SBU (using parallelism=4; with tests)
+depends:
+  required: []
+  recommended:
+  - nasm
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 753000

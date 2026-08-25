@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: filesystems
+version: '0'
+page_kind: configuration
+section: postlfs
+page: filesystems
+title: File Systems and Disk Management
+tarball: ''
+url: ''
+md5: ''
+summary: Journaling file systems reduce the time needed to recover a file system that
+  was not unmounted properly. While this can be extremely important in reducing downtime
+  for servers, it has also become popular for desktop environments. This chapter contains
+  other journaling file systems you can use instead of the default LFS extended file
+  system (ext2/3/4). It also provides introductory material on mana
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 65000

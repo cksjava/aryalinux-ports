@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: gnutls
+version: 3.8.13
+page_kind: single_package
+section: postlfs
+page: gnutls
+title: GnuTLS-3.8.13
+tarball: gnutls-3.8.13.tar.xz
+url: https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.13.tar.xz
+md5: a97671c1839340c6b43c23ccb3237180
+summary: 'The GnuTLS package contains libraries and userspace tools which provide
+  a secure layer over a reliable transport layer. Currently the GnuTLS library implements
+  the proposed standards by the IETF''s TLS working group. Quoting from the TLS 1.3
+  protocol specification :'
+download_size: 7.0 MB
+disk_space: 336 MB (with tests)
+sbu: 0.6 SBU (add 1.4 SBU for tests; both using parallelism=8)
+depends:
+  required:
+  - nettle
+  recommended:
+  - make-ca
+  - libunistring
+  - libtasn1
+  - p11-kit
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 44000

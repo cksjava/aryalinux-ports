@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: file-find-rule
+version: '0.35'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: File::Find::Rule-0.35
+tarball: File-Find-Rule-0.35.tar.gz
+url: https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/File-Find-Rule-0.35.tar.gz
+md5: a4820609e21b6b85dba26d9e94523d0a
+summary: File::Find::Rule is a friendlier interface to File::Find. It allows you to
+  build rules which specify the desired files and directories.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - number-compare
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

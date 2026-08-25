@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
+if [[ ${#_tops[@]} -ne 1 ]]; then
+  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
+  exit 1
+fi
+cd "${_tops[0]}"
+
+# --- commands from BLFS ---
+sed '20,$ d' -i trust/trust-extract-compat
+
+cat >> trust/trust-extract-compat << "EOF"
+# Copy existing anchor modifications to /etc/ssl/local
+/usr/libexec/make-ca/copy-trust-modifications
+
+# Update trust stores
+/usr/sbin/make-ca -r
+EOF
+
+mkdir p11-build
+cd    p11-build
+
+meson setup ..            \
+      --prefix=/usr       \
+      --buildtype=release \
+      -D trust_paths=/etc/pki/anchors
+ninja
+
+ninja install
+ln -sfv /usr/libexec/p11-kit/trust-extract-compat \
+        /usr/bin/update-ca-certificates
+
+ln -sfv ./pkcs11/p11-kit-trust.so /usr/lib/libnssckbi.so

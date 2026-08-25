@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: libvpx
+version: 1.16.0
+page_kind: single_package
+section: multimedia
+page: libvpx
+title: libvpx-1.16.0
+tarball: libvpx-1.16.0.tar.gz
+url: https://github.com/webmproject/libvpx/archive/v1.16.0/libvpx-1.16.0.tar.gz
+md5: fb51551487ecfdec93f3d243b7fb1a67
+summary: This package, from the WebM project, provides the reference implementations
+  of the VP8 Codec (used in most current HTML5 video) and of the next-generation VP9
+  Codec.
+download_size: 5.4 MB
+disk_space: 73 MB (add 1.7 GB for tests)
+sbu: 0.4 SBU (Using parallelism=4; add approx 11 SBU for tests using parallelism=4,
+  including download time)
+depends:
+  required: []
+  recommended:
+  - yasm
+  - nasm
+  - which
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/libvpx-1.16.0-security_fix-1.patch
+  filename: libvpx-1.16.0-security_fix-1.patch
+book_order: 791000

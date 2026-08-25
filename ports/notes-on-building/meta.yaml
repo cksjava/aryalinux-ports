@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: notes-on-building
+version: '0'
+page_kind: configuration
+section: introduction
+page: notes-on-building
+title: Notes on Building Software
+tarball: ''
+url: ''
+md5: ''
+summary: Those people who have built an LFS system may be aware of the general principles
+  of downloading and unpacking software. Some of that information is repeated here
+  for those new to building their own software.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 18000

@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: gtkmm
+version: 4.22.0
+page_kind: single_package
+section: x
+page: gtkmm4
+title: Gtkmm-4.22.0
+tarball: gtkmm-4.22.0.tar.xz
+url: https://download.gnome.org/sources/gtkmm/4.22/gtkmm-4.22.0.tar.xz
+md5: a1c76be0b7cd6156b269832e6a0bc660
+summary: The Gtkmm package provides a C++ interface to GTK-4.
+download_size: 17 MB
+disk_space: 217 MB (with tests)
+sbu: 0.8 SBU (With tests; both using parallelism=4)
+depends:
+  required:
+  - gtk
+  - pangomm
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 489000

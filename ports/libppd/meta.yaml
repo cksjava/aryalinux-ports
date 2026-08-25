@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: libppd
+version: 2.1.1
+page_kind: single_package
+section: pst
+page: libppd
+title: libppd-2.1.1
+tarball: libppd-2.1.1.tar.xz
+url: https://github.com/OpenPrinting/libppd/releases/download/2.1.1/libppd-2.1.1.tar.xz
+md5: 65accc86f9956a1160937b14e0f516a6
+summary: The libppd library contains functions for handling legacy printers using
+  PPD description files.
+download_size: 576 KB
+disk_space: 13 MB (with tests)
+sbu: less than 0.1 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - libcupsfilters
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 839000

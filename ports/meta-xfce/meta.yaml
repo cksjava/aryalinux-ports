@@ -1,0 +1,42 @@
+format: alps-port-v1
+name: meta-xfce
+version: '1'
+page_kind: meta
+section: meta
+page: meta-xfce
+title: meta-xfce
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: install BLFS ports from section ''xfce'''
+depends:
+  required: []
+  recommended: []
+members:
+- exo
+- garcon
+- libwnck
+- libxfce4ui
+- libxfce4util
+- libxfce4windowing
+- parole
+- ristretto
+- thunar
+- thunar-volman
+- tumbler
+- xfburn
+- xfce4-appfinder
+- xfce4-dev-tools
+- xfce4-notifyd
+- xfce4-panel
+- xfce4-power-manager
+- xfce4-pulseaudio-plugin
+- xfce4-session
+- xfce4-settings
+- xfce4-terminal
+- xfconf
+- xfdesktop
+- xfwm4
+bootscripts: []
+provides: []
+conflicts: []

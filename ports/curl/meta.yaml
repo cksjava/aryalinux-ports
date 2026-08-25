@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: curl
+version: 8.21.0
+page_kind: single_package
+section: basicnet
+page: curl
+title: cURL-8.21.0
+tarball: curl-8.21.0.tar.xz
+url: https://curl.se/download/curl-8.21.0.tar.xz
+md5: 230131079987135cbe1eadb77a04af57
+summary: 'The cURL package contains a utility and a library used for transferring
+  files with URL syntax to any of the following protocols: DICT, FILE, FTP, FTPS,
+  GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTSP,
+  SMB, SMBS, SMTP, SMPTS, TELNET, and TFTP. Its ability to both download and upload
+  files can be incorporated into other programs to support functions like streaming
+  med'
+download_size: 2.8 MB
+disk_space: 51 64 MB (with tests)
+sbu: 0.3 SBU (add 4.1 SBU for tests (without valgrind, add 17 SBU with valgrind) all
+  using parallelism=4)
+depends:
+  required: []
+  recommended:
+  - libpsl
+  - nghttp2
+  - make-ca
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 391000

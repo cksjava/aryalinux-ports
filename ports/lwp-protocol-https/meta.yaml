@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: lwp-protocol-https
+version: '6.17'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: LWP::Protocol::https-6.17
+tarball: LWP-Protocol-https-6.17.tar.gz
+url: https://www.cpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.17.tar.gz
+md5: ec336ad8e2cd3dabf8db3d31f40beb80
+summary: LWP::Protocol::https provides https support for LWP::UserAgent (i.e. libwww-perl-6.83).
+  Once the module is installed LWP is able to access sites using HTTP over SSL/TLS.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - io-socket-ssl
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

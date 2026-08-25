@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: gtksourceview5
+version: 5.20.0
+page_kind: single_package
+section: x
+page: gtksourceview5
+title: gtksourceview5-5.20.0
+tarball: gtksourceview-5.20.0.tar.xz
+url: https://download.gnome.org/sources/gtksourceview/5.20/gtksourceview-5.20.0.tar.xz
+md5: 08a754c0b10c05c6e74f77695e6e04ce
+summary: The GtkSourceView package contains a library used for extending the GTK text
+  functions to include syntax highlighting.
+download_size: 1.2 MB
+disk_space: 155 MB
+sbu: 0.2 SBU (with tests; both using parallelism=4)
+depends:
+  required:
+  - gtk
+  recommended:
+  - glib
+  - libxml2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 493000

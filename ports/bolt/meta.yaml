@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: bolt
+version: 0.9.11
+page_kind: single_package
+section: kde
+page: bolt
+title: bolt-0.9.11
+tarball: bolt-0.9.11.tar.gz
+url: https://gitlab.freedesktop.org/bolt/bolt/-/archive/0.9.11/bolt-0.9.11.tar.gz
+md5: 6fade22d3875b3ff480e26058571b534
+summary: The bolt package is a system daemon to enable security levels for Thunderbolt.
+download_size: 252 KB
+disk_space: 9.8 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required:
+  - glib
+  - polkit
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 574000

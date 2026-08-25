@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: xml
+version: '0'
+page_kind: configuration
+section: pst
+page: xml
+title: Extensible Markup Language (XML)
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains the DocBook XML document type definition (DTD) and
+  DocBook Stylesheets which are used to validate, transform, format and publish DocBook
+  documents.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 851000

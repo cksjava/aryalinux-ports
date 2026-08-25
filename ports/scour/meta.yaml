@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: scour
+version: 0.38.2
+page_kind: python_module
+section: general
+page: python-modules
+title: Scour-0.38.2
+tarball: scour-0.38.2.tar.gz
+url: https://github.com/scour-project/scour/archive/v0.38.2/scour-0.38.2.tar.gz
+md5: ae30f52602802f8c7df3a32e1f72b325
+summary: Scour is an SVG (Scalable Vector Graphics) optimizer/cleaner that reduces
+  their size by optimizing structure and removing unnecessary data.
+download_size: 100 KB
+disk_space: 1.3 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - six
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

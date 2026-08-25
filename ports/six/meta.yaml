@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: six
+version: 1.17.0
+page_kind: python_module
+section: general
+page: python-modules
+title: six-1.17.0
+tarball: six-1.17.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/six/six-1.17.0.tar.gz
+md5: a0387fe15662c71057b4fb2b7aa9056a
+summary: Six is a Python 2 to 3 compatibility library.
+download_size: 36 KB
+disk_space: 300 KB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

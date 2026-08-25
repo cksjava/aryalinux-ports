@@ -1,0 +1,36 @@
+format: alps-port-v1
+name: cups
+version: 2.4.19
+page_kind: single_package
+section: pst
+page: cups
+title: Cups-2.4.19
+tarball: cups-2.4.19-source.tar.gz
+url: https://github.com/OpenPrinting/cups/releases/download/v2.4.19/cups-2.4.19-source.tar.gz
+md5: 06b7a3921812988cdb3198ff74ae381d
+summary: The Common Unix Printing System (CUPS) is a print spooler and associated
+  utilities. It is based on the "Internet Printing Protocol" and provides printing
+  services to most PostScript and raster printers.
+download_size: 7.6 MB
+disk_space: 134 MB (with tests)
+sbu: 0.4 SBU (Add 1.4 SBU for tests)
+depends:
+  required:
+  - gnutls
+  - cups-filters
+  recommended:
+  - colord
+  - dbus
+  - libusb
+  - linux-pam
+  - xdg-utils
+  ignore_for_order:
+  - cups-filters
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 833000
+cycle_policy:
+  install_before:
+  - cups-filters

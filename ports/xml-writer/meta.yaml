@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: xml-writer
+version: '0.900'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: XML::Writer-0.900
+tarball: XML-Writer-0.900.tar.gz
+url: https://www.cpan.org/authors/id/J/JO/JOSEPHW/XML-Writer-0.900.tar.gz
+md5: 2457214360cefda445742a608dd6195e
+summary: XML::Writer provides a Perl extension for writing XML documents.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

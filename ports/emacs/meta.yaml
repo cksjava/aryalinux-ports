@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: emacs
+version: '30.2'
+page_kind: single_package
+section: postlfs
+page: emacs
+title: Emacs-30.2
+tarball: emacs-30.2.tar.xz
+url: https://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
+md5: 0adba4843ac864ba8c3c9b2a7deea176
+summary: The Emacs package contains an extensible, customizable, self-documenting
+  real-time display editor.
+download_size: 53 MB
+disk_space: 556 MB
+sbu: 0.6 SBU (Using parallelism=4)
+depends:
+  required: []
+  recommended:
+  - harfbuzz
+  - giflib
+  - gnutls
+  - jansson
+  - tiff
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 86000

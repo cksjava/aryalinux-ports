@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: brotli
+version: 1.2.0
+page_kind: single_package
+section: general
+page: brotli
+title: brotli-1.2.0
+tarball: brotli-1.2.0.tar.gz
+url: https://github.com/google/brotli/archive/v1.2.0/brotli-1.2.0.tar.gz
+md5: 8fbfae9a5ecbc278ae7f761ecb6d1285
+summary: Brotli provides a general-purpose lossless compression algorithm that compresses
+  data using a combination of a modern variant of the LZ77 algorithm, Huffman coding
+  and 2nd order context modeling. Its libraries are particularly used for WOFF2 fonts
+  on webpages.
+download_size: 632 KB
+disk_space: 33 MB (with python3 bindings)
+sbu: 0.3 SBU (with python3 bindings; parallelism=4)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 107000

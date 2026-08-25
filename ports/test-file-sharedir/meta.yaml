@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: test-file-sharedir
+version: '1.001002'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::File::ShareDir-1.001002
+tarball: Test-File-ShareDir-1.001002.tar.gz
+url: https://cpan.metacpan.org/authors/id/K/KE/KENTNL/Test-File-ShareDir-1.001002.tar.gz
+md5: ec31466aa44c1cd56c6cb51d7ec3a5de
+summary: Test::File::ShareDir is some low level plumbing to enable a distribution
+  to perform tests while consuming its own share directories in a manner similar to
+  how they will be once installed. This allows File-ShareDir-1.118 to see the latest
+  version of content instead of whatever is installed on the target system where you
+  are testing.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - class-tiny
+  - file-copy-recursive
+  - file-sharedir
+  - path-tiny
+  - scope-guard
+  recommended:
+  - test-fatal
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: iniconfig
+version: 2.3.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Iniconfig-2.3.0
+tarball: iniconfig-2.3.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/i/iniconfig/iniconfig-2.3.0.tar.gz
+md5: 5c1d9c21275feb3da71400bf716edd72
+summary: Iniconfig is a small and simple INI-file parser module.
+download_size: 24 KB
+disk_space: 304 KB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - setuptools_scm
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: parole
+version: 4.20.0
+page_kind: single_package
+section: xfce
+page: parole
+title: Parole-4.20.0
+tarball: parole-4.20.0.tar.xz
+url: https://archive.xfce.org/src/apps/parole/4.20/parole-4.20.0.tar.xz
+md5: 388dee33b1d06ee89f007b4cb08dedaf
+summary: Parole is a DVD/CD/music player for Xfce that uses GStreamer.
+download_size: 470 KB
+disk_space: 19 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - dbus-glib
+  - gst-plugins-base
+  - libxfce4ui
+  recommended:
+  - libnotify
+  - taglib
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 666000

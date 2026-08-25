@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: libfm-qt
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: libfm-qt
+title: libfm-qt-2.4.0
+tarball: libfm-qt-2.4.0.tar.xz
+url: https://github.com/lxqt/libfm-qt/releases/download/2.4.0/libfm-qt-2.4.0.tar.xz
+md5: d836e9732df22a1fc8a5b3d3919f4549
+summary: libfm-qt is the Qt port of libfm, a library providing components to build
+  desktop file managers. In LXQt, libfm-qt also handles desktop icons and backgrounds.
+download_size: 432 KB
+disk_space: 29 MB
+sbu: 0.4 SBU (Using parallelism=4)
+depends:
+  required:
+  - cmake
+  - libexif
+  - menu-cache
+  - qt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 692000

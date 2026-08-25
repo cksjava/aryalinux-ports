@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: wireless-kernel
+version: '0'
+page_kind: configuration
+section: basicnet
+page: wireless-kernel
+title: Configuring the Linux Kernel for Wireless
+tarball: ''
+url: ''
+md5: ''
+summary: 'Before using any userspace tools for connecting to a wireless AP, the Linux
+  kernel must be configured to drive the wireless NIC properly. Enable the following
+  options in the kernel configuration as well as specific device drivers for your
+  hardware and recompile the kernel if necessary:'
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 376000

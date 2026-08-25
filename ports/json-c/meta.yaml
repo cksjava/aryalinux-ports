@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: json-c
+version: '0.19'
+page_kind: single_package
+section: general
+page: json-c
+title: json-c-0.19
+tarball: json-c-0.19.tar.gz
+url: https://s3.amazonaws.com/json-c_releases/releases/json-c-0.19.tar.gz
+md5: 5678f1373ba51e0041b574c0411c696b
+summary: The json-c implements a reference counting object model that allows you to
+  easily construct JSON objects in C, output them as JSON formatted strings and parse
+  JSON formatted strings back into the C representation of JSON objects.
+download_size: 452 KB
+disk_space: 12 MB
+sbu: 0.2 SBU (with tests)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 129000

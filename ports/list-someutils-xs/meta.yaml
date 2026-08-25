@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: list-someutils-xs
+version: '0.59'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: List::SomeUtils::XS-0.59
+tarball: List-SomeUtils-XS-0.59.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/List-SomeUtils-XS-0.59.tar.gz
+md5: 34aed288f13771855a16dbd3d544c4f1
+summary: List::SomeUtils::XS is a (faster) XS (eXternal Subroutine) implementation
+  for List::SomeUtils.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - test-leaktrace
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

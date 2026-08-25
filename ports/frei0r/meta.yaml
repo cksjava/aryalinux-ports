@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: frei0r
+version: 3.4.0
+page_kind: single_package
+section: multimedia
+page: frei0r
+title: frei0r-3.4.0
+tarball: frei0r-3.4.0.tar.gz
+url: https://github.com/dyne/frei0r/archive/v3.4.0/frei0r-3.4.0.tar.gz
+md5: 2f88c0e4b5da87ca5d2c81967294d605
+summary: Frei0r is a minimalistic plugin API for video effects. Note that the 0 in
+  the name is a zero, not a capital letter o.
+download_size: 4.0 MB
+disk_space: 53 MB
+sbu: 0.5 SBU
+depends:
+  required: []
+  recommended:
+  - gavl
+  - opencv
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 758000

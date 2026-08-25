@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: upgradedb
+version: '0'
+page_kind: configuration
+section: server
+page: upgradedb
+title: Important Notes About Upgrading Database Server Software
+tarball: ''
+url: ''
+md5: ''
+summary: ''
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 432000

@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: itstool
+version: 2.0.7
+page_kind: single_package
+section: pst
+page: itstool
+title: itstool-2.0.7
+tarball: itstool-2.0.7.tar.gz
+url: https://github.com/itstool/itstool/archive/2.0.7/itstool-2.0.7.tar.gz
+md5: e759b258617a912acce630de3fa43957
+summary: Itstool extracts messages from XML files and outputs PO template files, then
+  merges translations from MO files to create translated XML files. It determines
+  what to translate and how to chunk it into messages using the W3C Internationalization
+  Tag Set (ITS).
+download_size: 79 KB
+disk_space: 688 KB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - docbook-xml
+  - lxml
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/itstool-2.0.7-lxml-1.patch
+  filename: itstool-2.0.7-lxml-1.patch
+book_order: 856000

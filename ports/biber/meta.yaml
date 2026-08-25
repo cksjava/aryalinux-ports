@@ -1,0 +1,53 @@
+format: alps-port-v1
+name: biber
+version: '2.21'
+page_kind: single_package
+section: pst
+page: biber
+title: biber-2.21
+tarball: biber-2.21.tar.gz
+url: https://github.com/plk/biber/archive/v2.21/biber-2.21.tar.gz
+md5: abdbdb2aa0479e490d0d75eb8e35ad50
+summary: Biber is a BibTeX replacement for users of biblatex, written in Perl, with
+  full Unicode support.
+download_size: 1.6 MB
+disk_space: 14 MB (installs 1.2MB of perl modules)
+sbu: 0.4 SBU including tests
+depends:
+  required:
+  - autovivification
+  - business-isbn
+  - business-ismn
+  - business-issn
+  - class-accessor
+  - data-compare
+  - data-dump
+  - data-uniqid
+  - datetime-calendar-julian
+  - datetime-format-builder
+  - encode-eucjpascii
+  - file-slurper
+  - io-string
+  - ipc-run3
+  - lingua-translit
+  - list-allutils
+  - list-moreutils
+  - log-log4perl
+  - lwp-protocol-https
+  - parse-recdescent
+  - perlio-utf8_strict
+  - sort-key
+  - text-bibtex
+  - text-csv
+  - text-roman
+  - unicode-collate
+  - unicode-linebreak
+  - xml-libxml-simple
+  recommended:
+  - file-which
+  - test-differences
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 869000

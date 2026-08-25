@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: talloc
+version: 2.5.0
+page_kind: single_package
+section: general
+page: talloc
+title: Talloc-2.5.0
+tarball: talloc-2.5.0.tar.gz
+url: https://www.samba.org/ftp/talloc/talloc-2.5.0.tar.gz
+md5: d56f69f6059b37aa26013a66904f6340
+summary: Talloc provides a hierarchical, reference counted memory pool system with
+  destructors. It is the core memory allocator used in Samba.
+download_size: 676 KB
+disk_space: 11 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 198000

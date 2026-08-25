@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: extutils-config
+version: '0.010'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: ExtUtils::Config-0.010
+tarball: ExtUtils-Config-0.010.tar.gz
+url: https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-Config-0.010.tar.gz
+md5: f455b5743db7b73c80e88133effa3551
+summary: ExtUtils::Config is a wrapper for Perl's configuration system.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

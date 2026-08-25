@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: lxqt-panel
+version: 2.4.1
+page_kind: single_package
+section: lxqt
+page: lxqt-panel
+title: lxqt-panel-2.4.1
+tarball: lxqt-panel-2.4.1.tar.xz
+url: https://github.com/lxqt/lxqt-panel/releases/download/2.4.1/lxqt-panel-2.4.1.tar.xz
+md5: bd2273c99d752fe36a013993cd68d060
+summary: The lxqt-panel package contains a lightweight X11 desktop panel.
+download_size: 816 KB
+disk_space: 74 MB
+sbu: 0.9 SBU (Using parallelism=4)
+depends:
+  required:
+  - layer-shell-qt-6.7.4-for-lxqt
+  - libdbusmenu-lxqt
+  - lxqt-globalkeys
+  - lxqt-menu-data
+  - solid-6.29.0-for-lxqt
+  - menu-cache
+  recommended:
+  - pulseaudio
+  - libstatgrab
+  - libsysstat
+  - libxkbcommon
+  - lm-sensors-3-6
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 695000

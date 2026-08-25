@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libde265
+version: 1.1.1
+page_kind: single_package
+section: multimedia
+page: libde265
+title: libde265-1.1.1
+tarball: libde265-1.1.1.tar.gz
+url: https://github.com/strukturag/libde265/releases/download/v1.1.1/libde265-1.1.1.tar.gz
+md5: e9a8ccb8185b5191e712b8a5fa1d1bfc
+summary: The libde265 package contains an open source H.265 video codec implementation.
+download_size: 312 KB
+disk_space: 7.8 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 777000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: qqc2-breeze-style
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: qqc2-breeze-style-6.7.4
+tarball: qqc2-breeze-style-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/qqc2-breeze-style-6.7.4.tar.xz
+md5: 97bd995296967e15827b872e7d8d2466
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 46
+book_order: 578047

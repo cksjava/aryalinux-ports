@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: semantic_version
+version: 2.10.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: semantic_version-2.10.0
+tarball: semantic_version-2.10.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/semantic_version/semantic_version-2.10.0.tar.gz
+md5: e48abef93ba69abcd4eaf4640edfc38b
+summary: The semantic_version module brings a small library to handle the standard
+  for Semantic Versioning in Python.
+download_size: 52 KB
+disk_space: 656 KB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

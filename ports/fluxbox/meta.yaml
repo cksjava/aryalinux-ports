@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: fluxbox
+version: 1.3.7
+page_kind: single_package
+section: x
+page: fluxbox
+title: Fluxbox-1.3.7
+tarball: fluxbox-1.3.7.tar.xz
+url: https://downloads.sourceforge.net/fluxbox/fluxbox-1.3.7.tar.xz
+md5: b44afd10ee1e64624c23115aa51dcd55
+summary: The Fluxbox package contains a window manager.
+download_size: 772 KB
+disk_space: 101 MB
+sbu: 0.9 SBU
+depends:
+  required:
+  - a-graphical-environment
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 523000

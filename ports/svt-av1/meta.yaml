@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: svt-av1
+version: 4.2.0
+page_kind: single_package
+section: multimedia
+page: svt-av1
+title: SVT-AV1-4.2.0
+tarball: SVT-AV1-v4.2.0.tar.gz
+url: https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.2.0/SVT-AV1-v4.2.0.tar.gz
+md5: a40beb25d550ed1ddf26aa372f2dca42
+summary: The SVT-AV1 package contains an AV1 encoder.
+download_size: 11 MB
+disk_space: 79 MB (add 668 MB for tests)
+sbu: 0.7 SBU (using parallelism=4; add 31 SBU for tests)
+depends:
+  required:
+  - cmake
+  recommended:
+  - nasm
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 802000

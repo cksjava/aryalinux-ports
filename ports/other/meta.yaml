@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: other
+version: '0'
+page_kind: configuration
+section: xsoft
+page: other
+title: Other X-based Programs
+tarball: ''
+url: ''
+md5: ''
+summary: These programs use the X Window System and don't fit easily into any of the
+  other chapters.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 729000

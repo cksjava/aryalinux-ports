@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: uri
+version: '5.35'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: URI-5.35
+tarball: URI-5.35.tar.gz
+url: https://www.cpan.org/authors/id/O/OA/OALDERS/URI-5.35.tar.gz
+md5: 77df061af47e25e3c53d18bd2d562ad8
+summary: This module implements the URI class. Objects of this class represent "Uniform
+  Resource Identifier references" as specified in RFC 2396 (and updated by RFC 2732).
+  A Uniform Resource Identifier is a compact string of characters that identifies
+  an abstract or physical resource. A Uniform Resource Identifier can be further classified
+  as either a Uniform Resource Locator (URL) or a Uniform Resource Na
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - mime-base32
+  recommended:
+  - test-fatal
+  - test-needs
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: plasma5support
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: plasma5support-6.7.4
+tarball: plasma5support-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/plasma5support-6.7.4.tar.xz
+md5: 649967c3120b2eacf73969528d7f6191
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 16
+book_order: 578017

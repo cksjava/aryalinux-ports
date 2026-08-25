@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: apr-util
+version: 1.6.5
+page_kind: single_package
+section: general
+page: apr-util
+title: Apr-Util-1.6.5
+tarball: apr-util-1.6.5.tar.bz2
+url: https://archive.apache.org/dist/apr/apr-util-1.6.5.tar.bz2
+md5: 3897a2f32d365a8281fbb90d1c2794ac
+summary: The Apache Portable Runtime Utility Library provides a predictable and consistent
+  interface to underlying client library interfaces. This application programming
+  interface assures predictable if not identical behavior regardless of which libraries
+  are available on a given platform.
+download_size: 432 KB
+disk_space: 9.4 MB (with tests)
+sbu: less than 0.1 SBU (add 0.3 SBU for tests)
+depends:
+  required:
+  - apr
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 104000

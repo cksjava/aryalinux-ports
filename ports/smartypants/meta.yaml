@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: smartypants
+version: 2.0.2
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Smartypants-2.0.2
+tarball: smartypants-2.0.2.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/smartypants/smartypants-2.0.2.tar.gz
+md5: 3149badecd0771c80ee9db4d09695edd
+summary: Smartypants translates plain ASCII punctuation characters into “smart” typographic
+  punctuation HTML entities.
+download_size: 17 KB
+disk_space: 344 KB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

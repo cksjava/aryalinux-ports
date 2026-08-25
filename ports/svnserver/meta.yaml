@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: svnserver
+version: '0'
+page_kind: configuration
+section: general
+page: svnserver
+title: Running a Subversion Server
+tarball: ''
+url: ''
+md5: ''
+summary: This section will describe how to set up, administer and secure a Subversion
+  server.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units:
+- svnserve
+provides: []
+conflicts: []
+book_order: 352000

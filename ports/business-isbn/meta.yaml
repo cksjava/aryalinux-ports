@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: business-isbn
+version: '3.014'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Business::ISBN-3.014
+tarball: Business-ISBN-3.014.tar.gz
+url: https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISBN-3.014.tar.gz
+md5: d20dedcc798a253223bcfcba2058689e
+summary: The Business::ISBN module provides functions for working with International
+  Standard Book Numbers.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - business-isbn-data
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

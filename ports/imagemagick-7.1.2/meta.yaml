@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: imagemagick-7.1.2
+version: '13'
+page_kind: single_package
+section: general
+page: imagemagick
+title: ImageMagick-7.1.2-13
+tarball: ImageMagick-7.1.2-13.tar.xz
+url: https://www.imagemagick.org/archive/releases/ImageMagick-7.1.2-13.tar.xz
+md5: a28a5d65a58fce9c24e8cf4b47cb5c5c
+summary: ImageMagick is a collection of tools and libraries to read, write, and manipulate
+  an image in various image formats. Image processing operations are available from
+  the command line. Bindings for Perl and C++ are also available.
+download_size: 10 MB
+disk_space: 179 MB, 45 MB installed (with typical dependencies; add 26 MB for checks)
+sbu: 1.6 SBU (with typical dependencies; add 0.5 SBU for checks, both using parallelism=4)
+depends:
+  required: []
+  recommended:
+  - xorg-libraries
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 264000

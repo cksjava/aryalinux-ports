@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: pavucontrol
+version: '6.2'
+page_kind: single_package
+section: multimedia
+page: pavucontrol
+title: pavucontrol-6.2
+tarball: pavucontrol-6.2.tar.xz
+url: https://www.freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-6.2.tar.xz
+md5: d515163651b8272e500dfcac32c525dd
+summary: PulseAudio Volume Control (pavucontrol) is a simple GTK based volume control
+  tool ("mixer") for the PulseAudio sound server. In contrast to classic mixer tools,
+  this one allows you to control both the volume of hardware devices and of each playback
+  stream separately.
+download_size: 196 KB
+disk_space: 5.6 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - gtkmm
+  - json-glib
+  - libsigc++
+  - pulseaudio
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 816000

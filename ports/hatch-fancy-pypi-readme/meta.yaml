@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: hatch-fancy-pypi-readme
+version: 25.1.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Hatch-Fancy-Pypi-Readme-25.1.0
+tarball: hatch_fancy_pypi_readme-25.1.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/h/hatch-fancy-pypi-readme/hatch_fancy_pypi_readme-25.1.0.tar.gz
+md5: 8e1ed2416887685adc1c909ed4fb63cb
+summary: Hatch-Fancy-Pypi-Readme is a hatch plugin filling the readme field into the
+  metadata of a Python module from markup language documentation files of the module.
+download_size: 32 KB
+disk_space: 388 KB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - hatchling
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

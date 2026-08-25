@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: mako
+version: 1.4.1
+page_kind: python_module
+section: general
+page: python-modules
+title: Mako-1.4.1
+tarball: mako-1.4.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/M/Mako/mako-1.4.1.tar.gz
+md5: 9c09a897c23a34df7ba614ec2d7229e1
+summary: Mako is a Python module that implements hyperfast and lightweight templating
+  for the Python platform.
+download_size: 404 KB
+disk_space: 5.1 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

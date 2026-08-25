@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: mutt
+version: 2.4.1
+page_kind: single_package
+section: basicnet
+page: mutt
+title: Mutt-2.4.1
+tarball: mutt-2.4.1.tar.gz
+url: http://ftp.mutt.org/pub/mutt/mutt-2.4.1.tar.gz
+md5: 5013f92c0b45edcac344eaeec68b0e6c
+summary: The Mutt package contains a Mail User Agent. This is useful for reading,
+  writing, replying to, saving, and deleting your email.
+download_size: 5.4 MB
+disk_space: 49 MB
+sbu: 0.2 SBU
+depends:
+  required: []
+  recommended:
+  - lynx
+  - links
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 418000

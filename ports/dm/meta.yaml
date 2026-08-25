@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: dm
+version: '0'
+page_kind: configuration
+section: x
+page: dm
+title: Display Managers
+tarball: ''
+url: ''
+md5: ''
+summary: Display Managers are graphical programs used for starting the graphical display
+  (currently, the X server) and providing a login capability for a Window Manager
+  or Desktop Environment.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 518000

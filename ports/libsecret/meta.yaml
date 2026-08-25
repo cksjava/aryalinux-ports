@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: libsecret
+version: 0.21.7
+page_kind: single_package
+section: gnome
+page: libsecret
+title: libsecret-0.21.7
+tarball: libsecret-0.21.7.tar.xz
+url: https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.7.tar.xz
+md5: 7a938a802a3c17df441fbd0358866e99
+summary: The libsecret package contains a GObject based library for accessing the
+  Secret Service API.
+download_size: 204 KB
+disk_space: 11 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required:
+  - glib
+  - gnome-keyring
+  recommended:
+  - libgcrypt
+  - gnutls
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 584000

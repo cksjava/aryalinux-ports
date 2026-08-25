@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: test2-plugin-nowarnings
+version: '0.10'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test2::Plugin::NoWarnings-0.10
+tarball: Test2-Plugin-NoWarnings-0.10.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Test2-Plugin-NoWarnings-0.10.tar.gz
+md5: d50e21a76f1fef09004092a73b1c065b
+summary: Test2::Plugin::NoWarnings causes tests to fail if there are any warnings
+  while they run.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - test-simple
+  recommended:
+  - ipc-run3
+  - module-pluggable
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

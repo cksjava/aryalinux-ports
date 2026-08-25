@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: qtxdg-tools
+version: 4.4.0
+page_kind: single_package
+section: lxqt
+page: qtxdg-tools
+title: qtxdg-tools-4.4.0
+tarball: qtxdg-tools-4.4.0.tar.xz
+url: https://github.com/lxqt/qtxdg-tools/releases/download/4.4.0/qtxdg-tools-4.4.0.tar.xz
+md5: e5d4680526ed7751eb2ee8068c14cf50
+summary: The qtxdg-tools contains a CLI MIME tool for handling file associations and
+  opening files with their default applications.
+download_size: 20 KB
+disk_space: 2.1 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - libqtxdg
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 689000

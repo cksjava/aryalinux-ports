@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: zsh
+version: 5.9.2
+page_kind: single_package
+section: postlfs
+page: zsh
+title: zsh-5.9.2
+tarball: zsh-5.9.2.tar.xz
+url: https://www.zsh.org/pub/zsh-5.9.2.tar.xz
+md5: 5c8305ba85166838ef062c5e7b245820
+summary: The zsh package contains a command interpreter (shell) usable as an interactive
+  login shell and as a shell script command processor. Of the standard shells, zsh
+  most closely resembles ksh but includes many enhancements.
+download_size: 3.3 MB
+disk_space: 66 MB (includes documentation and tests)
+sbu: 1.6 SBU (Using parallelism=4; includes documentation and tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 95000

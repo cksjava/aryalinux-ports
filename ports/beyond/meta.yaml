@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: beyond
+version: '0'
+page_kind: configuration
+section: introduction
+page: beyond
+title: Going Beyond BLFS
+tarball: ''
+url: ''
+md5: ''
+summary: The packages that are installed in this book are only the tip of the iceberg.
+  We hope that the experience you gained with the LFS book and the BLFS book will
+  give you the background needed to compile, install and configure packages that are
+  not included in this book.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 25000

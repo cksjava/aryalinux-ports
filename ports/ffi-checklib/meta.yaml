@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: ffi-checklib
+version: '0.31'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: FFI::CheckLib-0.31
+tarball: FFI-CheckLib-0.31.tar.gz
+url: https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/FFI-CheckLib-0.31.tar.gz
+md5: ffc8e61bb686dd631bed3ddf102af41c
+summary: FFI::CheckLib checks whether a particular dynamic library is available for
+  FFI (Foreign Function Interface) to use.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - capture-tiny
+  - file-which
+  - path-tiny
+  - test-simple
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

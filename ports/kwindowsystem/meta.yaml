@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kwindowsystem
+version: 6.29.0
+page_kind: kde_batch
+section: kde
+page: frameworks6
+title: kwindowsystem-6.29.0
+tarball: kwindowsystem-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/kwindowsystem-6.29.0.tar.xz
+md5: d996373ba3aeda5299c92d9b9f05244a
+summary: KDE batch package from frameworks6.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 17
+book_order: 548018

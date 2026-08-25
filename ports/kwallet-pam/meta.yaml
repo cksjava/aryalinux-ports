@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kwallet-pam
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: kwallet-pam-6.7.4
+tarball: kwallet-pam-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/kwallet-pam-6.7.4.tar.xz
+md5: e6073ba97e05a06c0ee3d6141e2cf387
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 25
+book_order: 578026

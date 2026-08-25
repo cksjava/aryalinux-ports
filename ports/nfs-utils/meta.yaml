@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: nfs-utils
+version: 2.9.2
+page_kind: single_package
+section: basicnet
+page: nfs-utils
+title: NFS-Utils-2.9.2
+tarball: nfs-utils-2.9.2.tar.xz
+url: https://www.kernel.org/pub/linux/utils/nfs-utils/2.9.2/nfs-utils-2.9.2.tar.xz
+md5: c398aeaa53ee5bc9ded8bc11752347e9
+summary: The NFS Utilities package contains the userspace server and client tools
+  necessary to use the kernel's NFS abilities. NFS is a protocol that allows sharing
+  file systems over the network.
+download_size: 748 KB
+disk_space: 25 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required:
+  - libevent
+  - libnl
+  - libtirpc
+  - libxml2
+  - rpcsvc-proto
+  - rpcbind
+  recommended: []
+bootscripts: []
+systemd_units:
+- nfsv4-server
+- nfs-server
+- nfs-client
+provides: []
+conflicts: []
+book_order: 370000

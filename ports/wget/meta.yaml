@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: wget
+version: 1.25.0
+page_kind: single_package
+section: basicnet
+page: wget
+title: Wget-1.25.0
+tarball: wget-1.25.0.tar.gz
+url: https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.gz
+md5: c70ba58b36f944e8ba1d655ace552881
+summary: The Wget package contains a utility useful for non-interactive downloading
+  of files from the Web.
+download_size: 5.0 MB
+disk_space: 38 MB (add 27 MB for tests)
+sbu: 0.3 SBU (add 0.4 SBU for tests)
+depends:
+  required: []
+  recommended:
+  - libpsl
+  - make-ca
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 375000

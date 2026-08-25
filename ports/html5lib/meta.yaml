@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: html5lib
+version: '1.1'
+page_kind: python_module
+section: general
+page: python-modules
+title: html5lib-1.1
+tarball: html5lib-1.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/h/html5lib/html5lib-1.1.tar.gz
+md5: 6748742e2ec4cb99287a6bc82bcfe2b0
+summary: html5lib provides a pure-python library for parsing HTML. It is designed
+  to conform to the WHATWG HTML specification.
+download_size: 268 KB
+disk_space: 3.9 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - six
+  - webencodings
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/html5lib-1.1-python_3.14_buildfix-1.patch
+  filename: html5lib-1.1-python_3.14_buildfix-1.patch
+book_order: 344000

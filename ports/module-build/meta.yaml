@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: module-build
+version: '0.4234'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Module::Build-0.4234
+tarball: Module-Build-0.4234.tar.gz
+url: https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-0.4234.tar.gz
+md5: 0032d0c0bc36a3b68ef41c947829d5e3
+summary: Module::Build allows perl modules to be built without a make command being
+  present.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

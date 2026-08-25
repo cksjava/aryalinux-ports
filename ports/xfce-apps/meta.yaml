@@ -1,0 +1,18 @@
+format: alps-port-v1
+name: xfce-apps
+version: '0'
+page_kind: configuration
+section: xfce
+page: xfce-apps
+title: Xfce Applications
+tarball: ''
+url: ''
+md5: ''
+summary: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+provides: []
+conflicts: []
+book_order: 665000

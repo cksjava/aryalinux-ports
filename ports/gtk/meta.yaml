@@ -1,0 +1,55 @@
+format: alps-port-v1
+name: gtk
+version: 4.22.4
+page_kind: single_package
+section: x
+page: gtk4
+title: GTK-4.22.4
+tarball: gtk-4.22.4.tar.xz
+url: https://download.gnome.org/sources/gtk/4.22/gtk-4.22.4.tar.xz
+md5: 2420b9b289937c1c9f97332470db1889
+summary: The GTK 4 package contains libraries used for creating graphical user interfaces
+  for applications.
+download_size: 17 MB
+disk_space: 1.4 GB (with docs and tests)
+sbu: 1.5 SBU (using parallelism=4; with docs; add 2.1 SBU for tests)
+depends:
+  required:
+  - gdk-pixbuf
+  - graphene
+  - iso-codes
+  - libepoxy
+  - librsvg
+  - libxkbcommon
+  - pango
+  - wayland-protocols
+  recommended:
+  - adwaita-icon-theme
+  - gst-plugins-bad
+  - gst-plugins-good
+  - libvpx
+  - hicolor-icon-theme
+  - vulkan-loader
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gnome
+  - glib
+  ignore_for_order:
+  - adwaita-icon-theme
+  - gst-plugins-bad
+  - gst-plugins-good
+  - vulkan-loader
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gnome
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 487000
+cycle_policy:
+  install_before:
+  - adwaita-icon-theme
+  - gst-plugins-bad
+  - gst-plugins-good
+  - vulkan-loader
+  - xdg-desktop-portal
+  - xdg-desktop-portal-gnome

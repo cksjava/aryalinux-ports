@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libplasma
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: libplasma-6.7.4
+tarball: libplasma-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/libplasma-6.7.4.tar.xz
+md5: d968787e8579337c7749bcabb860e5e9
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 7
+book_order: 578008

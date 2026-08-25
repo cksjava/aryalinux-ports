@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: duktape
+version: 2.7.0
+page_kind: single_package
+section: general
+page: duktape
+title: duktape-2.7.0
+tarball: duktape-2.7.0.tar.xz
+url: https://duktape.org/duktape-2.7.0.tar.xz
+md5: b3200b02ab80125b694bae887d7c1ca6
+summary: duktape is an embeddable Javascript engine, with a focus on portability and
+  compact footprint.
+download_size: 1003 KB
+disk_space: 25 MB
+sbu: 0.3 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 111000

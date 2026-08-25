@@ -1,0 +1,35 @@
+format: alps-port-v1
+name: glycin
+version: 2.1.5
+page_kind: single_package
+section: general
+page: glycin
+title: glycin-2.1.5
+tarball: glycin-2.1.5.tar.xz
+url: https://download.gnome.org/sources/glycin/2.1/glycin-2.1.5.tar.xz
+md5: d9224a846ad1ed964d07e1ebb48d4458
+summary: The glycin package contains a sandboxed and extendable image loading framework.
+download_size: 6.8 MB
+disk_space: 1.4 GB (with documentation, add 1 GB for tests)
+sbu: 3.3 SBU (with documentation, add 2.5 SBU for tests)
+depends:
+  required:
+  - bubblewrap
+  - glib
+  - little-cms
+  - libseccomp
+  - rustc
+  recommended:
+  - libheif
+  - libjxl
+  - vala
+  ignore_for_order:
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 218000
+cycle_policy:
+  install_before:
+  - vala

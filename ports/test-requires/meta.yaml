@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: test-requires
+version: '0.11'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::Requires-0.11
+tarball: Test-Requires-0.11.tar.gz
+url: https://cpan.metacpan.org/authors/id/T/TO/TOKUHIROM/Test-Requires-0.11.tar.gz
+md5: 999d6c4e46ea7baae7a5113292e02ed8
+summary: The Test::Requires module checks if another (optional) module can be loaded,
+  and if not it skips all the current tests.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

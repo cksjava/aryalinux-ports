@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: business-issn
+version: '1.008'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Business::ISSN-1.008
+tarball: Business-ISSN-1.008.tar.gz
+url: https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISSN-1.008.tar.gz
+md5: 967e79eff741c8710d70c64fb593eda1
+summary: The Business::ISSN module provides functions for working with International
+  Standard Serial Numbers.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

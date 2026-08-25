@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: lximage-qt
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lximage-qt
+title: lximage-qt-2.4.0
+tarball: lximage-qt-2.4.0.tar.xz
+url: https://github.com/lxqt/lximage-qt/releases/download/2.4.0/lximage-qt-2.4.0.tar.xz
+md5: 3bec142eec14e1c3c40927dd9ecc36f2
+summary: The lximage-qt package contains a lightweight image viewer and screenshot
+  program.
+download_size: 852 KB
+disk_space: 11 MB
+sbu: 0.5 SBU
+depends:
+  required:
+  - libfm-qt
+  - xdg-utils
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 712000

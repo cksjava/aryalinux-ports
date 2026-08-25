@@ -1,0 +1,37 @@
+format: alps-port-v1
+name: gst-plugins-bad
+version: 1.28.6
+page_kind: single_package
+section: multimedia
+page: gst10-plugins-bad
+title: gst-plugins-bad-1.28.6
+tarball: gst-plugins-bad-1.28.6.tar.xz
+url: https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.28.6.tar.xz
+md5: cdc3c30609d2d235d9322a676a5d4474
+summary: The GStreamer Bad Plug-ins package contains a set of plug-ins that aren't
+  up to par compared to the rest. They might be close to being good quality, but they're
+  missing something - be it a good code review, some documentation, a set of tests,
+  a real live maintainer, or some actual wide use.
+download_size: 8.0 MB
+disk_space: 314 MB (with tests)
+sbu: 0.7 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - gst-plugins-base
+  recommended:
+  - libaom
+  - libdvdread
+  - libdvdnav
+  - libva
+  - svt-av1
+  - soundtouch
+  ignore_for_order:
+  - libva
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 763000
+cycle_policy:
+  install_before:
+  - libva

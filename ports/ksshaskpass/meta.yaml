@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: ksshaskpass
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: ksshaskpass-6.7.4
+tarball: ksshaskpass-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/ksshaskpass-6.7.4.tar.xz
+md5: b1788bd5285df58b80f74f8430b1e43a
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 35
+book_order: 578036

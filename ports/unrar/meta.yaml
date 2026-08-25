@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: unrar
+version: 7.2.4
+page_kind: single_package
+section: general
+page: unrar
+title: UnRar-7.2.4
+tarball: unrarsrc-7.2.4.tar.gz
+url: https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
+md5: 4c2c8cae2a8f1dabd8bf150848253248
+summary: The UnRar package contains a RAR extraction utility used for extracting files
+  from RAR archives. RAR archives are usually created with WinRAR, primarily in a
+  Windows environment.
+download_size: 264 KB
+disk_space: 3.2 MB
+sbu: 0.3 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 308000

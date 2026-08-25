@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: xfce4-settings
+version: 4.20.5
+page_kind: single_package
+section: xfce
+page: xfce4-settings
+title: xfce4-settings-4.20.5
+tarball: xfce4-settings-4.20.5.tar.bz2
+url: https://archive.xfce.org/src/xfce/xfce4-settings/4.20/xfce4-settings-4.20.5.tar.bz2
+md5: 681c73af0e2db6f0e13ff61db265556c
+summary: The Xfce4 Settings package contains a collection of programs that are useful
+  for adjusting your Xfce preferences.
+download_size: 2.5 MB
+disk_space: 47 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - exo
+  - garcon
+  - gnome-icon-theme
+  recommended:
+  - libcanberra
+  - libnotify
+  - libxklavier
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 661000

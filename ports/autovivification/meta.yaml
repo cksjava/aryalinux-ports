@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: autovivification
+version: '0.18'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: autovivification-0.18
+tarball: autovivification-0.18.tar.gz
+url: https://www.cpan.org/authors/id/V/VP/VPIT/autovivification-0.18.tar.gz
+md5: 8dec994e1e7d368e055f21a5777385a0
+summary: This module allows you disable autovivification (the automatic creation and
+  population of new arrays and hashes whenever undefined variables are dereferenced),
+  and optionally throw a warning or an error when it would have occurred.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: test-utf8
+version: '1.03'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::utf8-1.03
+tarball: Test-utf8-1.03.tar.gz
+url: https://cpan.metacpan.org/authors/id/S/SC/SCHWIGON/Test-utf8-1.03.tar.gz
+md5: 03e219b5a7d0645b313f557238c0f8b3
+summary: Test::utf8 is a collection of tests useful for dealing with utf8 strings
+  in Perl.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

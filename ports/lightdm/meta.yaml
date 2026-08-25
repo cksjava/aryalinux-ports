@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: lightdm
+version: 1.33.1
+page_kind: multi_package
+section: x
+page: lightdm
+title: lightdm-1.33.1
+tarball: lightdm-1.33.1.tar.gz
+url: https://github.com/ubuntu/lightdm/archive/1.33.1/lightdm-1.33.1.tar.gz
+md5: 1e228e940a9e97a59a4e67b07836ad17
+summary: The lightdm package contains a lightweight display manager based upon GTK.
+download_size: 324 KB
+disk_space: 19 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - exo
+  - libgcrypt
+  - intltool
+  - itstool
+  - linux-pam
+  - xorg-server
+  recommended:
+  - glib
+  - libxklavier
+  - vala
+bootscripts: []
+systemd_units:
+- lightdm
+provides: []
+conflicts: []
+book_order: 520000

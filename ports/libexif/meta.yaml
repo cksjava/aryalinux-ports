@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libexif
+version: 0.6.26
+page_kind: single_package
+section: general
+page: libexif
+title: libexif-0.6.26
+tarball: libexif-0.6.26.tar.bz2
+url: https://github.com/libexif/libexif/releases/download/v0.6.26/libexif-0.6.26.tar.bz2
+md5: d659a750d1be6330105de54eb3bf627a
+summary: The libexif package contains a library for parsing, editing, and saving EXIF
+  data. Most digital cameras produce EXIF files, which are JPEG files with extra tags
+  that contain information about the image. All EXIF tags described in EXIF standard
+  2.1 are supported.
+download_size: 2.0 MB
+disk_space: 24 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 226000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: xml-sax-base
+version: '1.09'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: XML::SAX::Base-1.09
+tarball: XML-SAX-Base-1.09.tar.gz
+url: https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-Base-1.09.tar.gz
+md5: ec347a14065dd7aec7d9fb181b2d7946
+summary: This module has a very simple task - to be a base class for PerlSAX drivers
+  and filters.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

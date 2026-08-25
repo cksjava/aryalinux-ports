@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: file-slurper
+version: '0.014'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: File::Slurper-0.014
+tarball: File-Slurper-0.014.tar.gz
+url: https://www.cpan.org/authors/id/L/LE/LEONT/File-Slurper-0.014.tar.gz
+md5: d43bc5f069035eff3b6b7c418b4cedc4
+summary: File::Slurper is a simple, sane and efficient module to slurp a file.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - test-warnings
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

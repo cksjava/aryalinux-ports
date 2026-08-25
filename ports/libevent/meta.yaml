@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libevent
+version: 2.1.13
+page_kind: single_package
+section: basicnet
+page: libevent
+title: libevent-2.1.13
+tarball: libevent-2.1.13-stable.tar.gz
+url: https://github.com/libevent/libevent/releases/download/release-2.1.13-stable/libevent-2.1.13-stable.tar.gz
+md5: eaa0bd3472b5d6a52ac6b9e0b7418b03
+summary: libevent is an asynchronous event notification software library. The libevent
+  API provides a mechanism to execute a callback function when a specific event occurs
+  on a file descriptor or after a timeout has been reached. Furthermore, libevent
+  also supports callbacks due to signals or regular timeouts.
+download_size: 1.1 MB
+disk_space: 23 MB (with tests and API docs)
+sbu: 0.3 SBU (add 11 SBU for tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 397000

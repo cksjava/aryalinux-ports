@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: thunar-volman
+version: 4.20.0
+page_kind: single_package
+section: xfce
+page: thunar-volman
+title: thunar-volman-4.20.0
+tarball: thunar-volman-4.20.0.tar.bz2
+url: https://archive.xfce.org/src/xfce/thunar-volman/4.20/thunar-volman-4.20.0.tar.bz2
+md5: 34c8e0af77ea3894db7e3d164998f9bf
+summary: The Thunar Volume Manager is an extension for the Thunar file manager, which
+  enables automatic management of removable drives and media.
+download_size: 624 KB
+disk_space: 7.0 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - exo
+  - libgudev
+  recommended:
+  - libnotify
+  - gvfs
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 657000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: xfce-core
+version: '0'
+page_kind: configuration
+section: xfce
+page: xfce-core
+title: Xfce Desktop
+tarball: ''
+url: ''
+md5: ''
+summary: Xfce is a desktop environment that aims to be fast and low on system resources,
+  while still being visually appealing and user friendly.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 646000

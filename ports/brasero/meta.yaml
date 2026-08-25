@@ -1,0 +1,40 @@
+format: alps-port-v1
+name: brasero
+version: 3.12.3
+page_kind: single_package
+section: gnome
+page: brasero
+title: Brasero-3.12.3
+tarball: brasero-3.12.3.tar.xz
+url: https://download.gnome.org/sources/brasero/3.12/brasero-3.12.3.tar.xz
+md5: ae48248dd36f89282d573eb7a0a1391f
+summary: Brasero is an application used to burn CDs and DVDs on the GNOME Desktop.
+  It is designed to be as simple as possible and has some unique features that enable
+  users to create their discs easily and quickly.
+download_size: 3.0 MB
+disk_space: 105 MB
+sbu: 1.0 SBU
+depends:
+  required:
+  - gst-plugins-base
+  - itstool
+  - libcanberra
+  - libnotify
+  recommended:
+  - glib
+  - libburn
+  - libisoburn
+  - nautilus
+  - tinysparql
+  - totem-pl-parser
+  - dvd+rw-tools
+  - gvfs
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/brasero-3.12.3-upstream_fixes-1.patch
+  filename: brasero-3.12.3-upstream_fixes-1.patch
+book_order: 625000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: plasma-desktop
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: plasma-desktop-6.7.4
+tarball: plasma-desktop-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/plasma-desktop-6.7.4.tar.xz
+md5: ac1a9aac994ae3cb85eaa99188669ecf
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 33
+book_order: 578034

@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: position
+version: '0'
+page_kind: configuration
+section: introduction
+page: position
+title: The /usr Versus /usr/local Debate
+tarball: ''
+url: ''
+md5: ''
+summary: Should I install XXX in /usr or /usr/local?
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 19000

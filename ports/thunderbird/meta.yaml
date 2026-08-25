@@ -1,0 +1,37 @@
+format: alps-port-v1
+name: thunderbird
+version: 153.1.0esr
+page_kind: single_package
+section: xsoft
+page: thunderbird
+title: Thunderbird-153.1.0esr
+tarball: thunderbird-153.1.0esr.source.tar.xz
+url: https://archive.mozilla.org/pub/thunderbird/releases/153.1.0esr/source/thunderbird-153.1.0esr.source.tar.xz
+md5: 7d6be3aa7ddb01cb2f04d2f49ba142f2
+summary: Thunderbird is a stand-alone mail/news client based on the Mozilla codebase.
+  It uses the Gecko rendering engine to enable it to display and compose HTML emails.
+download_size: 892 MB
+disk_space: 11.0 GB (296 MB installed)
+sbu: 16 SBU (on a 8-core machine)
+depends:
+  required:
+  - cbindgen
+  - gtk
+  - llvm
+  - nodejs
+  - pulseaudio
+  - alsa-lib
+  recommended:
+  - dav1d
+  - libaom
+  - libevent
+  - libvpx
+  - libwebp
+  - nasm
+  - nspr
+  - nss
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 738000

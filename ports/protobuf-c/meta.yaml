@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: protobuf-c
+version: 1.5.2
+page_kind: single_package
+section: general
+page: protobuf-c
+title: Protobuf-c-1.5.2
+tarball: protobuf-c-1.5.2.tar.gz
+url: https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz
+md5: 0612ee47cccaaf4ad1c4f0c8bdc13abf
+summary: The Protobuf-c package contains an implementation of the Google Protocol
+  Buffers data serialization format in C.
+download_size: 520 KB
+disk_space: 56 MB
+sbu: 0.6 SBU (with tests)
+depends:
+  required:
+  - protobuf
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/protobuf-c-1.5.2-protobuf34_fix-1.patch
+  filename: protobuf-c-1.5.2-protobuf34_fix-1.patch
+book_order: 189000

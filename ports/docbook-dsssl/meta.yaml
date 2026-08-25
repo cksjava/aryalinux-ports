@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: docbook-dsssl
+version: '1.79'
+page_kind: multi_package
+section: pst
+page: docbook-dsssl
+title: docbook-dsssl-1.79
+tarball: docbook-dsssl-1.79.tar.bz2
+url: https://downloads.sourceforge.net/docbook/docbook-dsssl-1.79.tar.bz2
+md5: bc192d23266b9a664ca0aba4a7794c7c
+summary: The DocBook DSSSL Stylesheets package contains DSSSL stylesheets. These are
+  used by OpenJade or other tools to transform SGML and XML DocBook files.
+download_size: 277 KB
+disk_space: 14 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - sgml-common
+  - docbook-3.1-dtd
+  - docbook-4.5-dtd
+  - opensp
+  - openjade
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 849000

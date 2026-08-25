@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: x7lib
+version: '0'
+page_kind: x11_driver
+section: x
+page: x7lib
+title: Xorg Libraries
+tarball: lib
+url: https://www.x.org/pub/individual/lib/
+md5: ''
+summary: The Xorg libraries provide library routines that are used within all X Window
+  applications.
+download_size: 12 MB
+disk_space: 274 MB (47 MB installed) - if source directories not deleted
+sbu: 1.8 SBU
+depends:
+  required:
+  - fontconfig
+  - libxcb
+  recommended:
+  - dbus
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 447000

@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: lxqt-layer-shell-qt
+version: 6.7.4
+page_kind: single_package
+section: lxqt
+page: lxqt-layer-shell-qt
+title: layer-shell-qt-6.7.4 for lxqt
+tarball: layer-shell-qt-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/layer-shell-qt-6.7.4.tar.xz
+md5: 34f89e74bc586c7e280ac512f8474691
+summary: This component is meant for applications to be able to easily use clients
+  based on a "wlr-layer-shell" protocol. Clients can use this interface to assign
+  the surface_layer role to wl_surfaces. Such surfaces are assigned to a "layer" of
+  the output and rendered with a defined z-depth respective to each other.
+download_size: 36 KB
+disk_space: 5.2 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - extra-cmake-modules
+  - qt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 681000

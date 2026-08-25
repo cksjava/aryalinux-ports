@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: meta-xfce-apps
+version: '1'
+page_kind: meta
+section: xfce
+page: xfce-apps
+title: Xfce Applications
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: applications linked from xfce-apps.html'
+depends:
+  required: []
+  recommended: []
+members:
+- xfce4-session
+- parole
+- xfce
+- xfce4-terminal
+- xfburn
+- ristretto
+- xfce4-notifyd
+bootscripts: []
+provides: []
+conflicts: []
+book_order: 665000

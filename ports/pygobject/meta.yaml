@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: pygobject
+version: 3.56.3
+page_kind: python_module
+section: general
+page: python-modules
+title: PyGObject-3.56.3
+tarball: pygobject-3.56.3.tar.gz
+url: https://download.gnome.org/sources/pygobject/3.56/pygobject-3.56.3.tar.gz
+md5: 7fe8fa9ff801a010eca0f0c79f59232b
+summary: PyGObject3 provides Python bindings to the GObject class from GLib.
+download_size: 1.4 MB
+disk_space: 15 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required:
+  - glib
+  recommended:
+  - pycairo
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

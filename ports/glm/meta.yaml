@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: glm
+version: 1.0.3
+page_kind: single_package
+section: general
+page: glm
+title: GLM-1.0.3
+tarball: glm-1.0.3.tar.gz
+url: https://github.com/g-truc/glm/archive/1.0.3/glm-1.0.3.tar.gz
+md5: 2192069d8d0091ff1cca041cdcdc85fe
+summary: OpenGL Mathematics (GLM) is a header-only C++ mathematics library for graphics
+  software based on the OpenGL Shading Language (GLSL) specifications. An extension
+  system provides extended capabilities such as matrix transformations and quaternions.
+download_size: 4.4 MB
+disk_space: 25 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 217000

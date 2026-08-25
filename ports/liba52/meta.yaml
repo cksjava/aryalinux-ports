@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: liba52
+version: 0.8.0
+page_kind: single_package
+section: multimedia
+page: liba52
+title: Liba52-0.8.0
+tarball: a52dec-0.8.0.tar.gz
+url: https://distfiles.adelielinux.org/source/a52dec/a52dec-0.8.0.tar.gz
+md5: 4debeed0257f5312e84d92711a5cfcec
+summary: liba52 is a free library for decoding ATSC A/52 (also known as AC-3) streams.
+  The A/52 standard is used in a variety of applications, including digital television
+  and DVD.
+download_size: 448 KB
+disk_space: 3.7 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 770000

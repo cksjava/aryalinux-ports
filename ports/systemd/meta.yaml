@@ -1,0 +1,34 @@
+format: alps-port-v1
+name: systemd
+version: '261.2'
+page_kind: single_package
+section: general
+page: systemd
+title: Systemd-261.2
+tarball: systemd-261.2.tar.gz
+url: https://github.com/systemd/systemd/archive/v261.2/systemd-261.2.tar.gz
+md5: e3f04ccc83a28ec5e80c5432bb8329f5
+summary: While systemd was installed when building LFS, there are many features provided
+  by the package that were not included in the initial installation because Linux-PAM
+  was not yet installed. The systemd package needs to be rebuilt to provide a working
+  systemd-logind service, which provides many additional features for dependent packages.
+download_size: 18 MB
+disk_space: 396 MB (with tests)
+sbu: 1.2 SBU (with tests using 4 cores)
+depends:
+  required: []
+  recommended:
+  - linux-pam
+  - polkit
+  ignore_for_order:
+  - linux-pam
+  - polkit
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 306000
+cycle_policy:
+  install_before:
+  - linux-pam
+  - polkit

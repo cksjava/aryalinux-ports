@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: lxqt-kidletime
+version: 6.29.0
+page_kind: single_package
+section: lxqt
+page: lxqt-kidletime
+title: kidletime-6.29.0 for lxqt
+tarball: kidletime-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/kidletime-6.29.0.tar.xz
+md5: 212c502ef7cf38f31ec3aea352a7e401
+summary: KIdleTime is used to report the idle time of users and the system. It is
+  useful not only for determining the current idle time of the PC, but also for getting
+  notified upon idle time events, such as custom timeouts or user activity.
+download_size: 31 KB
+disk_space: 5.2 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - extra-cmake-modules
+  - plasma-wayland-protocols
+  - qt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 678000

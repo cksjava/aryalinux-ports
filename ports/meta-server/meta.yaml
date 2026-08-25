@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: meta-server
+version: '1'
+page_kind: meta
+section: meta
+page: meta-server
+title: meta-server
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: install BLFS ports from section ''server'''
+depends:
+  required: []
+  recommended: []
+members:
+- apache
+- bind
+- dovecot
+- exim
+- kea
+- lmdb
+- mariadb
+- openldap
+- postfix
+- postgresql
+- proftpd
+bootscripts: []
+provides: []
+conflicts: []

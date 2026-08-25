@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libunwind
+version: 1.8.3
+page_kind: single_package
+section: general
+page: libunwind
+title: libunwind-1.8.3
+tarball: libunwind-1.8.3.tar.gz
+url: https://github.com/libunwind/libunwind/releases/download/v1.8.3/libunwind-1.8.3.tar.gz
+md5: 13bc7b41462ac6ea157d350eaf6c1503
+summary: The libunwind package contains a portable and efficient C programming interface
+  (API) to determine the call-chain of a program. The API additionally provides the
+  means to manipulate the preserved (callee-saved) state of each call-frame and to
+  resume execution at any point in the call-chain (non-local goto). The API supports
+  both local (same-process) and remote (across-process) operation.
+download_size: 960 KB
+disk_space: 22 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 169000

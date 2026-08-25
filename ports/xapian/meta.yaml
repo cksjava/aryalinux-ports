@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: xapian
+version: 2.0.0
+page_kind: single_package
+section: general
+page: xapian
+title: Xapian-2.0.0
+tarball: xapian-core-2.0.0.tar.xz
+url: https://oligarchy.co.uk/xapian/2.0.0/xapian-core-2.0.0.tar.xz
+md5: 8105ac73b1a6510501ecea8f0e78b9b3
+summary: Xapian is an open source search engine library.
+download_size: 3.3 MB
+disk_space: 174 MB (add 157 MB for tests)
+sbu: 0.6 SBU (add 7.0 SBU for tests; both using parallelism=4)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 205000

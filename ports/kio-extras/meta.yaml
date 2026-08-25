@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: kio-extras
+version: 26.04.3
+page_kind: single_package
+section: kde
+page: kio-extras
+title: kio-extras-26.04.3
+tarball: kio-extras-26.04.3.tar.xz
+url: https://download.kde.org/stable/release-service/26.04.3/src/kio-extras-26.04.3.tar.xz
+md5: eafb6c828a1ec58eff5902ba8cbecd09
+summary: The kio-extras package contains additional components to increase the functionality
+  of the KDE resource and network access abstractions.
+download_size: 5.3 MB
+disk_space: 100 MB
+sbu: 0.5 SBU (using parallelism=4)
+depends:
+  required:
+  - kde-frameworks
+  - kdsoap-ws-discovery-client
+  - libproxy
+  - plasma-activities-stats
+  - qcoro
+  recommended:
+  - libkexiv2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 562000

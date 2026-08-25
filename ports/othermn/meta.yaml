@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: othermn
+version: '0'
+page_kind: configuration
+section: basicnet
+page: othermn
+title: Other Mail and News Programs
+tarball: ''
+url: ''
+md5: ''
+summary: Balsa-2.6.5 is a GTK2 based mail client.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 420000

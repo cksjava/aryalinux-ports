@@ -1,0 +1,34 @@
+format: alps-port-v1
+name: gpm
+version: 1.20.7
+page_kind: single_package
+section: general
+page: gpm
+title: GPM-1.20.7
+tarball: gpm-1.20.7.tar.bz2
+url: https://anduin.linuxfromscratch.org/BLFS/gpm/gpm-1.20.7.tar.bz2
+md5: bf84143905a6a903dbd4d4b911a2a2b8
+summary: The GPM (General Purpose Mouse daemon) package contains a mouse server for
+  the console and xterm. It not only provides cut and paste support generally, but
+  its library component is used by various software such as Links to provide mouse
+  support to the application. It is useful on desktops, especially if following (Beyond)
+  Linux From Scratch instructions; it's often much easier (and less error pron
+download_size: 820 KB
+disk_space: 7.4 MB
+sbu: 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units:
+- gpm
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch
+  filename: gpm-1.20.7-consolidated-1.patch
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-gcc15_fixes-1.patch
+  filename: gpm-1.20.7-gcc15_fixes-1.patch
+book_order: 291000

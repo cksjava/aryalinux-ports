@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: openbox
+version: 3.6.1
+page_kind: single_package
+section: x
+page: openbox
+title: openbox-3.6.1
+tarball: openbox-3.6.1.tar.gz
+url: http://openbox.org/dist/openbox/openbox-3.6.1.tar.gz
+md5: b72794996c6a3ad94634727b95f9d204
+summary: Openbox is a highly configurable desktop window manager with extensive standards
+  support. It allows you to control almost every aspect of how you interact with your
+  desktop.
+download_size: 944 KB
+disk_space: 19 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - a-graphical-environment
+  - pango
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/openbox-3.6.1-py3-1.patch
+  filename: openbox-3.6.1-py3-1.patch
+book_order: 525000

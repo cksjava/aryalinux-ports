@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: cdrdao
+version: 1.2.6
+page_kind: single_package
+section: multimedia
+page: cdrdao
+title: Cdrdao-1.2.6
+tarball: cdrdao-1.2.6.tar.bz2
+url: https://downloads.sourceforge.net/cdrdao/cdrdao-1.2.6.tar.bz2
+md5: f59689d847d56647187d4de487e3487d
+summary: The Cdrdao package contains CD recording utilities. These are useful for
+  burning a CD in disk-at-once mode.
+download_size: 832 KB
+disk_space: 88 MB
+sbu: 0.3 SBU (Using parallelism-4)
+depends:
+  required: []
+  recommended:
+  - gtkmm
+  - libao
+  - libvorbis
+  - libmad
+  - lame
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 825000

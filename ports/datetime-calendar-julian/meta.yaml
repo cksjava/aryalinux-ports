@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: datetime-calendar-julian
+version: '0.108'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: DateTime::Calendar::Julian-0.108
+tarball: DateTime-Calendar-Julian-0.108.tar.gz
+url: https://www.cpan.org/authors/id/W/WY/WYANT/DateTime-Calendar-Julian-0.108.tar.gz
+md5: e68a782ba204b3935a1cfec81408f6fd
+summary: DateTime::Calendar::Julian implements the Julian Calendar.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - datetime
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: gutenprint
+version: 5.3.5
+page_kind: single_package
+section: pst
+page: gutenprint
+title: Gutenprint-5.3.5
+tarball: gutenprint-5.3.5.tar.xz
+url: https://downloads.sourceforge.net/gimp-print/gutenprint-5.3.5.tar.xz
+md5: 18968a1376a0fb0155afea4ce832d7fd
+summary: The Gutenprint (formerly Gimp-Print) package contains high quality drivers
+  for many brands and models of printers for use with Cups-2.4.19. See a list of supported
+  printers at https://gimp-print.sourceforge.io/p_Supported_Printers.php.
+download_size: 5.4 MB
+disk_space: 71 MB (without tests)
+sbu: 0.3 SBU (without tests)
+depends:
+  required: []
+  recommended:
+  - cups
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 837000

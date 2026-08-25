@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: xfdesktop
+version: 4.20.2
+page_kind: single_package
+section: xfce
+page: xfdesktop
+title: Xfdesktop-4.20.2
+tarball: xfdesktop-4.20.2.tar.bz2
+url: https://archive.xfce.org/src/xfce/xfdesktop/4.20/xfdesktop-4.20.2.tar.bz2
+md5: 8789870145b82f5ba4f35c8a6522db2e
+summary: Xfdesktop is a desktop manager for the Xfce Desktop Environment. Xfdesktop
+  sets the background image / color, creates the right click menu and window list
+  and displays the file icons on the desktop using Thunar libraries.
+download_size: 2.5 MB
+disk_space: 35 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - exo
+  - libxfce4windowing
+  - libwnck
+  recommended:
+  - libnotify
+  - startup-notification
+  - thunar
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 662000

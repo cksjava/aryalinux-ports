@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: data-dump
+version: '1.25'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Data::Dump-1.25
+tarball: Data-Dump-1.25.tar.gz
+url: https://www.cpan.org/authors/id/G/GA/GARU/Data-Dump-1.25.tar.gz
+md5: 9bd7131ef0441e1e0e001bf85e9fae31
+summary: Data::Dump provides pretty printing of data structures.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

@@ -1,0 +1,60 @@
+format: alps-port-v1
+name: qt
+version: 6.11.2
+page_kind: single_package
+section: x
+page: qt6
+title: Qt-6.11.2
+tarball: qt-everywhere-src-6.11.2.tar.xz
+url: https://download.qt.io/archive/qt/6.11/6.11.2/single/qt-everywhere-src-6.11.2.tar.xz
+md5: 669c1f3a41c37fdda389094882044d7a
+summary: Qt6 is a cross-platform application framework that is widely used for developing
+  application software with a graphical user interface (GUI) (in which cases Qt6 is
+  classified as a widget toolkit), and also used for developing non-GUI programs such
+  as command-line tools and consoles for servers.
+download_size: 972 MB
+disk_space: 48 GB (504 MB installed)
+sbu: 14 SBU (using parallelism=8)
+depends:
+  required:
+  - xorg-libraries
+  recommended:
+  - alsa-lib
+  - make-ca
+  - cups
+  - ffmpeg
+  - gst-plugins-base
+  - gst-plugins-bad
+  - harfbuzz
+  - icu
+  - libjpeg-turbo
+  - libinput
+  - libmng
+  - libpng
+  - tiff
+  - libxkbcommon
+  - mesa
+  - wayland
+  - xcb-utilities
+  ignore_for_order:
+  - cups
+  - ffmpeg
+  - gst-plugins-bad
+  - gst-plugins-base
+  - libxkbcommon
+  - mesa
+  - xcb-utilities
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 508000
+cycle_policy:
+  install_before:
+  - cups
+  - ffmpeg
+  - gst-plugins-bad
+  - gst-plugins-base
+  - libxkbcommon
+  - mesa
+  - xcb-utilities

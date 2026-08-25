@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: dtc
+version: 1.8.1
+page_kind: single_package
+section: general
+page: dtc
+title: dtc-1.8.1
+tarball: dtc-1.8.1.tar.xz
+url: https://kernel.org/pub/software/utils/dtc/dtc-1.8.1.tar.xz
+md5: 9753bdbf18763efef1f5ae8c0cecb5f6
+summary: The dtc package contains the Device Tree Compiler for working with device
+  tree source and binary files and also libfdt, a utility library for reading and
+  manipulating device trees in the binary format.
+download_size: 176 KB
+disk_space: 14 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 326000

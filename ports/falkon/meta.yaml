@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: falkon
+version: 26.04.3
+page_kind: single_package
+section: xsoft
+page: falkon
+title: falkon-26.04.3
+tarball: falkon-26.04.3.tar.xz
+url: https://download.kde.org/stable/release-service/26.04.3/src/falkon-26.04.3.tar.xz
+md5: a5e8b39bb071747f12a22b90a1a98fff
+summary: Falkon is a KDE web browser using the QtWebEngine rendering engine. It was
+  previously known as QupZilla. It aims to be a lightweight web browser available
+  through all major platforms.
+download_size: 2.6 MB
+disk_space: 166 MB
+sbu: 1.6 SBU (Using parallelism=4; add 0.1 SBU for tests)
+depends:
+  required:
+  - extra-cmake-modules
+  - kde-frameworks
+  - qtwebengine
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 726000

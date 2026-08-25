@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libaio
+version: 0.3.113
+page_kind: single_package
+section: general
+page: libaio
+title: libaio-0.3.113
+tarball: libaio-0.3.113.tar.gz
+url: https://releases.pagure.org/libaio/libaio-0.3.113.tar.gz
+md5: 7d5be185f20eeaae15e267419950aaf7
+summary: The libaio package is an asynchronous I/O facility ("async I/O", or "aio")
+  that has a richer API and capability set than the simple POSIX async I/O facility.
+  This library, libaio, provides the Linux-native API for async I/O. The POSIX async
+  I/O facility requires this library in order to provide kernel-accelerated async
+  I/O capabilities, as do applications which require the Linux-native async I/O A
+download_size: 52 KB
+disk_space: 1.1 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 132000

@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: gjs
+version: 1.88.1
+page_kind: single_package
+section: gnome
+page: gjs
+title: Gjs-1.88.1
+tarball: gjs-1.88.1.tar.xz
+url: https://download.gnome.org/sources/gjs/1.88/gjs-1.88.1.tar.xz
+md5: 851963b653cbcf8534dff8b9e719592e
+summary: Gjs is a set of Javascript bindings for GNOME.
+download_size: 788 KB
+disk_space: 336 MB (with tests)
+sbu: 0.3 SBU (with tests; with parallelism=4)
+depends:
+  required:
+  - cairo
+  - dbus
+  - glib
+  - spidermonkey-from-firefox
+  recommended:
+  - gtk
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 590000

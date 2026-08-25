@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: tidy-html5
+version: 5.8.0
+page_kind: single_package
+section: general
+page: tidy-html5
+title: tidy-html5-5.8.0
+tarball: tidy-html5-5.8.0.tar.gz
+url: https://github.com/htacg/tidy-html5/archive/5.8.0/tidy-html5-5.8.0.tar.gz
+md5: 0f6c55ef651e258adbe5750f555af50f
+summary: The Tidy HTML5 package contains a command line tool and libraries used to
+  read HTML, XHTML and XML files and write cleaned up markup. It detects and corrects
+  many common coding errors and strives to produce visually equivalent markup that
+  is both W3C compliant and compatible with most browsers.
+download_size: 992 KB
+disk_space: 11 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - cmake
+  recommended:
+  - libxslt
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/tidy-html5-5.8.0-cmake4_fixes-1.patch
+  filename: tidy-html5-5.8.0-cmake4_fixes-1.patch
+book_order: 272000

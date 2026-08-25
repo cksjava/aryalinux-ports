@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: iso-codes
+version: 4.20.1
+page_kind: single_package
+section: general
+page: iso-codes
+title: ISO Codes-4.20.1
+tarball: iso-codes-v4.20.1.tar.gz
+url: https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.20.1/iso-codes-v4.20.1.tar.gz
+md5: a8f16a62662ec13e55ca255a7c036ee3
+summary: The ISO Codes package contains a list of country, language and currency names
+  and it is used as a central database for accessing this data.
+download_size: 16 MB
+disk_space: 114 MB
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 266000

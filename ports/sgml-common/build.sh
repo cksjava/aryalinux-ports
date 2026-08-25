@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
+if [[ ${#_tops[@]} -ne 1 ]]; then
+  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
+  exit 1
+fi
+cd "${_tops[0]}"
+
+# --- commands from BLFS ---
+patch -Np1 -i ../sgml-common-0.6.3-manpage-1.patch
+autoreconf -f -i
+
+./configure --prefix=/usr --sysconfdir=/etc
+make
+
+make docdir=/usr/share/doc install
+
+install-catalog --add /etc/sgml/sgml-ent.cat \
+    /usr/share/sgml/sgml-iso-entities-8879.1986/catalog
+
+install-catalog --add /etc/sgml/sgml-docbook.cat \
+    /etc/sgml/sgml-ent.cat
+
+install-catalog --remove /etc/sgml/sgml-ent.cat \
+    /usr/share/sgml/sgml-iso-entities-8879.1986/catalog
+
+install-catalog --remove /etc/sgml/sgml-docbook.cat \
+    /etc/sgml/sgml-ent.cat

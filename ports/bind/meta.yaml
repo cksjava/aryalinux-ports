@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: bind
+version: 9.20.27
+page_kind: single_package
+section: server
+page: bind
+title: BIND-9.20.27
+tarball: bind-9.20.27.tar.xz
+url: https://ftp.isc.org/isc/bind9/9.20.27/bind-9.20.27.tar.xz
+md5: 0a05c630261429e9da8b012314507b05
+summary: The BIND package provides a DNS server and client utilities. If you are only
+  interested in the utilities, refer to the BIND Utilities-9.20.27.
+download_size: 5.6 MB
+disk_space: 157 MB (23 MB installed)
+sbu: 0.4 SBU (with parallelism=4; about 8 minutes somewhat processor independent,
+  to run the complete test suite)
+depends:
+  required:
+  - liburcu
+  - libuv
+  recommended:
+  - json-c
+  - libcap-2.78-with-pam
+  - nghttp2
+bootscripts: []
+systemd_units:
+- named
+provides: []
+conflicts: []
+book_order: 424000

@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: alien-build-plugin-download-gitlab
+version: '0.01'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Alien::Build::Plugin::Download::GitLab-0.01
+tarball: Alien-Build-Plugin-Download-GitLab-0.01.tar.gz
+url: https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Build-Plugin-Download-GitLab-0.01.tar.gz
+md5: ad1d815262ad7dd98b0a9b35ba2f05ef
+summary: Alien::Build::Plugin::Download::GitLab allows Alien::Build to download from
+  GitLab (in practice, this does not download if the required library is already installed
+  on the system).
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - alien-build
+  - uri
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Download
+  url: https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Build-Plugin-Download-GitLab-0.01.tar.gz
+  filename: Alien-Build-Plugin-Download-GitLab-0.01.tar.gz
+- label: Download
+  url: perl-deps.html#perl-alien-build
+  filename: perl-deps.html
+book_order: 340000

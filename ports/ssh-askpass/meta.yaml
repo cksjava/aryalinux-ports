@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: ssh-askpass
+version: 10.5p1
+page_kind: single_package
+section: postlfs
+page: ssh-askpass
+title: ssh-askpass-10.5p1
+tarball: openssh-10.5p1.tar.gz
+url: https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.5p1.tar.gz
+md5: a95119f402dfa0166c9dd1237239085c
+summary: The ssh-askpass is a generic executable name for many packages, with similar
+  names, that provide a interactive X service to grab password for packages requiring
+  administrative privileges to be run. It prompts the user with a window box where
+  the necessary password can be inserted. Here, we choose Damien Miller's package
+  distributed in the OpenSSH tarball.
+download_size: 1.9 MB
+disk_space: 11 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - gtk
+  - sudo
+  - xorg-libraries
+  - a-graphical-environment
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 61000

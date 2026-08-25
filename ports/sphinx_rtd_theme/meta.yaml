@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: sphinx_rtd_theme
+version: 3.1.0
+page_kind: python_module
+section: general
+page: python-modules
+title: Sphinx_rtd_theme-3.1.0
+tarball: sphinx_rtd_theme-3.1.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-3.1.0.tar.gz
+md5: ac4255e53e5bed61a6b48e70ca80607c
+summary: The sphinx_rtd_theme module is a Sphinx theme designed to provide a great
+  reader experience for documentation users on both desktop and mobile devices. This
+  theme is used primarily on Read the Docs but can work with any Sphinx project.
+download_size: 7.3 MB
+disk_space: 40 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required:
+  - sphinx
+  - sphinxcontrib-jquery
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

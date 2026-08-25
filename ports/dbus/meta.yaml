@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: dbus
+version: 1.16.2
+page_kind: single_package
+section: general
+page: dbus
+title: dbus-1.16.2
+tarball: dbus-1.16.2.tar.xz
+url: https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz
+md5: 97832e6f0a260936d28536e5349c22e5
+summary: Even though D-Bus was built in LFS, there are some features provided by the
+  package that other BLFS packages need, but their dependencies didn't fit into LFS.
+download_size: 1.1 MB
+disk_space: 25 MB (add 6 MB for tests)
+sbu: 0.3 SBU (add 0.4 SBU for tests)
+depends:
+  required: []
+  recommended:
+  - xorg-libraries
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 289000

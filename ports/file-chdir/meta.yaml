@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: file-chdir
+version: '0.1011'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: File::chdir-0.1011
+tarball: File-chdir-0.1011.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-chdir-0.1011.tar.gz
+md5: 932090f6c5f602301ae66c259de23ebb
+summary: File::chdir provides a more sensible way to change directories.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

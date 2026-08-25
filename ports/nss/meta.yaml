@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: nss
+version: '3.126'
+page_kind: single_package
+section: postlfs
+page: nss
+title: NSS-3.126
+tarball: nss-3.126.tar.gz
+url: https://archive.mozilla.org/pub/security/nss/releases/NSS_3_126_RTM/src/nss-3.126.tar.gz
+md5: 0ca322cec564a53ac5a59ce130d96f46
+summary: 'The Network Security Services (NSS) package is a set of libraries designed
+  to support cross-platform development of security-enabled client and server applications.
+  Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS
+  #11, PKCS #12, S/MIME, X.509 v3 certificates, and other security standards. This
+  is useful for implementing SSL and S/MIME or other Internet security st'
+download_size: 76 MB
+disk_space: 406 MB (with tests)
+sbu: 0.8 SBU (with parallelism=4, add 8.4 SBU for tests)
+depends:
+  required:
+  - nspr
+  recommended:
+  - p11-kit
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/nss-standalone-1.patch
+  filename: nss-standalone-1.patch
+book_order: 55000

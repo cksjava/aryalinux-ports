@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: breeze-icons
+version: 6.29.0
+page_kind: single_package
+section: x
+page: breeze-icons
+title: breeze-icons-6.29.0
+tarball: breeze-icons-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/breeze-icons-6.29.0.tar.xz
+md5: 04a8c3e8651fdf4dead94221a3451f93
+summary: The Breeze Icons package contains the default icons for KDE Plasma applications,
+  but it can be used for other window environments.
+download_size: 2.0 MB
+disk_space: 141 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - extra-cmake-modules
+  - qt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 528000

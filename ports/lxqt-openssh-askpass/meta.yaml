@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: lxqt-openssh-askpass
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-openssh-askpass
+title: lxqt-openssh-askpass-2.4.0
+tarball: lxqt-openssh-askpass-2.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-openssh-askpass/releases/download/2.4.0/lxqt-openssh-askpass-2.4.0.tar.xz
+md5: 33cc903f04f9bf36b40074dd6c261e15
+summary: The lxqt-openssh-askpass package is a GUI to query credentials on behalf
+  of other programs.
+download_size: 20 KB
+disk_space: 2.7 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - liblxqt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 705000

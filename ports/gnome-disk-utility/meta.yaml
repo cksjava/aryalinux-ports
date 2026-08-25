@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: gnome-disk-utility
+version: '46.1'
+page_kind: single_package
+section: gnome
+page: gnome-disk-utility
+title: gnome-disk-utility-46.1
+tarball: gnome-disk-utility-46.1.tar.xz
+url: https://download.gnome.org/sources/gnome-disk-utility/46/gnome-disk-utility-46.1.tar.xz
+md5: bfc4d0cfbf186ba5bd487f3fddbf07d2
+summary: The GNOME Disk Utility package provides applications used for dealing with
+  storage devices.
+download_size: 1.5 MB
+disk_space: 29 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - gnome-settings-daemon
+  - itstool
+  - libdvdread
+  - libhandy
+  - libpwquality
+  - libsecret
+  - udisks
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 632000

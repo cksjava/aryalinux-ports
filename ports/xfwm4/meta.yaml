@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: xfwm4
+version: 4.20.0
+page_kind: single_package
+section: xfce
+page: xfwm4
+title: Xfwm4-4.20.0
+tarball: xfwm4-4.20.0.tar.bz2
+url: https://archive.xfce.org/src/xfce/xfwm4/4.20/xfwm4-4.20.0.tar.bz2
+md5: e74cfb30b6e9ebf9cbaac0827dd534e3
+summary: ''
+download_size: 1.4 MB
+disk_space: 26 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - libwnck
+  - libxfce4ui
+  recommended:
+  - startup-notification
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 663000

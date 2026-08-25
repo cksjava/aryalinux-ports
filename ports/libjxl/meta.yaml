@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: libjxl
+version: 0.12.0
+page_kind: single_package
+section: general
+page: libjxl
+title: libjxl-0.12.0
+tarball: libjxl-0.12.0.tar.gz
+url: https://github.com/libjxl/libjxl/archive/v0.12.0/libjxl-0.12.0.tar.gz
+md5: a0fd3ac7b474525dadb99bbcb5d814f9
+summary: The libjxl package contains the reference implementation of the JPEG XL image
+  format.
+download_size: 1.7 MB
+disk_space: 67 MB
+sbu: 1.0 SBU (with parallelism=4)
+depends:
+  required:
+  - brotli
+  - cmake
+  - giflib
+  - little-cms
+  - libjpeg-turbo
+  - libpng
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 230000

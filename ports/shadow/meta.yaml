@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: shadow
+version: 4.20.2
+page_kind: single_package
+section: postlfs
+page: shadow
+title: Shadow-4.20.2
+tarball: shadow-4.20.2.tar.xz
+url: https://github.com/shadow-maint/shadow/releases/download/4.20.2/shadow-4.20.2.tar.xz
+md5: f52e717bd330818c67bd57c897ec5a8e
+summary: Shadow was indeed installed in LFS and there is no reason to reinstall it
+  unless you installed Linux-PAM after your LFS system was completed. With Linux-PAM
+  installed, reinstalling Shadow will allow programs such as login and su to utilize
+  PAM.
+download_size: 2.2 MB
+disk_space: 100 MB
+sbu: 0.4 SBU
+depends:
+  required:
+  - linux-pam
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 60000

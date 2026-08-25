@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: wiki
+version: '0'
+page_kind: configuration
+section: introduction
+page: wiki
+title: Editor Notes
+tarball: ''
+url: ''
+md5: ''
+summary: The BLFS Project has created a Wiki for editors to comment on pages and instructions
+  at https://wiki.linuxfromscratch.org/blfs/wiki.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 13000

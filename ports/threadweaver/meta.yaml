@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: threadweaver
+version: 6.29.0
+page_kind: kde_batch
+section: kde
+page: frameworks6
+title: threadweaver-6.29.0
+tarball: threadweaver-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/threadweaver-6.29.0.tar.xz
+md5: 3e14a2b5cb689cc9583f4d9838e2c1e2
+summary: KDE batch package from frameworks6.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 21
+book_order: 548022

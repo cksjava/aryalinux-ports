@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: la-files
+version: '0'
+page_kind: configuration
+section: introduction
+page: la-files
+title: About Libtool Archive (.la) files
+tarball: ''
+url: ''
+md5: ''
+summary: In LFS and BLFS, many packages use an internally shipped libtool copy to
+  build on a variety of Unix platforms. This includes platforms such as AIX, Solaris,
+  IRIX, HP-UX, and Cygwin as well as Linux. The origins of this tool are quite dated.
+  It was intended to manage libraries on systems with less advanced capabilities than
+  a modern Linux system.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 22000

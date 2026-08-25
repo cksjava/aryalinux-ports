@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: apache-ant
+version: 1.10.17
+page_kind: single_package
+section: general
+page: apache-ant
+title: apache-ant-1.10.17
+tarball: apache-ant-1.10.17-src.tar.xz
+url: https://archive.apache.org/dist/ant/source/apache-ant-1.10.17-src.tar.xz
+md5: 218213b1db69824923c2439461213527
+summary: The Apache Ant package is a Java-based build tool. In theory, it is like
+  the make command, but without make's wrinkles. Ant is different. Instead of a model
+  that is extended with shell-based commands, Ant is extended using Java classes.
+  Instead of writing shell commands, the configuration files are XML-based, calling
+  out a target tree that executes various tasks. Each task is run by an object that
+download_size: 3.7 MB
+disk_space: 328 MB
+sbu: 0.2 SBU (excluding download time)
+depends:
+  required:
+  - java-binary
+  - openjdk
+  - glib
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 362000

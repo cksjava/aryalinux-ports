@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: io-socket-ssl
+version: '2.099'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: IO::Socket::SSL-2.099
+tarball: IO-Socket-SSL-2.099.tar.gz
+url: https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.099.tar.gz
+md5: 3b5e1886ae3204b8f8d354e333a047eb
+summary: IO::Socket::SSL makes using SSL/TLS much easier by wrapping the necessary
+  functionality into the familiar IO::Socket interface and providing secure defaults
+  whenever possible.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - make-ca
+  - net-ssleay
+  recommended:
+  - uri
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

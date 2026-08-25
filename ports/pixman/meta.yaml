@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: pixman
+version: 0.46.4
+page_kind: single_package
+section: general
+page: pixman
+title: Pixman-0.46.4
+tarball: pixman-0.46.4.tar.gz
+url: https://www.cairographics.org/releases/pixman-0.46.4.tar.gz
+md5: c08173c8e1d2cc79428d931c13ffda59
+summary: The Pixman package contains a library that provides low-level pixel manipulation
+  features such as image compositing and trapezoid rasterization.
+download_size: 808 KB
+disk_space: 28 MB (With tests)
+sbu: 0.1 SBU (Using parallelism=4; with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 245000

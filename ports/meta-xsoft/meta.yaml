@@ -1,0 +1,37 @@
+format: alps-port-v1
+name: meta-xsoft
+version: '1'
+page_kind: meta
+section: meta
+page: meta-xsoft
+title: meta-xsoft
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: install BLFS ports from section ''xsoft'''
+depends:
+  required: []
+  recommended: []
+members:
+- balsa
+- epiphany
+- falkon
+- feh
+- firefox
+- fontforge
+- freerdp
+- gimp
+- gnumeric
+- gparted
+- inkscape
+- rxvt-unicode
+- seamonkey
+- thunderbird
+- tigervnc
+- transmission
+- xarchiver
+- xdg-utils
+- xscreensaver
+bootscripts: []
+provides: []
+conflicts: []

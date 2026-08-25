@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: file-which
+version: '1.27'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: File::Which-1.27
+tarball: File-Which-1.27.tar.gz
+url: https://www.cpan.org/authors/id/P/PL/PLICEASE/File-Which-1.27.tar.gz
+md5: d5c9154262b93398f0750ec364207639
+summary: File::Which provides a portable implementation of the 'which' utility.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

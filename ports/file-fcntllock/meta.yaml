@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: file-fcntllock
+version: '0.22'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: File::FcntlLock-0.22
+tarball: File-FcntlLock-0.22.tar.gz
+url: https://www.cpan.org/authors/id/J/JT/JTT/File-FcntlLock-0.22.tar.gz
+md5: 579698d735d864ee403674f1175f789d
+summary: File::FcntlLock is a module to do file locking in an object oriented fashion
+  using the fcntl(2) system call. This allows locks on parts of a file as well as
+  on the whole file and overcomes some known problems with flock(2), on which which
+  Perl's flock() function is based per default.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

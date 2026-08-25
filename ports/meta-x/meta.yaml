@@ -1,0 +1,51 @@
+format: alps-port-v1
+name: meta-x
+version: '1'
+page_kind: meta
+section: meta
+page: meta-x
+title: meta-x
+tarball: ''
+url: ''
+md5: ''
+summary: "Slim X Window System: Xorg libs/server/drivers, twm, xterm, xinit (not GTK/Qt/GNOME/Wayland\
+  \ DEs \u2014 see meta-x-all / meta-gnome)"
+depends:
+  required: []
+  recommended: []
+members:
+- util-macros
+- xorgproto
+- libxau
+- libxdmcp
+- xcb-proto
+- libxcb
+- x7lib
+- libxcvt
+- xcb-util
+- xcb-utilities
+- libdrm
+- mesa
+- libepoxy
+- xbitmaps
+- x7app
+- luit
+- xcursor-themes
+- x7font
+- xkeyboardconfig
+- xorg-server
+- mtdev
+- libevdev
+- libinput
+- xorg-evdev-driver
+- xorg-libinput-driver
+- xorg-synaptics-driver
+- xorg-wacom-driver
+- twm
+- xterm
+- xclock
+- xinit
+- x7legacy
+bootscripts: []
+provides: []
+conflicts: []

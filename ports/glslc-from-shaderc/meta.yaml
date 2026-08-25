@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: glslc-from-shaderc
+version: '2026.3'
+page_kind: single_package
+section: general
+page: glslc
+title: glslc from shaderc-2026.3
+tarball: shaderc-2026.3.tar.gz
+url: https://github.com/google/shaderc/archive/v2026.3/shaderc-2026.3.tar.gz
+md5: 5ce02d42b02a77e6165dbc476d1a334c
+summary: The glslc program is Google's command line compiler for OpenGL Shading Language/High
+  Level Shading Language (GLSL/HLSL) to Standard Portable Intermediate Representation
+  (SPIR-V).
+download_size: 228 KB
+disk_space: 3.9 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - cmake
+  - glslang
+  - spirv-tools
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 259000

@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: plasma
+version: '0'
+page_kind: configuration
+section: kde
+page: plasma
+title: KDE Plasma
+tarball: ''
+url: ''
+md5: ''
+summary: KDE Plasma is a desktop environment built using KDE Frameworks and QML which
+  runs on top of a fully hardware accelerated graphics stack using Qt, QtQuick, and
+  an OpenGL(-ES) scenegraph.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 569000

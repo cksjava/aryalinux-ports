@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: gpgme
+version: 2.1.2
+page_kind: single_package
+section: postlfs
+page: gpgme
+title: gpgme-2.1.2
+tarball: gpgme-2.1.2.tar.bz2
+url: https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-2.1.2.tar.bz2
+md5: 58448073da13a22e878adfb22a988d4d
+summary: The gpgme package is a C library that allows cryptography support to be added
+  to a program. It is designed to make access to public key crypto engines like GnuPG
+  or GpgSM easier for applications. gpgme provides a high-level crypto API for encryption,
+  decryption, signing, signature verification and key management.
+download_size: 1.4 MB
+disk_space: 29 MB (with tests)
+sbu: 0.2 SBU (with tests and parallelism=4)
+depends:
+  required:
+  - libassuan
+  recommended:
+  - gnupg
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 45000

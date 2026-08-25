@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: sphinxcontrib-jquery
+version: '4.1'
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Sphinxcontrib-jquery-4.1
+tarball: sphinxcontrib-jquery-4.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jquery/sphinxcontrib-jquery-4.1.tar.gz
+md5: 46ea52845b17343ed6c61e6963fb265d
+summary: The Sphinxcontrib-jquery package is a Sphinx extension which includes jQuery
+  on newer Sphinx releases.
+download_size: 120 KB
+disk_space: 552 KB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - sphinx
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

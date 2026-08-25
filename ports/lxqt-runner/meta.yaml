@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: lxqt-runner
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-runner
+title: lxqt-runner-2.4.0
+tarball: lxqt-runner-2.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-runner/releases/download/2.4.0/lxqt-runner-2.4.0.tar.xz
+md5: 9ceae166db36448dfbc5825434c2dc08
+summary: The lxqt-runner package provides a tool used to launch programs quickly by
+  typing their names.
+download_size: 232 KB
+disk_space: 6.4 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - lxqt-globalkeys
+  - kwindowsystem-6.29.0-for-lxqt
+  - muparser
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 698000

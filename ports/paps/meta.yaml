@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: paps
+version: 0.8.0
+page_kind: single_package
+section: pst
+page: paps
+title: paps-0.8.0
+tarball: paps-0.8.0.tar.gz
+url: https://github.com/dov/paps/releases/download/v0.8.0/paps-0.8.0.tar.gz
+md5: 6bd661b8fd224adc3343a91e6521a4f2
+summary: paps is a text to PostScript converter that works through Pango. Its input
+  is a UTF-8 encoded text file and it outputs vectorized PostScript. It may be used
+  for printing any complex script supported by Pango.
+download_size: 220 KB
+disk_space: 4.0 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - fmt
+  - intltool
+  - pango
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/paps-0.8.0-fmt_fix-1.patch
+  filename: paps-0.8.0-fmt_fix-1.patch
+book_order: 863000

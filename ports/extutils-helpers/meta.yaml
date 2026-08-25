@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: extutils-helpers
+version: '0.028'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: ExtUtils::Helpers-0.028
+tarball: ExtUtils-Helpers-0.028.tar.gz
+url: https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-Helpers-0.028.tar.gz
+md5: 0687f20ac896a7d01219646908ccdf89
+summary: ExtUtils::Helpers contains various portability utilities for module builders.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

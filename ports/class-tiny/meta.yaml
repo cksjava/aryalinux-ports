@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: class-tiny
+version: '1.008'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Class::Tiny-1.008
+tarball: Class-Tiny-1.008.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Class-Tiny-1.008.tar.gz
+md5: e3ccfae5f64d443e7e1110be964d7202
+summary: Class::Tiny offers a minimalist class construction kit.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

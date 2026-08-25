@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: regexp-common
+version: '2024080801'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Regexp::Common-2024080801
+tarball: Regexp-Common-2024080801.tar.gz
+url: https://www.cpan.org/authors/id/A/AB/ABIGAIL/Regexp-Common-2024080801.tar.gz
+md5: 73d4b4b2a0690f9ab573d54a69c22aee
+summary: Regexp::Common provides commonly requested regular expressions.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

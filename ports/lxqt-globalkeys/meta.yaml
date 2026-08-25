@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: lxqt-globalkeys
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-globalkeys
+title: lxqt-globalkeys-2.4.0
+tarball: lxqt-globalkeys-2.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-globalkeys/releases/download/2.4.0/lxqt-globalkeys-2.4.0.tar.xz
+md5: bc6d90bfaed073da2fa9c8aa976e7f79
+summary: The lxqt-globalkeys package contains a daemon used to register global keyboard
+  shortcuts as well as an editor for keyboard shortcuts.
+download_size: 80 KB
+disk_space: 12 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - liblxqt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 693000

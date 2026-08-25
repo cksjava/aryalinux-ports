@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: highlight
+version: '4.21'
+page_kind: single_package
+section: general
+page: highlight
+title: Highlight-4.21
+tarball: highlight-4.21.tar.bz2
+url: http://www.andre-simon.de/zip/highlight-4.21.tar.bz2
+md5: 7012cb264294e0895909b7a6a00601ef
+summary: Highlight is a utility that converts source code to formatted text with syntax
+  highlighting.
+download_size: 1.5 MB
+disk_space: 34 MB (with gui)
+sbu: 0.2 SBU (Using parallelism=4; with gui)
+depends:
+  required:
+  - boost
+  - lua
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 262000

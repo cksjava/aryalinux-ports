@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: number-compare
+version: '0.03'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Number::Compare-0.03
+tarball: Number-Compare-0.03.tar.gz
+url: https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Number-Compare-0.03.tar.gz
+md5: ded4085a8fc96328742785574ca65208
+summary: Number::Compare compiles a simple comparison to an anonymous subroutine,
+  which you can call with a value to be tested against. It understands IEC standard
+  magnitudes (k, ki, m, mi, g, gi).
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

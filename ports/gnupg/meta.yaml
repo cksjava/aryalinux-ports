@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: gnupg
+version: 2.5.21
+page_kind: single_package
+section: postlfs
+page: gnupg
+title: GnuPG-2.5.21
+tarball: gnupg-2.5.21.tar.bz2
+url: https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.21.tar.bz2
+md5: 39311d55044c9548b5eb8f53466a86b5
+summary: The GnuPG package is GNU's tool for secure communication and data storage.
+  It can be used to encrypt data and to create digital signatures. It includes an
+  advanced key management facility and is compliant with the proposed OpenPGP Internet
+  standard as described in RFC2440 and the S/MIME standard as described by several
+  RFCs. GnuPG 2 is the stable version of GnuPG integrating support for OpenPGP an
+download_size: 8.0 MB
+disk_space: 181 MB (with tests)
+sbu: 0.7 SBU (with tests; both using parallelism=4)
+depends:
+  required:
+  - libassuan
+  - libgcrypt
+  - libksba
+  - npth
+  - openldap
+  recommended:
+  - gnutls
+  - pinentry
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 43000

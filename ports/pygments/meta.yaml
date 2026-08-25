@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: pygments
+version: 2.20.0
+page_kind: python_module
+section: general
+page: python-modules
+title: Pygments-2.20.0
+tarball: pygments-2.20.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/P/Pygments/pygments-2.20.0.tar.gz
+md5: 358297d0a1db8e4beff8eebc0620960e
+summary: Pygments is a general syntax highlighter written in Python, for more than
+  300 languages.
+download_size: 4.8 MB
+disk_space: 84 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - hatchling
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

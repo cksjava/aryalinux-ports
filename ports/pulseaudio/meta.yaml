@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: pulseaudio
+version: '17.0'
+page_kind: single_package
+section: multimedia
+page: pulseaudio
+title: PulseAudio-17.0
+tarball: pulseaudio-17.0.tar.xz
+url: https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-17.0.tar.xz
+md5: c4a3596a26ff4b9dcd0c394dd1d4f8ee
+summary: PulseAudio is a sound system for POSIX OSes, meaning that it is a proxy for
+  sound applications. It allows you to do advanced operations on your sound data as
+  it passes between your application and your hardware. Operations such as transferring
+  the audio to a different machine, changing the sample format or channel count, and
+  mixing several sounds into one are easily achieved using a sound server.
+download_size: 1.5 MB
+disk_space: 42 MB (with tests)
+sbu: 0.2 SBU (Using parallelism=4; add 0.2 SBU for tests)
+depends:
+  required:
+  - libsndfile
+  recommended:
+  - alsa-lib
+  - dbus
+  - glib
+  - speex
+  - xml-parser
+  - xorg-libraries
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 795000

@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: imlib2
+version: 1.12.6
+page_kind: single_package
+section: x
+page: imlib2
+title: imlib2-1.12.6
+tarball: imlib2-1.12.6.tar.xz
+url: https://downloads.sourceforge.net/enlightenment/imlib2-1.12.6.tar.xz
+md5: 8c66b4dabc52225562324be5a994accf
+summary: imlib2 is a graphics library for fast file loading, saving, rendering and
+  manipulation.
+download_size: 828 KB
+disk_space: 20 MB (with docs)
+sbu: 0.2 SBU (with docs)
+depends:
+  required:
+  - xorg-libraries
+  recommended:
+  - giflib
+  - librsvg
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 494000

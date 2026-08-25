@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: version
+version: '0'
+page_kind: configuration
+section: introduction
+page: version
+title: Book Version
+tarball: ''
+url: ''
+md5: ''
+summary: This is BLFS-BOOK version r13.0-1344 dated August 24th, 2026. This is the
+  systemd branch of the BLFS book, currently targeting the LFS systemd book. For development
+  versions, if this version is older than a month, it's likely that your mirror hasn't
+  been synchronized recently and a newer version is probably available for download
+  or viewing. Check one of the mirror sites at https://www.linuxfromsc
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 8000

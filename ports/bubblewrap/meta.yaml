@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: bubblewrap
+version: 0.11.2
+page_kind: single_package
+section: general
+page: bubblewrap
+title: Bubblewrap-0.11.2
+tarball: bubblewrap-0.11.2.tar.xz
+url: https://github.com/containers/bubblewrap/releases/download/v0.11.2/bubblewrap-0.11.2.tar.xz
+md5: 6376255e2e505100e01b20c2dafa7faf
+summary: Bubblewrap is a setuid implementation of user namespaces, or sandboxing,
+  that provides access to a subset of kernel user namespace features. Bubblewrap allows
+  user owned processes to run in an isolated environment with limited access to the
+  underlying filesystem.
+download_size: 116 KB
+disk_space: 3.8 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 285000

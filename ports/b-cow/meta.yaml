@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: b-cow
+version: '0.007'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: B::COW-0.007
+tarball: B-COW-0.007.tar.gz
+url: https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/B-COW-0.007.tar.gz
+md5: 7afc46f19e6f906e2ba5769b21fca5ff
+summary: B::COW provides additional helpers for the B core module to check Copy On
+  Write.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

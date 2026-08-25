@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libburn
+version: 1.5.8
+page_kind: single_package
+section: multimedia
+page: libburn
+title: libburn-1.5.8
+tarball: libburn-1.5.8.tar.gz
+url: https://files.libburnia-project.org/releases/libburn-1.5.8.tar.gz
+md5: 4c8c786e88eb3e9f7c1d0ddc4d4a39e7
+summary: 'libburn is a library for writing preformatted data onto optical media: CD,
+  DVD and BD (Blu-Ray).'
+download_size: 984 KB
+disk_space: 22 MB
+sbu: 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 828000

@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: libsamplerate
+version: 0.2.2
+page_kind: single_package
+section: multimedia
+page: libsamplerate
+title: libsamplerate-0.2.2
+tarball: libsamplerate-0.2.2.tar.xz
+url: https://github.com/libsndfile/libsamplerate/releases/download/0.2.2/libsamplerate-0.2.2.tar.xz
+md5: 97c010fc25156c33cddc272c1935afab
+summary: libsamplerate is a sample rate converter for audio.
+download_size: 3.2 MB
+disk_space: 15 MB (add 2 MB for tests)
+sbu: less than 0.1 SBU (add 0.3 SBU for tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 787000

@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
+if [[ ${#_tops[@]} -ne 1 ]]; then
+  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
+  exit 1
+fi
+cd "${_tops[0]}"
+
+# --- commands from BLFS ---
+patch -Np1 -i ../opencv-4.13.0-ffmpeg-9.0.patch
+
+tar -xf ../opencv_contrib-4.13.0.tar.gz
+
+mkdir build
+cd    build
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr      \
+      -D CMAKE_BUILD_TYPE=Release       \
+      -D ENABLE_CXX11=ON                \
+      -D BUILD_PERF_TESTS=OFF           \
+      -D WITH_XINE=ON                   \
+      -D BUILD_TESTS=OFF                \
+      -D ENABLE_PRECOMPILED_HEADERS=OFF \
+      -D CMAKE_SKIP_INSTALL_RPATH=ON    \
+      -D BUILD_WITH_DEBUG_INFO=OFF      \
+      -D OPENCV_GENERATE_PKGCONFIG=ON   \
+      -W no-author  ..
+make
+
+make install

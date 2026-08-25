@@ -1,0 +1,37 @@
+format: alps-port-v1
+name: firefox
+version: 153.1.0esr
+page_kind: single_package
+section: xsoft
+page: firefox
+title: Firefox-153.1.0esr
+tarball: firefox-153.1.0esr.source.tar.xz
+url: https://archive.mozilla.org/pub/firefox/releases/153.1.0esr/source/firefox-153.1.0esr.source.tar.xz
+md5: 0a7c52154f2c65d6a8510f79812c306e
+summary: Firefox is a stand-alone browser based on the Mozilla codebase.
+download_size: 765 MB
+disk_space: 8.9 GB (268 MB installed) without tests
+sbu: 15 SBU using -j8, without tests
+depends:
+  required:
+  - cbindgen
+  - gtk
+  - libarchive
+  - llvm
+  - nodejs
+  - pulseaudio
+  - alsa-lib
+  - startup-notification
+  recommended:
+  - dav1d
+  - icu
+  - libevent
+  - libvpx
+  - libwebp
+  - nasm
+  - nss
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 727000

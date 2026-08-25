@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: gnome-terminal
+version: 3.60.0
+page_kind: single_package
+section: gnome
+page: gnome-terminal
+title: gnome-terminal-3.60.0
+tarball: gnome-terminal-3.60.0.tar.gz
+url: https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.60.0/gnome-terminal-3.60.0.tar.gz
+md5: fed6d01626aa09f320e806d4347d4fe6
+summary: The GNOME Terminal package contains the terminal emulator for GNOME Desktop.
+download_size: 2.9 MB
+disk_space: 33 MB
+sbu: 0.2 SBU (With tests)
+depends:
+  required:
+  - dconf
+  - gnome-shell
+  - gsettings-desktop-schemas
+  - itstool
+  - libhandy
+  - vte
+  recommended:
+  - nautilus
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 638000

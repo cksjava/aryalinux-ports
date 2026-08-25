@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: encode-hanextra
+version: '0.23'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Encode::HanExtra-0.23
+tarball: Encode-HanExtra-0.23.tar.gz
+url: https://www.cpan.org/authors/id/A/AU/AUDREYT/Encode-HanExtra-0.23.tar.gz
+md5: e1d3bc32c1c8ee304235a06fbcd5d5a4
+summary: The Encode::HanExtra module provides extra sets of Chinese Encodings which
+  are not included in the core Encode module because of size issues.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: lxqt-kwindowsystem
+version: 6.29.0
+page_kind: single_package
+section: lxqt
+page: lxqt-kwindowsystem
+title: kwindowsystem-6.29.0 for lxqt
+tarball: kwindowsystem-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/kwindowsystem-6.29.0.tar.xz
+md5: d996373ba3aeda5299c92d9b9f05244a
+summary: The kwindowsystem provides information about, and allows interaction with,
+  the windowing system. It provides a high level API that is windowing system independent
+  and has platform specific implementations.
+download_size: 2.3 MB
+disk_space: 74 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - extra-cmake-modules
+  - plasma-wayland-protocols
+  - qt
+  - xorg-libraries
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 675000

@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: module-implementation
+version: '0.09'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Module::Implementation-0.09
+tarball: Module-Implementation-0.09.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Module-Implementation-0.09.tar.gz
+md5: 52e3fe0ca6b1eff0488d59b7aacc0667
+summary: Module::Implementation loads one of several alternate underlying implementations
+  of a module (e.g. eXternal Subroutine or pure Perl, or an implementation for a given
+  OS).
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - module-runtime
+  recommended:
+  - test-fatal
+  - test-requires
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

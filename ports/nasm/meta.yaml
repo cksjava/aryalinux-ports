@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: nasm
+version: '3.02'
+page_kind: single_package
+section: general
+page: nasm
+title: NASM-3.02
+tarball: nasm-3.02.tar.xz
+url: https://www.nasm.us/pub/nasm/releasebuilds/3.02/nasm-3.02.tar.xz
+md5: 31ba022fff8de3065b5bc5ad5559188c
+summary: NASM (Netwide Assembler) is an 80x86 assembler designed for portability and
+  modularity. It includes a disassembler as well.
+download_size: 1.5 MB
+disk_space: 72 MB
+sbu: 0.2 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 337000

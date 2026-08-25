@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: recommonmark
+version: 0.7.1
+page_kind: python_module
+section: general
+page: python-modules
+title: Recommonmark-0.7.1
+tarball: recommonmark-0.7.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-0.7.1.tar.gz
+md5: 3c550a76eb62006bf007843a9f1805bb
+summary: Recommonmark is a docutils-compatibility bridge to CommonMark. It allows
+  writing CommonMark inside of Docutils and Sphinx projects. Recommonmark is now deprecated
+  in favor of MyST-Parser. Unfortunately, libinput-1.31.3 depends on this module.
+download_size: 34 KB
+disk_space: 680 KB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required:
+  - commonmark
+  - sphinx
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

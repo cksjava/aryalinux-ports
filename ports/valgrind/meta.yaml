@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: valgrind
+version: 3.27.1
+page_kind: single_package
+section: general
+page: valgrind
+title: Valgrind-3.27.1
+tarball: valgrind-3.27.1.tar.bz2
+url: https://sourceware.org/pub/valgrind/valgrind-3.27.1.tar.bz2
+md5: 9b819b1aa88fc5936373fc624aa75723
+summary: Valgrind is an instrumentation framework for building dynamic analysis tools.
+  There are Valgrind tools that can automatically detect many memory management and
+  threading bugs, and profile programs in detail. Valgrind can also be used to build
+  new tools.
+download_size: 17 MB
+disk_space: 421 MB (add 107 MB for tests)
+sbu: 0.5 SBU (add 7.6 SBU for tests; both using parallelism=4)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 357000

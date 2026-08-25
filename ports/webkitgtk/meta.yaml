@@ -1,0 +1,46 @@
+format: alps-port-v1
+name: webkitgtk
+version: 2.52.5
+page_kind: single_package
+section: x
+page: webkitgtk
+title: WebKitGTK-2.52.5
+tarball: webkitgtk-2.52.5.tar.xz
+url: https://webkitgtk.org/releases/webkitgtk-2.52.5.tar.xz
+md5: 84bddd5381f3a518c7caac66ad98646e
+summary: The WebKitGTK package is a port of the portable web rendering engine WebKit
+  to the GTK-3 and GTK-4 platforms.
+download_size: 66 MB
+disk_space: 1.4 GB (193 MB installed, add 191 MB for GTK-4)
+sbu: 23 SBU (for GTK-3; add 23 SBU for GTK-4; both using parallelism=8)
+depends:
+  required:
+  - cairo
+  - cmake
+  - gst-plugins-base
+  - gtk
+  - icu
+  - little-cms
+  - libgudev
+  - libsecret
+  - libsoup
+  - libtasn1
+  - libwebp
+  - mesa
+  - openjpeg
+  - ruby
+  - which
+  recommended:
+  - bubblewrap
+  - enchant
+  - geoclue
+  - glib
+  - hicolor-icon-theme
+  - libjxl
+  - libseccomp
+  - xdg-dbus-proxy
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 513000

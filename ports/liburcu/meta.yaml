@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: liburcu
+version: 0.15.6
+page_kind: single_package
+section: general
+page: liburcu
+title: liburcu-0.15.6
+tarball: userspace-rcu-0.15.6.tar.bz2
+url: https://lttng.org/files/urcu/userspace-rcu-0.15.6.tar.bz2
+md5: 08ad35d135f3797d572bc2aa9129abf5
+summary: The userspace-rcu package provides a set of userspace RCU (read-copy-update)
+  libraries. These data synchronization libraries provide read-side access which scales
+  linearly with the number of cores. It does so by allowing multiples copies of a
+  given data structure to live at the same time, and by monitoring the data structure
+  accesses to detect grace periods after which memory reclamation is possib
+download_size: 672 KB
+disk_space: 26 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 170000

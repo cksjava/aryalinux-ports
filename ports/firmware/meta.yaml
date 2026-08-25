@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: firmware
+version: '0'
+page_kind: configuration
+section: postlfs
+page: firmware
+title: About Firmware
+tarball: ''
+url: ''
+md5: ''
+summary: On some recent PCs it can be necessary, or desirable, to load firmware to
+  make them work at their best. The kernel or kernel drivers look for firmware images
+  in /lib/firmware. But in LFS /lib is a symlink to usr/lib, so the directory containing
+  the firmware files is actually /usr/lib/firmware.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 30000

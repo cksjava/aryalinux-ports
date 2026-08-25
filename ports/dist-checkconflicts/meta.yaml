@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: dist-checkconflicts
+version: '0.11'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Dist::CheckConflicts-0.11
+tarball: Dist-CheckConflicts-0.11.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DO/DOY/Dist-CheckConflicts-0.11.tar.gz
+md5: c8725a92b9169708b0f63036812070f2
+summary: Dist::CheckConflicts declares version conflicts for a distribution, to support
+  post-install updates of dependent distributions.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - module-runtime
+  recommended:
+  - test-fatal
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

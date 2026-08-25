@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: gnome-menus
+version: 3.38.1
+page_kind: single_package
+section: gnome
+page: gnome-menus
+title: gnome-menus-3.38.1
+tarball: gnome-menus-3.38.1.tar.xz
+url: https://download.gnome.org/sources/gnome-menus/3.38/gnome-menus-3.38.1.tar.xz
+md5: bd89f4013689edf35a039ceb1a1b7c39
+summary: The GNOME Menus package contains an implementation of the draft Desktop Menu
+  Specification from freedesktop.org. It also contains the GNOME menu layout configuration
+  files and .directory files.
+download_size: 464 KB
+disk_space: 8.3 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - glib
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 593000

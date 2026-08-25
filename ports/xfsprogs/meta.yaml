@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: xfsprogs
+version: 7.1.1
+page_kind: single_package
+section: postlfs
+page: xfsprogs
+title: xfsprogs-7.1.1
+tarball: xfsprogs-7.1.1.tar.xz
+url: https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-7.1.1.tar.xz
+md5: befa97b62b635a1817db666806d40411
+summary: The xfsprogs package contains administration and debugging tools for the
+  XFS file system.
+download_size: 1.5 MB
+disk_space: 74 MB
+sbu: 0.3 SBU (Using parallelism=4)
+depends:
+  required:
+  - inih
+  - liburcu
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 80000

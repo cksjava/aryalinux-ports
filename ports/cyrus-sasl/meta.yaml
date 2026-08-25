@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: cyrus-sasl
+version: 2.1.28
+page_kind: single_package
+section: postlfs
+page: cyrus-sasl
+title: Cyrus SASL-2.1.28
+tarball: cyrus-sasl-2.1.28.tar.gz
+url: https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz
+md5: 6f228a692516f5318a64505b46966cfa
+summary: The Cyrus SASL package contains a Simple Authentication and Security Layer
+  implementation, a method for adding authentication support to connection-based protocols.
+  To use SASL, a protocol includes a command for identifying and authenticating a
+  user to a server and for optionally negotiating protection of subsequent protocol
+  interactions. If its use is negotiated, a security layer is inserted betw
+download_size: 3.9 MB
+disk_space: 28 MB
+sbu: 0.2 SBU
+depends:
+  required: []
+  recommended:
+  - lmdb
+bootscripts: []
+systemd_units:
+- saslauthd
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+  filename: cyrus-sasl-2.1.28-gcc15_fixes-1.patch
+book_order: 42000

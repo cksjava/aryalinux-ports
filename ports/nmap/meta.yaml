@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: nmap
+version: '7.991'
+page_kind: single_package
+section: basicnet
+page: nmap
+title: Nmap-7.991
+tarball: nmap-7.991.tar.bz2
+url: https://nmap.org/dist/nmap-7.991.tar.bz2
+md5: a689503c1b7851be8aba804eae414b27
+summary: Nmap is a utility for network exploration and security auditing. It supports
+  ping scanning, port scanning and TCP/IP fingerprinting.
+download_size: 13 MB
+disk_space: 208 MB (with tests)
+sbu: 0.5 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - build
+  recommended:
+  - liblinear
+  - libpcap
+  - lua
+  - pygobject
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 385000

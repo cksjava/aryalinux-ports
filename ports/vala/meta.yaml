@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: vala
+version: 0.56.19
+page_kind: single_package
+section: general
+page: vala
+title: Vala-0.56.19
+tarball: vala-0.56.19.tar.xz
+url: https://download.gnome.org/sources/vala/0.56/vala-0.56.19.tar.xz
+md5: a2dc825de503fad703584cfb0ed50302
+summary: Vala is a new programming language that aims to bring modern programming
+  language features to GNOME developers without imposing any additional runtime requirements
+  and without using a different ABI compared to applications and libraries written
+  in C.
+download_size: 3.8 MB
+disk_space: 160 MB (add 16 MB for tests)
+sbu: 0.4 SBU (add 0.9 SBU for tests; both using parallelism=4)
+depends:
+  required:
+  - glib
+  recommended:
+  - graphviz
+  ignore_for_order:
+  - graphviz
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 356000
+cycle_policy:
+  install_before:
+  - graphviz

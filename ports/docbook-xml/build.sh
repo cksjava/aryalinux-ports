@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
+if [[ ${#_tops[@]} -ne 1 ]]; then
+  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
+  exit 1
+fi
+cd "${_tops[0]}"
+
+# --- commands from BLFS ---
+install -vdm755 /usr/share/xml/docbook/xml-5.0
+cp -rv catalog.xml dtd rng sch xsd /usr/share/xml/docbook/xml-5.0
+
+if [ ! -e /etc/xml/catalog ]; then
+    install -v -d -m755 /etc/xml
+    xmlcatalog --noout --create /etc/xml/catalog
+fi
+
+xmlcatalog --noout --add "delegatePublic"             \
+  "-//OASIS//DTD DocBook XML 5.0//EN                " \
+  "file:///usr/share/xml/docbook/xml-5.0/catalog.xml" \
+  /etc/xml/catalog
+
+xmlcatalog --noout --add "delegateSystem"             \
+  "http://docbook.org/xml/5.0/dtd/"                   \
+  "file:///usr/share/xml/docbook/xml-5.0/catalog.xml" \
+  /etc/xml/catalog
+
+xmlcatalog --noout --add "delegateURI"                \
+  "http://docbook.org/xml/5.0"                        \
+  "file:///usr/share/xml/docbook/xml-5.0/catalog.xml" \
+  /etc/xml/catalog

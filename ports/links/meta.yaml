@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: links
+version: '2.30'
+page_kind: single_package
+section: basicnet
+page: links
+title: Links-2.30
+tarball: links-2.30.tar.bz2
+url: http://links.twibright.com/download/links-2.30.tar.bz2
+md5: dc56041551980c74dd354cd7c2882539
+summary: Links is a text and graphics mode WWW browser. It includes support for rendering
+  tables and frames, features background downloads, can display colors and has many
+  other features.
+download_size: 6.3 MB
+disk_space: 36 MB
+sbu: 0.2 SBU
+depends:
+  required: []
+  recommended:
+  - libevent
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 413000

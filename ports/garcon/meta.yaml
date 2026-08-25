@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: garcon
+version: 4.20.0
+page_kind: single_package
+section: xfce
+page: garcon
+title: Garcon-4.20.0
+tarball: garcon-4.20.0.tar.bz2
+url: https://archive.xfce.org/src/xfce/garcon/4.20/garcon-4.20.0.tar.bz2
+md5: fe17e9cb15a62013e0086183a446e89e
+summary: The Garcon package contains a freedesktop.org compliant menu implementation
+  based on GLib and GIO.
+download_size: 648 KB
+disk_space: 8.6 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - libxfce4ui
+  - gtk
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 651000

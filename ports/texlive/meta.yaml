@@ -1,0 +1,44 @@
+format: alps-port-v1
+name: texlive
+version: '0'
+page_kind: multi_package
+section: pst
+page: texlive
+title: texlive-20250308-source
+tarball: texlive-20250308-source.tar.xz
+url: https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-source.tar.xz
+md5: 699b3a9871885e54f35c155332d69da4
+summary: ''
+download_size: 106 MB
+disk_space: 9.8 GB including the additional downloads and the tests, 8.7 GB installed
+sbu: 4.0 SBU including the additional downloads and the tests, building with parallelism=4
+depends:
+  required: []
+  recommended:
+  - a-graphical-environment
+  - fontconfig
+  - freetype
+  - graphite2
+  - harfbuzz
+  - icu
+  - libpaper
+  - libpng
+  - setting-the-path-for-tex-live
+  ignore_for_order:
+  - fontconfig
+  - freetype
+  - harfbuzz
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/texlive-20250308-source-upstream_fixes-1.patch
+  filename: texlive-20250308-source-upstream_fixes-1.patch
+book_order: 867000
+cycle_policy:
+  install_before:
+  - fontconfig
+  - freetype
+  - harfbuzz

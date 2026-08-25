@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: gucharmap
+version: 17.0.2
+page_kind: single_package
+section: gnome
+page: gucharmap
+title: Gucharmap-17.0.2
+tarball: gucharmap-17.0.2.tar.bz2
+url: https://gitlab.gnome.org/GNOME/gucharmap/-/archive/17.0.2/gucharmap-17.0.2.tar.bz2
+md5: eb7a254cebe0650f41281a270846afb5
+summary: Gucharmap is a Unicode character map and font viewer. It allows you to browse
+  through all the available Unicode characters and categories for the installed fonts,
+  and to examine their detailed properties. It is an easy way to find the character
+  you might only know by its Unicode name or code point.
+download_size: 1.4 MB
+disk_space: 80 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - desktop-file-utils
+  - gtk
+  - itstool
+  - libarchive
+  recommended:
+  - glib
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 640000

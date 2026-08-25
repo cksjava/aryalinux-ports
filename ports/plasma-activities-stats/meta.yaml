@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: plasma-activities-stats
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: plasma-activities-stats-6.7.4
+tarball: plasma-activities-stats-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/plasma-activities-stats-6.7.4.tar.xz
+md5: bc863afab26218d4105eff8d39ecadca
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 17
+book_order: 578018

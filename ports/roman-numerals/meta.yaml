@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: roman-numerals
+version: 4.1.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Roman-numerals-4.1.0
+tarball: roman_numerals-4.1.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/r/roman-numerals/roman_numerals-4.1.0.tar.gz
+md5: 0154d3518651ec46fb0ad1dfbdf86348
+summary: Roman-numerals is a python library for manipulating well-formed Roman numerals.
+download_size: 12 KB
+disk_space: 320 KB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

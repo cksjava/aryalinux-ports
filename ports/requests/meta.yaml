@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: requests
+version: 2.34.2
+page_kind: python_module
+section: general
+page: python-modules
+title: Requests-2.34.2
+tarball: requests-2.34.2.tar.gz
+url: https://files.pythonhosted.org/packages/source/r/requests/requests-2.34.2.tar.gz
+md5: 611e438d0803e962500225f9807a475e
+summary: The Requests package is an elegant and simple HTTP library for Python, built
+  for human beings. It allows sending HTTP/1.1 requests extremely easily.
+download_size: 140 KB
+disk_space: 89 MB (with tests)
+sbu: less than 0.1 SBU (0.9 SBU for tests)
+depends:
+  required:
+  - charset-normalizer
+  - idna
+  - urllib3
+  recommended:
+  - make-ca
+  - p11-kit
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

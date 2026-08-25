@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libunistring
+version: 1.4.2
+page_kind: single_package
+section: general
+page: libunistring
+title: libunistring-1.4.2
+tarball: libunistring-1.4.2.tar.xz
+url: https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.2.tar.xz
+md5: e033195d90d0803063f3fecc77148124
+summary: libunistring is a library that provides functions for manipulating Unicode
+  strings and for manipulating C strings according to the Unicode standard.
+download_size: 2.7 MB
+disk_space: 58 MB (add 46 MB for tests)
+sbu: 0.6 SBU (add 0.3 SBU for tests; both using parallelism=4)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 168000

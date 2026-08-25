@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: desktop-file-utils
+version: '0.28'
+page_kind: single_package
+section: general
+page: desktop-file-utils
+title: desktop-file-utils-0.28
+tarball: desktop-file-utils-0.28.tar.xz
+url: https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.28.tar.xz
+md5: dec5d7265c802db1fde3980356931b7b
+summary: The Desktop File Utils package contains command line utilities for working
+  with Desktop entries. These utilities are used by Desktop Environments and other
+  applications to manipulate the MIME-types application databases and help adhere
+  to the Desktop Entry Specification.
+download_size: 80 KB
+disk_space: 1.2 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - glib
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 256000

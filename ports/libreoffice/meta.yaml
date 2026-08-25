@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libreoffice
+version: '0'
+page_kind: configuration
+section: xsoft
+page: libreoffice
+title: LibreOffice-26.2.5
+tarball: ''
+url: ''
+md5: ''
+summary: LibreOffice is a full-featured office suite. It is largely compatible with
+  Microsoft Office and is descended from OpenOffice.org.
+download_size: 279 MB
+disk_space: 7.8 GB including the additional files if downloaded during the build (751
+  MB installed). Installing the whole set of languages requires more than 25 GB (around
+  3 GB installed)
+sbu: 25 SBU with parallelism=8 (will vary due to download time)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 723000

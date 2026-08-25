@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: markdown
+version: 3.10.2
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Markdown-3.10.2
+tarball: markdown-3.10.2.tar.gz
+url: https://files.pythonhosted.org/packages/source/M/Markdown/markdown-3.10.2.tar.gz
+md5: ec7bae2cc261dcb2c9a27271b60d40d4
+summary: Markdown is a Python parser for John Gruber's Markdown specification.
+download_size: 364 KB
+disk_space: 21 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

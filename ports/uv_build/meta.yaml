@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: uv_build
+version: 0.11.24
+page_kind: python_module
+section: general
+page: python-dependencies
+title: uv_build-0.11.24
+tarball: uv_build-0.11.24.tar.gz
+url: https://files.pythonhosted.org/packages/source/u/uv_build/uv_build-0.11.24.tar.gz
+md5: f537ded461369ed76aec64e5d2e0269d
+summary: The uv_build module provides the PEP 517 build backend from the 'uv' Python
+  package management system.
+download_size: 392 KB
+disk_space: 445 MB
+sbu: 0.9 SBU
+depends:
+  required:
+  - maturin
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

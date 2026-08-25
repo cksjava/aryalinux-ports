@@ -1,0 +1,66 @@
+format: alps-port-v1
+name: meta-basicnet
+version: '1'
+page_kind: meta
+section: meta
+page: meta-basicnet
+title: meta-basicnet
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: install BLFS ports from section ''basicnet'''
+depends:
+  required: []
+  recommended: []
+members:
+- avahi
+- bind-utilities
+- c-ares
+- cifs-utils
+- curl
+- fetchmail
+- geoclue
+- glib-networking
+- iw
+- kdsoap
+- kdsoap-ws-discovery-client
+- ldns
+- libevent
+- libmnl
+- libndp
+- libnl
+- libnma
+- libnsl
+- libpcap
+- libpsl
+- libslirp
+- libsoup
+- libtirpc
+- links
+- lynx
+- mailx
+- mutt
+- ncftp
+- neon
+- net-tools
+- network-manager-applet
+- networkmanager
+- nfs-utils
+- nghttp2
+- nmap
+- ntp
+- procmail
+- rpcbind
+- rpcsvc-proto
+- rsync
+- samba
+- serf
+- traceroute
+- wget
+- whois
+- wireless-tools
+- wireshark
+- wpa_supplicant
+bootscripts: []
+provides: []
+conflicts: []

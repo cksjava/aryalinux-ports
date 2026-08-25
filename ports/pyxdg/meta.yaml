@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: pyxdg
+version: '0.28'
+page_kind: python_module
+section: general
+page: python-modules
+title: PyXDG-0.28
+tarball: pyxdg-0.28.tar.gz
+url: https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz
+md5: d9a1d04fe60c956f5e3b9de3b4ef4722
+summary: PyXDG is a Python library to access freedesktop.org standards.
+download_size: 76 KB
+disk_space: 808 KB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/pyxdg-0.28-python3_14-fixes-1.patch
+  filename: pyxdg-0.28-python3_14-fixes-1.patch
+book_order: 344000

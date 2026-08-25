@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: yyjson
+version: 0.12.0
+page_kind: single_package
+section: general
+page: yyjson
+title: yyjson-0.12.0
+tarball: yyjson-0.12.0.tar.gz
+url: https://github.com/ibireme/yyjson/archive/0.12.0/yyjson-0.12.0.tar.gz
+md5: a0a4fe2ae717277125fdebc60630ddf1
+summary: The yyjson package contains a high performance JSON library written in C.
+download_size: 1.6 MB
+disk_space: 22 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 206000

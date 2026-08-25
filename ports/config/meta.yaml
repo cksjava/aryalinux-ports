@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: config
+version: '0'
+page_kind: configuration
+section: postlfs
+page: config
+title: After LFS Configuration Issues
+tarball: ''
+url: ''
+md5: ''
+summary: The intention of LFS is to provide a basic system which you can build upon.
+  There are several things about tidying up the system which many people wonder about
+  once they have done the base install. We hope to cover these issues in this chapter.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 27000

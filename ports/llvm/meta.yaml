@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: llvm
+version: 22.1.8
+page_kind: single_package
+section: general
+page: llvm
+title: LLVM-22.1.8
+tarball: llvm-project-22.1.8.src.tar.xz
+url: https://github.com/llvm/llvm-project/releases/download/llvmorg-22.1.8/llvm-project-22.1.8.src.tar.xz
+md5: 69065494ebcb1150b2a329c1b3db7584
+summary: The LLVM package contains a collection of modular and reusable compiler and
+  toolchain technologies. The Low Level Virtual Machine (LLVM) Core libraries provide
+  a modern source and target-independent optimizer, along with code generation support
+  for many popular CPUs (as well as some less common ones!). These libraries are built
+  around a well specified code representation known as the LLVM intermed
+download_size: 160 MB
+disk_space: 4.7 GB (1.1 GB installed; add 23 GB for tests and 2.3 GB for documentation)
+sbu: 13 SBU (Add 19 SBU for tests; both using parallelism=8)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/llvm-22.1.8-upstream_fix-1.patch
+  filename: llvm-22.1.8-upstream_fix-1.patch
+book_order: 333000

@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: make-ca
+version: 1.16.1
+page_kind: single_package
+section: postlfs
+page: make-ca
+title: make-ca-1.16.1
+tarball: make-ca-1.16.1.tar.gz
+url: https://github.com/lfs-book/make-ca/archive/v1.16.1/make-ca-1.16.1.tar.gz
+md5: bf9cea2d24fc5344d4951b49f275c595
+summary: Public Key Infrastructure (PKI) is a method to validate the authenticity
+  of an otherwise unknown entity across untrusted networks. PKI works by establishing
+  a chain of trust, rather than trusting each individual host or entity explicitly.
+  In order for a certificate presented by a remote entity to be trusted, that certificate
+  must present a complete chain of certificates that can be validated using
+download_size: 40 KB
+disk_space: 164 KB (with all runtime deps)
+sbu: less than 0.1 SBU (with all runtime deps)
+depends:
+  required:
+  - p11-kit
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 39000

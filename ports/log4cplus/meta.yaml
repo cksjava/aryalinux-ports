@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: log4cplus
+version: 2.2.0.1
+page_kind: single_package
+section: general
+page: log4cplus
+title: log4cplus-2.2.0.1
+tarball: log4cplus-2.2.0.1.tar.xz
+url: https://github.com/log4cplus/log4cplus/releases/download/REL_2_2_0_1/log4cplus-2.2.0.1.tar.xz
+md5: 5fde60414fc15ccdaee58021e346ecb7
+summary: log4cplus is an easy to use C++20 logging API providing thread-safe, flexible,
+  and arbitrarily granular control over log management and configuration. It is modeled
+  after the Java log4j API.
+download_size: 952 KB
+disk_space: 115 MB
+sbu: 0.3 SBU (Using parallelism=4; add 0.5 SBU for tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 180000

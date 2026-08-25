@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: profile
+version: '0'
+page_kind: configuration
+section: postlfs
+page: profile
+title: The Bash Shell Startup Files
+tarball: ''
+url: ''
+md5: ''
+summary: The shell program /bin/bash (hereafter referred to as just "the shell") uses
+  a collection of startup files to help create an environment. Each file has a specific
+  use and may affect login and interactive environments differently. The files in
+  the /etc directory generally provide global settings. If an equivalent file exists
+  in your home directory it may override the global settings.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 34000

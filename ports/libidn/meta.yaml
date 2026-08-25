@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libidn
+version: '1.44'
+page_kind: single_package
+section: general
+page: libidn
+title: libidn-1.44
+tarball: libidn-1.44.tar.gz
+url: https://ftpmirror.gnu.org/libidn/libidn-1.44.tar.gz
+md5: 4ee07cf7f960679b2872d5c15c0a5ed5
+summary: libidn is a package designed for internationalized string handling based
+  on the Stringprep, Punycode and IDNA specifications defined by the Internet Engineering
+  Task Force (IETF) Internationalized Domain Names (IDN) working group, used for internationalized
+  domain names. This is useful for converting data from the system's native representation
+  into UTF-8, transforming Unicode strings into ASCII s
+download_size: 2.5 MB
+disk_space: 24 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 149000

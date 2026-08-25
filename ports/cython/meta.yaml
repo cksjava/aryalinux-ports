@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: cython
+version: 3.2.9
+page_kind: python_module
+section: general
+page: python-modules
+title: Cython-3.2.9
+tarball: cython-3.2.9.tar.gz
+url: https://github.com/cython/cython/releases/download/3.2.9/cython-3.2.9.tar.gz
+md5: 775ad752cdb021193f3ef323228388d5
+summary: The Cython package provides a compiler for writing C extensions for the Python
+  language.
+download_size: 3.2 MB
+disk_space: 186 MB (add 12 MB for tests)
+sbu: 1.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

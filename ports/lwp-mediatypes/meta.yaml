@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: lwp-mediatypes
+version: '6.04'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: LWP::MediaTypes-6.04
+tarball: LWP-MediaTypes-6.04.tar.gz
+url: https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-MediaTypes-6.04.tar.gz
+md5: 84b799a90c0d2ce52897a7cb4c0478d0
+summary: LWP::MediaTypes guesses the media type (i.e. the MIME Type) for a file or
+  URL.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - test-fatal
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: meson_python
+version: 0.20.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Meson_python-0.20.0
+tarball: meson_python-0.20.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/m/meson_python/meson_python-0.20.0.tar.gz
+md5: 032ed60b1d86c448331fc0a2ba81f499
+summary: The Meson_python module contains a Python build backend (PEP 517) for Meson
+  projects.
+download_size: 104 KB
+disk_space: 20 MB (with tests)
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - pyproject-metadata
+  recommended:
+  - patchelf
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

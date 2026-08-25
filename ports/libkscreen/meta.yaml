@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libkscreen
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: libkscreen-6.7.4
+tarball: libkscreen-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/libkscreen-6.7.4.tar.xz
+md5: 227422d0896d13924d99a74707b3e05c
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 1
+book_order: 578002

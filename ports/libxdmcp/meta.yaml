@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libxdmcp
+version: 1.1.5
+page_kind: single_package
+section: x
+page: libXdmcp
+title: libXdmcp-1.1.5
+tarball: libXdmcp-1.1.5.tar.xz
+url: https://www.x.org/pub/individual/lib/libXdmcp-1.1.5.tar.xz
+md5: ce0af51de211e4c99a111e64ae1df290
+summary: The libXdmcp package contains a library implementing the X Display Manager
+  Control Protocol. This is useful for allowing clients to interact with the X Display
+  Manager.
+download_size: 292 KB
+disk_space: 3.0 MB (with test)
+sbu: less than 0.1 SBU (with test)
+depends:
+  required:
+  - xorgproto
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 444000

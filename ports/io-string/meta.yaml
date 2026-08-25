@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: io-string
+version: '1.08'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: IO::String-1.08
+tarball: IO-String-1.08.tar.gz
+url: https://www.cpan.org/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz
+md5: 250e5424f290299fc3d6b5d1e9da3835
+summary: IO::String - Emulate file interface for in-core strings.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

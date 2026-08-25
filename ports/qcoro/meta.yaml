@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: qcoro
+version: 0.13.0
+page_kind: single_package
+section: general
+page: qcoro
+title: qcoro-0.13.0
+tarball: qcoro-0.13.0.tar.gz
+url: https://github.com/danvratil/qcoro/archive/v0.13.0/qcoro-0.13.0.tar.gz
+md5: 1cc2b522b90d8d0842523f751e75c99b
+summary: This package provides a set of tools to make use of C++20 coroutines with
+  Qt.
+download_size: 160 KB
+disk_space: 31 MB (with tests)
+sbu: 0.4 SBU (Using parallelism=4; add 0.6 SBU for tests)
+depends:
+  required:
+  - qt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 191000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kdeclarative
+version: 6.29.0
+page_kind: kde_batch
+section: kde
+page: frameworks6
+title: kdeclarative-6.29.0
+tarball: kdeclarative-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/kdeclarative-6.29.0.tar.xz
+md5: eb444e38b4fd327c22d34486f21b42b6
+summary: KDE batch package from frameworks6.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 43
+book_order: 548044

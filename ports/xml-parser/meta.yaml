@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: xml-parser
+version: '2.59'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: XML::Parser-2.59
+tarball: XML-Parser-2.59.tar.gz
+url: https://www.cpan.org/authors/id/T/TO/TODDR/XML-Parser-2.59.tar.gz
+md5: f483e6b8541d60a84e4bf50803e476bc
+summary: The XML::Parser module is a Perl interface to James Clark's XML parser. It
+  is built on top of XML::Parser::Expat, which is a lower level interface to the expat
+  library. Each call to one of the parsing methods creates a new instance of XML::Parser::Expat
+  which is then used to parse the document.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - file-sharedir
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

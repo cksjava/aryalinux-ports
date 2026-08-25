@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: cmake
+version: 4.4.2
+page_kind: single_package
+section: general
+page: cmake
+title: CMake-4.4.2
+tarball: cmake-4.4.2.tar.gz
+url: https://cmake.org/files/v4.4/cmake-4.4.2.tar.gz
+md5: 6911f0379d901db23619413f092b99ef
+summary: The CMake package contains a modern toolset used for generating Makefiles.
+  It is a successor of the auto-generated configure script and aims to be platform-
+  and compiler-independent. A significant user of CMake is KDE since version 4.
+download_size: 13 MB
+disk_space: 2.3 GB (with tests)
+sbu: 2.2 SBU (add 4.3 SBU for tests, both using parallelism=4)
+depends:
+  required: []
+  recommended:
+  - curl
+  - libarchive
+  - libuv
+  - nghttp2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 324000

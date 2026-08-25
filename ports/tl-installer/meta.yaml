@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: tl-installer
+version: '0'
+page_kind: single_package
+section: pst
+page: tl-installer
+title: install-tl-unx
+tarball: install-tl-unx.tar.gz
+url: https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+md5: ''
+summary: The TeX Live package is a comprehensive TeX document production system. It
+  includes TeX, LaTeX2e, LuaLaTeX, Metafont, MetaPost, BibTeX and many other programs;
+  an extensive collection of macros, fonts and documentation; and support for typesetting
+  in many different scripts from around the world.
+download_size: 5.5 MB
+disk_space: 90 MB for plain TeX, typically 323 MB for latex and later engines, 9.0
+  GB if everything is included
+sbu: varies, depending on network speed and traffic
+depends:
+  required: []
+  recommended:
+  - gnupg
+  - ghostscript
+  - xorg-libraries
+  - libxcb
+  - a-graphical-environment
+  - epdfview-gtk3
+  - freeglut
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 866000

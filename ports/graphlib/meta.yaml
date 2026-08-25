@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: graphlib
+version: '0'
+page_kind: configuration
+section: general
+page: graphlib
+title: Graphics and Font Libraries
+tarball: ''
+url: ''
+md5: ''
+summary: Depending on what your system will be used for, you may or may not require
+  the graphics and font libraries. Most desktop machines will want them for use with
+  graphical applications. Most servers on the other hand, will not require them.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 207000

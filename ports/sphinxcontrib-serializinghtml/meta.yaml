@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: sphinxcontrib-serializinghtml
+version: 2.0.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Sphinxcontrib-serializinghtml-2.0.0
+tarball: sphinxcontrib_serializinghtml-2.0.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-2.0.0.tar.gz
+md5: b536ce248d5ca134a30018692a17c6ca
+summary: The Sphinxcontrib-serializinghtml package is a Sphinx extension which outputs
+  “serialized” HTML files (json and pickle).
+download_size: 16 KB
+disk_space: 1.1 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

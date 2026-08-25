@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: vulkan-loader
+version: 1.4.357.0
+page_kind: single_package
+section: x
+page: vulkan-loader
+title: Vulkan-Loader-1.4.357.0
+tarball: Vulkan-Loader-vulkan-sdk-1.4.357.0.tar.gz
+url: https://github.com/KhronosGroup/Vulkan-Loader/archive/vulkan-sdk-1.4.357.0/Vulkan-Loader-vulkan-sdk-1.4.357.0.tar.gz
+md5: ce35f16bee47e9faf0a50d682a2db77d
+summary: The Vulkan-Loader package contains a library which provides the Vulkan API
+  and provides core support for graphics drivers for Vulkan.
+download_size: 1.8 MB
+disk_space: 146 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required:
+  - cmake
+  - vulkan-headers
+  - xorg-libraries
+  recommended:
+  - wayland
+  - mesa
+  ignore_for_order:
+  - mesa
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 512000
+cycle_policy:
+  install_before:
+  - mesa

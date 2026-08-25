@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: boost
+version: 1.92.0
+page_kind: single_package
+section: general
+page: boost
+title: boost-1.92.0
+tarball: boost-1.92.0-b2-nodocs.tar.xz
+url: https://github.com/boostorg/boost/releases/download/boost-1.92.0/boost-1.92.0-b2-nodocs.tar.xz
+md5: 01f7ba6534c21e1b49dc9f69524bf5e4
+summary: Boost provides a set of free peer-reviewed portable C++ source libraries.
+  It includes libraries for linear algebra, pseudorandom number generation, multithreading,
+  image processing, regular expressions and unit testing.
+download_size: 51 MB
+disk_space: 959 MB (208 MB installed)
+sbu: 1.7 SBU (Using parallelism=4; add 0.2 SBU for tests)
+depends:
+  required: []
+  recommended:
+  - which
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 106000

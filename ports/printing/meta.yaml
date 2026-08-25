@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: printing
+version: '0'
+page_kind: configuration
+section: pst
+page: printing
+title: Printing
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains spooling printer management systems and ghostscript
+  applications to render PostScript for display on terminals or paper.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 832000

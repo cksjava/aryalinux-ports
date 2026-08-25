@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: extutils-installpaths
+version: '0.015'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: ExtUtils::InstallPaths-0.015
+tarball: ExtUtils-InstallPaths-0.015.tar.gz
+url: https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-InstallPaths-0.015.tar.gz
+md5: 70f17a346e92560b5f5692119edbb161
+summary: ExtUtils::InstallPaths is a tool to resolve perl installation paths.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: gc
+version: 8.2.12
+page_kind: single_package
+section: general
+page: gc
+title: GC-8.2.12
+tarball: gc-8.2.12.tar.gz
+url: https://github.com/bdwgc/bdwgc/releases/download/v8.2.12/gc-8.2.12.tar.gz
+md5: 5e7c74f8bd57f64d3f86673ff3c17230
+summary: 'The GC package contains the Boehm-Demers-Weiser conservative garbage collector,
+  which can be used as a garbage collecting replacement for the C malloc function
+  or C++ new operator. It allows you to allocate memory basically as you normally
+  would, without explicitly deallocating memory that is no longer useful. The collector
+  automatically recycles memory when it determines that it can no longer be '
+download_size: 1.2 MB
+disk_space: 9.4 MB (with tests)
+sbu: 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 328000

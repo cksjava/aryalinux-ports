@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: snowballstemmer
+version: 3.1.1
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Snowballstemmer-3.1.1
+tarball: snowballstemmer-3.1.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/snowballstemmer/snowballstemmer-3.1.1.tar.gz
+md5: 6f838ab3e97baba9ed72ef64966ba4a0
+summary: The Snowballstemmer package is a small string processing language for creating
+  stemming algorithms for use in Information Retrieval, plus a collection of stemming
+  algorithms implemented using it. Stemming maps different forms of the same word
+  to a common “stem” — for example, the English stemmer maps connection, connections,
+  connective, connected, and connecting to connect. Running a search for co
+download_size: 124 KB
+disk_space: 2.0 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

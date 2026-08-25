@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: lmdb
+version: 1.0.1
+page_kind: single_package
+section: server
+page: lmdb
+title: lmdb-1.0.1
+tarball: openldap-LMDB_1.0.1.tar.bz2
+url: https://git.openldap.org/openldap/openldap/-/archive/LMDB_1.0.1/openldap-LMDB_1.0.1.tar.bz2
+md5: f060b9e036cd5d998b7b3ca1498d7715
+summary: The lmdb package is a fast, compact, key-value embedded data store. It uses
+  memory-mapped files, so it has the read performance of a pure in-memory database
+  while still offering the persistence of standard disk-based databases, and is only
+  limited to the size of the virtual address space
+download_size: 144 KB
+disk_space: 8.7 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 433000

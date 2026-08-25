@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: flac
+version: 1.5.0
+page_kind: single_package
+section: multimedia
+page: flac
+title: FLAC-1.5.0
+tarball: flac-1.5.0.tar.xz
+url: https://github.com/xiph/flac/releases/download/1.5.0/flac-1.5.0.tar.xz
+md5: 0bb45bcf74338b00efeec121fff27367
+summary: FLAC is an audio CODEC similar to MP3, but lossless, meaning that audio is
+  compressed without losing any information.
+download_size: 1.1 MB
+disk_space: 25 MB (additional 170 MB to run the test suite)
+sbu: 0.2 SBU (additional 0.2 SBU to run the test suite)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 757000

@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: lvm2
+version: 2.03.42
+page_kind: single_package
+section: postlfs
+page: lvm2
+title: LVM2-2.03.42
+tarball: LVM2.2.03.42.tgz
+url: https://sourceware.org/ftp/lvm2/LVM2.2.03.42.tgz
+md5: 1cfc17fcbdc5103492b4504c5ddaa274
+summary: The LVM2 package is a set of tools that manage logical partitions. It allows
+  spanning of file systems across multiple physical disks and disk partitions and
+  provides for dynamic growing or shrinking of logical partitions, mirroring and low
+  storage footprint snapshots.
+download_size: 3.0 MB
+disk_space: 40 MB (add up to 300 MB for transient files for tests in the /tmp directory)
+sbu: 0.4 SBU (add 9 to 48 SBU for tests, depending on disk speed and options enabled
+  in the kernel)
+depends:
+  required:
+  - libaio
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 71000

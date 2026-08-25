@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: tesseract
+version: 5.5.3
+page_kind: single_package
+section: kde
+page: tesseract
+title: tesseract-5.5.3
+tarball: tesseract-5.5.3.tar.gz
+url: https://github.com/tesseract-ocr/tesseract/archive/5.5.3/tesseract-5.5.3.tar.gz
+md5: 561b6b104238fffa1d00362ac72ea397
+summary: The tesseract package provides an Optical Character Recognition (OCR) engine
+  and command-line program used to extract printed text from images.
+download_size: 1.8 MB
+disk_space: 210 MB
+sbu: 0.4 SBU (Using parallelism=4)
+depends:
+  required:
+  - tesseract
+  recommended:
+  - curl
+  - icu
+  - pango
+  ignore_for_order:
+  - tesseract
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 577000
+cycle_policy:
+  install_before:
+  - tesseract

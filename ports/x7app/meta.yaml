@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: x7app
+version: '0'
+page_kind: x11_driver
+section: x
+page: x7app
+title: Xorg Applications
+tarball: app
+url: https://www.x.org/pub/individual/app/
+md5: ''
+summary: The Xorg applications provide the expected applications available in previous
+  X Window implementations.
+download_size: 4.9 MB
+disk_space: 48 MB
+sbu: 1.5 SBU (ignoring the time to download)
+depends:
+  required:
+  - libpng
+  - mesa
+  - xbitmaps
+  - xcb-util
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 453000

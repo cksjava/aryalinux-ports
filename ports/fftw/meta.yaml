@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: fftw
+version: 3.3.11
+page_kind: single_package
+section: general
+page: fftw
+title: fftw-3.3.11
+tarball: fftw-3.3.11.tar.gz
+url: https://www.fftw.org/fftw-3.3.11.tar.gz
+md5: 40ec8d0447d03b8f01f8c90aa77bd16f
+summary: FFTW is a C subroutine library for computing the discrete Fourier transform
+  (DFT) in one or more dimensions, of arbitrary input size, and of both real and complex
+  data (as well as of even/odd data, i.e. the discrete cosine/sine transforms or DCT/DST).
+download_size: 4.2 MB
+disk_space: 71 MB
+sbu: 1.6 SBU (add 3.4 SBU for tests, both using parallelism=4)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 115000

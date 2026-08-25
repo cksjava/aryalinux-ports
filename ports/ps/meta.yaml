@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: ps
+version: '0'
+page_kind: configuration
+section: pst
+page: ps
+title: PostScript
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter includes applications that create, manipulate or view PostScript
+  files and create or view Portable Document Format PDF files.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 858000

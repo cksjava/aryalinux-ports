@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: inih
+version: '62'
+page_kind: single_package
+section: general
+page: inih
+title: inih-62
+tarball: inih-r62.tar.gz
+url: https://github.com/benhoyt/inih/archive/r62/inih-r62.tar.gz
+md5: c0c6982525958a0376a3cb5bfbee14a0
+summary: This package is a simple .INI file parser written in C.
+download_size: 24 KB
+disk_space: 2 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 126000

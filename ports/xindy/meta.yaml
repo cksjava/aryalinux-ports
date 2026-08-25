@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: xindy
+version: 2.5.1
+page_kind: single_package
+section: pst
+page: xindy
+title: xindy-2.5.1
+tarball: xindy-2.5.1.tar.gz
+url: https://ctan.org/indexing/xindy-2.5.1.tar.gz
+md5: 221acfeeb0f6f8388f89a59c56491041
+summary: Xindy is an index processor that can be used to generate book-like indexes
+  for arbitrary document-preparation systems. This includes systems such as TeX and
+  LaTeX, the roff-family, and SGML/XML-based systems (e.g., HTML) that process some
+  kind of text and generate indexing information.
+download_size: 506 KB
+disk_space: 15 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - clisp
+  - texlive
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/xindy-2.5.1-upstream_fixes-2.patch
+  filename: xindy-2.5.1-upstream_fixes-2.patch
+book_order: 871000

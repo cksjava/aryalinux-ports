@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: gnome-icon-theme-extras
+version: 3.12.0
+page_kind: single_package
+section: x
+page: gnome-icon-theme-extras
+title: gnome-icon-theme-extras-3.12.0
+tarball: gnome-icon-theme-extras-3.12.0.tar.xz
+url: https://download.gnome.org/sources/gnome-icon-theme-extras/3.12/gnome-icon-theme-extras-3.12.0.tar.xz
+md5: 91f8f7e35a3d8d926716d88b8b1e9a29
+summary: The GNOME Icon Theme Extras package contains extra icons for the GNOME Desktop.
+download_size: 1.7 MB
+disk_space: 12 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - gnome-icon-theme
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 530000

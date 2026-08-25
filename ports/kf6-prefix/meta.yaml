@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kf6-prefix
+version: '0'
+page_kind: configuration
+section: kde
+page: frameworks6
+title: KF6 prefix setup
+tarball: ''
+url: ''
+md5: ''
+summary: Create /opt/kf6 layout and dbus/polkit symlinks (BLFS KF6)
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 0
+book_order: 548001

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: xarchiver
+version: 0.5.4.27
+page_kind: single_package
+section: xsoft
+page: xarchiver
+title: xarchiver-0.5.4.27
+tarball: xarchiver-0.5.4.27.tar.gz
+url: https://github.com/ib/xarchiver/archive/0.5.4.27/xarchiver-0.5.4.27.tar.gz
+md5: 8a6fb3ab5c0161e3fa05ec6a1faf2c12
+summary: XArchiver is a GTK+ archive manager with support for tar, xz, bzip2, gzip,
+  zip, 7z, rar, lzo and many other archive formats.
+download_size: 1.1 MB
+disk_space: 11 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - gtk
+  - intltool
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 741000

@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: sddm
+version: 0.21.0
+page_kind: single_package
+section: x
+page: sddm
+title: sddm-0.21.0
+tarball: sddm-0.21.0.tar.gz
+url: https://github.com/sddm/sddm/archive/v0.21.0/sddm-0.21.0.tar.gz
+md5: e32a35c282d9be3360737eefbe25b5fa
+summary: The sddm package contains a lightweight display manager based upon Qt and
+  QML.
+download_size: 3.4 MB
+disk_space: 24 MB
+sbu: 0.3 SBU (Using parallelism=4)
+depends:
+  required:
+  - cmake
+  - extra-cmake-modules
+  - qt
+  recommended:
+  - docutils
+  - linux-pam
+  - upower
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 521000

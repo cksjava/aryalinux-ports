@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: net-dns
+version: '1.56'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Net::DNS-1.56
+tarball: Net-DNS-1.56.tar.gz
+url: https://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-1.56.tar.gz
+md5: 683b3e1d4882d242478e192b2579ae88
+summary: Net::DNS is a DNS resolver implemented in Perl. It can be used to perform
+  nearly any type of DNS query from a Perl script.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

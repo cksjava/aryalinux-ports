@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: alsa-tools
+version: 1.2.15
+page_kind: single_package
+section: multimedia
+page: alsa-tools
+title: alsa-tools-1.2.15
+tarball: alsa-tools-1.2.15.tar.bz2
+url: https://www.alsa-project.org/files/pub/tools/alsa-tools-1.2.15.tar.bz2
+md5: 8c5306b6c31e9dcaa70ac7d5ce244579
+summary: The ALSA Tools package contains advanced tools for certain sound cards.
+download_size: 1.9 MB
+disk_space: 25 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - alsa-lib
+  recommended:
+  - gtk
+  - fltk
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 750000

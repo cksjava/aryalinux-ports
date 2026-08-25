@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libarchive
+version: 3.8.9
+page_kind: single_package
+section: general
+page: libarchive
+title: libarchive-3.8.9
+tarball: libarchive-3.8.9.tar.xz
+url: https://github.com/libarchive/libarchive/releases/download/v3.8.9/libarchive-3.8.9.tar.xz
+md5: 535e3afec5f61d493f0b1b9e8bcf7539
+summary: The libarchive library provides a single interface for reading/writing various
+  compression formats.
+download_size: 6.4 MB
+disk_space: 91 MB (with tests)
+sbu: 1.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 133000

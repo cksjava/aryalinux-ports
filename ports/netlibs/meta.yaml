@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: netlibs
+version: '0'
+page_kind: configuration
+section: basicnet
+page: netlibs
+title: Networking Libraries
+tarball: ''
+url: ''
+md5: ''
+summary: These applications are support libraries for other applications in the book.
+  It is unlikely that you would just install these libraries, you will generally find
+  that you will be referred to this chapter to satisfy a dependency of other applications.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 389000

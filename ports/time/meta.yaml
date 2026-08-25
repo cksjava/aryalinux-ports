@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: time
+version: '1.10'
+page_kind: single_package
+section: general
+page: time
+title: Time-1.10
+tarball: time-1.10.tar.gz
+url: https://ftpmirror.gnu.org/time/time-1.10.tar.gz
+md5: ded256bf7d215594fb3b51d3d9d74e15
+summary: The time utility is a program that measures many of the CPU resources, such
+  as time and memory, that other programs use. The GNU version can format the output
+  in arbitrary ways by using a printf-style format string to include various resource
+  measurements.
+download_size: 832 KB
+disk_space: 6.2 MB (with tests)
+sbu: 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 273000

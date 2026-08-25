@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: wv
+version: 1.2.9
+page_kind: single_package
+section: general
+page: wv
+title: wv-1.2.9
+tarball: wv-1.2.9.tar.gz
+url: https://anduin.linuxfromscratch.org/BLFS/wv/wv-1.2.9.tar.gz
+md5: dbccf2e9f747e50c913b7e3d126b73f7
+summary: The wv package contains tools for reading information from an MS Word document.
+download_size: 608 KB
+disk_space: 25 MB
+sbu: 0.4 SBU
+depends:
+  required:
+  - libgsf
+  - libpng
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 204000

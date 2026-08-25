@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: lxqt-session
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-session
+title: lxqt-session-2.4.0
+tarball: lxqt-session-2.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-session/releases/download/2.4.0/lxqt-session-2.4.0.tar.xz
+md5: 42a340dbb742c6afb872cb3bd5a6eeda
+summary: The lxqt-session package contains the default session manager for LXQt.
+download_size: 220 KB
+disk_space: 12 MB
+sbu: 0.5 SBU
+depends:
+  required:
+  - liblxqt
+  - qtxdg-tools
+  - xdg-user-dirs
+  - openbox
+  - icewm
+  - lxqt-config
+  - fluxbox
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 706000

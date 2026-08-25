@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libtasn1
+version: 4.21.0
+page_kind: single_package
+section: general
+page: libtasn1
+title: libtasn1-4.21.0
+tarball: libtasn1-4.21.0.tar.gz
+url: https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.21.0.tar.gz
+md5: 2ee1d9f3aa66f1e308c46a283aa9a8c2
+summary: libtasn1 is a highly portable C library that encodes and decodes DER/BER
+  data following an ASN.1 schema.
+download_size: 1.7 MB
+disk_space: 16 MB (with tests)
+sbu: 0.5 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 167000

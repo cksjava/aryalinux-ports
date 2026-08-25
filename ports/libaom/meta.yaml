@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libaom
+version: 3.14.1
+page_kind: single_package
+section: multimedia
+page: libaom
+title: libaom-3.14.1
+tarball: libaom-3.14.1.tar.gz
+url: https://storage.googleapis.com/aom-releases/libaom-3.14.1.tar.gz
+md5: 4a689bbc27ec095d253ed8d241077ad5
+summary: The libaom package contains a reference version of the Alliance for Open
+  Media video codec. This codec is a patent free alternative to H.265, and is starting
+  to be used throughout the internet.
+download_size: 6.1 MB
+disk_space: 124 MB
+sbu: 0.8 SBU (with parallelism=4)
+depends:
+  required: []
+  recommended:
+  - yasm
+  - nasm
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 772000

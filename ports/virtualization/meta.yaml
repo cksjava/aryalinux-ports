@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: virtualization
+version: '0'
+page_kind: configuration
+section: postlfs
+page: virtualization
+title: Virtualization
+tarball: ''
+url: ''
+md5: ''
+summary: Virtualization allows running a complete operating system, or virtual machine
+  (VM), within another operating environment as a task. There are several commercial
+  and open source environments that either emulate another processor or utilize the
+  hardware virtualization features of the host processor.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 96000

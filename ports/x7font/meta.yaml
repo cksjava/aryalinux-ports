@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: x7font
+version: '0'
+page_kind: x11_driver
+section: x
+page: x7font
+title: Xorg Fonts
+tarball: font
+url: https://www.x.org/pub/individual/font/
+md5: ''
+summary: The Xorg font packages provide some scalable fonts and supporting packages
+  for Xorg applications. Many people will want to install other TTF or OTF fonts in
+  addition to, or instead of, these. Some are listed at the section called “TTF and
+  OTF fonts”.
+download_size: 3.0 MB
+disk_space: 8.8 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - xcursor-themes
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 456000

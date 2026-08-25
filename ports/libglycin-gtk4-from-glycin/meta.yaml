@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libglycin-gtk4-from-glycin
+version: 2.1.5
+page_kind: single_package
+section: general
+page: glycin-gtk4
+title: libglycin-gtk4 from glycin-2.1.5
+tarball: glycin-2.1.5.tar.xz
+url: https://download.gnome.org/sources/glycin/2.1/glycin-2.1.5.tar.xz
+md5: d9224a846ad1ed964d07e1ebb48d4458
+summary: The libglycin-gtk4 library provides GTK-4 integration for glycin-2.1.5.
+download_size: 6.8 MB
+disk_space: 669 MB (with documentation)
+sbu: 0.4 SBU (Using parallelism=4; with documentation)
+depends:
+  required:
+  - glycin
+  - gtk
+  recommended:
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 219000

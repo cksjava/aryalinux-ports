@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: leptonica
+version: 1.87.0
+page_kind: single_package
+section: kde
+page: leptonica
+title: leptonica-1.87.0
+tarball: leptonica-1.87.0.tar.gz
+url: https://github.com/DanBloomberg/leptonica/releases/download/1.87.0/leptonica-1.87.0.tar.gz
+md5: d523d2c883b71850a46af2517d8915bf
+summary: The leptonica package provides softwre that is broadly useful for image processing
+  and image analysis applications.
+download_size: 14 MB
+disk_space: 128 MB
+sbu: 0.4 SBU (Using parallelism=4)
+depends:
+  required: []
+  recommended:
+  - libjpeg-turbo
+  - libpng
+  - libwebp
+  - tiff
+  - openjpeg
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 576000

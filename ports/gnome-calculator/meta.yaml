@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: gnome-calculator
+version: '50.0'
+page_kind: single_package
+section: gnome
+page: gnome-calculator
+title: gnome-calculator-50.0
+tarball: gnome-calculator-50.0.tar.xz
+url: https://download.gnome.org/sources/gnome-calculator/50/gnome-calculator-50.0.tar.xz
+md5: db7f8f49762a51c5c658f1b4c0ed74d8
+summary: GNOME Calculator is a powerful graphical calculator with financial, logical
+  and scientific modes. It uses a multiple precision package to do its arithmetic
+  to give a high degree of accuracy.
+download_size: 1.2 MB
+disk_space: 44 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required:
+  - blueprint-compiler
+  - gtksourceview5
+  - itstool
+  - libadwaita
+  - libgee
+  - libsoup
+  recommended:
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 629000

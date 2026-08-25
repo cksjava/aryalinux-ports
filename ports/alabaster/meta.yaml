@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: alabaster
+version: 1.0.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Alabaster-1.0.0
+tarball: alabaster-1.0.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-1.0.0.tar.gz
+md5: c6c2173e5565fb12f08bef410ea50f72
+summary: The Alabaster package is a theme for the sphinx documentation system. Although
+  developed separately, it is the default theme for sphinx.
+download_size: 24 KB
+disk_space: 160 KB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

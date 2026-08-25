@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: parse-yapp
+version: '1.21'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Parse::Yapp-1.21
+tarball: Parse-Yapp-1.21.tar.gz
+url: https://www.cpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
+md5: 69584d5b0f0304bb2a23cffcd982c5de
+summary: Parse::Yapp is a Perl extension for generating and using LALR parsers.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: test-command
+version: '0.11'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Test::Command-0.11
+tarball: Test-Command-0.11.tar.gz
+url: https://www.cpan.org/authors/id/D/DA/DANBOO/Test-Command-0.11.tar.gz
+md5: 9ab83c4695961dbe92cd86efe08f0634
+summary: Test::Command tests the exit status, STDOUT, or STDERR, of an external command.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

@@ -1,0 +1,67 @@
+format: alps-port-v1
+name: meta-perl-modules
+version: '1'
+page_kind: meta
+section: meta
+page: perl-modules
+title: meta-perl-modules
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: all ports from BLFS perl-modules.html'
+depends:
+  required: []
+  recommended: []
+members:
+- archive-zip
+- autovivification
+- business-isbn
+- business-ismn
+- business-issn
+- class-accessor
+- data-compare
+- data-dump
+- data-uniqid
+- datetime-calendar-julian
+- datetime-format-builder
+- encode-eucjpascii
+- encode-hanextra
+- encode-jis2k
+- file-fcntllock
+- file-slurper
+- file-which
+- html-parser
+- http-daemon
+- io-socket-ssl
+- io-string
+- ipc-run3
+- lingua-translit
+- list-allutils
+- list-moreutils
+- log-log4perl
+- lwp-protocol-https
+- module-build
+- net-dns
+- parse-recdescent
+- parse-yapp
+- perl-libwww-perl
+- perlio-utf8_strict
+- regexp-common
+- sgmlspm
+- sort-key
+- test-command
+- test-differences
+- text-bibtex
+- text-csv
+- text-roman
+- unicode-collate
+- unicode-linebreak
+- uri
+- xml-libxml-simple
+- xml-libxslt
+- xml-parser
+- xml-simple
+- xml-writer
+bootscripts: []
+provides: []
+conflicts: []

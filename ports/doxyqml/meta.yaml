@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: doxyqml
+version: 0.5.3
+page_kind: python_module
+section: general
+page: python-modules
+title: Doxyqml-0.5.3
+tarball: doxyqml-0.5.3.tar.gz
+url: https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-0.5.3.tar.gz
+md5: 3d394a0d896721e27beb62bf032f7f43
+summary: The Doxyqml package allows using Doxygen to document QML classes.
+download_size: 28 KB
+disk_space: 652 KB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required:
+  - doxygen
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

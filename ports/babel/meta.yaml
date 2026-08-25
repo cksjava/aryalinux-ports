@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: babel
+version: 2.18.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: babel-2.18.0
+tarball: babel-2.18.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/B/Babel/babel-2.18.0.tar.gz
+md5: b5ea9705c2ad6f8c630e4a66d3dd2cfa
+summary: The Babel package is an integrated collection of utilities that assist in
+  internationalizing and localizing Python applications, with an emphasis on web-based
+  applications.
+download_size: 9.5 MB
+disk_space: 129 MB (with tests)
+sbu: 0.1 SBU (with tests)
+depends:
+  required:
+  - pytz
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

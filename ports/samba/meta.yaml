@@ -1,0 +1,38 @@
+format: alps-port-v1
+name: samba
+version: 4.24.6
+page_kind: single_package
+section: basicnet
+page: samba
+title: Samba-4.24.6
+tarball: samba-4.24.6.tar.gz
+url: https://download.samba.org/pub/samba/stable/samba-4.24.6.tar.gz
+md5: 7b5ede4bc9fe86378e7fb6975f1f1469
+summary: The Samba package provides file and print services to SMB/CIFS clients and
+  Windows networking to Linux clients. Samba can also be configured as a Windows Domain
+  Controller replacement, a file/print server acting as a member of a Windows Active
+  Directory domain and a NetBIOS (RFC1001/1002) nameserver (which among other things
+  provides LAN browsing support).
+download_size: 41 MB
+disk_space: 757 MB (with tests)
+sbu: 2.3 SBU (using parallelism=4; with tests)
+depends:
+  required:
+  - gnutls
+  - libtirpc
+  - parse-yapp
+  - rpcsvc-proto
+  recommended:
+  - fuse
+  - gpgme
+  - icu
+  - jansson
+  - libtasn1
+  - libxslt
+  - linux-pam
+  - lmdb
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 374000

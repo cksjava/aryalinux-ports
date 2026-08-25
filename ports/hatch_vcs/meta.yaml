@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: hatch_vcs
+version: 0.5.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Hatch_vcs-0.5.0
+tarball: hatch_vcs-0.5.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/h/hatch-vcs/hatch_vcs-0.5.0.tar.gz
+md5: 9a22a9f7203783e526959d34510a9672
+summary: Hatch_vcs is a Hatch plugin for versioning with several Version Control Systems
+  ( VCS ).
+download_size: 9.9 KB
+disk_space: 436 KB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required:
+  - hatchling
+  - setuptools_scm
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: majorservers
+version: '0'
+page_kind: configuration
+section: server
+page: majorservers
+title: Major Servers
+tarball: ''
+url: ''
+md5: ''
+summary: Major servers are the programs that provide content or services to users
+  or other programs.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 422000

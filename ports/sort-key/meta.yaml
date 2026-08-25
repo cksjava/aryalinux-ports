@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: sort-key
+version: '1.33'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Sort::Key-1.33
+tarball: Sort-Key-1.33.tar.gz
+url: https://www.cpan.org/authors/id/S/SA/SALVA/Sort-Key-1.33.tar.gz
+md5: a37ab0da0cfdc26e57b4c79e39f6d98f
+summary: Sort::Key provides a set of functions to sort lists of values by some calculated
+  key value.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

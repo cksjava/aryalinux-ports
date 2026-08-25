@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: ntp
+version: 4.2.8p18
+page_kind: single_package
+section: basicnet
+page: ntp
+title: ntp-4.2.8p18
+tarball: ntp-4.2.8p18.tar.gz
+url: https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p18.tar.gz
+md5: 516bdabd94ab7c824e9771390761a46c
+summary: The ntp package contains a client and server to keep the time synchronized
+  between various computers over a network. This package is the official reference
+  implementation of the NTP protocol.
+download_size: 6.8 MB
+disk_space: 99 MB (with tests)
+sbu: 0.8 SBU (With tests; both using parallelism=4)
+depends:
+  required:
+  - io-socket-ssl
+  recommended: []
+bootscripts: []
+systemd_units:
+- ntpd
+provides: []
+conflicts: []
+book_order: 371000

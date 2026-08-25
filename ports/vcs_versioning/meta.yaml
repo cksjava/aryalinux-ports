@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: vcs_versioning
+version: 2.2.4
+page_kind: python_module
+section: general
+page: python-dependencies
+title: vcs_versioning-2.2.4
+tarball: vcs_versioning-2.2.4.tar.gz
+url: https://files.pythonhosted.org/packages/source/v/vcs_versioning/vcs_versioning-2.2.4.tar.gz
+md5: 4379f311792d41c845f9b86975b1be18
+summary: vcs_versioning provides essential functionality for setuptools_scm that allows
+  that module to properly set version control metadata.
+download_size: 132 KB
+disk_space: 2.8 MB
+sbu: less than 0.1 SBU (add 1.2 SBU for tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

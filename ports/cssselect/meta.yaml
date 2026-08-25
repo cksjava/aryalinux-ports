@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: cssselect
+version: 1.5.0
+page_kind: python_module
+section: general
+page: python-modules
+title: CSSSelect-1.5.0
+tarball: cssselect-1.5.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/c/cssselect/cssselect-1.5.0.tar.gz
+md5: 465a7b6af9ea95fdefe5357301589b9c
+summary: CSSSelect provides CSS selectors for Python.
+download_size: 48 KB
+disk_space: 1.2 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required:
+  - hatchling
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

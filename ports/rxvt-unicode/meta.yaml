@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: rxvt-unicode
+version: '9.31'
+page_kind: single_package
+section: xsoft
+page: rxvt-unicode
+title: rxvt-unicode-9.31
+tarball: rxvt-unicode-9.31.tar.bz2
+url: http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.31.tar.bz2
+md5: 3d0ec83705c9b9ff301a4b9965b3cd9f
+summary: rxvt-unicode is a clone of the terminal emulator rxvt, an X Window System
+  terminal emulator which includes support for XFT and Unicode.
+download_size: 860 KB
+disk_space: 22 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - libptytty
+  - a-graphical-environment
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 737000

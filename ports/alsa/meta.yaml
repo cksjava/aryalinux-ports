@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: alsa
+version: '0'
+page_kind: configuration
+section: multimedia
+page: alsa
+title: ALSA
+tarball: ''
+url: ''
+md5: ''
+summary: 'The Linux kernel now provides ALSA support by default. However, applications
+  need to interface to that capability. The following six sections of the book deal
+  with the separate components of ALSA: the libraries, the plugins, the utilities,
+  the tools, and the firmware.'
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 746000

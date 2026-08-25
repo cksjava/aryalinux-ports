@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: datetime-timezone
+version: '2.68'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: DateTime::TimeZone-2.68
+tarball: DateTime-TimeZone-2.68.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-TimeZone-2.68.tar.gz
+md5: 6594692f63df025c64c12241d3d38901
+summary: This class is the base class for all time zone objects. A time zone is represented
+  internally as a set of observances, each of which describes the offset from GMT
+  for a given time period.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - class-singleton
+  - module-runtime
+  recommended:
+  - test-fatal
+  - test-requires
+  - datetime
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

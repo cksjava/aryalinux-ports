@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libao
+version: 1.2.0
+page_kind: single_package
+section: multimedia
+page: libao
+title: Libao-1.2.0
+tarball: libao-1.2.0.tar.gz
+url: https://downloads.xiph.org/releases/ao/libao-1.2.0.tar.gz
+md5: 9f5dd20d7e95fd0dd72df5353829f097
+summary: The libao package contains a cross-platform audio library. This is useful
+  to output audio on a wide variety of platforms. It currently supports WAV files,
+  OSS (Open Sound System), ESD (Enlighten Sound Daemon), ALSA (Advanced Linux Sound
+  Architecture), NAS (Network Audio system), aRTS (analog Real-Time Synthesizer),
+  and PulseAudio (next generation GNOME sound architecture).
+download_size: 456 KB
+disk_space: 3.9 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 771000

@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: xorg-synaptics-driver
+version: 1.10.0
+page_kind: x11_driver
+section: x
+page: x7driver
+title: Xorg Synaptics Driver-1.10.0
+tarball: xf86-input-synaptics-1.10.0.tar.xz
+url: https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz
+md5: 017383c13a0d0f4cb320be477ab25513
+summary: The Xorg Synaptics Driver package contains the X.Org Input Driver, support
+  programs and SDK for Synaptics touchpads. Even though the evdev driver can handle
+  touchpads very well, this driver is required if you want to use advanced features
+  like multi tapping, scrolling with touchpad, turning the touchpad off while typing,
+  etc.
+download_size: 424 KB
+disk_space: 5.3 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - libevdev
+  - xorg-server
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 460000

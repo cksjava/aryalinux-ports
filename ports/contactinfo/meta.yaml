@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: contactinfo
+version: '0'
+page_kind: configuration
+section: introduction
+page: contactinfo
+title: Contact Information
+tarball: ''
+url: ''
+md5: ''
+summary: Please direct your emails to one of the BLFS mailing lists. See Mailing lists
+  for more information on the available mailing lists.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 16000

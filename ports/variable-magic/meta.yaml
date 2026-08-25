@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: variable-magic
+version: '0.64'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Variable::Magic-0.64
+tarball: Variable-Magic-0.64.tar.gz
+url: https://cpan.metacpan.org/authors/id/V/VP/VPIT/Variable-Magic-0.64.tar.gz
+md5: 957d53fc6614deb593aa6d7cf96d713a
+summary: Magic is Perl's way of enhancing variables. With this module, you can add
+  your own magic to any variable.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

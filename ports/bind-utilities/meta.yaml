@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: bind-utilities
+version: 9.20.27
+page_kind: single_package
+section: basicnet
+page: bind-utils
+title: BIND Utilities-9.20.27
+tarball: bind-9.20.27.tar.xz
+url: https://ftp.isc.org/isc/bind9/9.20.27/bind-9.20.27.tar.xz
+md5: 0a05c630261429e9da8b012314507b05
+summary: BIND Utilities is not a separate package, it is a collection of the client
+  side programs that are included with BIND-9.20.27. The BIND package includes the
+  client side programs nslookup, dig and host. If you install BIND server, these programs
+  will be installed automatically. This section is for those users who don't need
+  the complete BIND server, but need these client side applications.
+download_size: 5.7 MB
+disk_space: 107 MB
+sbu: 0.3 SBU (using parallelism=4)
+depends:
+  required:
+  - liburcu
+  - libuv
+  recommended:
+  - json-c
+  - nghttp2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 382000

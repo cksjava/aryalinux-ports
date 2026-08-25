@@ -1,0 +1,50 @@
+format: alps-port-v1
+name: meta-pst
+version: '1'
+page_kind: meta
+section: meta
+page: meta-pst
+title: meta-pst
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: install BLFS ports from section ''pst'''
+depends:
+  required: []
+  recommended: []
+members:
+- asymptote
+- biber
+- cups
+- cups-browsed
+- cups-filters
+- docbook-3.1-dtd
+- docbook-4.5-dtd
+- docbook-dsssl
+- docbook-utils
+- docbook-xml
+- docbook-xsl-nons
+- docbook-xsl-ns
+- dvisvgm
+- enscript
+- epdfview-gtk3
+- fop
+- ghostscript
+- gutenprint
+- itstool
+- libcupsfilters
+- libppd
+- mupdf
+- openjade
+- opensp
+- paps
+- sane
+- sgml-common
+- simple-scan
+- texlive
+- tl-installer
+- xindy
+- xmlto
+bootscripts: []
+provides: []
+conflicts: []

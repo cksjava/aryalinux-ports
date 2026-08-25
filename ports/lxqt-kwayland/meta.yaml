@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: lxqt-kwayland
+version: 6.7.4
+page_kind: single_package
+section: lxqt
+page: lxqt-kwayland
+title: kwayland-6.7.4 for lxqt
+tarball: kwayland-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/kwayland-6.7.4.tar.xz
+md5: 020f2d5ae392678298050babb4e60337
+summary: kwayland is a Qt-style API to interact with the wayland-client and wayland-server
+  API.
+download_size: 131 KB
+disk_space: 11 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - extra-cmake-modules
+  - mesa
+  - wayland
+  - plasma-wayland-protocols
+  - qt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 679000

@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: ntfs-3g
+version: 2026.7.7
+page_kind: single_package
+section: postlfs
+page: ntfs-3g
+title: ntfs-3g-2026.7.7
+tarball: ntfs-3g-2026.7.7.tar.gz
+url: https://github.com/tuxera/ntfs-3g/archive/2026.7.7/ntfs-3g-2026.7.7.tar.gz
+md5: 254f0eae638ae2f1f0e24f0b76dd1dfc
+summary: ''
+download_size: 884 KB
+disk_space: 26 MB
+sbu: 0.2 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 75000

@@ -1,0 +1,38 @@
+format: alps-port-v1
+name: xdg-desktop-portal-wlr
+version: 0.8.3
+page_kind: single_package
+section: x
+page: xdg-desktop-portal-wlr
+title: xdg-desktop-portal-wlr-0.8.3
+tarball: xdg-desktop-portal-wlr-0.8.3.tar.gz
+url: https://github.com/emersion/xdg-desktop-portal-wlr/archive/v0.8.3/xdg-desktop-portal-wlr-0.8.3.tar.gz
+md5: 4a02f0350b69df8168b235994df0e43c
+summary: The xdg-desktop-portal-wlr package provides the screenshot and screencast
+  portal interfaces for wlroots compositors. Most of the other portal interfaces are
+  provided by xdg-desktop-portal-gtk-1.15.3, but isn't strictly required unless you
+  need those interfaces.
+download_size: 44 KB
+disk_space: 4 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - mesa
+  - inih
+  - libdrm
+  - systemd
+  - pipewire
+  - wayland
+  - wayland-protocols
+  recommended:
+  - xdg-desktop-portal-gtk
+  ignore_for_order:
+  - xdg-desktop-portal-gtk
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 517000
+cycle_policy:
+  install_before:
+  - xdg-desktop-portal-gtk

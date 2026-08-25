@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: net-http
+version: '6.24'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Net::HTTP-6.24
+tarball: Net-HTTP-6.24.tar.gz
+url: https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-6.24.tar.gz
+md5: 3728289552dc5031700596e0cf4092b4
+summary: The Net::HTTP class is a low level HTTP client. An instance of the class
+  represents a connection to an HTTP server.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - uri
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

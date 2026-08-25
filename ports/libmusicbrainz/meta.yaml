@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: libmusicbrainz
+version: 5.1.0
+page_kind: single_package
+section: multimedia
+page: libmusicbrainz5
+title: libmusicbrainz-5.1.0
+tarball: libmusicbrainz-5.1.0.tar.gz
+url: https://github.com/metabrainz/libmusicbrainz/releases/download/release-5.1.0/libmusicbrainz-5.1.0.tar.gz
+md5: 4cc5556aa40ff7ab8f8cb83965535bc3
+summary: The libmusicbrainz package contains a library which allows you to access
+  the data held on the MusicBrainz server.
+download_size: 76 KB
+disk_space: 6.6 MB (additional 4.4 MB for the API documentation)
+sbu: 0.1 SBU
+depends:
+  required:
+  - cmake
+  - libxml2
+  - neon
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/libmusicbrainz-5.1.0-cmake_fixes-1.patch
+  filename: libmusicbrainz-5.1.0-cmake_fixes-1.patch
+book_order: 784000

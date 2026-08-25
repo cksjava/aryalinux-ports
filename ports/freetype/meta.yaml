@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: freetype
+version: 2.14.3
+page_kind: multi_package
+section: general
+page: freetype2
+title: FreeType-2.14.3
+tarball: freetype-2.14.3.tar.xz
+url: https://downloads.sourceforge.net/freetype/freetype-2.14.3.tar.xz
+md5: 5e78e6fdce5a61d3075e4c25e9852f84
+summary: The FreeType2 package contains a library which allows applications to properly
+  render TrueType fonts.
+download_size: 2.6 MB
+disk_space: 51 MB (with additional documentation)
+sbu: 0.2 SBU (with additional documentation)
+depends:
+  required: []
+  recommended:
+  - harfbuzz
+  - libpng
+  ignore_for_order:
+  - harfbuzz
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 211000
+cycle_policy:
+  install_before:
+  - harfbuzz

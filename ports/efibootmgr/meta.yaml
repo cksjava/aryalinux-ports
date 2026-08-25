@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: efibootmgr
+version: '18'
+page_kind: single_package
+section: postlfs
+page: efibootmgr
+title: efibootmgr-18
+tarball: efibootmgr-18.tar.gz
+url: https://github.com/rhboot/efibootmgr/archive/18/efibootmgr-18.tar.gz
+md5: e170147da25e1d5f72721ffc46fe4e06
+summary: The efibootmgr package provides tools and libraries to manipulate EFI variables.
+download_size: 48 KB
+disk_space: 1.1 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - efivar
+  - popt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 82000

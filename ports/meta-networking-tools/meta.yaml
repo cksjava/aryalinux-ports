@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: meta-networking-tools
+version: '1'
+page_kind: meta
+section: meta
+page: meta-networking-tools
+title: meta-networking-tools
+tarball: ''
+url: ''
+md5: ''
+summary: "Common networking clients/tools (wget, curl, \u2026)"
+depends:
+  required: []
+  recommended: []
+members:
+- curl
+- iw
+- nmap
+- rsync
+- traceroute
+- wget
+- whois
+- wireless-tools
+bootscripts: []
+provides: []
+conflicts: []

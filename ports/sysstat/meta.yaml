@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: sysstat
+version: 12.7.9
+page_kind: single_package
+section: general
+page: sysstat
+title: Sysstat-12.7.9
+tarball: sysstat-12.7.9.tar.xz
+url: https://sysstat.github.io/sysstat-packages/sysstat-12.7.9.tar.xz
+md5: feded3c0171774a19c1efdb2dc43b68d
+summary: The Sysstat package contains utilities to monitor system performance and
+  usage activity. Sysstat contains the sar utility, common to many commercial Unixes,
+  and tools you can schedule via cron to collect and historize performance and activity
+  data.
+download_size: 916 KB
+disk_space: 29 MB
+sbu: 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 305000

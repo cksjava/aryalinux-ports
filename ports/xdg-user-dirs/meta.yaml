@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: xdg-user-dirs
+version: '0.20'
+page_kind: single_package
+section: general
+page: xdg-user-dirs
+title: Xdg-user-dirs-0.20
+tarball: xdg-user-dirs-v0.20.tar.gz
+url: https://gitlab.freedesktop.org/xdg/xdg-user-dirs/-/archive/v0.20/xdg-user-dirs-v0.20.tar.gz
+md5: a80c6f2cc9fd3d9870fcda76d73ce3e6
+summary: Xdg-user-dirs is a tool to help manage “well known” user directories like
+  the desktop folder and the music folder. It also handles localization (i.e. translation)
+  of the filenames.
+download_size: 68 KB
+disk_space: 3.6 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 277000

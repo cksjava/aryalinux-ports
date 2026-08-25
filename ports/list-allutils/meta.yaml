@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: list-allutils
+version: '0.19'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: List::AllUtils-0.19
+tarball: List-AllUtils-0.19.tar.gz
+url: https://www.cpan.org/authors/id/D/DR/DROLSKY/List-AllUtils-0.19.tar.gz
+md5: 86469b1f6819ba181a8471eb932965f2
+summary: The List::Allutils module combines List::Util and List::MoreUtils in one
+  bite-sized package.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - list-someutils
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

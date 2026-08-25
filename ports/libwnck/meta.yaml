@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libwnck
+version: '43.3'
+page_kind: single_package
+section: xfce
+page: libwnck
+title: libwnck-43.3
+tarball: libwnck-43.3.tar.xz
+url: https://download.gnome.org/sources/libwnck/43/libwnck-43.3.tar.xz
+md5: 61938ba1c41f38c9c12033aca5706598
+summary: The libwnck package contains the Window Navigator Construction Kit.
+download_size: 448 KB
+disk_space: 9.8 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - gtk
+  recommended:
+  - glib
+  - startup-notification
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 652000

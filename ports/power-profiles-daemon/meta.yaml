@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: power-profiles-daemon
+version: '0.30'
+page_kind: single_package
+section: general
+page: power-profiles-daemon
+title: Power-profiles-daemon-0.30
+tarball: power-profiles-daemon-0.30.tar.gz
+url: https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/0.30/power-profiles-daemon-0.30.tar.gz
+md5: b72dbed7159cbeff972e9a20ddcc7388
+summary: The Power-profiles-daemon package provides a program that allows modification
+  of the system power/behavior state. This is used on many laptops and can be used
+  by a Desktop Environment to activate power saving or performance CPU governors through
+  dbus. On other systems, Power-profiles-daemon can be used as a streamlined way to
+  set the CPU governor in order to increase system performance at the cost
+download_size: 84 KB
+disk_space: 1.6 MB
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required:
+  - polkit
+  - pygobject
+  - upower
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 300000

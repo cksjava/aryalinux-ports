@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: lib
+version: '0'
+page_kind: configuration
+section: x
+page: lib
+title: Graphical Environment Libraries
+tarball: ''
+url: ''
+md5: ''
+summary: 'This chapter does not contain libraries that are required to run X. It does
+  contain libraries that enhance X. In some cases the enhancement is as simple as
+  font support. In others it is as complex as libraries that sit between X and applications
+  that run on X whose purpose is to standardize the look and feel and inter-process
+  communications for different applications. They also assist programmers '
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 471000

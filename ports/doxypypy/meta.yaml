@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: doxypypy
+version: 0.8.8.7
+page_kind: python_module
+section: general
+page: python-modules
+title: Doxypypy-0.8.8.7
+tarball: doxypypy-0.8.8.7.tar.gz
+url: https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-0.8.8.7.tar.gz
+md5: 5773d0a7882df900cbda8ee5107e1ced
+summary: The Doxypypy package is a doxygen filter for python.
+download_size: 45 KB
+disk_space: 2.1 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - chardet
+  - doxygen
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

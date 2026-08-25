@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: loupe
+version: '49.2'
+page_kind: single_package
+section: gnome
+page: loupe
+title: Loupe-49.2
+tarball: loupe-49.2.tar.xz
+url: https://download.gnome.org/sources/loupe/49/loupe-49.2.tar.xz
+md5: fbfd6f3e60b342094dd67932f3818eb0
+summary: Loupe is an application used for viewing image files on the GNOME Desktop.
+download_size: 372 KB
+disk_space: 1.0 GB (11 MB installed, add 2 MB for tests)
+sbu: 1.4 SBU (with 4 jobs, add 2.6 SBU for tests)
+depends:
+  required:
+  - glycin
+  - little-cms
+  - libadwaita
+  - libgweather
+  - libseccomp
+  - rustc
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 641000

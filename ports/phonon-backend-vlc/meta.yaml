@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: phonon-backend-vlc
+version: 0.12.0
+page_kind: single_package
+section: kde
+page: phonon-backend-vlc
+title: Phonon-backend-vlc-0.12.0
+tarball: phonon-backend-vlc-0.12.0.tar.xz
+url: https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz
+md5: 2a27b5d249f97a15040481008fb16e1b
+summary: This package provides a Phonon backend which utilizes the VLC media framework.
+download_size: 72 KB
+disk_space: 6.6 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - phonon
+  - vlc
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 542000

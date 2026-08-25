@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: rsync
+version: 3.5.0
+page_kind: single_package
+section: basicnet
+page: rsync
+title: rsync-3.5.0
+tarball: rsync-3.5.0.tar.gz
+url: https://www.samba.org/ftp/rsync/src/rsync-3.5.0.tar.gz
+md5: 418db7651d1acf55364b0834234dbbfb
+summary: The rsync package contains the rsync utility. This is useful for synchronizing
+  large file archives over a network.
+download_size: 1.9 MB
+disk_space: 80 MB (with tests and documentation)
+sbu: 0.6 SBU (with tests)
+depends:
+  required: []
+  recommended:
+  - popt
+bootscripts: []
+systemd_units:
+- rsyncd
+provides: []
+conflicts: []
+book_order: 373000

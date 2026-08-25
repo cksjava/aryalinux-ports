@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: balsa
+version: 2.6.5
+page_kind: single_package
+section: xsoft
+page: balsa
+title: Balsa-2.6.5
+tarball: balsa-2.6.5.tar.gz
+url: https://gitlab.gnome.org/GNOME/balsa/-/archive/2.6.5/balsa-2.6.5.tar.gz
+md5: c1039c22e8c2544c6a357626d71b6220
+summary: The Balsa package contains a lightweight GTK+-based mail client.
+download_size: 6.0 MB
+disk_space: 44 MB
+sbu: 0.1 SBU (Using parallelism=4)
+depends:
+  required:
+  - enchant
+  - gmime
+  - gpgme
+  - gtk
+  - libnotify
+  - libsecret
+  - mta
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/balsa-2.6.5-libical_4_fixes-1.patch
+  filename: balsa-2.6.5-libical_4_fixes-1.patch
+book_order: 730000

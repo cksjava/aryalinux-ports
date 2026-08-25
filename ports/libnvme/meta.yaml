@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libnvme
+version: 1.16.2
+page_kind: single_package
+section: general
+page: libnvme
+title: libnvme-1.16.2
+tarball: libnvme-1.16.2.tar.gz
+url: https://github.com/linux-nvme/libnvme/archive/v1.16.2/libnvme-1.16.2.tar.gz
+md5: a6554fb50022d762021fc1e949e01520
+summary: The libnvme package is a library which provides type definitions for NVMe
+  specification structures, enumerations, and bit fields, helper functions to construct,
+  dispatch, and decode commands and payloads, and utilities to connect, scan, and
+  manage NVMe devices on a Linux system.
+download_size: 820 KB
+disk_space: 34 MB
+sbu: 0.1 SBU (including tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 154000

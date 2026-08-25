@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: skel
+version: '0'
+page_kind: configuration
+section: postlfs
+page: skel
+title: Configuring for Adding Users
+tarball: ''
+url: ''
+md5: ''
+summary: Together, the /usr/sbin/useradd command and /etc/skel directory (both are
+  easy to set up and use) provide a way to assure new users are added to your LFS
+  system with the same beginning settings for things such as the PATH, keyboard processing
+  and other environmental variables. Using these two facilities makes it easier to
+  assure this initial state for each new user added to the system.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 32000

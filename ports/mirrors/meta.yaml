@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: mirrors
+version: '0'
+page_kind: configuration
+section: introduction
+page: mirrors
+title: Mirror Sites
+tarball: ''
+url: ''
+md5: ''
+summary: The BLFS project has a number of mirrors set up world-wide to make it easier
+  and more convenient for you to access the website. Please visit the https://www.linuxfromscratch.org/mirrors.html
+  website for the list of current mirrors.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 9000

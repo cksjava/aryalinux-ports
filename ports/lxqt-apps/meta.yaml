@@ -1,0 +1,18 @@
+format: alps-port-v1
+name: lxqt-apps
+version: '0'
+page_kind: configuration
+section: lxqt
+page: lxqt-apps
+title: LXQt Applications
+tarball: ''
+url: ''
+md5: ''
+summary: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+provides: []
+conflicts: []
+book_order: 711000

@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: cryptsetup
+version: 2.8.7
+page_kind: single_package
+section: postlfs
+page: cryptsetup
+title: cryptsetup-2.8.7
+tarball: cryptsetup-2.8.7.tar.xz
+url: https://www.kernel.org/pub/linux/utils/cryptsetup/v2.8/cryptsetup-2.8.7.tar.xz
+md5: a9a19068e4db32f77c0ab95c378ab290
+summary: cryptsetup is used to set up transparent encryption of block devices using
+  the kernel crypto API.
+download_size: 11 MB
+disk_space: 35 MB (add 5 MB for tests)
+sbu: 0.2 SBU (add 19 SBU for tests)
+depends:
+  required:
+  - json-c
+  - lvm2
+  - popt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 41000

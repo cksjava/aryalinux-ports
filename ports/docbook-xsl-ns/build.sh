@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
+if [[ ${#_tops[@]} -ne 1 ]]; then
+  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
+  exit 1
+fi
+cd "${_tops[0]}"
+
+# --- commands from BLFS ---
+patch -Np1 -i ../docbook-xsl-1.79.2-stack_fix-1.patch
+
+install -v -m755 -d /usr/share/xml/docbook/xsl-stylesheets-1.79.2
+
+cp -v -R VERSION assembly common eclipse epub epub3 extensions fo        \
+         highlighting html htmlhelp images javahelp lib manpages params  \
+         profiling roundtrip slides template tests tools webhelp website \
+         xhtml xhtml-1_1 xhtml5                                          \
+    /usr/share/xml/docbook/xsl-stylesheets-1.79.2
+
+ln -s VERSION /usr/share/xml/docbook/xsl-stylesheets-1.79.2/VERSION.xsl
+
+(set -e
+
+ install -v -d -m755 /etc/xml
+ [ -e /etc/xml/catalog ] || xmlcatalog --noout --create /etc/xml/catalog
+
+ for uri in http{,s}://cdn.docbook.org/release/xsl/{1.79.2,current} \
+            http://docbook.sourceforge.net/release/xsl-ns/current; do
+   for rewrite in System URI; do
+     xmlcatalog --noout --add "rewrite$rewrite"        \
+       "$uri"                                          \
+       "/usr/share/xml/docbook/xsl-stylesheets-1.79.2" \
+       /etc/xml/catalog
+   done
+ done)

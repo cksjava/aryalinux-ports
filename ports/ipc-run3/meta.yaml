@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: ipc-run3
+version: '0.049'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: IPC::Run3-0.049
+tarball: IPC-Run3-0.049.tar.gz
+url: https://www.cpan.org/authors/id/R/RJ/RJBS/IPC-Run3-0.049.tar.gz
+md5: 569393ca56dfb78dedd79e93c0439159
+summary: IPC::Run3 is used to run a subprocess with input/output redirection.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

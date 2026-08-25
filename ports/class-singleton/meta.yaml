@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: class-singleton
+version: '1.6'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Class::Singleton-1.6
+tarball: Class-Singleton-1.6.tar.gz
+url: https://cpan.metacpan.org/authors/id/S/SH/SHAY/Class-Singleton-1.6.tar.gz
+md5: d9c84a7b8d1c490c38e88ed1f9faae47
+summary: A Singleton describes an object class that can have only one instance in
+  any system, such as a print spooler. This module implements a Singleton class from
+  which other classes can be derived.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: sshfs
+version: 3.7.6
+page_kind: single_package
+section: postlfs
+page: sshfs
+title: sshfs-3.7.6
+tarball: sshfs-3.7.6.tar.xz
+url: https://github.com/libfuse/sshfs/releases/download/sshfs-3.7.6/sshfs-3.7.6.tar.xz
+md5: bf45c6ade1bef1f7e1bb2c2f344a0b33
+summary: The Sshfs package contains a filesystem client based on the SSH File Transfer
+  Protocol. This is useful for mounting a remote computer that you have ssh access
+  to as a local filesystem. This allows you to drag and drop files or run shell commands
+  on the remote files as if they were on your local computer.
+download_size: 56 KB
+disk_space: 1.2 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - fuse
+  - glib
+  - openssh
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 79000

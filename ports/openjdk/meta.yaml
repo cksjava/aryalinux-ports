@@ -1,0 +1,37 @@
+format: alps-port-v1
+name: openjdk
+version: 21.0.10
+page_kind: single_package
+section: general
+page: openjdk
+title: OpenJDK-21.0.10
+tarball: jdk-21.0.10-ga.tar.gz
+url: https://github.com/openjdk/jdk21u/archive/jdk-21.0.10-ga.tar.gz
+md5: ea4fc0a1057529cae074ab6ab0a7e1f2
+summary: OpenJDK is an open-source implementation of Oracle's Java Standard Edition
+  platform. OpenJDK is useful for developing Java programs, and provides a complete
+  runtime environment to run Java programs.
+download_size: 109 MB
+disk_space: 4.0 GB (add 802 MB for tests)
+sbu: 3.8 SBU with 4 jobs (add 25 SBU for tests with 4 jobs)
+depends:
+  required:
+  - java
+  - alsa-lib
+  - cpio
+  - cups
+  - which
+  - xorg-libraries
+  - zip
+  recommended:
+  - make-ca
+  - giflib
+  - little-cms
+  - libjpeg-turbo
+  - libpng
+  - wget
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 360000

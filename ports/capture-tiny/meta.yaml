@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: capture-tiny
+version: '0.50'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Capture::Tiny-0.50
+tarball: Capture-Tiny-0.50.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Capture-Tiny-0.50.tar.gz
+md5: 92c96fdff1b972a663cc2b3e206ca853
+summary: The Capture::Tiny module captures STDOUT and STDERR from Perl, XS (eXternal
+  Subroutine, i.e. written in C or C++) or external programs.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

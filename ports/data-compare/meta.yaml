@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: data-compare
+version: '1.29'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Data::Compare-1.29
+tarball: Data-Compare-1.29.tar.gz
+url: https://www.cpan.org/authors/id/D/DC/DCANTRELL/Data-Compare-1.29.tar.gz
+md5: ce9cb42ba6af634f5ab51f13f37e2ddb
+summary: The Data::Compare module compares two perl data structures.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - clone
+  - file-find-rule
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

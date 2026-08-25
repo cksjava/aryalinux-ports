@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: blfs-systemd-units
+version: '0'
+page_kind: systemd_units
+section: introduction
+page: systemd-units
+title: BLFS Systemd Units
+tarball: ''
+url: ''
+md5: ''
+summary: 'Vendored BLFS systemd units (Makefile + unit files); ports install via postinstall:
+  alps unit install-<name>'
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 21000

@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: tinysparql
+version: 3.11.1
+page_kind: single_package
+section: gnome
+page: tinysparql
+title: tinysparql-3.11.1
+tarball: tinysparql-3.11.1.tar.xz
+url: https://download.gnome.org/sources/tinysparql/3.11/tinysparql-3.11.1.tar.xz
+md5: aa793424c64c06b50248969f3e9d553d
+summary: Tinysparql is a low-footprint RDF triple store with a SPARQL 1.1 interface.
+download_size: 2.3 MB
+disk_space: 61 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required:
+  - json-glib
+  - vala
+  recommended:
+  - glib
+  - icu
+  - libsoup
+  - localsearch
+  ignore_for_order:
+  - localsearch
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 602000
+cycle_policy:
+  install_before:
+  - localsearch

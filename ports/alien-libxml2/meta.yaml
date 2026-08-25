@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: alien-libxml2
+version: '0.20'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Alien::Libxml2-0.20
+tarball: Alien-Libxml2-0.20.tar.gz
+url: https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Libxml2-0.20.tar.gz
+md5: c19b4fdf1e4670f035a0971413a56424
+summary: Alien::Libxml2 is designed to allow modules to install the C libxml2 library
+  on your system. In BLFS, it uses pkg-config to find how to link to the installed
+  libxml2-2.15.3.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - alien-build-plugin-download-gitlab
+  - libxml2
+  - path-tiny
+  recommended:
+  - test-simple
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Download
+  url: libxml2.html
+  filename: libxml2.html
+book_order: 340000

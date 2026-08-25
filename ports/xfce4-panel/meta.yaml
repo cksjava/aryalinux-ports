@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: xfce4-panel
+version: 4.20.8
+page_kind: single_package
+section: xfce
+page: xfce4-panel
+title: xfce4-panel-4.20.8
+tarball: xfce4-panel-4.20.8.tar.bz2
+url: https://archive.xfce.org/src/xfce/xfce4-panel/4.20/xfce4-panel-4.20.8.tar.bz2
+md5: c4c7919a07c2c48cffea7a608ea86803
+summary: The Xfce4 Panel package contains the Xfce4 Panel.
+download_size: 2.3 MB
+disk_space: 62 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - cairo
+  - exo
+  - garcon
+  - libxfce4windowing
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 655000

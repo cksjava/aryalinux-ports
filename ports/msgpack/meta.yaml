@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: msgpack
+version: 1.2.1
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Msgpack-1.2.1
+tarball: msgpack-1.2.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/m/msgpack/msgpack-1.2.1.tar.gz
+md5: e0a9c82423574f99314ccd1ed77b8c67
+summary: Msgpack is an efficient binary serialization format. It lets you exchange
+  data among multiple languages like JSON. But it's faster and smaller. This package
+  provides CPython bindings for reading and writing Msgpack data.
+download_size: 180 KB
+disk_space: 4.1 MB (add 0.3 MB for tests)
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - cython
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

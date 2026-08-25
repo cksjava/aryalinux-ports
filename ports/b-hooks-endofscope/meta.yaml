@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: b-hooks-endofscope
+version: '0.28'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: B::Hooks::EndOfScope-0.28
+tarball: B-Hooks-EndOfScope-0.28.tar.gz
+url: https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz
+md5: d738ba65539d4acd601d47cc3e2cbb3a
+summary: B::Hooks::EndOfScope allows you to execute code when Perl finishes compiling
+  the surrounding scope.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - module-implementation
+  - sub-exporter-progressive
+  - variable-magic
+  recommended:
+  - try-tiny
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

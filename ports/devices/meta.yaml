@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: devices
+version: '0'
+page_kind: configuration
+section: postlfs
+page: devices
+title: About Devices
+tarball: ''
+url: ''
+md5: ''
+summary: Although most devices needed by packages in BLFS and beyond are set up properly
+  by udev using the default rules installed by LFS in /etc/udev/rules.d, there are
+  cases where the rules must be modified or augmented.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 31000

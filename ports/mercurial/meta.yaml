@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: mercurial
+version: 7.2.4
+page_kind: single_package
+section: general
+page: mercurial
+title: Mercurial-7.2.4
+tarball: mercurial-7.2.4.tar.gz
+url: https://www.mercurial-scm.org/release/mercurial-7.2.4.tar.gz
+md5: 625110ea71d1b872f1e3c59227842db5
+summary: Mercurial is a distributed source control management tool similar to Git
+  and Bazaar. Mercurial is written in Python and is used by projects such as Mozilla
+  for Firefox and Thunderbird.
+download_size: 8.9 MB
+disk_space: 125 MB (with docs and tests)
+sbu: 0.3 SBU (with docs; add 24 SBU for tests; both using parallelism=4)
+depends:
+  required:
+  - setuptools_scm
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 336000

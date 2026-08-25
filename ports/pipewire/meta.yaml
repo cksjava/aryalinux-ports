@@ -1,0 +1,39 @@
+format: alps-port-v1
+name: pipewire
+version: 1.6.8
+page_kind: single_package
+section: multimedia
+page: pipewire
+title: Pipewire-1.6.8
+tarball: pipewire-1.6.8.tar.bz2
+url: https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.8/pipewire-1.6.8.tar.bz2
+md5: 9ae75812a76951c93210a26272c90ef3
+summary: The pipewire package contains a server and userspace API to handle multimedia
+  pipelines. This includes a universal API to connect to multimedia devices, as well
+  as sharing multimedia files between applications.
+download_size: 2.0 MB
+disk_space: 110 MB (with tests)
+sbu: 0.7 SBU (with tests, both using parallelism=4)
+depends:
+  required: []
+  recommended:
+  - bluez
+  - gstreamer
+  - gst-plugins-base
+  - sbc
+  - v4l-utils
+  - wireplumber
+  ignore_for_order:
+  - gst-plugins-base
+  - v4l-utils
+  - wireplumber
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 794000
+cycle_policy:
+  install_before:
+  - gst-plugins-base
+  - v4l-utils
+  - wireplumber

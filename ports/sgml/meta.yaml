@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: sgml
+version: '0'
+page_kind: configuration
+section: pst
+page: sgml
+title: Standard Generalized Markup Language (SGML)
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains DocBook SGML document type definitions (DTDs), DocBook
+  DSSSL Stylesheets and DocBook tools to validate, transform, format and publish DocBook
+  documents.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 843000

@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: aspell
+version: 0.60.8.2
+page_kind: single_package
+section: general
+page: aspell
+title: Aspell-0.60.8.2
+tarball: aspell-0.60.8.2.tar.gz
+url: https://ftpmirror.gnu.org/aspell/aspell-0.60.8.2.tar.gz
+md5: bc3f30321db5d44f112ab66084421225
+summary: The Aspell package contains an interactive spell checking program and the
+  Aspell libraries. Aspell can either be used as a library or as an independent spell
+  checker.
+download_size: 3.5 MB
+disk_space: 56 MB (Additional 8 MB for EN dictionary)
+sbu: 0.4 SBU
+depends:
+  required:
+  - which
+  - enchant
+  recommended: []
+  ignore_for_order:
+  - enchant
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 105000
+cycle_policy:
+  install_before:
+  - enchant

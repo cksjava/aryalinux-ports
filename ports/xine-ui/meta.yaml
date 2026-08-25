@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: xine-ui
+version: 0.99.14
+page_kind: single_package
+section: multimedia
+page: xine-ui
+title: xine-ui-0.99.14
+tarball: xine-ui-0.99.14.tar.xz
+url: https://downloads.sourceforge.net/xine/xine-ui-0.99.14.tar.xz
+md5: 86a4db9050405a91fcc33b7ad85274f5
+summary: The xine User Interface package contains a multimedia player. It plays back
+  CDs, DVDs and VCDs. It also decodes multimedia files like AVI, MOV, WMV, MPEG and
+  MP3 from local disk drives, and displays multimedia streamed over the Internet.
+download_size: 2.1 MB
+disk_space: 23 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - xine-lib
+  - shared-mime-info
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 823000

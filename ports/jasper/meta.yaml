@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: jasper
+version: 4.2.9
+page_kind: single_package
+section: general
+page: jasper
+title: jasper-4.2.9
+tarball: jasper-version-4.2.9.tar.gz
+url: https://github.com/jasper-software/jasper/archive/version-4.2.9/jasper-version-4.2.9.tar.gz
+md5: 5c84b0c41b6b3363124f8bc7f8881f53
+summary: The jasper Project is an open-source initiative to provide a free software-based
+  reference implementation of the JPEG-2000 codec.
+download_size: 1.9 MB
+disk_space: 10 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required:
+  - cmake
+  recommended:
+  - libjpeg-turbo
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 223000

@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: cdwriteutils
+version: '0'
+page_kind: configuration
+section: multimedia
+page: cdwriteutils
+title: CD/DVD-Writing Utilities
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains information on CD/DVD-writing utilities in Linux.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 824000

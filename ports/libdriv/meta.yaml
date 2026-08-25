@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libdriv
+version: '0'
+page_kind: configuration
+section: multimedia
+page: libdriv
+title: Multimedia Libraries and Drivers
+tarball: ''
+url: ''
+md5: ''
+summary: Many multimedia programs require libraries and/or drivers in order to function
+  properly. The packages in this section fall into this category. Generally you only
+  need to install these if you are installing a program which has the library listed
+  as either a requirement, or as an option to enable it to support certain functionality.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 745000

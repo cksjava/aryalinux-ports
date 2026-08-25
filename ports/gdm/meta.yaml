@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: gdm
+version: '50.2'
+page_kind: single_package
+section: x
+page: gdm
+title: GDM-50.2
+tarball: gdm-50.2.tar.xz
+url: https://download.gnome.org/sources/gdm/50/gdm-50.2.tar.xz
+md5: b6cc3ad55bf918bc3c32e647ce35a531
+summary: GDM is a system service that is responsible for providing graphical logins
+  and managing local and remote displays.
+download_size: 984 KB
+disk_space: 28 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - accountsservice
+  - linux-pam
+  - gnome-session
+  - gnome-shell
+  - systemd
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 519000

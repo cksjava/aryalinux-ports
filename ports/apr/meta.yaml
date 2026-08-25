@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: apr
+version: 1.7.6
+page_kind: single_package
+section: general
+page: apr
+title: Apr-1.7.6
+tarball: apr-1.7.6.tar.bz2
+url: https://archive.apache.org/dist/apr/apr-1.7.6.tar.bz2
+md5: 2ebb58910e426e5a83af97bc94cae66d
+summary: The Apache Portable Runtime (APR) is a supporting library for the Apache
+  web server. It provides a set of application programming interfaces (APIs) that
+  map to the underlying Operating System (OS). Where the OS doesn't support a particular
+  function, APR will provide an emulation. Thus programmers can use the APR to make
+  a program portable across different platforms.
+download_size: 879 KB
+disk_space: 11 MB (additional 4 MB for the tests)
+sbu: 0.2 SBU (add 1.7 SBU for tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 103000

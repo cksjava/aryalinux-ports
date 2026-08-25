@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: sphinxcontrib-qthelp
+version: 2.0.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Sphinxcontrib-qthelp-2.0.0
+tarball: sphinxcontrib_qthelp-2.0.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcontrib_qthelp-2.0.0.tar.gz
+md5: ed4f32003b71a54ac3d68aa651cb6573
+summary: The Sphinxcontrib-qthelp package is a Sphinx extension which outputs QtHelp
+  documents.
+download_size: 20 KB
+disk_space: 18 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

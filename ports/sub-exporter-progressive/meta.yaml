@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: sub-exporter-progressive
+version: '0.001013'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Sub::Exporter::Progressive-0.001013
+tarball: Sub-Exporter-Progressive-0.001013.tar.gz
+url: https://cpan.metacpan.org/authors/id/F/FR/FREW/Sub-Exporter-Progressive-0.001013.tar.gz
+md5: 72cf6acdd2a0a8b105821a4db98e4ebe
+summary: Sub::Exporter::Progressive is a wrapper for Sub::Exporter.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

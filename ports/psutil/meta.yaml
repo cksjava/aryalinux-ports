@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: psutil
+version: 7.2.2
+page_kind: python_module
+section: general
+page: python-modules
+title: psutil-7.2.2
+tarball: psutil-7.2.2.tar.gz
+url: https://files.pythonhosted.org/packages/source/p/psutil/psutil-7.2.2.tar.gz
+md5: a1c5c30f68a927053be09592d1a4be53
+summary: psutil (process and system utilities) is a cross-platform library for retrieving
+  information on running processes and system utilization (CPU, memory, disks, network,
+  sensors) in Python. It is useful mainly for system monitoring, profiling and limiting
+  process resources and management of running processes. It implements many functionalities
+  offered by classic UNIX command line tools such as ps, to
+download_size: 484 KB
+disk_space: 94 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

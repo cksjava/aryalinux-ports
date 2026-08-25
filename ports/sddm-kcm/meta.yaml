@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: sddm-kcm
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: sddm-kcm-6.7.4
+tarball: sddm-kcm-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/sddm-kcm-6.7.4.tar.xz
+md5: 317ca68615ef017390275a222b15ce9d
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 36
+book_order: 578037

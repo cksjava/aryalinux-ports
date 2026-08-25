@@ -1,0 +1,18 @@
+format: alps-port-v1
+name: kf-apps
+version: '0'
+page_kind: configuration
+section: kde
+page: kf-apps
+title: KDE Frameworks 6 Based Applications
+tarball: ''
+url: ''
+md5: ''
+summary: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+provides: []
+conflicts: []
+book_order: 549000

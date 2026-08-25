@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: pyparsing
+version: 3.3.2
+page_kind: python_module
+section: general
+page: python-modules
+title: pyparsing-3.3.2
+tarball: pyparsing-3.3.2.tar.gz
+url: https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-3.3.2.tar.gz
+md5: ca3bea68cd1a84584b68cd7bed679464
+summary: The pyparsing module is an alternative approach to creating and executing
+  simple grammars, vs. the traditional lex/yacc approach, or the use of regular expressions.
+  It provides a library of classes that client code uses to construct the grammar
+  directly in Python code.
+download_size: 6.6 MB
+disk_space: 113 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

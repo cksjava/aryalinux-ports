@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: uchardet
+version: 0.0.8
+page_kind: single_package
+section: general
+page: uchardet
+title: Uchardet-0.0.8
+tarball: uchardet-0.0.8.tar.xz
+url: https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+md5: 9e267be7aee81417e5875086dd9d44fd
+summary: The Uchardet package contains an encoding detector library which takes a
+  sequence of bytes in an unknown character encoding and attempts to determine the
+  encoding of the text.
+download_size: 217 KB
+disk_space: 4.6 MB (with test)
+sbu: less than 0.1 SBU (with test)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 199000

@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libmnl
+version: 1.0.5
+page_kind: single_package
+section: basicnet
+page: libmnl
+title: libmnl-1.0.5
+tarball: libmnl-1.0.5.tar.bz2
+url: https://netfilter.org/projects/libmnl/files/libmnl-1.0.5.tar.bz2
+md5: 0bbb70573119ec5d49435114583e7a49
+summary: The libmnl library provides a minimalistic userspace library oriented to
+  Netlink developers. There are a lot of common tasks in the parsing, validating,
+  and constructing of both the Netlink header and TLVs that are repetitive and easy
+  to get wrong. This library aims to provide simple helpers that allow you to re-use
+  code and to avoid re-inventing the wheel.
+download_size: 308 KB
+disk_space: 2.9 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 398000

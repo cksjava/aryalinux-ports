@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: screengrab
+version: 3.2.0
+page_kind: single_package
+section: lxqt
+page: screengrab
+title: screengrab-3.2.0
+tarball: screengrab-3.2.0.tar.xz
+url: https://github.com/lxqt/screengrab/releases/download/3.2.0/screengrab-3.2.0.tar.xz
+md5: 642790e122e55167414000a74cd274c6
+summary: The screengrab package is a cross-platform tool for making screenshots quickly.
+download_size: 368 KB
+disk_space: 10 MB
+sbu: 0.4 SBU
+depends:
+  required:
+  - lxqt-build-tools
+  - libqtxdg
+  - xdg-utils
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 719000

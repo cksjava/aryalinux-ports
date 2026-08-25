@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: qtermwidget
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: qtermwidget
+title: qtermwidget-2.4.0
+tarball: qtermwidget-2.4.0.tar.xz
+url: https://github.com/lxqt/qtermwidget/releases/download/2.4.0/qtermwidget-2.4.0.tar.xz
+md5: 033823bc2599813ad02b1cfcabcefec9
+summary: As the name suggests, the qtermwidget package is a terminal widget for Qt.
+download_size: 200 KB
+disk_space: 7.5 MB
+sbu: 0.5 SBU
+depends:
+  required:
+  - qt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 717000

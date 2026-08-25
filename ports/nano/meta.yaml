@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: nano
+version: '9.2'
+page_kind: single_package
+section: postlfs
+page: nano
+title: Nano-9.2
+tarball: nano-9.2.tar.xz
+url: https://www.nano-editor.org/dist/v9/nano-9.2.tar.xz
+md5: 9bb0f37945afa964d16bffd9e4da3106
+summary: The Nano package contains a small, simple text editor which aims to replace
+  Pico, the default editor in the Pine package.
+download_size: 1.7 MB
+disk_space: 30 MB
+sbu: 0.2 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 90000

@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: module-pluggable
+version: '6.3'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Module::Pluggable-6.3
+tarball: Module-Pluggable-6.3.tar.gz
+url: https://cpan.metacpan.org/authors/id/S/SI/SIMONW/Module-Pluggable-6.3.tar.gz
+md5: 442bb8838a2b7053aa276a41233b0607
+summary: Module::Pluggable provides a way of having 'plugins' for your module.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

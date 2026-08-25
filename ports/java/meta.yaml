@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: java
+version: '0'
+page_kind: configuration
+section: general
+page: java
+title: Java-21.0.10
+tarball: ''
+url: ''
+md5: ''
+summary: Creating a JVM from source requires a set of circular dependencies. The first
+  thing that's needed is a set of programs called a Java Development Kit (JDK). This
+  set of programs includes java, javac, jar, and several others. It also includes
+  several base jar files.
+download_size: ''
+disk_space: 315 MB
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 359000

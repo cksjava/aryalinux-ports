@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: openssh
+version: 10.5p1
+page_kind: single_package
+section: postlfs
+page: openssh
+title: OpenSSH-10.5p1
+tarball: openssh-10.5p1.tar.gz
+url: https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.5p1.tar.gz
+md5: a95119f402dfa0166c9dd1237239085c
+summary: The OpenSSH package contains ssh clients and the sshd daemon. This is useful
+  for encrypting authentication and subsequent traffic over a network. The ssh and
+  scp commands are secure implementations of telnet and rcp.
+download_size: 2.3 MB
+disk_space: 103 MB (with tests)
+sbu: 0.3 SBU (Using parallelism=4; running the tests takes about 11 minutes, irrespective
+  of processor speed)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units:
+- sshd
+provides: []
+conflicts: []
+book_order: 56000

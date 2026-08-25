@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: gnome-nettool
+version: '42.0'
+page_kind: single_package
+section: gnome
+page: gnome-nettool
+title: gnome-nettool-42.0
+tarball: gnome-nettool-42.0.tar.xz
+url: https://download.gnome.org/sources/gnome-nettool/42/gnome-nettool-42.0.tar.xz
+md5: ba99489e9e3a1af03e9f2719acac7beb
+summary: The GNOME Nettool package is a network information tool which provides GUI
+  interface for some of the most common command line network tools.
+download_size: 413 KB
+disk_space: 12 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - gtk
+  - itstool
+  - libgtop
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
+  filename: gnome-nettool-42.0-ping_and_netstat_fixes-1.patch
+book_order: 635000

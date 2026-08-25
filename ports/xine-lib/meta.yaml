@@ -1,0 +1,38 @@
+format: alps-port-v1
+name: xine-lib
+version: 1.2.13
+page_kind: single_package
+section: multimedia
+page: xine-lib
+title: xine-lib-1.2.13
+tarball: xine-lib-1.2.13.tar.xz
+url: https://downloads.sourceforge.net/xine/xine-lib-1.2.13.tar.xz
+md5: 9e1be39857b7a3cd7cc0f2b96331ff22
+summary: The Xine Libraries package contains xine libraries. These are useful for
+  interfacing with external plug-ins that allow the flow of information from the source
+  to the audio and video hardware.
+download_size: 4.8 MB
+disk_space: 98 MB (with API documentation)
+sbu: 0.5 SBU (Using parallelism=4; with API documentation)
+depends:
+  required:
+  - a-graphical-environment
+  - ffmpeg
+  - pulseaudio
+  recommended:
+  - libdvdnav
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-upstream_fixes-1.patch
+  filename: xine-lib-1.2.13-upstream_fixes-1.patch
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-gcc15_fixes-1.patch
+  filename: xine-lib-1.2.13-gcc15_fixes-1.patch
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/xine-lib-1.2.13-ffmpeg8.patch
+  filename: xine-lib-1.2.13-ffmpeg8.patch
+book_order: 808000

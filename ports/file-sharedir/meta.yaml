@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: file-sharedir
+version: '1.118'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: File::ShareDir-1.118
+tarball: File-ShareDir-1.118.tar.gz
+url: https://cpan.metacpan.org/authors/id/R/RE/REHSACK/File-ShareDir-1.118.tar.gz
+md5: 0084f730f4e3d4d89703d92b3ea82f54
+summary: File::ShareDir allows you to access data files which have been installed
+  by File::ShareDir::Install.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - class-inspector
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

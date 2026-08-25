@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: xscreensaver
+version: '6.15'
+page_kind: single_package
+section: xsoft
+page: xscreensaver
+title: XScreenSaver-6.15
+tarball: xscreensaver-6.15.tar.gz
+url: https://www.jwz.org/xscreensaver/xscreensaver-6.15.tar.gz
+md5: 65cd8d94841019763e1246df097612ff
+summary: The XScreenSaver package is a modular screen saver and locker for the X Window
+  System. It is highly customizable and allows the use of any program that can draw
+  on the root window as a display mode. The purpose of XScreenSaver is to display
+  pretty pictures on your screen when it is not in use, in keeping with the philosophy
+  that unattended monitors should always be doing something interesting, jus
+download_size: 32 MB
+disk_space: 379 MB
+sbu: 0.4 SBU (Using parallelism=4)
+depends:
+  required:
+  - gtk
+  - intltool
+  - xorg-applications
+  recommended:
+  - glu
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 743000

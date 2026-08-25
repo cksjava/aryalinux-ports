@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
+if [[ ${#_tops[@]} -ne 1 ]]; then
+  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
+  exit 1
+fi
+cd "${_tops[0]}"
+
+# --- commands from BLFS ---
+./configure --prefix=/usr --disable-static
+make
+
+make -C doc html
+makeinfo --html      -o doc/html       doc/parted.texi
+makeinfo --plaintext -o doc/parted.txt doc/parted.texi
+
+cp build-aux/texinfo.tex doc
+texi2pdf -o doc/parted.pdf doc/parted.texi
+texi2dvi -o doc/parted.dvi doc/parted.texi
+dvips    -o doc/parted.ps  doc/parted.dvi
+
+make install
+install -v -m755 -d /usr/share/doc/parted-3.7/html
+install -v -m644    doc/html/* \
+                    /usr/share/doc/parted-3.7/html
+install -v -m644    doc/{FAT,API.md,parted.{txt,html}} \
+                    /usr/share/doc/parted-3.7
+
+install -v -m644 doc/FAT doc/API doc/parted.{pdf,ps,dvi} \
+                    /usr/share/doc/parted-3.7

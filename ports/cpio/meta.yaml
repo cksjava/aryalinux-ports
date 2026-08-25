@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: cpio
+version: '2.15'
+page_kind: single_package
+section: general
+page: cpio
+title: cpio-2.15
+tarball: cpio-2.15.tar.bz2
+url: https://ftpmirror.gnu.org/cpio/cpio-2.15.tar.bz2
+md5: 3394d444ca1905ea56c94b628b706a0b
+summary: The cpio package contains tools for archiving.
+download_size: 1.6 MB
+disk_space: 21 MB (with tests and docs)
+sbu: 0.3 SBU (with tests and docs)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 287000

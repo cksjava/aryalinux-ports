@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: fop
+version: '2.11'
+page_kind: single_package
+section: pst
+page: fop
+title: fop-2.11
+tarball: fop-2.11-src.tar.gz
+url: https://archive.apache.org/dist/xmlgraphics/fop/source/fop-2.11-src.tar.gz
+md5: b202dcd7c6dcaf3ec5d14bb193d7bf01
+summary: The FOP (Formatting Objects Processor) package contains a print formatter
+  driven by XSL formatting objects (XSL-FO). It is a Java application that reads a
+  formatting object tree and renders the resulting pages to a specified output. Output
+  formats currently supported include PDF, PCL, PostScript, SVG, XML (area tree representation),
+  print, AWT, MIF and ASCII text. The primary output target is PDF.
+download_size: 21 MB
+disk_space: 343 MB (including files downloaded to the user directory)
+sbu: 0.9 SBU
+depends:
+  required:
+  - apache-ant
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 861000

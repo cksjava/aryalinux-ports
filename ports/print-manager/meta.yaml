@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: print-manager
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: print-manager-6.7.4
+tarball: print-manager-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/print-manager-6.7.4.tar.xz
+md5: 7e54089100df8684ce3e421f0f85b26e
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 52
+book_order: 578053

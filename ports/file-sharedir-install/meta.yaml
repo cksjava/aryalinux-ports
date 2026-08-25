@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: file-sharedir-install
+version: '0.14'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: File::ShareDir::Install-0.14
+tarball: File-ShareDir-Install-0.14.tar.gz
+url: https://cpan.metacpan.org/authors/id/E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz
+md5: bac4d924f3d863b00648ab56ec0dcbdc
+summary: File::ShareDir::Install allows you to install read-only data files from a
+  distribution.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

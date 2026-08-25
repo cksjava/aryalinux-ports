@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: build
+version: 1.5.1
+page_kind: python_module
+section: general
+page: python-modules
+title: build-1.5.1
+tarball: build-1.5.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/b/build/build-1.5.1.tar.gz
+md5: 34f31a0c3be1c827237b01696d3d0b89
+summary: build is a Python build frontend implementing the PEP-517 resolution.
+download_size: 112 KB
+disk_space: 1.1 MB (add 128 MB for tests)
+sbu: less than 0.1 SBU (add 0.6 SBU (with tests)
+depends:
+  required:
+  - pyproject_hooks
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

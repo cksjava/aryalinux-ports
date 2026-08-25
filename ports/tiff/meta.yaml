@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: tiff
+version: 4.7.2
+page_kind: single_package
+section: general
+page: tiff
+title: tiff-4.7.2
+tarball: tiff-4.7.2.tar.gz
+url: https://download.osgeo.org/libtiff/tiff-4.7.2.tar.gz
+md5: a2a65ea450b8f469c667128848ffebfc
+summary: The tiff package contains the TIFF libraries and associated utilities. The
+  libraries are used by many programs for reading and writing TIFF files and the utilities
+  are used for general work with TIFF files.
+download_size: 3.9 MB
+disk_space: 56 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required: []
+  recommended:
+  - cmake
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 249000

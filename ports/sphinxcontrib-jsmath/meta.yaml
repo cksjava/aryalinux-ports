@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: sphinxcontrib-jsmath
+version: 1.0.1
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Sphinxcontrib-jsmath-1.0.1
+tarball: sphinxcontrib-jsmath-1.0.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-1.0.1.tar.gz
+md5: e45179f0a3608b6766862e0f34c23b62
+summary: The Sphinxcontrib-jsmath package is a Sphinx extension which renders display
+  math in HTML via JavaScript.
+download_size: 5.7 KB
+disk_space: 324 KB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/sphinxcontrib-jsmath-1.0.1-sphinx9_fixes-1.patch
+  filename: sphinxcontrib-jsmath-1.0.1-sphinx9_fixes-1.patch
+book_order: 345000

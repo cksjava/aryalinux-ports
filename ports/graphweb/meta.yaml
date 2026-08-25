@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: graphweb
+version: '0'
+page_kind: configuration
+section: xsoft
+page: graphweb
+title: Graphical Web Browsers
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains a wonderful selection of browsers. We hope you can
+  find one you enjoy using or give them each a trial run.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 724000

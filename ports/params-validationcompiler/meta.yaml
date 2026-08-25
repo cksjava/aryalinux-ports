@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: params-validationcompiler
+version: '0.31'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Params::ValidationCompiler-0.31
+tarball: Params-ValidationCompiler-0.31.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-ValidationCompiler-0.31.tar.gz
+md5: 15528055f3f53c8cfebbee1f928dec07
+summary: Params::ValidationCompiler builds an optimized subroutine parameter validator.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - exception-class
+  recommended:
+  - test-without-module
+  - test2-plugin-nowarnings
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

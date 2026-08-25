@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: luajit
+version: '20260213'
+page_kind: single_package
+section: general
+page: luajit
+title: luajit-20260213
+tarball: luajit-20260213.tar.xz
+url: https://anduin.linuxfromscratch.org/BLFS/luajit/luajit-20260213.tar.xz
+md5: 6459b2696188b74edf950926cb3bacd1
+summary: The luajit package contains a Just-In-Time compiler for Lua. It is often
+  used as scripting middleware, and it is high performance while also having a low
+  memory footprint.
+download_size: 736 KB
+disk_space: 9.1 MB
+sbu: 0.2 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 335000

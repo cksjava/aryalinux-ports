@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libpng
+version: 1.6.58
+page_kind: single_package
+section: general
+page: libpng
+title: libpng-1.6.58
+tarball: libpng-1.6.58.tar.xz
+url: https://downloads.sourceforge.net/libpng/libpng-1.6.58.tar.xz
+md5: c6c372a9d7754c66e0b77a8d34987a3b
+summary: The libpng package contains libraries used by other programs for reading
+  and writing PNG files. The PNG format was designed as a replacement for GIF and,
+  to a lesser extent, TIFF, with many improvements and extensions and lack of patent
+  problems.
+download_size: 1.1 MB
+disk_space: 17 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 234000

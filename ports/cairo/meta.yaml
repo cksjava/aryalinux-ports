@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: cairo
+version: 1.18.4
+page_kind: single_package
+section: x
+page: cairo
+title: Cairo-1.18.4
+tarball: cairo-1.18.4.tar.xz
+url: https://www.cairographics.org/releases/cairo-1.18.4.tar.xz
+md5: db575fb41bbda127e0147e401f36f8ac
+summary: Cairo is a 2D graphics library with support for multiple output devices.
+  Currently supported output targets include the X Window System, Win32, image buffers,
+  PostScript, PDF and SVG. Experimental backends include OpenGL, Quartz and XCB file
+  output. Cairo is designed to produce consistent output on all output media while
+  taking advantage of display hardware acceleration when available (e.g. throug
+download_size: 31 MB
+disk_space: 95 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - libpng
+  - pixman
+  recommended:
+  - fontconfig
+  - glib
+  - xorg-libraries
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 474000

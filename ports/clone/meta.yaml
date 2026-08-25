@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: clone
+version: '0.50'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Clone-0.50
+tarball: Clone-0.50.tar.gz
+url: https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/Clone-0.50.tar.gz
+md5: 792aa8855c32abb22b814cd9182076e5
+summary: Clone recursively copies perl datatypes.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - b-cow
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: datetime
+version: '1.66'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: DateTime-1.66
+tarball: DateTime-1.66.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-1.66.tar.gz
+md5: 525b43ebad148a24783c971aa198559c
+summary: DateTime is a date and time object for perl.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - datetime-locale
+  recommended:
+  - cpan-meta-check
+  - test-warnings
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

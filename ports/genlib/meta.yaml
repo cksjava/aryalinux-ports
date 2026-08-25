@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: genlib
+version: '0'
+page_kind: configuration
+section: general
+page: genlib
+title: General Libraries
+tarball: ''
+url: ''
+md5: ''
+summary: Libraries contain code which is often required by more than one program.
+  This has the advantage that each program doesn't need to duplicate code (and risk
+  introducing bugs), it just has to call functions from the libraries installed on
+  the system. The most obvious example of a set of libraries is Glibc which is installed
+  during the LFS book. This contains all of the C library functions which progr
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 99000

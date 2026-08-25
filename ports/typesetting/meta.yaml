@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: typesetting
+version: '0'
+page_kind: configuration
+section: pst
+page: typesetting
+title: Typesetting
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter includes texlive applications that create output equivalent
+  to typesetting.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 864000

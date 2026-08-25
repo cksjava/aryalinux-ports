@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: imath
+version: 3.2.2
+page_kind: single_package
+section: general
+page: imath
+title: Imath-3.2.2
+tarball: Imath-3.2.2.tar.gz
+url: https://github.com/AcademySoftwareFoundation/Imath/releases/download/v3.2.2/Imath-3.2.2.tar.gz
+md5: 7389e3bb124012e7dbbb99c3b2a5323c
+summary: Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations
+  for computer graphics.
+download_size: 668 KB
+disk_space: 162 MB (with tests)
+sbu: 1.2 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - cmake
+  recommended:
+  - boost
+  - numpy
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 222000

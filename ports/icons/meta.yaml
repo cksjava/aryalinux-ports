@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: icons
+version: '0'
+page_kind: configuration
+section: x
+page: icons
+title: Icons
+tarball: ''
+url: ''
+md5: ''
+summary: Window Managers and Desktop Environments can use icons from different sources.
+  Generally icons are installed in /usr/share/icons and are independent of distribution.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 526000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: plasma-workspace-wallpapers
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: plasma-workspace-wallpapers-6.7.4
+tarball: plasma-workspace-wallpapers-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/plasma-workspace-wallpapers-6.7.4.tar.xz
+md5: c5d1d25a57d6c15a489b01874faa6328
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 30
+book_order: 578031

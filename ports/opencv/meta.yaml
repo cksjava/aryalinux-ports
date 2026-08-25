@@ -1,0 +1,39 @@
+format: alps-port-v1
+name: opencv
+version: 4.13.0
+page_kind: single_package
+section: general
+page: opencv
+title: opencv-4.13.0
+tarball: opencv-4.13.0.tar.gz
+url: https://github.com/opencv/opencv/archive/4.13.0/opencv-4.13.0.tar.gz
+md5: f33c0ace3add57aba7b9d3fe3c41feb4
+summary: The opencv package contains graphics libraries mainly aimed at real-time
+  computer vision.
+download_size: 91 MB
+disk_space: 1.0 GB (with opencv-contrib)
+sbu: 4.1 SBU (using parallelism=8)
+depends:
+  required:
+  - cmake
+  - libarchive
+  recommended:
+  - ffmpeg
+  - gst-plugins-base
+  - jasper
+  - libavif
+  - libjpeg-turbo
+  - libpng
+  - tiff
+  - libwebp
+  - v4l-utils
+  - xine-lib
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/opencv-4.13.0-ffmpeg-9.0.patch
+  filename: opencv-4.13.0-ffmpeg-9.0.patch
+book_order: 242000

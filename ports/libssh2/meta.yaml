@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libssh2
+version: 1.11.1
+page_kind: single_package
+section: general
+page: libssh2
+title: libssh2-1.11.1
+tarball: libssh2-1.11.1.tar.gz
+url: https://www.libssh2.org/download/libssh2-1.11.1.tar.gz
+md5: 38857d10b5c5deb198d6989dacace2e6
+summary: Libssh2 package is a client-side C library implementing the SSH2 protocol.
+download_size: 1.0 MB
+disk_space: 15 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/libssh2-1.11.1-security_fixes-1.patch
+  filename: libssh2-1.11.1-security_fixes-1.patch
+book_order: 165000

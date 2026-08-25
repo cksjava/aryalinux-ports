@@ -1,0 +1,39 @@
+format: alps-port-v1
+name: evolution
+version: 3.60.2
+page_kind: single_package
+section: gnome
+page: evolution
+title: Evolution-3.60.2
+tarball: evolution-3.60.2.tar.xz
+url: https://download.gnome.org/sources/evolution/3.60/evolution-3.60.2.tar.xz
+md5: 4ec00dcb2c280798f61642746fcbdf49
+summary: The Evolution package contains an integrated mail, calendar and address book
+  suite designed for the GNOME environment.
+download_size: 13 MB
+disk_space: 297 MB
+sbu: 0.7 SBU (Using parallelism=4)
+depends:
+  required:
+  - adwaita-icon-theme
+  - gcr
+  - gnome-autoar
+  - intltool
+  - shared-mime-info
+  recommended:
+  - bogofilter
+  - enchant
+  - gnome-desktop
+  - gspell
+  - highlight
+  - itstool
+  - libcanberra
+  - libgweather
+  - libnotify
+  - openldap
+  - seahorse
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 627000

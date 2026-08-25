@@ -1,0 +1,36 @@
+format: alps-port-v1
+name: graphviz
+version: 15.1.1
+page_kind: single_package
+section: general
+page: graphviz
+title: Graphviz-15.1.1
+tarball: graphviz-15.1.1.tar.bz2
+url: https://gitlab.com/graphviz/graphviz/-/archive/15.1.1/graphviz-15.1.1.tar.bz2
+md5: ec7f236467bcaeb57b69601d4913c5b7
+summary: The Graphviz package contains graph visualization software. Graph visualization
+  is a way of representing structural information as diagrams of abstract graphs and
+  networks. Graphviz has several main graph layout programs. It also has web and interactive
+  graphical interfaces, auxiliary tools, libraries, and language bindings.
+download_size: 35 MB
+disk_space: 198 MB (6.8 MB installed)
+sbu: 0.3 SBU (using parallelism=4)
+depends:
+  required:
+  - cmake
+  recommended:
+  - pango
+  - cairo
+  - fontconfig
+  - libpng
+  - gegl
+  ignore_for_order:
+  - gegl
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 260000
+cycle_policy:
+  install_before:
+  - gegl

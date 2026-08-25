@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: alsa-lib
+version: 1.2.16.1
+page_kind: single_package
+section: multimedia
+page: alsa-lib
+title: alsa-lib-1.2.16.1
+tarball: alsa-lib-1.2.16.1.tar.bz2
+url: https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.16.1.tar.bz2
+md5: c14c9f94f78f76924c13668954997a33
+summary: The ALSA Library package contains the ALSA library used by programs (including
+  ALSA Utilities) requiring access to the ALSA sound interface.
+download_size: 1.1 MB
+disk_space: 82 MB (with tests and docs)
+sbu: 0.3 SBU (with tests and docs)
+depends:
+  required: []
+  recommended:
+  - systemd
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 747000

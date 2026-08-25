@@ -1,0 +1,38 @@
+format: alps-port-v1
+name: wayfire
+version: 0.11.0
+page_kind: single_package
+section: x
+page: wayfire
+title: wayfire-0.11.0
+tarball: wayfire-0.11.0.tar.xz
+url: https://github.com/WayfireWM/wayfire/releases/download/v0.11.0/wayfire-0.11.0.tar.xz
+md5: d4c4d782464f2a3def4848d8e727c27e
+summary: Wayfire is a Wayland compositor which takes a lot of effects from the now
+  deprecated Compiz Xorg compositor. It aims to be customizable, yet lightweight.
+  Unlike other compositors, it is also 3D and supports multiple perspectives for seeing
+  windows.
+download_size: 1 MB
+disk_space: 240 MB
+sbu: 0.6 SBU (with parallelism=4)
+depends:
+  required:
+  - glm
+  - freetype
+  - libdrm
+  - libinput
+  - libjpeg-turbo
+  - libpng
+  - libxkbcommon
+  - mesa
+  - pixman
+  - wayland
+  - wayland-protocols
+  recommended:
+  - xorg-libraries
+  - yyjson
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 469000

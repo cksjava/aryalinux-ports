@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: text-glob
+version: '0.11'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Text::Glob-0.11
+tarball: Text-Glob-0.11.tar.gz
+url: https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Text-Glob-0.11.tar.gz
+md5: d001559c504a2625dd117bd1558f07f7
+summary: Text::Glob implements glob(3) style matching that can be used to match against
+  text, rather than fetching names from a filesystem.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

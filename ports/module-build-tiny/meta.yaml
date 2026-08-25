@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: module-build-tiny
+version: '0.053'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Module::Build::Tiny-0.053
+tarball: Module-Build-Tiny-0.053.tar.gz
+url: https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-Tiny-0.053.tar.gz
+md5: 606d1f830f0475b6de53b82aa3e5d36a
+summary: Module::Build::Tiny is a simplified version of Module-Build-0.4234.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - extutils-config
+  - extutils-installpaths
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

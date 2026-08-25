@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: accountsservice
+version: 26.27.3
+page_kind: single_package
+section: general
+page: accountsservice
+title: AccountsService-26.27.3
+tarball: accountsservice-26.27.3.tar.bz2
+url: https://gitlab.freedesktop.org/accountsservice/accountsservice/-/archive/26.27.3/accountsservice-26.27.3.tar.bz2
+md5: 61f56055b9d4564ad29bab799222e386
+summary: The AccountsService package provides a set of D-Bus interfaces for querying
+  and manipulating user account information and an implementation of those interfaces
+  based on the usermod(8), useradd(8), and userdel(8) commands.
+download_size: 660 KB
+disk_space: 11 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required:
+  - polkit
+  recommended:
+  - glib
+  - systemd
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 280000

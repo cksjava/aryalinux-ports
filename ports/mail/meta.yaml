@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: mail
+version: '0'
+page_kind: configuration
+section: server
+page: mail
+title: Mail Server Software
+tarball: ''
+url: ''
+md5: ''
+summary: MTAs are the programs which transport mail from one machine to the other.
+  The traditional MTA is Sendmail, however there are several other choices. BLFS does
+  not include the Sendmail package anymore, but both Exim and Postfix provide the
+  same functionality as well as a compatibility symlink for applications that expect
+  Sendmail to be present.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 427000

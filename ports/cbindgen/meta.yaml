@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: cbindgen
+version: 0.29.4
+page_kind: single_package
+section: general
+page: cbindgen
+title: Cbindgen-0.29.4
+tarball: cbindgen-0.29.4.tar.gz
+url: https://github.com/mozilla/cbindgen/archive/v0.29.4/cbindgen-0.29.4.tar.gz
+md5: 7e790e024bc678ad1b4431b0350679e9
+summary: Cbindgen can be used to generate C bindings for Rust code.
+download_size: 248 KB
+disk_space: 255 MB (with tests)
+sbu: 0.4 SBU (add 0.2 SBU for tests), both on a 4-core machine
+depends:
+  required:
+  - rustc
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 322000

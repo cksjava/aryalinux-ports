@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: drkonqi
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: drkonqi-6.7.4
+tarball: drkonqi-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/drkonqi-6.7.4.tar.xz
+md5: cc4b7b53165f9b458743a3e732c7eebf
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 40
+book_order: 578041

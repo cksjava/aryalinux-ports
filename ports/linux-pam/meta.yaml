@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: linux-pam
+version: 1.7.2
+page_kind: multi_package
+section: postlfs
+page: linux-pam
+title: Linux-PAM-1.7.2
+tarball: Linux-PAM-1.7.2.tar.xz
+url: https://github.com/linux-pam/linux-pam/releases/download/v1.7.2/Linux-PAM-1.7.2.tar.xz
+md5: 934c26eca3fada956356a30489e86291
+summary: The Linux PAM package contains Pluggable Authentication Modules used by the
+  local system administrator to control how application programs authenticate users.
+download_size: 500 KB
+disk_space: 16 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required:
+  - shadow
+  - systemd
+  recommended:
+  - libpwquality
+  ignore_for_order:
+  - libpwquality
+  - shadow
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 50000
+cycle_policy:
+  install_before:
+  - libpwquality
+  - shadow

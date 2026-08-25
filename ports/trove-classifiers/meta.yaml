@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: trove-classifiers
+version: 2026.6.1.19
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Trove-Classifiers-2026.6.1.19
+tarball: trove_classifiers-2026.6.1.19.tar.gz
+url: https://files.pythonhosted.org/packages/source/t/trove_classifiers/trove_classifiers-2026.6.1.19.tar.gz
+md5: fb231b2e9492a5d34fb9bec0250f0f55
+summary: 'Trove-Classifiers is a Python library to encompass all valid PyPI classifiers
+  used to categorize projects and releases per PEP 301, for example Topic :: System
+  :: Filesystems and Development Status :: 6 - Mature.'
+download_size: 20 KB
+disk_space: 540 KB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

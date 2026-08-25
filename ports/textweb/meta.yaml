@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: textweb
+version: '0'
+page_kind: configuration
+section: basicnet
+page: textweb
+title: Text Web Browsers
+tarball: ''
+url: ''
+md5: ''
+summary: 'People who are new to Unix-based systems tend to ask the question "Why on
+  earth would I want a text-mode browser? I''m going to compile X and use Firefox/Falkon/Whatever!".
+  Those who have been around systems for a while know that when (not if) you manage
+  to mess up your graphical browser install and you need to look up some information
+  on the web, a console based browser will save you. Also, there '
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 412000

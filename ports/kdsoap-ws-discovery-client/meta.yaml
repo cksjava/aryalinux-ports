@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: kdsoap-ws-discovery-client
+version: 0.4.0
+page_kind: single_package
+section: basicnet
+page: kdsoap-ws-discovery-client
+title: kdsoap-ws-discovery-client-0.4.0
+tarball: kdsoap-ws-discovery-client-0.4.0.tar.xz
+url: https://download.kde.org/stable/kdsoap-ws-discovery-client/kdsoap-ws-discovery-client-0.4.0.tar.xz
+md5: 6d653d927efac8296662bc92784f2fe5
+summary: The kdsoap-ws-discovery-client package contains a library that provides support
+  for the WS-Discovery protocol, a recent protocol used to discover services available
+  on a local network.
+download_size: 32 KB
+disk_space: 7.5 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - doxygen
+  - extra-cmake-modules
+  - kdsoap
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 395000

@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: kea
+version: 3.0.2
+page_kind: single_package
+section: server
+page: kea
+title: Kea 3.0.2 DHCP Server
+tarball: kea-3.0.2.tar.xz
+url: https://downloads.isc.org/isc/kea/3.0.2/kea-3.0.2.tar.xz
+md5: a673e95637b708b3b1926c696cdf168b
+summary: The ISC Kea package contains the server programs for DHCP. This is the successor
+  of the old ISC DHCP server which went out of support in December 2022.
+download_size: 6.3 MB
+disk_space: 231 MB (47 MB installed; add 425 MB for tests)
+sbu: 6.4 SBU (with parallelism=4; add 17 SBU for tests)
+depends:
+  required:
+  - boost
+  - log4cplus
+  recommended: []
+bootscripts: []
+systemd_units:
+- kea-dhcpd
+provides: []
+conflicts: []
+book_order: 425000

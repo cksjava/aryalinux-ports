@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: config-autoconf
+version: '0.320'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Config::AutoConf-0.320
+tarball: Config-AutoConf-0.320.tar.gz
+url: https://cpan.metacpan.org/authors/id/A/AM/AMBS/Config-AutoConf-0.320.tar.gz
+md5: 71664b2864232e265179ac29298e0916
+summary: The Config::AutoConf module implements some of the AutoConf macros (detecting
+  a command, detecting a library, etc.) in pure perl.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - capture-tiny
+  - file-slurper
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

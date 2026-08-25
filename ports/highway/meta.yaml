@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: highway
+version: 1.4.0
+page_kind: single_package
+section: general
+page: highway
+title: highway-1.4.0
+tarball: highway-1.4.0.tar.gz
+url: https://github.com/google/highway/archive/1.4.0/highway-1.4.0.tar.gz
+md5: 9d335797777e17f827c7980b8313a34b
+summary: The highway package contains a C++ library that provides portable SIMD/vector
+  intrinsics.
+download_size: 3.6 MB
+disk_space: 41 MB
+sbu: 0.6 SBU (with parallelism=4)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 124000

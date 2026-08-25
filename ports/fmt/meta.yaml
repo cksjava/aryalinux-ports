@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: fmt
+version: 12.2.0
+page_kind: single_package
+section: general
+page: fmt
+title: fmt-12.2.0
+tarball: fmt-12.2.0.tar.gz
+url: https://github.com/fmtlib/fmt/archive/12.2.0/fmt-12.2.0.tar.gz
+md5: 7be257d8bfad55bc9eabb1288ad895be
+summary: The fmt package is an open-source formatting library providing a fast and
+  safe alternative to C stdio and C++ iostreams.
+download_size: 724 KB
+disk_space: 48 MB (with tests)
+sbu: 0.4 SBU (using parallelism=4; with tests)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 116000

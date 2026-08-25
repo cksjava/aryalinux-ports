@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: text-csv_xs
+version: '1.62'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Text::CSV_XS-1.62
+tarball: Text-CSV_XS-1.62.tgz
+url: https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.62.tgz
+md5: d7a3748a5dca671e3ee3f874456993ae
+summary: Text::CSV_XS provides facilities for the composition and decomposition of
+  comma-separated values.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

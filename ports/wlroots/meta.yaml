@@ -1,0 +1,41 @@
+format: alps-port-v1
+name: wlroots
+version: 0.20.2
+page_kind: single_package
+section: x
+page: wlroots
+title: wlroots-0.20.2
+tarball: wlroots-0.20.2.tar.bz2
+url: https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.20.2/wlroots-0.20.2.tar.bz2
+md5: 03634ea5be3d116490630c955355610c
+summary: wlroots is a Wayland compositor library, the backbone of most Wayland compositors.
+  Compositors that use a different base may have used this package in the beginning
+  of the compositor's history for providing most of the work.
+download_size: 516 KB
+disk_space: 19 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - libdrm
+  - libxkbcommon
+  - pixman
+  - wayland
+  - wayland-protocols
+  recommended:
+  - mesa
+  - hwdata
+  - libdisplay-info
+  - libliftoff
+  - libinput
+  - little-cms
+  - seatd
+  - vulkan-loader
+  - glslang
+  - xcb-utilities
+  - xorg-libraries
+  - xwayland
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 514000

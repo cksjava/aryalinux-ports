@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: namespace-clean
+version: '0.27'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: namespace::clean-0.27
+tarball: namespace-clean-0.27.tar.gz
+url: https://cpan.metacpan.org/authors/id/R/RI/RIBASUSHI/namespace-clean-0.27.tar.gz
+md5: cba97f39ef7e594bd8489b4fdcddb662
+summary: This package allows you to keep imports and functions out of your namespace.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - b-hooks-endofscope
+  - package-stash
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

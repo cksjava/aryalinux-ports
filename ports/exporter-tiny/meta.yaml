@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: exporter-tiny
+version: '1.006003'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Exporter::Tiny-1.006003
+tarball: Exporter-Tiny-1.006003.tar.gz
+url: https://cpan.metacpan.org/authors/id/T/TO/TOBYINK/Exporter-Tiny-1.006003.tar.gz
+md5: a70bdc039b12f90191e7c5669b2b55f9
+summary: Exporter::Tiny is an exporter with the features of Sub::Exporter but only
+  core dependencies.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: office
+version: '0'
+page_kind: configuration
+section: xsoft
+page: office
+title: Office Programs
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter is a collection of programs that are useful for viewing or editing
+  office documents. Some specialise in doing one thing (such as word processing or
+  manipulating a spreadsheet). LibreOffice is a suite of programs that can manipulate
+  many different formats including powerpoint presentations.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 721000

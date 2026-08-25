@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libheif
+version: 1.23.1
+page_kind: single_package
+section: general
+page: libheif
+title: libheif-1.23.1
+tarball: libheif-1.23.1.tar.gz
+url: https://github.com/strukturag/libheif/releases/download/v1.23.1/libheif-1.23.1.tar.gz
+md5: 26fd31d0591ab927ef1a638de64cb2da
+summary: The libheif package is an HEIF and AVIF file format decoder and encoder.
+download_size: 2.0 MB
+disk_space: 49 MB (with tests)
+sbu: 0.6 SBU (with tests, parallelism=4)
+depends:
+  required: []
+  recommended:
+  - libaom
+  - libde265
+  - x265
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 228000

@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: html-tagset
+version: '3.24'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: HTML::Tagset-3.24
+tarball: HTML-Tagset-3.24.tar.gz
+url: https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/HTML-Tagset-3.24.tar.gz
+md5: f8db8974f5e7fe7df2a58263a7b00552
+summary: HTML::Tagset provides several data tables useful in parsing HTML.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

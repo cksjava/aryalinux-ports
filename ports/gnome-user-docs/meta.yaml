@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: gnome-user-docs
+version: '50.4'
+page_kind: single_package
+section: gnome
+page: gnome-user-docs
+title: gnome-user-docs-50.4
+tarball: gnome-user-docs-50.4.tar.xz
+url: https://download.gnome.org/sources/gnome-user-docs/50/gnome-user-docs-50.4.tar.xz
+md5: d629c3a0542d3a7403259e6a695cc477
+summary: The GNOME User Docs package contains documentation for GNOME.
+download_size: 16 MB
+disk_space: 285 MB
+sbu: 0.3 SBU (using parallelism=4)
+depends:
+  required:
+  - itstool
+  - libxml2
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 621000

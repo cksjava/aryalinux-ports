@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: openjpeg
+version: 2.5.4
+page_kind: single_package
+section: general
+page: openjpeg2
+title: OpenJPEG-2.5.4
+tarball: openjpeg-2.5.4.tar.gz
+url: https://github.com/uclouvain/openjpeg/archive/v2.5.4/openjpeg-2.5.4.tar.gz
+md5: 6160de075bb5191e482bc0f024b375e4
+summary: OpenJPEG is an open-source implementation of the JPEG-2000 standard. OpenJPEG
+  fully respects the JPEG-2000 specifications and can compress/decompress lossless
+  16-bit images.
+download_size: 2.1 MB
+disk_space: 16 MB (add 1.7 GB for tests)
+sbu: 0.2 SBU (add 1.1 SBU for tests)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 243000

@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libsndfile
+version: 1.2.2
+page_kind: single_package
+section: multimedia
+page: libsndfile
+title: libsndfile-1.2.2
+tarball: libsndfile-1.2.2.tar.xz
+url: https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz
+md5: 04e2e6f726da7c5dc87f8cf72f250d04
+summary: Libsndfile is a library of C routines for reading and writing files containing
+  sampled audio data.
+download_size: 716 KB
+disk_space: 12 MB (add 10 MB for tests)
+sbu: 0.3 SBU (add 0.3 SBU for tests)
+depends:
+  required: []
+  recommended:
+  - flac
+  - opus
+  - libvorbis
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 788000

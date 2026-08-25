@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: wpa_supplicant
+version: '2.12'
+page_kind: single_package
+section: basicnet
+page: wpa_supplicant
+title: wpa_supplicant-2.12
+tarball: wpa_supplicant-2.12.tar.gz
+url: https://w1.fi/releases/wpa_supplicant-2.12.tar.gz
+md5: 3f1af56655ebca941d2035358331bbc9
+summary: WPA Supplicant is a Wi-Fi Protected Access (WPA) client and IEEE 802.1X supplicant.
+  It implements WPA key negotiation with a WPA Authenticator and Extensible Authentication
+  Protocol (EAP) authentication with an Authentication Server. In addition, it controls
+  the roaming and IEEE 802.11 authentication/association of the wireless LAN driver.
+  This is useful for connecting to a password protected wire
+download_size: 4.1 MB
+disk_space: 46 MB
+sbu: 0.3 SBU
+depends:
+  required: []
+  recommended:
+  - libnl
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 379000

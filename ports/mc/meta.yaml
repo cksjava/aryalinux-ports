@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: mc
+version: 4.8.33
+page_kind: single_package
+section: general
+page: mc
+title: MC-4.8.33
+tarball: mc-4.8.33.tar.xz
+url: http://ftp.midnight-commander.org/mc-4.8.33.tar.xz
+md5: b3596c1f092b9822a6cd9c9a1aef8dde
+summary: MC (Midnight Commander) is a text-mode full-screen file manager and visual
+  shell. It provides a clear, user-friendly, and somewhat protected interface to a
+  Unix system while making many frequent file operations more efficient and preserving
+  the full power of the command prompt.
+download_size: 2.3 MB
+disk_space: 71 MB (add 97 MB for tests)
+sbu: 0.3 SBU (using parallelism=4; add 0.1 SBU for tests)
+depends:
+  required:
+  - glib
+  recommended:
+  - slang
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 295000

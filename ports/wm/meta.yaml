@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: wm
+version: '0'
+page_kind: configuration
+section: x
+page: wm
+title: Window Managers
+tarball: ''
+url: ''
+md5: ''
+summary: Window Managers and Desktop Environments are the primary user interfaces
+  into the X Window System. A window manager is a program that controls the appearance
+  of windows and provides the means by which the user can interact with them. A Desktop
+  Environment provides a more complete interface to the operating system, and provides
+  a range of integrated utilities and applications.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 522000

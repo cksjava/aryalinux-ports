@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: pangomm
+version: 2.56.2
+page_kind: single_package
+section: x
+page: pangomm2
+title: Pangomm-2.56.2
+tarball: pangomm-2.56.2.tar.xz
+url: https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.2.tar.xz
+md5: 54f80e1204be44a97a2c831fec904ae9
+summary: The Pangomm package provides a C++ interface to Pango. This version is part
+  of a new API for supporting gtkmm-4.
+download_size: 768 KB
+disk_space: 13 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - libcairomm
+  - pango
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 507000

@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: cairomm-1.16
+version: 1.18.1
+page_kind: single_package
+section: x
+page: cairomm-1.16
+title: libcairomm-1.16 (cairomm-1.18.1)
+tarball: cairomm-1.18.1.tar.xz
+url: https://www.cairographics.org/releases/cairomm-1.18.1.tar.xz
+md5: 268bf55498b1c61441936adde03ba824
+summary: The libcairomm-1.16 package provides a C++ interface to Cairo. This version
+  of the API is needed to support gtkmm-4.
+download_size: 600 KB
+disk_space: 13 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required:
+  - cairo
+  - libsigc++
+  recommended:
+  - boost
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 476000

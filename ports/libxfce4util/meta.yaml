@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libxfce4util
+version: 4.20.1
+page_kind: single_package
+section: xfce
+page: libxfce4util
+title: libxfce4util-4.20.1
+tarball: libxfce4util-4.20.1.tar.bz2
+url: https://archive.xfce.org/src/xfce/libxfce4util/4.20/libxfce4util-4.20.1.tar.bz2
+md5: 8e30b7735333f74d80c379e15d9da145
+summary: The libxfce4util package is a basic utility library for the Xfce desktop
+  environment.
+download_size: 624 KB
+disk_space: 6.8 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - glib
+  recommended:
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 647000

@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: dvisvgm
+version: '3.6'
+page_kind: single_package
+section: pst
+page: dvisvgm
+title: dvisvgm-3.6
+tarball: dvisvgm-3.6.tar.gz
+url: https://github.com/mgieseki/dvisvgm/releases/download/3.6/dvisvgm-3.6.tar.gz
+md5: 46cf1f6d7092df0b65b68413ce19e1c2
+summary: The dvisvgm package converts DVI, EPS and PDF files to SVG format.
+download_size: 2.8 MB
+disk_space: 268 MB (net 7 MB installed after overwriting files in $TEXLIVE_PREFIX/texmf-dist/,
+  add 948 MB for the tests)
+sbu: 0.8 SBU (add 0.5 SBU for the tests, both using parallelism=4)
+depends:
+  required:
+  - brotli
+  - ghostscript
+  - texlive
+  recommended:
+  - woff2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 870000

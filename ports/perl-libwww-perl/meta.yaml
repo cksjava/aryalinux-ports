@@ -1,0 +1,37 @@
+format: alps-port-v1
+name: perl-libwww-perl
+version: '6.83'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: LWP (libwww-perl-6.83)
+tarball: libwww-perl-6.83.tar.gz
+url: https://www.cpan.org/authors/id/O/OA/OALDERS/libwww-perl-6.83.tar.gz
+md5: dfca8f917f4727ddbdf3d81d0979172f
+summary: The libwww-perl collection is a set of Perl modules which provides a simple
+  and consistent application programming interface (API) to the World-Wide Web. The
+  main focus of the library is to provide classes and functions that allow you to
+  write WWW clients. The library also contains modules that are of more general use
+  and even classes that help you implement simple HTTP servers.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - file-listing
+  - http-cookiejar
+  - http-cookies
+  - http-daemon
+  - http-negotiate
+  - html-parser
+  - net-http
+  - try-tiny
+  - www-robotrules
+  recommended:
+  - test-fatal
+  - test-needs
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

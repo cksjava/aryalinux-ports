@@ -1,0 +1,43 @@
+format: alps-port-v1
+name: inkscape
+version: 1.4.4
+page_kind: single_package
+section: xsoft
+page: inkscape
+title: Inkscape-1.4.4
+tarball: inkscape-1.4.4.tar.xz
+url: https://inkscape.org/gallery/item/59505/inkscape-1.4.4.tar.xz
+md5: 60ed50c2de060307ad1a6555c7653458
+summary: Inkscape is a what you see is what you get Scalable Vector Graphics editor.
+  It is useful for creating, viewing and changing SVG images.
+download_size: 52 MB
+disk_space: 1.1 GB (216 MB installed)
+sbu: 2.2 SBU (with parallelism=8)
+depends:
+  required:
+  - boost
+  - double-conversion
+  - gsl
+  - gtkmm
+  - libxslt
+  - poppler
+  - popt
+  recommended:
+  - imagemagick-7.1.2
+  - little-cms
+  - libcanberra
+  - potrace
+  - cachecontrol
+  - lxml
+  - numpy
+  - pyserial
+  - scour
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch for poppler-26.05 and later
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_fixes-3.patch
+  filename: inkscape-1.4.4-poppler_fixes-3.patch
+book_order: 736000

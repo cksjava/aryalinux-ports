@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: mro-compat
+version: '0.15'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: MRO::Compat-0.15
+tarball: MRO-Compat-0.15.tar.gz
+url: https://cpan.metacpan.org/authors/id/H/HA/HAARG/MRO-Compat-0.15.tar.gz
+md5: f644dafe901214cedfa7ed8b43b56df1
+summary: The "mro" namespace provides several utilities for dealing with method resolution
+  order and method caching in general in Perl 5.9.5 and higher. This module provides
+  those interfaces for earlier versions of Perl.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

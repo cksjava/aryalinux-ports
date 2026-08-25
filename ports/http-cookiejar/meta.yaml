@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: http-cookiejar
+version: '0.014'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: HTTP::CookieJar-0.014
+tarball: HTTP-CookieJar-0.014.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/HTTP-CookieJar-0.014.tar.gz
+md5: a1d891ce0046f1a2c19e2c617d624d0d
+summary: HTTP::CookieJar provides a minimalist HTTP user agent cookie jar.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - http-date
+  recommended:
+  - test-deep
+  - test-requires
+  - uri
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

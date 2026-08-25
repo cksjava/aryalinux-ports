@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: initramfs
+version: '0'
+page_kind: configuration
+section: postlfs
+page: initramfs
+title: About initramfs
+tarball: ''
+url: ''
+md5: ''
+summary: The only purpose of an initramfs is to mount the root filesystem. The initramfs
+  is a complete set of directories that you would find on a normal root filesystem.
+  It is bundled into a single cpio archive and compressed with one of several compression
+  algorithms.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: required file
+  url: ../general/cpio.html
+  filename: cpio.html
+book_order: 66000

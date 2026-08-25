@@ -1,0 +1,36 @@
+format: alps-port-v1
+name: meta-kf-apps
+version: '1'
+page_kind: meta
+section: kde
+page: kf-apps
+title: KDE Frameworks 6 Based Applications
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: applications linked from kf-apps.html'
+depends:
+  required: []
+  recommended: []
+members:
+- ark
+- dolphin
+- dolphin-plugins
+- kddockwidgets
+- kdenlive
+- kmix
+- khelpcenter
+- konsole
+- konversation
+- libkexiv2
+- plasma-activities
+- kio-extras
+- okular
+- libkdcraw
+- gwenview
+- libkcddb
+- k3b
+bootscripts: []
+provides: []
+conflicts: []
+book_order: 549000

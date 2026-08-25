@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: cdrtools
+version: 3.02a09
+page_kind: single_package
+section: multimedia
+page: cdrtools
+title: Cdrtools-3.02a09
+tarball: cdrtools-3.02a09.tar.bz2
+url: https://downloads.sourceforge.net/cdrtools/cdrtools-3.02a09.tar.bz2
+md5: 1e224a6adbbe4ad40047b9fddbb0e60c
+summary: The Cdrtools package contains CD recording utilities. These are useful for
+  reading, creating or writing (burning) CDs, DVDs, and Blu-ray discs.
+download_size: 2.1 MB
+disk_space: 32 MB
+sbu: 0.7 SBU
+depends:
+  required:
+  - alsa-lib
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 826000

@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: sg3_utils
+version: '1.49'
+page_kind: single_package
+section: general
+page: sg3_utils
+title: sg3_utils-1.49
+tarball: sg3_utils-1.49.tar.gz
+url: https://sg.danny.cz/sg/p/sg3_utils-1.49.tar.gz
+md5: a829e4bcce2ffcde7827b63019fb0329
+summary: The sg3_utils package contains low level utilities for devices that use a
+  SCSI command set. Apart from SCSI parallel interface (SPI) devices, the SCSI command
+  set is used by ATAPI devices (CD/DVDs and tapes), USB mass storage devices, Fibre
+  Channel disks, IEEE 1394 storage devices (that use the "SBP" protocol), SAS, iSCSI
+  and FCoE devices (amongst others).
+download_size: 1.5 MB
+disk_space: 37 MB
+sbu: 0.2 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 316000

@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: glib-networking
+version: 2.80.1
+page_kind: single_package
+section: basicnet
+page: glib-networking
+title: glib-networking-2.80.1
+tarball: glib-networking-2.80.1.tar.xz
+url: https://download.gnome.org/sources/glib-networking/2.80/glib-networking-2.80.1.tar.xz
+md5: 405e6c058723217a1307ba8415615f9d
+summary: The GLib Networking package contains Network related gio modules for GLib.
+download_size: 288 KB
+disk_space: 5.9 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required:
+  - glib
+  - gnutls
+  recommended:
+  - gsettings-desktop-schemas
+  - make-ca
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 393000

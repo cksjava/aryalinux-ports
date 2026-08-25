@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: oxygen-sounds
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: oxygen-sounds-6.7.4
+tarball: oxygen-sounds-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/oxygen-sounds-6.7.4.tar.xz
+md5: a3673682283357c8f04e89606af11d93
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 48
+book_order: 578049

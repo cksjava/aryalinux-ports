@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: patches
+version: '0'
+page_kind: configuration
+section: introduction
+page: patches
+title: Optional Patches
+tarball: ''
+url: ''
+md5: ''
+summary: 'As you follow the various sections in the book, you will observe that the
+  book occasionally includes patches that are required for a successful and secure
+  installation of the packages. The general policy of the book is to include patches
+  that fall in one of the following criteria:'
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 20000

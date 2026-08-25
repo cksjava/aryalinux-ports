@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: sonnet
+version: 6.29.0
+page_kind: kde_batch
+section: kde
+page: frameworks6
+title: sonnet-6.29.0
+tarball: sonnet-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/sonnet-6.29.0.tar.xz
+md5: 1d4ad3f264af279d92a0d7228726bda3
+summary: KDE batch package from frameworks6.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 20
+book_order: 548021

@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: meta-lxqt-apps
+version: '1'
+page_kind: meta
+section: lxqt
+page: lxqt-apps
+title: LXQt Applications
+tarball: ''
+url: ''
+md5: ''
+summary: 'Meta-package: applications linked from lxqt-apps.html'
+depends:
+  required: []
+  recommended: []
+members:
+- post-install
+- lximage-qt
+- lxqt
+- lxqt-archiver
+- lxqt-notificationd
+- pavucontrol-qt
+- qps
+- qtermwidget
+- qterminal
+- screengrab
+bootscripts: []
+provides: []
+conflicts: []
+book_order: 711000

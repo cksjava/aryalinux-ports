@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: sphinxcontrib-applehelp
+version: 2.0.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Sphinxcontrib-applehelp-2.0.0
+tarball: sphinxcontrib_applehelp-2.0.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/s/sphinxcontrib-applehelp/sphinxcontrib_applehelp-2.0.0.tar.gz
+md5: e16bb1d6199f686d411c180e64a8e831
+summary: The Sphinxcontrib-applehelp package is a Sphinx extension which outputs Apple
+  help books.
+download_size: 20 KB
+disk_space: 1.0 MB (with tests)
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

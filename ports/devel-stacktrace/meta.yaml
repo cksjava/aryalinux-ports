@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: devel-stacktrace
+version: '2.05'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Devel::StackTrace-2.05
+tarball: Devel-StackTrace-2.05.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Devel-StackTrace-2.05.tar.gz
+md5: b8ca19bb4c76e98a04373618db9c7c3c
+summary: Devel::StackTrace provides an object representing a stack trace.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

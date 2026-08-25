@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: exiv2
+version: 0.28.8
+page_kind: single_package
+section: general
+page: exiv2
+title: Exiv2-0.28.8
+tarball: exiv2-0.28.8.tar.gz
+url: https://github.com/Exiv2/exiv2/archive/v0.28.8/exiv2-0.28.8.tar.gz
+md5: 3f3b2d9c3e73880ea8e6bd78c67ea56a
+summary: Exiv2 contains a C++ library and a command line utility for managing image
+  and video metadata.
+download_size: 45 MB
+disk_space: 134 MB (with tests)
+sbu: 0.4 SBU (Using parallelism=4, with tests)
+depends:
+  required:
+  - cmake
+  recommended:
+  - brotli
+  - curl
+  - inih
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 210000

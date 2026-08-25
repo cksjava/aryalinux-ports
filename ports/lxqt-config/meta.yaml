@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: lxqt-config
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-config
+title: lxqt-config-2.4.0
+tarball: lxqt-config-2.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-config/releases/download/2.4.0/lxqt-config-2.4.0.tar.xz
+md5: 7bb4cc66ce5fc8cd5bc53127643888a1
+summary: The lxqt-config package provides the LXQt Configuration Center.
+download_size: 408 KB
+disk_space: 27 MB
+sbu: 0.4 SBU (Using parallelism=4)
+depends:
+  required:
+  - liblxqt
+  - kconfig-6.29.0-for-lxqt
+  - libkscreen-6.7.4-for-lxqt
+  - xorg-libinput
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 702000

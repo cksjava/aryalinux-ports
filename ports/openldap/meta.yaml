@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: openldap
+version: 2.7.0
+page_kind: single_package
+section: server
+page: openldap
+title: OpenLDAP-2.7.0
+tarball: openldap-2.7.0.tgz
+url: https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.7.0.tgz
+md5: fcb40191baba83c1f237d79f85835283
+summary: The OpenLDAP package provides an open source implementation of the Lightweight
+  Directory Access Protocol.
+download_size: 6.2 MB
+disk_space: 108 MB (client and server)
+sbu: 0.3 SBU (client), 0.8 SBU (server)
+depends:
+  required: []
+  recommended:
+  - cyrus-sasl
+bootscripts: []
+systemd_units:
+- slapd
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/openldap-2.7.0-consolidated-1.patch
+  filename: openldap-2.7.0-consolidated-1.patch
+book_order: 437000

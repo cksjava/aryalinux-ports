@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: log-log4perl
+version: '1.58'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Log::Log4perl-1.58
+tarball: Log-Log4perl-1.58.tar.gz
+url: https://www.cpan.org/authors/id/M/MS/MSCHILLI/Log-Log4perl-1.58.tar.gz
+md5: 2f22b55ad8d620644868231fe3430477
+summary: Log::Log4perl provides a Log4j implementation for perl.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

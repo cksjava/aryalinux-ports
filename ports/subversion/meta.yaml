@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: subversion
+version: 1.14.5
+page_kind: single_package
+section: general
+page: subversion
+title: Subversion-1.14.5
+tarball: subversion-1.14.5.tar.bz2
+url: https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
+md5: af6001dc7af2f1242a4f72e8a5c565d2
+summary: Subversion is a version control system that is designed to be a compelling
+  replacement for CVS in the open source community. It extends and enhances CVS' feature
+  set, while maintaining a similar interface for those already familiar with CVS.
+  These instructions install the client and server software used to manipulate a Subversion
+  repository. Creation of a repository is covered at Running a Subvers
+download_size: 8.3 MB
+disk_space: 260 MB (add 189 MB for bindings, 54 MB for docs, 1.3 GB for tests)
+sbu: 1.5 SBU (Using parallelism=4; add 2.0 SBU for bindings, 30 SBU for tests)
+depends:
+  required:
+  - apr-util
+  recommended:
+  - serf
+  - swig
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/subversion-1.14.5-upstream_fixes-1.patch
+  filename: subversion-1.14.5-upstream_fixes-1.patch
+book_order: 351000

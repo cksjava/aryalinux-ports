@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: bluez
+version: '5.87'
+page_kind: single_package
+section: general
+page: bluez
+title: BlueZ-5.87
+tarball: bluez-5.87.tar.xz
+url: https://www.kernel.org/pub/linux/bluetooth/bluez-5.87.tar.xz
+md5: 6c6f8445ec3d2fa3cc570a671ccea9fa
+summary: The BlueZ package contains the Bluetooth protocol stack for Linux.
+download_size: 2.3 MB
+disk_space: 146 MB (with tests)
+sbu: 0.8 SBU (using parallelism=4; with tests)
+depends:
+  required:
+  - dbus
+  - glib
+  - libical
+  recommended:
+  - docutils
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 284000

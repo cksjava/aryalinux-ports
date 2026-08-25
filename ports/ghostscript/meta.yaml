@@ -1,0 +1,36 @@
+format: alps-port-v1
+name: ghostscript
+version: 10.07.1
+page_kind: multi_package
+section: pst
+page: gs
+title: ghostscript-10.07.1
+tarball: ghostscript-10.07.1.tar.xz
+url: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10071/ghostscript-10.07.1.tar.xz
+md5: 9e987b203c535d3c7829e1daefb85e98
+summary: Ghostscript is a versatile processor for PostScript data with the ability
+  to render PostScript to different targets. It is a mandatory part of the cups printing
+  stack.
+download_size: 66 MB
+disk_space: 1.1 GB (with fonts and libgs.so)
+sbu: 1.9 SBU (Using parallelism=4; with libgs.so)
+depends:
+  required: []
+  recommended:
+  - cups
+  - fontconfig
+  - freetype
+  - little-cms
+  - libjpeg-turbo
+  - tiff
+  - openjpeg
+  ignore_for_order:
+  - cups
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 836000
+cycle_policy:
+  install_before:
+  - cups

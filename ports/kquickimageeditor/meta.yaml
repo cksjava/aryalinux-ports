@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: kquickimageeditor
+version: 0.6.2.1
+page_kind: single_package
+section: kde
+page: kquickimageeditor
+title: kquickimageeditor-0.6.2.1
+tarball: kquickimageeditor-0.6.2.1.tar.gz
+url: https://github.com/KDE/kquickimageeditor/archive/v0.6.2.1/kquickimageeditor-0.6.2.1.tar.gz
+md5: 3ae93b786dfb9e2586f3142cb859d5d8
+summary: This package provides a set of QtQuick components providing basic image editing
+  capabilities.
+download_size: 4.3 MB
+disk_space: 22 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - kde-frameworks
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 573000

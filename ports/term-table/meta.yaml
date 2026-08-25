@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: term-table
+version: '0.028'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Term::Table-0.028
+tarball: Term-Table-0.028.tar.gz
+url: https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Term-Table-0.028.tar.gz
+md5: 28c3c03c85938a37e92d24413d0953ec
+summary: Term::Table formats a header and rows into a table. This is used by some
+  failing tests to provide diagnostics about what has gone wrong.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - test-simple
+  ignore_for_order:
+  - test-simple
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000
+cycle_policy:
+  install_before:
+  - test-simple

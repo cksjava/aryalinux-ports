@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: protobuf
+version: '35.1'
+page_kind: single_package
+section: general
+page: protobuf
+title: Protobuf-35.1
+tarball: protobuf-35.1.tar.gz
+url: https://github.com/protocolbuffers/protobuf/releases/download/v35.1/protobuf-35.1.tar.gz
+md5: 8d1f93c3aa115cd14ab4dc00a93567c5
+summary: The Protobuf package contains utilities and libraries for using data in Google's
+  data interchange format.
+download_size: 6.9 MB
+disk_space: 116 MB
+sbu: 1.2 SBU (with parallelism=4)
+depends:
+  required:
+  - abseil-cpp
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 188000

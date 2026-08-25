@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: meta-xorg-drivers
+version: '1'
+page_kind: meta
+section: meta
+page: meta-xorg-drivers
+title: meta-xorg-drivers
+tarball: ''
+url: ''
+md5: ''
+summary: Xorg input drivers from BLFS
+depends:
+  required: []
+  recommended: []
+members:
+- libevdev
+- libinput
+- mtdev
+- xorg-evdev-driver
+- xorg-libinput-driver
+- xorg-synaptics-driver
+- xorg-wacom-driver
+bootscripts: []
+provides: []
+conflicts: []

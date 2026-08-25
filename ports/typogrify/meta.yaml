@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: typogrify
+version: 2.1.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Typogrify-2.1.0
+tarball: typogrify-2.1.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-2.1.0.tar.gz
+md5: 7cc9a0a1de988329add3982519dc7971
+summary: Typogrify provides filters to enhance web typography, including support for
+  Django and Jinja templates.
+download_size: 13 KB
+disk_space: 404 KB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - hatchling
+  - smartypants
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

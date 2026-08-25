@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: xorg-libinput-driver
+version: 1.5.0
+page_kind: x11_driver
+section: x
+page: x7driver
+title: Xorg Libinput Driver-1.5.0
+tarball: xf86-input-libinput-1.5.0.tar.xz
+url: https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz
+md5: f8d0fb6987d843e688d597c2b66ec824
+summary: The X.Org Libinput Driver is a thin wrapper around libinput and allows for
+  libinput to be used for input devices in X. This driver can be used as drop-in replacement
+  for evdev and synaptics.
+download_size: 324 KB
+disk_space: 3.9 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required:
+  - libinput
+  - xorg-server
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 460000

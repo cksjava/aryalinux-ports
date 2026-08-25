@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: iw
+version: '6.17'
+page_kind: single_package
+section: basicnet
+page: iw
+title: iw-6.17
+tarball: iw-6.17.tar.xz
+url: https://www.kernel.org/pub/software/network/iw/iw-6.17.tar.xz
+md5: 7323e43843f30068ffb6079e15e8e11a
+summary: iw is a new nl80211 based CLI configuration utility for wireless devices.
+  It supports all new drivers that have been added to the kernel recently. The old
+  tool iwconfig, which uses Wireless Extensions interface, is deprecated and it's
+  strongly recommended to switch to iw and nl80211.
+download_size: 160 KB
+disk_space: 4.0 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - libnl
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 377000

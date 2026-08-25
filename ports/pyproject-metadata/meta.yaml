@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: pyproject-metadata
+version: 0.12.1
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Pyproject-Metadata-0.12.1
+tarball: pyproject_metadata-0.12.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/p/pyproject-metadata/pyproject_metadata-0.12.1.tar.gz
+md5: d44c15fd176128acd9497af2512085a0
+summary: The Pyproject-Metadata module contains a data class for PEP 621 metadata
+  with support for “core metadata” (PEP 643) generation.
+download_size: 44 KB
+disk_space: 700 KB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

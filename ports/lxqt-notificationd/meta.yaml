@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: lxqt-notificationd
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-notificationd
+title: lxqt-notificationd-2.4.0
+tarball: lxqt-notificationd-2.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-notificationd/releases/download/2.4.0/lxqt-notificationd-2.4.0.tar.xz
+md5: 053f0b2de428b53fa4ce6e2f94ff2217
+summary: The lxqt-notificationd package is the LXQt notification daemon.
+download_size: 72 KB
+disk_space: 6.2 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - liblxqt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 714000

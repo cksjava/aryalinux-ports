@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: libgcrypt
+version: 1.12.2
+page_kind: single_package
+section: general
+page: libgcrypt
+title: libgcrypt-1.12.2
+tarball: libgcrypt-1.12.2.tar.bz2
+url: https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.2.tar.bz2
+md5: 4e98430cfc16d842a7231026c32418da
+summary: The libgcrypt package contains a general purpose crypto library based on
+  the code used in GnuPG. The library provides a high level interface to cryptographic
+  building blocks using an extendable and flexible API.
+download_size: 4.3 MB
+disk_space: 159 MB (with tests)
+sbu: 0.2 SBU (with documentation; add 0.9 SBU for tests)
+depends:
+  required:
+  - libgpg-error
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 143000

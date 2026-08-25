@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: kddockwidgets
+version: 2.4.0
+page_kind: single_package
+section: kde
+page: kddockwidgets
+title: KDDockWidgets-2.4.0
+tarball: KDDockWidgets-2.4.0.tar.gz
+url: https://github.com/KDAB/KDDockWidgets/releases/download/v2.4.0/KDDockWidgets-2.4.0.tar.gz
+md5: 6ad73ca8501c207d99116210054814aa
+summary: The KDDockWidgets package provides Qt dock widgets that are suitable for
+  replacing QDockWidget and implementing advanced functionality that is missing from
+  Qt.
+download_size: 5.4 MB
+disk_space: 114 MB
+sbu: 0.6 SBU (using parallelism=4)
+depends:
+  required:
+  - fmt
+  - qt
+  - vulkan-loader
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 553000

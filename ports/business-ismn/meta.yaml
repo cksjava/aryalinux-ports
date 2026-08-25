@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: business-ismn
+version: '1.205'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Business::ISMN-1.205
+tarball: Business-ISMN-1.205.tar.gz
+url: https://www.cpan.org/authors/id/B/BR/BRIANDFOY/Business-ISMN-1.205.tar.gz
+md5: b35f42bdaeb2fd797c51bb0821ffc906
+summary: The Business::ISMN module provides functions for working with International
+  Standard Music Numbers.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - tie-cycle
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

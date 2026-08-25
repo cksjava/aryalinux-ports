@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: libplacebo
+version: 7.360.1
+page_kind: single_package
+section: multimedia
+page: libplacebo
+title: libplacebo-7.360.1
+tarball: libplacebo-7.360.1.tar.gz
+url: https://github.com/haasn/libplacebo/archive/v7.360.1/libplacebo-7.360.1.tar.gz
+md5: e0fa1b52f8d7b7ba51373e9a639ca966
+summary: The libplacebo package contains a library for processing image and video
+  primitives and shaders. It also includes a high quality rendering pipeline that
+  supports OpenGL and Vulkan.
+download_size: 844 KB
+disk_space: 38 MB
+sbu: 0.2 SBU (With tests)
+depends:
+  required:
+  - glad
+  recommended:
+  - glslang
+  - vulkan-loader
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 786000

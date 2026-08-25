@@ -1,0 +1,37 @@
+format: alps-port-v1
+name: mutter
+version: '50.4'
+page_kind: single_package
+section: gnome
+page: mutter
+title: Mutter-50.4
+tarball: mutter-50.4.tar.xz
+url: https://download.gnome.org/sources/mutter/50/mutter-50.4.tar.xz
+md5: 16e91f37bb05f67c684f3582380f86a1
+summary: Mutter is the window manager for GNOME. It is not invoked directly, but from
+  GNOME Session (on a machine with a hardware accelerated video driver).
+download_size: 8.1 MB
+disk_space: 91 MB (add 84 MB for tests)
+sbu: 0.4 SBU (Using parallelism=4; add 6.2 SBU for tests)
+depends:
+  required:
+  - at-spi2-core
+  - docutils
+  - gnome-settings-daemon
+  - graphene
+  - gtk
+  - libei
+  - libxcvt
+  - libxkbcommon
+  - pipewire
+  recommended:
+  - desktop-file-utils
+  - libdisplay-info
+  - libinput
+  - wayland
+  - wayland-protocols
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 616000

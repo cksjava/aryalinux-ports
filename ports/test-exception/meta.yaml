@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: test-exception
+version: '0.43'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::Exception-0.43
+tarball: Test-Exception-0.43.tar.gz
+url: https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test-Exception-0.43.tar.gz
+md5: 572d355026fb0b87fc2b8c64b83cada0
+summary: Test::Exception provides convenience methods for testing exception based
+  code.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - sub-uplevel
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

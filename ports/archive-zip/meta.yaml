@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: archive-zip
+version: '1.68'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Archive::Zip-1.68
+tarball: Archive-Zip-1.68.tar.gz
+url: https://www.cpan.org/authors/id/P/PH/PHRED/Archive-Zip-1.68.tar.gz
+md5: a33993309322164867c99e04a4000ee3
+summary: The Archive::Zip module allows a Perl program to create, manipulate, read,
+  and write Zip archive files.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - libarchive
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

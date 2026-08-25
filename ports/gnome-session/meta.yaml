@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: gnome-session
+version: '50.1'
+page_kind: single_package
+section: gnome
+page: gnome-session
+title: gnome-session-50.1
+tarball: gnome-session-50.1.tar.xz
+url: https://download.gnome.org/sources/gnome-session/50/gnome-session-50.1.tar.xz
+md5: 0c02fd88e93b89b8cf09f80637356ca8
+summary: The GNOME Session package contains the GNOME session manager.
+download_size: 396 KB
+disk_space: 7.6 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - gnome-desktop
+  - json-glib
+  - mesa
+  - systemd
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 619000

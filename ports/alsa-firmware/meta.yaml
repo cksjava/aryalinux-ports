@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: alsa-firmware
+version: 1.2.4
+page_kind: single_package
+section: multimedia
+page: alsa-firmware
+title: alsa-firmware-1.2.4
+tarball: alsa-firmware-1.2.4.tar.bz2
+url: https://www.alsa-project.org/files/pub/firmware/alsa-firmware-1.2.4.tar.bz2
+md5: ee6c1d24a1a4ac1d86992b408ed710a2
+summary: The ALSA Firmware package contains firmware for certain sound cards.
+download_size: 4.9 MB
+disk_space: 39 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - alsa-tools
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 751000

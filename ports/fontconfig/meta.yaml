@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: fontconfig
+version: 2.18.3
+page_kind: single_package
+section: general
+page: fontconfig
+title: Fontconfig-2.18.3
+tarball: fontconfig-2.18.3.tar.xz
+url: https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.18.3/fontconfig-2.18.3.tar.xz
+md5: ce819e229ca6fb7d1be47a192d6681a3
+summary: The Fontconfig package contains a library and support programs used for configuring
+  and customizing font access.
+download_size: 1.2 MB
+disk_space: 27 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required:
+  - freetype
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 212000

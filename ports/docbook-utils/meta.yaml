@@ -1,0 +1,36 @@
+format: alps-port-v1
+name: docbook-utils
+version: 0.6.14
+page_kind: single_package
+section: pst
+page: docbook-utils
+title: DocBook-utils-0.6.14
+tarball: docbook-utils-0.6.14.tar.gz
+url: https://sourceware.org/ftp/docbook-tools/new-trials/SOURCES/docbook-utils-0.6.14.tar.gz
+md5: 6b41b18c365c01f225bc417cf632d81c
+summary: The DocBook-utils package is a collection of utility scripts used to convert
+  and analyze SGML documents in general, and DocBook files in particular. The scripts
+  are used to convert from DocBook or other SGML formats into “classical” file formats
+  like HTML, man, info, RTF and many more. There's also a utility to compare two SGML
+  files and only display the differences in markup. This is useful for c
+download_size: 124 KB
+disk_space: 1.44 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - openjade
+  - docbook-dsssl
+  - docbook-3.1-dtd
+  recommended:
+  - sgmlspm
+  - lynx
+  - links
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/docbook-utils-0.6.14-grep_fix-1.patch
+  filename: docbook-utils-0.6.14-grep_fix-1.patch
+book_order: 850000

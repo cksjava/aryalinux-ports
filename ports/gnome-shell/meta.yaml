@@ -1,0 +1,38 @@
+format: alps-port-v1
+name: gnome-shell
+version: '50.4'
+page_kind: single_package
+section: gnome
+page: gnome-shell
+title: gnome-shell-50.4
+tarball: gnome-shell-50.4.tar.xz
+url: https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.4.tar.xz
+md5: 4ab5141867b8639e793aa66fb38dc066
+summary: The GNOME Shell is the core user interface of the GNOME Desktop environment.
+download_size: 2.2 MB
+disk_space: 63 MB (with tests)
+sbu: 0.5 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - evolution-data-server
+  - gcr
+  - gjs
+  - gnome-desktop
+  - ibus
+  - mutter
+  - polkit
+  - startup-notification
+  - adwaita-icon-theme
+  - libgweather
+  - libnma
+  - systemd
+  recommended:
+  - desktop-file-utils
+  - gnome-bluetooth
+  - gst-plugins-base
+  - gnome-menus
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 617000

@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: libisoburn
+version: 1.5.8.pl02
+page_kind: single_package
+section: multimedia
+page: libisoburn
+title: libisoburn-1.5.8.pl02
+tarball: libisoburn-1.5.8.pl02.tar.gz
+url: https://files.libburnia-project.org/releases/libisoburn-1.5.8.pl02.tar.gz
+md5: 008b9adc9ab3545e167495220b453413
+summary: libisoburn is a frontend for the libburn and libisofs libraries, which enables
+  creation and expansion of ISO-9660 filesystems on all CD/DVD/BD media supported
+  by libburn. This includes media like DVD+RW, which do not support multi-session
+  management on the media level, and even plain disk files or block devices.
+download_size: 1.7 MB
+disk_space: 17 MB (with Tk and HTML documentation)
+sbu: 0.2 SBU (with Tk and HTML documentation)
+depends:
+  required:
+  - libburn
+  - libisofs
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 829000

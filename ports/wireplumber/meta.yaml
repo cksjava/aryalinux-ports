@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: wireplumber
+version: 0.5.15
+page_kind: single_package
+section: multimedia
+page: wireplumber
+title: Wireplumber-0.5.15
+tarball: wireplumber-0.5.15.tar.bz2
+url: https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.15/wireplumber-0.5.15.tar.bz2
+md5: dba978afa67ba317d99ef03285ad4733
+summary: The Wireplumber package contains a session and policy manager for Pipewire.
+download_size: 464 KB
+disk_space: 100 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required:
+  - glib
+  - pipewire
+  - systemd
+  recommended:
+  - lua
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 805000

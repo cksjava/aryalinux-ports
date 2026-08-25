@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: imagesize
+version: 1.4.1
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Imagesize-1.4.1
+tarball: imagesize-1.4.1.tar.gz
+url: https://files.pythonhosted.org/packages/source/i/imagesize/imagesize-1.4.1.tar.gz
+md5: 5a40586a25c07e1a8f16f6267252c321
+summary: The imagesize package analyzes image file headers and returns the image size
+  and DPI. It works with JPEG/JPEG 2000/PNG/GIF/TIFF/SVG/Netpbm/WebP formats.
+download_size: 1.2 MB
+disk_space: 1.8 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

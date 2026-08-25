@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: file-roller
+version: '44.7'
+page_kind: single_package
+section: gnome
+page: file-roller
+title: File-Roller-44.7
+tarball: file-roller-44.7.tar.xz
+url: https://download.gnome.org/sources/file-roller/44/file-roller-44.7.tar.xz
+md5: 7b3d5dc3c7557ed82659dc25292e642e
+summary: File Roller is an archive manager for GNOME with support for tar, bzip2,
+  bzip3, gzip, zip, jar, compress, lzop, zstd, dmg, and many other archive formats.
+download_size: 1.0 MB
+disk_space: 22 MB
+sbu: 0.1 SBU (Using parallelism=4)
+depends:
+  required:
+  - gtk
+  - itstool
+  recommended:
+  - cpio
+  - desktop-file-utils
+  - libarchive
+  - libadwaita
+  - libportal
+  - nautilus
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 628000

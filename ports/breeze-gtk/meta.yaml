@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: breeze-gtk
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: breeze-gtk-6.7.4
+tarball: breeze-gtk-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/breeze-gtk-6.7.4.tar.xz
+md5: a6501aa2fbd1b520e3cdb3122e7f3a60
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 4
+book_order: 578005

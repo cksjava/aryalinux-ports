@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: x
+version: '0'
+page_kind: configuration
+section: x
+page: x
+title: Graphical Components
+tarball: ''
+url: ''
+md5: ''
+summary: ''
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 438000

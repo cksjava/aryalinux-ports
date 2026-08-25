@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: text-roman
+version: '3.5'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Text::Roman-3.5
+tarball: Text-Roman-3.5.tar.gz
+url: https://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-3.5.tar.gz
+md5: 1f6b09c0cc1f4425b565ff787a39fd83
+summary: Text::Roman allows conversion between Roman and Arabic algorisms (number
+  systems, e.g. MCMXLV and 1945).
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

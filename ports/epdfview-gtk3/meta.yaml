@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: epdfview-gtk3
+version: '20200814'
+page_kind: single_package
+section: pst
+page: epdfview
+title: ePDFView-gtk3-20200814
+tarball: epdfview-gtk3-20200814.tar.xz
+url: https://anduin.linuxfromscratch.org/BLFS/epdfview-gtk3/epdfview-gtk3-20200814.tar.xz
+md5: d222a3dc26c2faf6f862018bb478fb36
+summary: ePDFView-gtk3 is a fork of the old ePDFView program. Although the github
+  repository https://github.com/Flow-It/epdfview_old.git names it as 'old', it is
+  the gtk3 fork. It is a lightweight replacement for Evince as it does not rely upon
+  GNOME libraries and is more capable than MuPDF.
+download_size: 184 KB
+disk_space: 3.5 MB
+sbu: less than 0.1 SBU (using parallelism=4)
+depends:
+  required:
+  - gtk
+  - poppler
+  recommended:
+  - cups
+  - hicolor-icon-theme
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 860000

@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: intel-media-driver
+version: 26.2.4
+page_kind: single_package
+section: multimedia
+page: intel-media-driver
+title: intel-media-driver-26.2.4
+tarball: intel-media-driver-26.2.4.tar.gz
+url: https://github.com/lfs-book/intel-media-driver/archive/v26.2.4/intel-media-driver-26.2.4.tar.gz
+md5: 507c81a204cbb38da19ac915ec16a618
+summary: The intel-media-driver package provides a VA API driver for Intel GPUs that
+  are provided with Broadwell CPUs and higher as well as the Intel Arc family of GPUs,
+  like the B-Series. This includes support for a variety of codecs.
+download_size: 28 MB
+disk_space: 3.2 GB (293 MB installed with a single GPU model)
+sbu: 6.0 SBU (with parallelism=4 and a single GPU model)
+depends:
+  required:
+  - cmake
+  - gmmlib
+  - libva
+  - xorg-build-environment
+  - mesa-kernel-configuration
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 768000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: compface
+version: 1.5.2
+page_kind: single_package
+section: general
+page: compface
+title: Compface-1.5.2
+tarball: compface-1.5.2.tar.gz
+url: https://anduin.linuxfromscratch.org/BLFS/compface/compface-1.5.2.tar.gz
+md5: 62f4f79c0861ad292ba3cf77b4c48319
+summary: Compface provides utilities and a library to convert from/to X-Face format,
+  a 48x48 bitmap format used to carry thumbnails of email authors in a mail header.
+download_size: 47 KB
+disk_space: 520 KB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 255000

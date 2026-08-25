@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: sharutils
+version: 4.15.2
+page_kind: single_package
+section: general
+page: sharutils
+title: Sharutils-4.15.2
+tarball: sharutils-4.15.2.tar.xz
+url: https://ftpmirror.gnu.org/sharutils/sharutils-4.15.2.tar.xz
+md5: 5975ce21da36491d7aa6dc2b0d9788e0
+summary: The Sharutils package contains utilities that can create 'shell' archives.
+download_size: 1.1 MB
+disk_space: 22 MB (with the test suite)
+sbu: 0.4 SBU (with the test suite)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/sharutils-4.15.2-consolidated-1.patch
+  filename: sharutils-4.15.2-consolidated-1.patch
+book_order: 271000

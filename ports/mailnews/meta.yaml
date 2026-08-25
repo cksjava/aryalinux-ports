@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: mailnews
+version: '0'
+page_kind: configuration
+section: basicnet
+page: mailnews
+title: Mail/News Clients
+tarball: ''
+url: ''
+md5: ''
+summary: Mail Clients help you retrieve (Fetchmail), sort (Procmail), read and compose
+  responses (Heirloom mailx, Mutt, Pine, Kmail, Balsa, Evolution, SeaMonkey) to email.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 415000

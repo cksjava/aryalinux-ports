@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: test-file
+version: '1.995'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::File-1.995
+tarball: Test-File-1.995.tar.gz
+url: https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Test-File-1.995.tar.gz
+md5: 865b7e00fa68431596e1933d523506ab
+summary: Test::File provides a collection of test utilities for file attributes.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - test-utf8
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

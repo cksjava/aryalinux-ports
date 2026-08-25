@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: vim
+version: 9.2.0954
+page_kind: single_package
+section: postlfs
+page: vim
+title: Vim-9.2.0954
+tarball: vim-9.2.0954.tar.gz
+url: https://github.com/vim/vim/archive/v9.2.0954/vim-9.2.0954.tar.gz
+md5: 3cf4136d4f83d45636f313b7103c75c5
+summary: The Vim package, which is an abbreviation for VI IMproved, contains a vi
+  clone with extra features as compared to the original vi.
+download_size: 19 MB
+disk_space: 159 MB (add 83 MB for tests)
+sbu: 0.3 SBU (with parallelism=4; add 3.4 SBU for tests)
+depends:
+  required: []
+  recommended:
+  - a-graphical-environment
+  - gtk
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 91000

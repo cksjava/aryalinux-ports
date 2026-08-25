@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: tex-path
+version: '0'
+page_kind: configuration
+section: pst
+page: tex-path
+title: Setting the PATH for TeX Live
+tarball: ''
+url: ''
+md5: ''
+summary: Upstream prefers to install in /usr/local but the BLFS editors regard that
+  as inconvenient, and think using /opt/texlive is more appropriate. Originally BLFS
+  used a full binary install to bootstrap the source install, so the same prefix is
+  used for both.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 865000

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: icu
+version: '78.3'
+page_kind: single_package
+section: general
+page: icu
+title: icu-78.3
+tarball: icu4c-78.3-sources.tgz
+url: https://github.com/unicode-org/icu/releases/download/release-78.3/icu4c-78.3-sources.tgz
+md5: a7b736b570ef0e180c96a31715a00c78
+summary: The International Components for Unicode (ICU) package is a mature, widely
+  used set of C/C++ libraries providing Unicode and Globalization support for software
+  applications. ICU is widely portable and gives applications the same results on
+  all platforms.
+download_size: 27 MB
+disk_space: 362 MB (add 48 MB for tests)
+sbu: 0.5 SBU (Using parallelism=4; add 2.1 SBU for tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 125000

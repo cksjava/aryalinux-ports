@@ -1,0 +1,29 @@
+format: alps-port-v1
+name: postfix
+version: 3.11.6
+page_kind: single_package
+section: server
+page: postfix
+title: Postfix-3.11.6
+tarball: postfix-3.11.6.tar.gz
+url: https://ghostarchive.org/postfix/postfix-release/official/postfix-3.11.6.tar.gz
+md5: 7d8b971f64d7c059dcb922e16462dcdd
+summary: The Postfix package contains a Mail Transport Agent (MTA). This is useful
+  for sending email to other users of your host machine. It can also be configured
+  to be a central mail server for your domain, a mail relay agent or simply a mail
+  delivery agent to your local Internet Service Provider.
+download_size: 5.1 MB
+disk_space: 245 MB (66 MB installed)
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required: []
+  recommended:
+  - cyrus-sasl
+  - libnsl
+  - lmdb
+bootscripts: []
+systemd_units:
+- postfix
+provides: []
+conflicts: []
+book_order: 430000

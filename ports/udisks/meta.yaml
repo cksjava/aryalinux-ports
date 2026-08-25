@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: udisks
+version: 2.11.2
+page_kind: single_package
+section: general
+page: udisks2
+title: UDisks-2.11.2
+tarball: udisks-2.11.2.tar.bz2
+url: https://github.com/storaged-project/udisks/releases/download/udisks-2.11.2/udisks-2.11.2.tar.bz2
+md5: 9e8e8c7f43257bc501b4896f43db9eb8
+summary: The UDisks package provides a daemon, tools and libraries to access and manipulate
+  disks and storage devices.
+download_size: 1.9 MB
+disk_space: 68 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required:
+  - libblockdev
+  - libgudev
+  - polkit
+  recommended:
+  - systemd
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 307000

@@ -1,0 +1,31 @@
+format: alps-port-v1
+name: mpv
+version: 0.41.0
+page_kind: single_package
+section: multimedia
+page: mpv
+title: mpv-0.41.0
+tarball: mpv-0.41.0.tar.gz
+url: https://github.com/mpv-player/mpv/archive/v0.41.0/mpv-0.41.0.tar.gz
+md5: fa40a0fedeaf0a77127e238a39b9d4c4
+summary: mpv is a free media player for the command line. It supports a wide variety
+  of media file formats, audio and video codecs, and subtitle types.
+download_size: 6.9 MB
+disk_space: 35 MB
+sbu: 0.4 SBU
+depends:
+  required:
+  - alsa-lib
+  - ffmpeg
+  - libplacebo
+  - mesa
+  recommended:
+  - libjpeg-turbo
+  - libva
+  - uchardet
+  - vulkan-loader
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 821000

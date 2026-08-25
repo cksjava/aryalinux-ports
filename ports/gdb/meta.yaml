@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: gdb
+version: '17.2'
+page_kind: single_package
+section: general
+page: gdb
+title: GDB-17.2
+tarball: gdb-17.2.tar.xz
+url: https://ftpmirror.gnu.org/gdb/gdb-17.2.tar.xz
+md5: 6137ae4ffa0e7423fce956768835de1f
+summary: GDB, the GNU Project debugger, allows you to see what is going on “inside”
+  another program while it executes -- or what another program was doing at the moment
+  it crashed. Note that GDB is most effective when tracing programs and libraries
+  that were built with debugging symbols and not stripped.
+download_size: 24 MB
+disk_space: 884 MB (add 824 MB for docs; add 7.8 GB for tests)
+sbu: 1.2 SBU (add 0.4 SBU for docs; add 12.0 SBU tests; all using parallelism=8)
+depends:
+  required: []
+  recommended:
+  - six
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 329000

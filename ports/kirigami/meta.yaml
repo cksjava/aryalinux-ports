@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kirigami
+version: 6.29.0
+page_kind: kde_batch
+section: kde
+page: frameworks6
+title: kirigami-6.29.0
+tarball: kirigami-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/kirigami-6.29.0.tar.xz
+md5: e3ea9add856c983ae55a5e88675f5cd9
+summary: KDE batch package from frameworks6.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 44
+book_order: 548045

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: unifdef
+version: '2.12'
+page_kind: single_package
+section: general
+page: unifdef
+title: unifdef-2.12
+tarball: unifdef-2.12.tar.gz
+url: https://dotat.at/prog/unifdef/unifdef-2.12.tar.gz
+md5: b225312c110cd2600ca7166bd0419751
+summary: The unifdef package contains a utility that is useful for removing preprocessor
+  conditionals from code.
+download_size: 88 KB
+disk_space: 1.9 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 355000

@@ -1,0 +1,36 @@
+format: alps-port-v1
+name: qtwebengine
+version: 6.11.2
+page_kind: single_package
+section: x
+page: qtwebengine
+title: QtWebEngine-6.11.2
+tarball: qtwebengine-everywhere-src-6.11.2.tar.xz
+url: https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtwebengine-everywhere-src-6.11.2.tar.xz
+md5: a33984478c690295f2b7a3d153c5772d
+summary: ''
+download_size: 553 MB
+disk_space: 12 GB (388 MB installed)
+sbu: 44 SBU (using parallelism=8)
+depends:
+  required:
+  - cups
+  - html5lib
+  - nodejs
+  - nss
+  - qt
+  - rust-bindgen
+  recommended:
+  - alsa-lib
+  - pulseaudio
+  - ffmpeg
+  - icu
+  - libxslt
+  - openjpeg
+  - opus
+  - pipewire
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 509000

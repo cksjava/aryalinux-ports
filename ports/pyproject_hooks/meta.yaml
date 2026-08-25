@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: pyproject_hooks
+version: 1.2.0
+page_kind: python_module
+section: general
+page: python-dependencies
+title: Pyproject_Hooks-1.2.0
+tarball: pyproject_hooks-1.2.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/p/pyproject-hooks/pyproject_hooks-1.2.0.tar.gz
+md5: ed3dd1b984339e83e35f676d7169c192
+summary: Pyproject_Hooks is a low-level library for calling build-backends in pyproject.toml-based
+  projects.
+download_size: 19 KB
+disk_space: 520 KB (14 MB with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 345000

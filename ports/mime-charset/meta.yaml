@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: mime-charset
+version: 1.013.1
+page_kind: perl_module
+section: general
+page: perl-deps
+title: MIME::Charset-1.013.1
+tarball: MIME-Charset-1.013.1.tar.gz
+url: https://cpan.metacpan.org/authors/id/N/NE/NEZUMI/MIME-Charset-1.013.1.tar.gz
+md5: b1932cfc806c8deb1b4a20d6afbfa8ac
+summary: MIME::Charset provides information about character sets used for MIME messages
+  on the internet, such as their encodings.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended:
+  - encode-eucjpascii
+  - encode-hanextra
+  - encode-jis2k
+  - biber
+  ignore_for_order:
+  - biber
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000
+cycle_policy:
+  install_before:
+  - biber

@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: rustc
+version: 1.97.1
+page_kind: single_package
+section: general
+page: rust
+title: Rustc-1.97.1
+tarball: rustc-1.97.1-src.tar.xz
+url: https://static.rust-lang.org/dist/rustc-1.97.1-src.tar.xz
+md5: c6fc3febcd3b1235cf4f00c3e05559b3
+summary: The Rust programming language is designed to be a safe, concurrent, practical
+  language.
+download_size: 232 MB
+disk_space: 10 GB (324 MB installed); add 11 GB if running the tests
+sbu: 10 SBU (including download time; add 15 SBU for tests, both using parallelism=8)
+depends:
+  required:
+  - cmake
+  - curl
+  recommended:
+  - libssh2
+  - llvm
+  - the-bash-shell-startup-files
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 347000

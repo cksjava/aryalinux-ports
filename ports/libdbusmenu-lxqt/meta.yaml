@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: libdbusmenu-lxqt
+version: 0.4.0
+page_kind: single_package
+section: lxqt
+page: libdbusmenu-lxqt
+title: libdbusmenu-lxqt-0.4.0
+tarball: libdbusmenu-lxqt-0.4.0.tar.xz
+url: https://github.com/lxqt/libdbusmenu-lxqt/releases/download/0.4.0/libdbusmenu-lxqt-0.4.0.tar.xz
+md5: f2aef1535a2ed37da8e5983d001ec194
+summary: The libdbusmenu-lxqt package provides a Qt implementation of the DBusMenu
+  protocol.
+download_size: 40 KB
+disk_space: 8.5 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 684000

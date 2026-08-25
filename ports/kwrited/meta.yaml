@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: kwrited
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: kwrited-6.7.4
+tarball: kwrited-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/kwrited-6.7.4.tar.xz
+md5: 3f7e64d7ad382a5c4fc9a4cc83d6c0a4
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 26
+book_order: 578027

@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: libcanberra
+version: '0.30'
+page_kind: single_package
+section: multimedia
+page: libcanberra
+title: libcanberra-0.30
+tarball: libcanberra-0.30.tar.xz
+url: https://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+md5: 34cb7e4430afaf6f447c4ebdb9b42072
+summary: libcanberra is an implementation of the XDG Sound Theme and Name Specifications,
+  for generating event sounds on free desktops, such as GNOME.
+download_size: 312 KB
+disk_space: 7.5 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - libvorbis
+  recommended:
+  - alsa-lib
+  - gstreamer
+  - gtk
+  - sound-theme-freedesktop
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/libcanberra-0.30-wayland-1.patch
+  filename: libcanberra-0.30-wayland-1.patch
+book_order: 774000

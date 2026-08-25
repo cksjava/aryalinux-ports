@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: plasma-thunderbolt
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: plasma-thunderbolt-6.7.4
+tarball: plasma-thunderbolt-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/plasma-thunderbolt-6.7.4.tar.xz
+md5: b9129e3342abb80f4b43d160d26dcb15
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 58
+book_order: 578059

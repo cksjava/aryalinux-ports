@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: pavucontrol-qt
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: pavucontrol-qt
+title: pavucontrol-qt-2.4.0
+tarball: pavucontrol-qt-2.4.0.tar.xz
+url: https://github.com/lxqt/pavucontrol-qt/releases/download/2.4.0/pavucontrol-qt-2.4.0.tar.xz
+md5: 79ec4eb4247001df14eca73c437a446c
+summary: pavucontrol-qt is the Qt port of the volume control utility pavucontrol,
+  which is used to adjust audio levels in Pulseaudio. It is desktop environment agnostic.
+download_size: 124 KB
+disk_space: 7.0 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - liblxqt
+  - pulseaudio
+  - glib
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 715000

@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: colord
+version: 1.4.8
+page_kind: single_package
+section: general
+page: colord
+title: Colord-1.4.8
+tarball: colord-1.4.8.tar.xz
+url: https://www.freedesktop.org/software/colord/releases/colord-1.4.8.tar.xz
+md5: 4d17dea7fe5460c2ea16aee64dca2ecb
+summary: Colord is a system service that makes it easy to manage, install, and generate
+  color profiles. It is used mainly by GNOME Color Manager for system integration
+  and use when no users are logged in.
+download_size: 1.8 MB
+disk_space: 22 MB (with tests)
+sbu: 0.3 SBU (with tests)
+depends:
+  required:
+  - dbus
+  - glib
+  - little-cms
+  - libgudev
+  - polkit
+  recommended:
+  - systemd
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 286000

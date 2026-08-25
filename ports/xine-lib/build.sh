@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
+if [[ ${#_tops[@]} -ne 1 ]]; then
+  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
+  exit 1
+fi
+cd "${_tops[0]}"
+
+# --- commands from BLFS ---
+patch -Np1 -i ../xine-lib-1.2.13-upstream_fixes-1.patch
+
+patch -Np1 -i ../xine-lib-1.2.13-gcc15_fixes-1.patch
+
+patch -Np1 -i ../xine-lib-1.2.13-ffmpeg8.patch
+
+./configure --prefix=/usr          \
+            --disable-vcd          \
+            --disable-w32dll       \
+            --with-external-dvdnav \
+            --docdir=/usr/share/doc/xine-lib-1.2.13
+make
+
+doxygen doc/Doxyfile
+
+make install
+
+install -v -m755 -d /usr/share/doc/xine-lib-1.2.13/api
+install -v -m644    doc/api/* \
+                    /usr/share/doc/xine-lib-1.2.13/api

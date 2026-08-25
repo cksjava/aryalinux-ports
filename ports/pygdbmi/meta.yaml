@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: pygdbmi
+version: 0.11.0.0
+page_kind: python_module
+section: general
+page: python-modules
+title: pygdbmi-0.11.0.0
+tarball: pygdbmi-0.11.0.0.tar.gz
+url: https://files.pythonhosted.org/packages/source/p/pygdbmi/pygdbmi-0.11.0.0.tar.gz
+md5: 34b1812e77469c6206002b3929798cab
+summary: GDB/MI is a line based machine oriented text interface to GDB and is activated
+  by specifying using the --interpreter command line option (see Mode Options). It
+  is specifically intended to support the development of systems which use the debugger
+  as just one small component of a larger system.
+download_size: 28 KB
+disk_space: 280 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: rust-bindgen
+version: 0.72.1
+page_kind: single_package
+section: general
+page: rust-bindgen
+title: rust-bindgen-0.72.1
+tarball: rust-bindgen-0.72.1.tar.gz
+url: https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.72.1/rust-bindgen-0.72.1.tar.gz
+md5: 49be3303557d072ce4c6987b2989be3c
+summary: The rust-bindgen package contains a utility that generates Rust bindings
+  from C/C++ headers.
+download_size: 2.2 MB
+disk_space: 219 MB
+sbu: 0.4 SBU (with parallelism=8)
+depends:
+  required:
+  - rustc
+  - llvm
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 348000

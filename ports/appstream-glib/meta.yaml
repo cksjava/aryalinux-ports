@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: appstream-glib
+version: 0.8.4
+page_kind: single_package
+section: general
+page: appstream-glib
+title: appstream-glib-0.8.4
+tarball: appstream-glib-0.8.4.tar.xz
+url: http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.8.4.tar.xz
+md5: e13816aed749622edc5abe1ca2cdd3ed
+summary: The appstream-glib provides GObjects and helper methods to make it easy to
+  read and write AppStream metadata. It also provides a simple DOM (Document Object
+  Model) implementation that makes it easy to edit nodes and convert to and from the
+  standardized XML representation.
+download_size: 2.4 MB
+disk_space: 16 MB (with tests)
+sbu: 0.1 SBU (with tests)
+depends:
+  required:
+  - curl
+  - gdk-pixbuf
+  - gtk
+  - libarchive
+  - libyaml
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 102000

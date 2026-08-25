@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: text-diff
+version: '1.45'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Text::Diff-1.45
+tarball: Text-Diff-1.45.tar.gz
+url: https://cpan.metacpan.org/authors/id/N/NE/NEILB/Text-Diff-1.45.tar.gz
+md5: edf57b6189f7651a6be454062a4e6d9c
+summary: Text::Diff performs diffs on files and record sets.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - algorithm-diff
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

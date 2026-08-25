@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: ipc-system-simple
+version: '1.30'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: IPC::System::Simple-1.30
+tarball: IPC-System-Simple-1.30.tar.gz
+url: https://cpan.metacpan.org/authors/id/J/JK/JKEENAN/IPC-System-Simple-1.30.tar.gz
+md5: e68341fd958fd013b3521d909904f675
+summary: IPC::System::Simple takes the hard work out of calling external commands
+  and producing detailed diagnostics.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

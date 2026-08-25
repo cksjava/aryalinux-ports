@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: numpy
+version: 2.5.2
+page_kind: python_module
+section: general
+page: python-modules
+title: NumPy-2.5.2
+tarball: numpy-2.5.2.tar.gz
+url: https://files.pythonhosted.org/packages/source/n/numpy/numpy-2.5.2.tar.gz
+md5: 85f9db626b908f4d2211d98b4bf8a83d
+summary: NumPy is the fundamental package for scientific computing with Python.
+download_size: 20 MB
+disk_space: 391 MB (with tests)
+sbu: 0.8 SBU (add 0.9 SBU for tests)
+depends:
+  required:
+  - cython
+  - meson_python
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

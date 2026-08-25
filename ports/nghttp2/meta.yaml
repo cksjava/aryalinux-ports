@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: nghttp2
+version: 1.70.0
+page_kind: single_package
+section: basicnet
+page: nghttp2
+title: nghttp2-1.70.0
+tarball: nghttp2-1.70.0.tar.xz
+url: https://github.com/nghttp2/nghttp2/releases/download/v1.70.0/nghttp2-1.70.0.tar.xz
+md5: 3df2b4b51caa13b76032bfd2d11d4ab2
+summary: nghttp2 is an implementation of HTTP/2 and its header compression algorithm,
+  HPACK.
+download_size: 2.0 MB
+disk_space: 29 MB
+sbu: 0.1 SBU
+depends:
+  required: []
+  recommended:
+  - libxml2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 409000

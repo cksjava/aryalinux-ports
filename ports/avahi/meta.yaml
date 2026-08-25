@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: avahi
+version: '0.8'
+page_kind: single_package
+section: basicnet
+page: avahi
+title: Avahi-0.8
+tarball: avahi-0.8.tar.gz
+url: https://github.com/lathiat/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+md5: 229c6aa30674fc43c202b22c5f8c2be7
+summary: The Avahi package is a system which facilitates service discovery on a local
+  network.
+download_size: 1.5 MB
+disk_space: 32 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - glib
+  recommended:
+  - gtk
+  - libdaemon
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/avahi-0.8-ipv6_race_condition_fix-1.patch
+  filename: avahi-0.8-ipv6_race_condition_fix-1.patch
+book_order: 381000

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: genutils
+version: '0'
+page_kind: configuration
+section: general
+page: genutils
+title: General Utilities
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains various utilities that do not fit conveniently into
+  other chapters. Programs include some documentation generators, several utilities
+  for manipulating text and graphics, programs for listing files, a program for entering
+  PIN numbers and pass-phrases, and a connection manager.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 252000

@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: xorg-wacom-driver
+version: 1.2.4
+page_kind: x11_driver
+section: x
+page: x7driver
+title: Xorg Wacom Driver-1.2.4
+tarball: xf86-input-wacom-1.2.4.tar.bz2
+url: https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-1.2.4/xf86-input-wacom-1.2.4.tar.bz2
+md5: e22300fe7cf162fa2b1a6e64ef7341f3
+summary: The Xorg Wacom Driver package contains the X.Org X11 driver and SDK for Wacom
+  and Wacom-like tablets. It is not required to use a Wacom tablet, the xf86-input-evdev
+  driver can handle these devices without problems.
+download_size: 676 KB
+disk_space: 6.4 MB (with tests)
+sbu: less than 0.1 SBU (with tests)
+depends:
+  required:
+  - xorg-server
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 460000

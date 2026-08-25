@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: taglib
+version: 2.3.1
+page_kind: single_package
+section: multimedia
+page: taglib
+title: Taglib-2.3.1
+tarball: taglib-2.3.1.tar.gz
+url: https://taglib.org/releases/taglib-2.3.1.tar.gz
+md5: b189dcfcf284179c04b97a89887e0ce6
+summary: Taglib is a library used for reading, writing and manipulating audio file
+  tags and is used by applications such as VLC.
+download_size: 1.6 MB
+disk_space: 25 MB
+sbu: 0.1 SBU (Using parallelism=4)
+depends:
+  required:
+  - cmake
+  - utfcpp
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 803000

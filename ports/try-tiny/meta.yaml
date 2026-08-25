@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: try-tiny
+version: '0.32'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Try::Tiny-0.32
+tarball: Try-Tiny-0.32.tar.gz
+url: https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-0.32.tar.gz
+md5: 964424fcada4654bede745a7a2fb870b
+summary: Try::Tiny provides try and catch to expect and handle exceptional conditions,
+  avoiding quirks in Perl and common mistakes.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

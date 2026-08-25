@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: text-bibtex
+version: '0.91'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Text::BibTeX-0.91
+tarball: Text-BibTeX-0.91.tar.gz
+url: https://www.cpan.org/authors/id/A/AM/AMBS/Text-BibTeX-0.91.tar.gz
+md5: 437862f801cfb7598dff52aa4ff7d888
+summary: Text::BibTeX provides an interface to read and parse BibTeX files.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - config-autoconf
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

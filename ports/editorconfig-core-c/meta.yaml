@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: editorconfig-core-c
+version: 0.12.11
+page_kind: single_package
+section: general
+page: editorconfig-core-c
+title: editorconfig-core-c-0.12.11
+tarball: editorconfig-core-c-0.12.11.tar.gz
+url: https://github.com/editorconfig/editorconfig-core-c/archive/v0.12.11/editorconfig-core-c-0.12.11.tar.gz
+md5: a0a6b43efe67635dad20e2d66a569a7b
+summary: The EditorConfig project maintains a file format and plugins for various
+  text editors which allow this file format to be read and used by those editors.
+download_size: 76 KB
+disk_space: 1.4 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 258000

@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: plasma-systemmonitor
+version: 6.7.4
+page_kind: kde_batch
+section: kde
+page: plasma-all
+title: plasma-systemmonitor-6.7.4
+tarball: plasma-systemmonitor-6.7.4.tar.xz
+url: https://download.kde.org/stable/plasma/6.7.4/plasma-systemmonitor-6.7.4.tar.xz
+md5: 71e9c21163c2304bea2cbf1c013811d1
+summary: KDE batch package from plasma-all.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 45
+book_order: 578046

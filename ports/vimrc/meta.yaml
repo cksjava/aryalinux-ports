@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: vimrc
+version: '0'
+page_kind: configuration
+section: postlfs
+page: vimrc
+title: The /etc/vimrc and ~/.vimrc Files
+tarball: ''
+url: ''
+md5: ''
+summary: The LFS book installs Vim as its text editor. At this point it should be
+  noted that there are a lot of different editing applications out there including
+  Emacs, nano, Joe and many more. Anyone who has been around the Internet (especially
+  usenet) for a short time will certainly have observed at least one flame war, usually
+  involving Vim and Emacs users!
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 35000

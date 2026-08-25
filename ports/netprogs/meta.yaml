@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: netprogs
+version: '0'
+page_kind: configuration
+section: basicnet
+page: netprogs
+title: Networking Programs
+tarball: ''
+url: ''
+md5: ''
+summary: These applications are generally client applications used to access the appropriate
+  server across the building or across the world. Tcpwrappers and portmap are support
+  programs for daemons that you may have running on your machine.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 366000

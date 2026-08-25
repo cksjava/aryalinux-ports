@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: test-simple
+version: '1.302222'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::Simple-1.302222
+tarball: Test-Simple-1.302222.tar.gz
+url: https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test-Simple-1.302222.tar.gz
+md5: e49c9f1651cba6d0a0d0706bf4acf846
+summary: Test::Simple contains basic utilities for writing tests.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - term-table
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

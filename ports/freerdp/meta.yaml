@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: freerdp
+version: 3.30.0
+page_kind: single_package
+section: xsoft
+page: freerdp
+title: FreeRDP-3.30.0
+tarball: FreeRDP-3.30.0.tar.gz
+url: https://github.com/freerdp/freerdp/archive/3.30.0/FreeRDP-3.30.0.tar.gz
+md5: 731ced27c915f292085b7f4c2c5627df
+summary: The FreeRDP package contains libraries and utilities for utilizing the Remote
+  Desktop Protocol. This includes tools to run an RDP server as well as to connect
+  to a computer using RDP. This is primarily used for connecting to Microsoft Windows
+  computers, but can also be used on Linux and macOS.
+download_size: 11 MB
+disk_space: 142 MB
+sbu: 0.3 SBU (Using parallelism=4)
+depends:
+  required:
+  - ffmpeg
+  - icu
+  recommended:
+  - cairo
+  - docbook-xsl-nons
+  - json-c
+  - mit-kerberos-v5
+  - libxkbcommon
+  - wayland
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 733000

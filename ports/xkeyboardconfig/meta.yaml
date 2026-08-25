@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: xkeyboardconfig
+version: '2.48'
+page_kind: single_package
+section: x
+page: xkeyboard-config
+title: XKeyboardConfig-2.48
+tarball: xkeyboard-config-2.48.tar.xz
+url: https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.48.tar.xz
+md5: 575106aff79b589abe4aff6c4bff4782
+summary: The XKeyboardConfig package contains the keyboard configuration database
+  for the X Window System.
+download_size: 932 KB
+disk_space: 35 MB
+sbu: 0.1 SBU (with tests)
+depends:
+  required:
+  - xorg-libraries
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 457000

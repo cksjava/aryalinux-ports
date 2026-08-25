@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: videoutils
+version: '0'
+page_kind: configuration
+section: multimedia
+page: videoutils
+title: Video Utilities
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter always seems to be the favorite chapter. It's probably because
+  there is a lot of satisfaction in playing your first video when you have spent so
+  much time getting to that point. All those libraries, all the configurations and
+  your reward is that you finally get to watch a movie. Not to worry though, there
+  is always one more CODEC to install.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 819000

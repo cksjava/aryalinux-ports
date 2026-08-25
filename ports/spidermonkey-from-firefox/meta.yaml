@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: spidermonkey-from-firefox
+version: 140.14.0
+page_kind: single_package
+section: general
+page: spidermonkey
+title: SpiderMonkey from firefox-140.14.0
+tarball: firefox-140.14.0esr.source.tar.xz
+url: https://archive.mozilla.org/pub/firefox/releases/140.14.0esr/source/firefox-140.14.0esr.source.tar.xz
+md5: c2eb4ac79de8b34cb3353272bea1cbd3
+summary: SpiderMonkey is Mozilla's JavaScript and WebAssembly Engine, written in C++
+  and Rust. In BLFS, the source code of SpiderMonkey is taken from Firefox.
+download_size: 614 MB
+disk_space: 4.7 GB (55 MB installed after removing 42 MB static lib; add 29 MB for
+  the main and jit tests)
+sbu: 1.9 SBU (with parallelism=4; add 0.4 SBU for the main tests and 2.6 SBU for the
+  jit tests)
+depends:
+  required:
+  - cbindgen
+  - icu
+  - which
+  recommended:
+  - llvm
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/spidermonkey-140.14.0-python_3.14_fixes-1.patch
+  filename: spidermonkey-140.14.0-python_3.14_fixes-1.patch
+book_order: 194000

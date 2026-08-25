@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: geocode-glib
+version: 3.26.4
+page_kind: single_package
+section: gnome
+page: geocode-glib
+title: geocode-glib-3.26.4
+tarball: geocode-glib-3.26.4.tar.xz
+url: https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz
+md5: 4c0dcdb7ee1222435b20acd3d7b68cd1
+summary: The Geocode GLib is a convenience library for the Yahoo! Place Finder APIs.
+  The Place Finder web service allows you to do geocoding (finding longitude and latitude
+  from an address), as well as reverse geocoding (finding an address from coordinates).
+download_size: 76 KB
+disk_space: 4.6 MB (with tests)
+sbu: 0.1 SBU (with tests)
+depends:
+  required:
+  - json-glib
+  - libsoup
+  recommended:
+  - glib
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 589000

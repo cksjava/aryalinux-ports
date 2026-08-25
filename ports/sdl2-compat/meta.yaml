@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: sdl2-compat
+version: 2.32.70
+page_kind: single_package
+section: multimedia
+page: sdl2
+title: sdl2-compat-2.32.70
+tarball: sdl2-compat-2.32.70.tar.gz
+url: https://www.libsdl.org/release/sdl2-compat-2.32.70.tar.gz
+md5: ba9179f09652a6395b3673e4ce8c473b
+summary: The sdl2-compat package provides a compatibility layer for packages that
+  require SDL2, utilizing SDL3 as the backend.
+download_size: 2.7 MB
+disk_space: 63 MB (add 29 MB for tests)
+sbu: 0.1 SBU (add 0.1 SBU for tests)
+depends:
+  required:
+  - cmake
+  - sdl3
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 797000

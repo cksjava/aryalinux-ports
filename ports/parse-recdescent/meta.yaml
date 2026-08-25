@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: parse-recdescent
+version: '1.967015'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Parse::RecDescent-1.967015
+tarball: Parse-RecDescent-1.967015.tar.gz
+url: https://www.cpan.org/authors/id/J/JT/JTBRAUN/Parse-RecDescent-1.967015.tar.gz
+md5: 7a36d45d62a9b68603edcdbd276006cc
+summary: Parse::RecDescent incrementally generates top-down recursive-descent text
+  parsers from simple yacc-like grammar specifications.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

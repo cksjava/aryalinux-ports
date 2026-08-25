@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: showtime
+version: '49.1'
+page_kind: single_package
+section: gnome
+page: showtime
+title: Showtime-49.1
+tarball: showtime-49.1.tar.xz
+url: https://download.gnome.org/sources/showtime/49/showtime-49.1.tar.xz
+md5: 8646fd90b0bbfb9bda6fcb83a637c437
+summary: Showtime is an application used for playing audio and video files on the
+  GNOME desktop.
+download_size: 2.8 MB
+disk_space: 5.0 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - blueprint-compiler
+  - gst-plugins-base
+  - pygobject
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 643000

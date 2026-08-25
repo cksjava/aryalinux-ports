@@ -1,0 +1,33 @@
+format: alps-port-v1
+name: libsoup
+version: 3.6.6
+page_kind: single_package
+section: basicnet
+page: libsoup3
+title: libsoup-3.6.6
+tarball: libsoup-3.6.6.tar.xz
+url: https://download.gnome.org/sources/libsoup/3.6/libsoup-3.6.6.tar.xz
+md5: 9e07742595800ecf301eafb52300dd89
+summary: The libsoup3 is a HTTP client/server library for GNOME. It uses GObject and
+  the GLib main loop to integrate with GNOME applications and it also has an asynchronous
+  API for use in threaded applications.
+download_size: 1.5 MB
+disk_space: 42 MB (with tests)
+sbu: 0.4 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - glib-networking
+  - libxml2
+  - nghttp2
+  recommended:
+  - glib
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/libsoup-3.6.6-upstream_fixes-1.patch
+  filename: libsoup-3.6.6-upstream_fixes-1.patch
+book_order: 406000

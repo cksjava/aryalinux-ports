@@ -1,0 +1,36 @@
+format: alps-port-v1
+name: libxkbcommon
+version: 1.13.2
+page_kind: single_package
+section: general
+page: libxkbcommon
+title: libxkbcommon-1.13.2
+tarball: libxkbcommon-1.13.2.tar.gz
+url: https://github.com/lfs-book/libxkbcommon/archive/v1.13.2/libxkbcommon-1.13.2.tar.gz
+md5: 07f838f575d62c267cfc53eaf5ee739b
+summary: libxkbcommon is a keymap compiler and support library which processes a reduced
+  subset of keymaps as defined by the XKB specification.
+download_size: 1.2 MB
+disk_space: 45 MB (with tests)
+sbu: 0.4 SBU (with tests)
+depends:
+  required:
+  - xkeyboard-config
+  recommended:
+  - libxcb
+  - wayland
+  - wayland-protocols
+  ignore_for_order:
+  - libxcb
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/libxkbcommon-1.13.2-upstream_fix-1.patch
+  filename: libxkbcommon-1.13.2-upstream_fix-1.patch
+book_order: 173000
+cycle_policy:
+  install_before:
+  - libxcb

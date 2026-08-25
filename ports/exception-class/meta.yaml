@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: exception-class
+version: '1.45'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Exception::Class-1.45
+tarball: Exception-Class-1.45.tar.gz
+url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Exception-Class-1.45.tar.gz
+md5: 1e564d20b374a99fdf660ba3f36b0098
+summary: Exception::Class allows you to declare real exception classes in Perl.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - class-data-inheritable
+  - devel-stacktrace
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

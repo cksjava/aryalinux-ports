@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: xorg-config
+version: '0'
+page_kind: configuration
+section: x
+page: xorg-config
+title: Xorg-7 Testing and Configuration
+tarball: ''
+url: ''
+md5: ''
+summary: ''
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 465000

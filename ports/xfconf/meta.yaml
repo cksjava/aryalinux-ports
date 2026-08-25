@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: xfconf
+version: 4.20.0
+page_kind: single_package
+section: xfce
+page: xfconf
+title: Xfconf-4.20.0
+tarball: xfconf-4.20.0.tar.bz2
+url: https://archive.xfce.org/src/xfce/xfconf/4.20/xfconf-4.20.0.tar.bz2
+md5: ca596ff0a9be7fa655bb09cb05458644
+summary: Xfconf is the configuration storage system for Xfce.
+download_size: 748 KB
+disk_space: 10 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - libxfce4util
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 648000

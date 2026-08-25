@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: xml-sax
+version: '1.02'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: XML::SAX-1.02
+tarball: XML-SAX-1.02.tar.gz
+url: https://cpan.metacpan.org/authors/id/G/GR/GRANTM/XML-SAX-1.02.tar.gz
+md5: b62e3754523695c7f5bbcafa3676a38d
+summary: XML::SAX is a SAX parser access API for Perl. It includes classes and APIs
+  required for implementing SAX drivers, along with a factory class for returning
+  any SAX parser installed on the user's system.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - libxml2
+  - xml-namespacesupport
+  - xml-sax-base
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

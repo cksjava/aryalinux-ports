@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: docbook-xsl-nons
+version: 1.79.2
+page_kind: multi_package
+section: pst
+page: docbook-xsl
+title: docbook-xsl-nons-1.79.2
+tarball: docbook-xsl-nons-1.79.2.tar.bz2
+url: https://github.com/docbook/xslt10-stylesheets/releases/download/release/1.79.2/docbook-xsl-nons-1.79.2.tar.bz2
+md5: 2666d1488d6ced1551d15f31d7ed8c38
+summary: The DocBook XSL Stylesheets package contains XSL stylesheets. These are useful
+  for performing transformations on XML DocBook files.
+download_size: 22 MB
+disk_space: 58 MB (includes installing optional documentation)
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended:
+  - libxml2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/docbook-xsl-nons-1.79.2-stack_fix-1.patch
+  filename: docbook-xsl-nons-1.79.2-stack_fix-1.patch
+book_order: 854000

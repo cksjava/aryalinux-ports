@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: tcsh
+version: 6.24.16
+page_kind: single_package
+section: postlfs
+page: tcsh
+title: Tcsh-6.24.16
+tarball: tcsh-6.24.16.tar.gz
+url: https://astron.com/pub/tcsh/tcsh-6.24.16.tar.gz
+md5: 448f53f12544abb627c9f078373b8ff5
+summary: The Tcsh package contains “an enhanced but completely compatible version
+  of the Berkeley Unix C shell (csh).” This is useful as an alternative shell for
+  those who prefer C syntax to that of the bash shell, and also because some programs
+  require the C shell in order to perform installation tasks.
+download_size: 936 KB
+disk_space: 11 MB (with tests)
+sbu: 0.2 SBU (with tests)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 94000

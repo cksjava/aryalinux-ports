@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: screen
+version: 5.0.2
+page_kind: single_package
+section: general
+page: screen
+title: Screen-5.0.2
+tarball: screen-5.0.2.tar.gz
+url: https://ftpmirror.gnu.org/screen/screen-5.0.2.tar.gz
+md5: 76c4f967284c1879f0a1423d318471b3
+summary: Screen is a terminal multiplexor that runs several separate processes, typically
+  interactive shells, on a single physical character-based terminal. Each virtual
+  terminal emulates a DEC VT100 plus several ANSI X3.64 and ISO 2022 functions and
+  also provides configurable input and output translation, serial port support, configurable
+  logging, multi-user support, and many character encodings, includin
+download_size: 872 KB
+disk_space: 11 MB
+sbu: 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 269000

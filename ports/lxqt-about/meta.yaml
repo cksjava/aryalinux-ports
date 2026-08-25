@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: lxqt-about
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-about
+title: lxqt-about-2.4.0
+tarball: lxqt-about-2.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-about/releases/download/2.4.0/lxqt-about-2.4.0.tar.xz
+md5: 12336bf5f198694c8a9736c4565c9a80
+summary: The lxqt-about package provides the standalone LXQt “About” dialog.
+download_size: 52 KB
+disk_space: 4.1 MB
+sbu: 0.1 SBU
+depends:
+  required:
+  - liblxqt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 701000

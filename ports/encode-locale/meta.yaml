@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: encode-locale
+version: '1.05'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Encode::Locale-1.05
+tarball: Encode-Locale-1.05.tar.gz
+url: https://cpan.metacpan.org/authors/id/G/GA/GAAS/Encode-Locale-1.05.tar.gz
+md5: fcfdb8e4ee34bcf62aed429b4a23db27
+summary: Encode::Locale determines the locale encoding.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

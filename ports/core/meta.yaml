@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: core
+version: '0'
+page_kind: configuration
+section: gnome
+page: core
+title: GNOME Libraries and Desktop
+tarball: ''
+url: ''
+md5: ''
+summary: The objective of this section is to build a GNOME desktop.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 580000

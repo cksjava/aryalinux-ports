@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: test-needs
+version: '0.002010'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::Needs-0.002010
+tarball: Test-Needs-0.002010.tar.gz
+url: https://cpan.metacpan.org/authors/id/H/HA/HAARG/Test-Needs-0.002010.tar.gz
+md5: 2b3d10946001561297624e7668f09c26
+summary: Test::Needs skips tests if a requested module is not present.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

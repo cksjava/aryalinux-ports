@@ -1,0 +1,44 @@
+format: alps-port-v1
+name: nautilus
+version: 50.2.2
+page_kind: single_package
+section: gnome
+page: nautilus
+title: Nautilus-50.2.2
+tarball: nautilus-50.2.2.tar.xz
+url: https://download.gnome.org/sources/nautilus/50/nautilus-50.2.2.tar.xz
+md5: b8a2330c5ac165178b4775e70435a473
+summary: The Nautilus package contains the GNOME file manager.
+download_size: 3.2 MB
+disk_space: 96 MB (with tests)
+sbu: 0.4 SBU (with tests, both using parallelism=4)
+depends:
+  required:
+  - blueprint-compiler
+  - gexiv2
+  - libglycin-gtk4-from-glycin
+  - gnome-autoar
+  - gnome-desktop
+  - libadwaita
+  - libportal
+  - libseccomp
+  - tinysparql
+  recommended:
+  - desktop-file-utils
+  - gst-plugins-base
+  - localsearch
+  - adwaita-icon-theme
+  ignore_for_order:
+  - adwaita-icon-theme
+  - gst-plugins-base
+  - localsearch
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 610000
+cycle_policy:
+  install_before:
+  - adwaita-icon-theme
+  - gst-plugins-base
+  - localsearch

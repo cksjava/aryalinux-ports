@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: gmmlib
+version: 22.10.0
+page_kind: single_package
+section: general
+page: gmmlib
+title: gmmlib-22.10.0
+tarball: gmmlib-22.10.0.tar.gz
+url: https://github.com/lfs-book/gmmlib/archive/v22.10.0/gmmlib-22.10.0.tar.gz
+md5: f94f6903e7df944c7a064f85b1b4a99b
+summary: The gmmlib package contains the Intel Graphics Memory Management Library,
+  which provides device specific memory and buffer management functions for the Intel
+  Media Driver for VAAPI and the Intel Graphics Computer Runtime for OpenCL (TM).
+download_size: 868 KB
+disk_space: 59 MB
+sbu: 0.7 SBU
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 121000

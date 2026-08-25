@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: glossary
+version: '0'
+page_kind: configuration
+section: appendices
+page: glossary
+title: Glossary
+tarball: ''
+url: ''
+md5: ''
+summary: AMD Generic Encapsulated Software Architecture
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 873000

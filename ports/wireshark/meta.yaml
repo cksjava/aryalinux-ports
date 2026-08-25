@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: wireshark
+version: 4.6.8
+page_kind: single_package
+section: basicnet
+page: wireshark
+title: Wireshark-4.6.8
+tarball: wireshark-4.6.8.tar.xz
+url: https://www.wireshark.org/download/src/all-versions/wireshark-4.6.8.tar.xz
+md5: 6f14969d008712771c5d3feca305b6e3
+summary: The Wireshark package contains a network protocol analyzer, also known as
+  a “sniffer.” This is useful for analyzing data captured “off the wire” from a live
+  network connection, or data read from a capture file.
+download_size: 54 MB
+disk_space: 1.1 GB (188 MB installed)
+sbu: 2.5 SBU (with parallelism=4)
+depends:
+  required:
+  - cmake
+  - c-ares
+  - glib
+  - libgcrypt
+  - qt
+  recommended:
+  - libpcap
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 388000

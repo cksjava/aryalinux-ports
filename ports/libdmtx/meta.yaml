@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: libdmtx
+version: 0.7.8
+page_kind: single_package
+section: kde
+page: libdmtx
+title: libdmtx-0.7.8
+tarball: libdmtx-0.7.8.tar.gz
+url: https://github.com/dmtx/libdmtx/archive/v0.7.8/libdmtx-0.7.8.tar.gz
+md5: 2b4329190b65e2f8b23e4a329ec7d792
+summary: This package is a software library that enables programs to read and write
+  Data Matrix barcodes.
+download_size: 780 KB
+disk_space: 2.9 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 545000

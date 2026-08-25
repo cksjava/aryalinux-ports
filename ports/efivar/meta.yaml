@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: efivar
+version: '39'
+page_kind: single_package
+section: postlfs
+page: efivar
+title: efivar-39
+tarball: efivar-39.tar.gz
+url: https://github.com/rhboot/efivar/archive/39/efivar-39.tar.gz
+md5: a8fc3e79336cd6e738ab44f9bc96a5aa
+summary: The efivar package provides tools and libraries to manipulate EFI variables.
+download_size: 456 KB
+disk_space: 21 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/efivar-39-upstream_fixes-1.patch
+  filename: efivar-39-upstream_fixes-1.patch
+book_order: 81000

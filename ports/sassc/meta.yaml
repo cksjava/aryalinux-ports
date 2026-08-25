@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: sassc
+version: 3.6.2
+page_kind: multi_package
+section: general
+page: sassc
+title: sassc-3.6.2
+tarball: sassc-3.6.2.tar.gz
+url: https://github.com/sass/sassc/archive/3.6.2/sassc-3.6.2.tar.gz
+md5: 4c3b06ce2979f2a9f0a35093e501d8bb
+summary: SassC is a wrapper around libsass, a CSS pre-processor language.
+download_size: 28 KB
+disk_space: 5.1 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 248000

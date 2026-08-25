@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: abseil-cpp
+version: '20260526.0'
+page_kind: single_package
+section: general
+page: abseil-cpp
+title: Abseil-cpp-20260526.0
+tarball: abseil-cpp-20260526.0.tar.gz
+url: https://github.com/abseil/abseil-cpp/releases/download/20260526.0/abseil-cpp-20260526.0.tar.gz
+md5: a8a8a3de136df18dbe87b47c174e7c16
+summary: The Abseil-cpp package contains a series of libraries designed to augment
+  the C++ standard library.
+download_size: 2.3 MB
+disk_space: 35 MB
+sbu: 0.2 SBU (Using parallelism=4)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 100000

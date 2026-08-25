@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: libdvdnav
+version: 7.0.0
+page_kind: single_package
+section: multimedia
+page: libdvdnav
+title: libdvdnav-7.0.0
+tarball: libdvdnav-7.0.0.tar.xz
+url: https://get.videolan.org/libdvdnav/7.0.0/libdvdnav-7.0.0.tar.xz
+md5: e9e9f137cdd52828abc0c61b727ea579
+summary: libdvdnav is a library that allows easy usage of sophisticated DVD navigation
+  features including DVD menus, multiangle playback, and even interactive DVD games.
+download_size: 84 KB
+disk_space: 1.4 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - libdvdread
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 780000

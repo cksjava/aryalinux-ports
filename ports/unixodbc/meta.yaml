@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: unixodbc
+version: 2.3.14
+page_kind: single_package
+section: general
+page: unixodbc
+title: unixODBC-2.3.14
+tarball: unixODBC-2.3.14.tar.gz
+url: https://github.com/lurcher/unixODBC/archive/v2.3.14/unixODBC-2.3.14.tar.gz
+md5: 2de94476f9aa78a8e0f9b6bb4b9acc90
+summary: The unixODBC package is an Open Source ODBC (Open DataBase Connectivity)
+  sub-system and an ODBC SDK for Linux, Mac OSX, and UNIX. ODBC is an open specification
+  for providing application developers with a predictable API with which to access
+  data sources. Data sources include optional SQL Servers and any data source with
+  an ODBC Driver. unixODBC contains the following components used to assist with
+download_size: 836 KB
+disk_space: 30 MB
+sbu: 0.2 SBU (using parallelism=4)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 275000

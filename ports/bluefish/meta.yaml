@@ -1,0 +1,27 @@
+format: alps-port-v1
+name: bluefish
+version: 2.4.2
+page_kind: single_package
+section: postlfs
+page: bluefish
+title: Bluefish-2.4.2
+tarball: bluefish-2.4.2.tar.bz2
+url: https://www.bennewitz.com/bluefish/stable/source/bluefish-2.4.2.tar.bz2
+md5: ec35f4c1d11f91e30caea0b940d455f4
+summary: Bluefish is a GTK+ text editor targeted towards programmers and web designers,
+  with many options to write websites, scripts and programming code. Bluefish supports
+  many programming and markup languages, and it focuses on editing dynamic and interactive
+  websites.
+download_size: 5.0 MB
+disk_space: 75 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - gtk
+  recommended:
+  - desktop-file-utils
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 84000

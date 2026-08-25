@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: autofs
+version: 5.1.9
+page_kind: single_package
+section: general
+page: autofs
+title: autofs-5.1.9
+tarball: autofs-5.1.9.tar.xz
+url: https://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.1.9.tar.xz
+md5: 06fb59a03c82364a0d788435b6853d70
+summary: Autofs controls the operation of the automount daemons. The automount daemons
+  automatically mount filesystems when they are accessed and unmount them after a
+  period of inactivity. This is done based on a set of pre-configured maps.
+download_size: 328 KB
+disk_space: 5.7 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - libtirpc
+  - rpcsvc-proto
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 283000

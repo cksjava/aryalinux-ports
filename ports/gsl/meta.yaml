@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: gsl
+version: '2.8'
+page_kind: single_package
+section: general
+page: gsl
+title: gsl-2.8
+tarball: gsl-2.8.tar.gz
+url: https://ftpmirror.gnu.org/gsl/gsl-2.8.tar.gz
+md5: 182ec03204f164e67238c9116591a37d
+summary: The GNU Scientific Library (GSL) is a numerical library for C and C++ programmers.
+  It provides a wide range of mathematical routines such as random number generators,
+  special functions and least-squares fitting.
+download_size: 8.6 MB
+disk_space: 223 MB (with tests, without docs)
+sbu: 1.0 SBU (Using parallelism=4; with tests, without docs)
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 122000

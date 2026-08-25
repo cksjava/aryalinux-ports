@@ -1,0 +1,34 @@
+format: alps-port-v1
+name: gst-plugins-good
+version: 1.28.6
+page_kind: single_package
+section: multimedia
+page: gst10-plugins-good
+title: gst-plugins-good-1.28.6
+tarball: gst-plugins-good-1.28.6.tar.xz
+url: https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.28.6.tar.xz
+md5: d84c17388909e98e7f7d81bb2717327c
+summary: The GStreamer Good Plug-ins is a set of plug-ins considered by the GStreamer
+  developers to have good quality code, correct functionality, and the preferred license
+  (LGPL for the plug-in code, LGPL or LGPL-compatible for the supporting library).
+  A wide range of video and audio decoders, encoders, and filters are included.
+download_size: 5.8 MB
+disk_space: 130 MB (with tests)
+sbu: 0.6 SBU (Using parallelism=4; with tests)
+depends:
+  required:
+  - gst-plugins-base
+  recommended:
+  - cairo
+  - flac
+  - gdk-pixbuf
+  - lame
+  - libsoup
+  - libvpx
+  - nasm
+  - pulseaudio
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 762000

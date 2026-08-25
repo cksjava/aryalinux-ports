@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: lxqt-powermanagement
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-powermanagement
+title: lxqt-powermanagement-2.4.0
+tarball: lxqt-powermanagement-2.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-powermanagement/releases/download/2.4.0/lxqt-powermanagement-2.4.0.tar.xz
+md5: 3a2ed6c122e16e9c16b92009395ac397
+summary: The lxqt-powermanagement package provides the power management module for
+  LXQt.
+download_size: 116 KB
+disk_space: 9.8 MB
+sbu: 0.5 SBU
+depends:
+  required:
+  - liblxqt
+  - kidletime-6.29.0-for-lxqt
+  - solid-6.29.0-for-lxqt
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 697000

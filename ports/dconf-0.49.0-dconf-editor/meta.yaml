@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: dconf-0.49.0-dconf-editor
+version: '49.0'
+page_kind: multi_package
+section: gnome
+page: dconf
+title: DConf-0.49.0 / DConf-Editor-49.0
+tarball: dconf-0.49.0.tar.xz
+url: https://download.gnome.org/sources/dconf/0.49/dconf-0.49.0.tar.xz
+md5: 1a3ff8a464a4d9ebbaf112005bfed95a
+summary: The DConf package contains a low-level configuration system. Its main purpose
+  is to provide a backend to GSettings on platforms that don't already have configuration
+  storage systems.
+download_size: 124 KB
+disk_space: 9.7 MB (with tests)
+sbu: 0.1 SBU (with tests)
+depends:
+  required:
+  - dbus
+  - glib
+  - gtk
+  - libhandy
+  recommended:
+  - libxslt
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 606000

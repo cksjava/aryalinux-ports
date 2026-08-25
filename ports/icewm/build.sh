@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
+if [[ ${#_tops[@]} -ne 1 ]]; then
+  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
+  exit 1
+fi
+cd "${_tops[0]}"
+
+# --- commands from BLFS ---
+mkdir build
+cd    build
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_BUILD_TYPE=Release  \
+      -D CFGDIR=/etc               \
+      -D ENABLE_LTO=ON             \
+      -D DOCDIR=/usr/share/doc/icewm-4.1.0  \
+      ..
+make
+
+make install
+
+rm -v /usr/share/xsessions/icewm.desktop
+
+echo icewm-session > ~/.xinitrc
+
+mkdir -pv ~/.icewm
+cp -v /usr/share/icewm/keys ~/.icewm/keys
+cp -v /usr/share/icewm/menu ~/.icewm/menu
+cp -v /usr/share/icewm/preferences ~/.icewm/preferences
+cp -v /usr/share/icewm/toolbar ~/.icewm/toolbar
+cp -v /usr/share/icewm/winoptions ~/.icewm/winoptions
+
+icewm-menu-fdo >~/.icewm/menu
+
+cat > ~/.icewm/startup << "EOF"
+rox -p Default &
+EOF
+chmod +x ~/.icewm/startup

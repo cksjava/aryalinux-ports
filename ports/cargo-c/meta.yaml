@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: cargo-c
+version: 0.10.24
+page_kind: single_package
+section: general
+page: cargo-c
+title: cargo-c-0.10.24
+tarball: cargo-c-0.10.24.tar.gz
+url: https://github.com/lu-zero/cargo-c/archive/v0.10.24/cargo-c-0.10.24.tar.gz
+md5: b6247bf8f5eac962f001ee8a37f1c25f
+summary: The cargo-c package creates a cargo subcommand to build and install C-ABI
+  compatible dynamic and static libraries.
+download_size: 38 KB
+disk_space: 1.4 GB (with tests)
+sbu: 0.7 SBU (add 5.2 SBU for tests)
+depends:
+  required:
+  - rustc
+  recommended:
+  - libssh2
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 321000

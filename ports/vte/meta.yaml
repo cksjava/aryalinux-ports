@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: vte
+version: 0.84.1
+page_kind: single_package
+section: gnome
+page: vte
+title: VTE-0.84.1
+tarball: vte-0.84.1.tar.gz
+url: https://gitlab.gnome.org/GNOME/vte/-/archive/0.84.1/vte-0.84.1.tar.gz
+md5: 9733f0218f72051999e42725fe5fbaa8
+summary: The VTE package contains a virtual terminal widget for GTK applications.
+download_size: 856 KB
+disk_space: 70 MB (with tests)
+sbu: 0.7 SBU (using parallelism=4; with tests)
+depends:
+  required:
+  - libxml2
+  recommended:
+  - fast_float
+  - fmt
+  - gnutls
+  - glib
+  - gtk
+  - simdutf
+  - vala
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 587000

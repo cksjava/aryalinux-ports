@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: sgmlspm
+version: '1.1'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: SGMLSpm-1.1
+tarball: SGMLSpm-1.1.tar.gz
+url: https://www.cpan.org/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz
+md5: 746c74ae969992cedb1a2879b4168090
+summary: The SGMLSpm module is a Perl library used for parsing the output from James
+  Clark's SGMLS and NSGMLS parsers.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

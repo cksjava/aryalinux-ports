@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
+export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
+export MAKEFLAGS="-j$ALPS_JOBS"
+
+# config / no-tarball port — book commands only
+
+# --- commands from BLFS ---
+b   Insert the baudrate of the current line.
+d   Insert the current date.
+s   Insert the system name, the name of the operating system.
+l   Insert the name of the current tty line.
+m   Insert the architecture identifier of the machine, e.g., i686.
+n   Insert the nodename of the machine, also known as the hostname.
+o   Insert the domainname of the machine.
+r   Insert the release number of the kernel, e.g., 2.6.11.12.
+t   Insert the current time.
+u   Insert the number of current users logged in.
+U   Insert the string "1 user" or "<n> users" where <n> is the
+    number of current users logged in.
+v   Insert the version of the OS, e.g., the build-date etc.

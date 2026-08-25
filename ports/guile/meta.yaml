@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: guile
+version: 3.0.11
+page_kind: single_package
+section: general
+page: guile
+title: Guile-3.0.11
+tarball: guile-3.0.11.tar.xz
+url: https://ftpmirror.gnu.org/guile/guile-3.0.11.tar.xz
+md5: f215f364387f6c9b008efaa11e8079dc
+summary: The Guile package contains the GNU Project's extension language library.
+  Guile also contains a stand alone Scheme interpreter.
+download_size: 5.6 MB
+disk_space: 195 MB (add 3 MB for tests)
+sbu: 4.2 SBU (Using parallelism=4; add 0.3 SBU for tests)
+depends:
+  required:
+  - gc
+  - libunistring
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 332000

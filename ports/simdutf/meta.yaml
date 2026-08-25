@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: simdutf
+version: 9.0.0
+page_kind: single_package
+section: general
+page: simdutf
+title: simdutf-9.0.0
+tarball: simdutf-9.0.0.tar.gz
+url: https://github.com/simdutf/simdutf/archive/v9.0.0/simdutf-9.0.0.tar.gz
+md5: a20af35e2a7c9737d97b7beae96e7146
+summary: The simdutf package contains a library used for processing Unicode characters
+  with SIMD optimizations. This includes the SSE2 and AVX2 instruction sets and more.
+download_size: 2.4 MB
+disk_space: 44 MB
+sbu: 0.3 SBU (add 1.1 SBU for tests)
+depends:
+  required:
+  - cmake
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 193000

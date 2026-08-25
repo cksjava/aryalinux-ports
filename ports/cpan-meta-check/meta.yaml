@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: cpan-meta-check
+version: '0.018'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: CPAN::Meta::Check-0.018
+tarball: CPAN-Meta-Check-0.018.tar.gz
+url: https://cpan.metacpan.org/authors/id/L/LE/LEONT/CPAN-Meta-Check-0.018.tar.gz
+md5: d1c2190e8bc1c176b9ee9cba3ac403ad
+summary: CPAN::Meta::Check verifies if requirements described in a CPAN::Meta object
+  are present.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

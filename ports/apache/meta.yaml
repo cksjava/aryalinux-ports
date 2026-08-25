@@ -1,0 +1,32 @@
+format: alps-port-v1
+name: apache
+version: 2.4.68
+page_kind: single_package
+section: server
+page: apache
+title: Apache-2.4.68
+tarball: httpd-2.4.68.tar.bz2
+url: https://archive.apache.org/dist/httpd/httpd-2.4.68.tar.bz2
+md5: f2f3121e9f1fb4838d433dbd494543f9
+summary: The Apache HTTPD package contains an open-source HTTP server. It is useful
+  for creating local intranet web sites or running huge web serving operations.
+download_size: 7.4 MB
+disk_space: 133 MB
+sbu: 0.3 SBU (Using parallelism=4)
+depends:
+  required:
+  - apr-util
+  recommended: []
+bootscripts: []
+systemd_units:
+- httpd
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/httpd-blfs_layout-1.patch
+  filename: httpd-blfs_layout-1.patch
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.4.68-openssl4_fixes-1.patch
+  filename: httpd-2.4.68-openssl4_fixes-1.patch
+book_order: 423000

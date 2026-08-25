@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: locale-issues
+version: '0'
+page_kind: configuration
+section: introduction
+page: locale-issues
+title: Locale Related Issues
+tarball: ''
+url: ''
+md5: ''
+summary: 'This page contains information about locale related problems and issues.
+  In the following paragraphs you''ll find a generic overview of things that can come
+  up when configuring your system for various locales. Many (but not all) existing
+  locale related problems can be classified and fall under one of the headings below.
+  The severity ratings below use the following criteria:'
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 24000

@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: libdisplay-info
+version: 0.4.0
+page_kind: single_package
+section: general
+page: libdisplay-info
+title: libdisplay-info-0.4.0
+tarball: libdisplay-info-0.4.0.tar.xz
+url: https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.4.0/downloads/libdisplay-info-0.4.0.tar.xz
+md5: af9f07493bd5ff560a98b95ea4c5c129
+summary: The libdisplay-info package provides a set of high-level and low-level functions
+  to access detailed Extended Display Identification Data (EDID) information.
+download_size: 116 KB
+disk_space: 3.8 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - hwdata
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 142000

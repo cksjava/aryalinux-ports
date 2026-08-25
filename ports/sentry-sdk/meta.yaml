@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: sentry-sdk
+version: 2.68.0
+page_kind: python_module
+section: general
+page: python-modules
+title: sentry-sdk-2.68.0
+tarball: sentry_sdk-2.68.0.tar.gz
+url: https://github.com/getsentry/sentry-python/releases/download/2.68.0/sentry_sdk-2.68.0.tar.gz
+md5: 98ab55219624150d1ab5d30ff90d20cb
+summary: The sentry-sdk module is the official Python SDK for Sentry.io.
+download_size: 988 KB
+disk_space: 11 MB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - certifi
+  - urllib3
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 344000

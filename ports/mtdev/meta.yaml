@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: mtdev
+version: 1.1.7
+page_kind: single_package
+section: general
+page: mtdev
+title: mtdev-1.1.7
+tarball: mtdev-1.1.7.tar.bz2
+url: https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+md5: 483ed7fdf7c1e7b7375c05a62848cce7
+summary: The mtdev package contains Multitouch Protocol Translation Library which
+  is used to transform all variants of kernel MT (Multitouch) events to the slotted
+  type B protocol.
+download_size: 296 KB
+disk_space: 2.5 MB
+sbu: less than 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 182000

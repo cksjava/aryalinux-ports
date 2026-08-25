@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: test-differences
+version: '0.72'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: Test::Differences-0.72
+tarball: Test-Differences-0.72.tar.gz
+url: https://www.cpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-0.72.tar.gz
+md5: 348ac35809a53290ac05cf0f18f673fa
+summary: Test::Differences tests strings and data structures and shows the differences
+  if they do not match.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - text-diff
+  recommended:
+  - capture-tiny
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

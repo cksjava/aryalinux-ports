@@ -1,0 +1,30 @@
+format: alps-port-v1
+name: p11-kit
+version: 0.26.5
+page_kind: single_package
+section: postlfs
+page: p11-kit
+title: p11-kit-0.26.5
+tarball: p11-kit-0.26.5.tar.xz
+url: https://github.com/p11-glue/p11-kit/releases/download/0.26.5/p11-kit-0.26.5.tar.xz
+md5: 308306e889850bff08fae74ae7897a21
+summary: 'The p11-kit package provides a way to load and enumerate PKCS #11 (a Cryptographic
+  Token Interface Standard) modules.'
+download_size: 1.1 MB
+disk_space: 117 MB (with tests)
+sbu: 0.5 SBU (with tests)
+depends:
+  required: []
+  recommended:
+  - libtasn1
+  - make-ca
+  ignore_for_order:
+  - make-ca
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 57000
+cycle_policy:
+  install_before:
+  - make-ca

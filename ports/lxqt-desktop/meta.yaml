@@ -1,0 +1,22 @@
+format: alps-port-v1
+name: lxqt-desktop
+version: '0'
+page_kind: configuration
+section: lxqt
+page: lxqt-desktop
+title: LXQt Desktop
+tarball: ''
+url: ''
+md5: ''
+summary: LXQt is an extremely fast-performing and energy-saving desktop environment.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 673000

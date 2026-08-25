@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: libshumate
+version: 1.6.3
+page_kind: single_package
+section: gnome
+page: libshumate
+title: libshumate-1.6.3
+tarball: libshumate-1.6.3.tar.xz
+url: https://download.gnome.org/sources/libshumate/1.6/libshumate-1.6.3.tar.xz
+md5: 42afb4ec07d34e5158febb260b65ab76
+summary: The libshumate package contains a GTK-4 widget to display maps.
+download_size: 5.7 MB
+disk_space: 41 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - gtk
+  - libsoup
+  - protobuf-c
+  recommended:
+  - glib
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 600000

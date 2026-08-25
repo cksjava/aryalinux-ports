@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: lxqt-admin
+version: 2.4.0
+page_kind: single_package
+section: lxqt
+page: lxqt-admin
+title: lxqt-admin-2.4.0
+tarball: lxqt-admin-2.4.0.tar.xz
+url: https://github.com/lxqt/lxqt-admin/releases/download/2.4.0/lxqt-admin-2.4.0.tar.xz
+md5: 77a73ebdfad37f8d0948fe20011c24db
+summary: The lxqt-admin package provides two GUI tools to adjust settings of the operating
+  system LXQt is running on.
+download_size: 160 KB
+disk_space: 5.8 MB
+sbu: 0.3 SBU
+depends:
+  required:
+  - liblxqt
+  - polkit
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 700000

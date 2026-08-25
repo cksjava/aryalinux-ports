@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: lame
+version: '3.100'
+page_kind: single_package
+section: multimedia
+page: lame
+title: LAME-3.100
+tarball: lame-3.100.tar.gz
+url: https://downloads.sourceforge.net/lame/lame-3.100.tar.gz
+md5: 83e260acbe4389b54fe08e0bdbf7cddb
+summary: The LAME package contains an MP3 encoder and optionally, an MP3 frame analyzer.
+  This is useful for creating and analyzing compressed audio files.
+download_size: 1.5 MB
+disk_space: 9.7 MB
+sbu: 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 814000

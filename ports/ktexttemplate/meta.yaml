@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: ktexttemplate
+version: 6.29.0
+page_kind: kde_batch
+section: kde
+page: frameworks6
+title: ktexttemplate-6.29.0
+tarball: ktexttemplate-6.29.0.tar.xz
+url: https://download.kde.org/stable/frameworks/6.29/ktexttemplate-6.29.0.tar.xz
+md5: f382cd12656952d85178985ae92be71b
+summary: KDE batch package from frameworks6.html
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+batch_index: 69
+book_order: 548070

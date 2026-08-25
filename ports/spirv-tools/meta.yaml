@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: spirv-tools
+version: 1.4.357.0
+page_kind: single_package
+section: general
+page: spirv-tools
+title: SPIRV-Tools-1.4.357.0
+tarball: SPIRV-Tools-vulkan-sdk-1.4.357.0.tar.gz
+url: https://github.com/KhronosGroup/SPIRV-Tools/archive/vulkan-sdk-1.4.357.0/SPIRV-Tools-vulkan-sdk-1.4.357.0.tar.gz
+md5: c357eec1e33bc95e650aa4c8efdd3b13
+summary: The SPIRV-Tools package contains libraries and utilities for processing SPIR-V
+  modules.
+download_size: 3.4 MB
+disk_space: 80 MB
+sbu: 0.6 SBU (with tests; both using parallelism=8)
+depends:
+  required:
+  - cmake
+  - spirv-headers
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 196000

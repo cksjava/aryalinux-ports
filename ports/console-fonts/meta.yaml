@@ -1,0 +1,26 @@
+format: alps-port-v1
+name: console-fonts
+version: '0'
+page_kind: configuration
+section: postlfs
+page: console-fonts
+title: About Console Fonts
+tarball: ''
+url: ''
+md5: ''
+summary: An LFS system can be used without a graphical desktop, and unless or until
+  you install a graphical environment you will have to work in the console. Most,
+  if not all, PCs boot with an 8x16 font - whatever the actual screen size. There
+  are a few things you can do to alter the display on the console. Most of them involve
+  changing the font, but the first alters the commandline used by grub.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 29000

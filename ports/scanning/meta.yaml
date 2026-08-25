@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: scanning
+version: '0'
+page_kind: configuration
+section: pst
+page: scanning
+title: Scanning
+tarball: ''
+url: ''
+md5: ''
+summary: This chapter contains scanning applications which allow you to convert printed
+  documents into formatted documents readable by other applications.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 840000

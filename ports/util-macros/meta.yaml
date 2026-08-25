@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: util-macros
+version: 1.20.2
+page_kind: single_package
+section: x
+page: util-macros
+title: util-macros-1.20.2
+tarball: util-macros-1.20.2.tar.xz
+url: https://www.x.org/pub/individual/util/util-macros-1.20.2.tar.xz
+md5: 5f683a1966834b0a6ae07b3680bcb863
+summary: The util-macros package contains the m4 macros used by all of the Xorg packages.
+download_size: 84 KB
+disk_space: 524 KB
+sbu: less than 0.1 SBU
+depends:
+  required:
+  - xorg-build-environment
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 441000

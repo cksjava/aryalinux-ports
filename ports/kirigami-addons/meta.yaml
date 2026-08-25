@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: kirigami-addons
+version: 1.13.1
+page_kind: single_package
+section: kde
+page: kirigami-addons
+title: kirigami-addons-1.13.1
+tarball: kirigami-addons-1.13.1.tar.xz
+url: https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.13.1.tar.xz
+md5: d3a1944cb0dddcea3f441f04ee54c0d0
+summary: This package provides additional QML files for the Kirigami framework.
+download_size: 2.9 MB
+disk_space: 75 MB
+sbu: 0.7 SBU (Using parallelism=4)
+depends:
+  required:
+  - kde-frameworks
+  recommended:
+  - vulkan-loader
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 570000

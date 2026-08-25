@@ -1,0 +1,24 @@
+format: alps-port-v1
+name: xml-libxslt
+version: '2.003000'
+page_kind: perl_module
+section: general
+page: perl-modules
+title: XML::LibXSLT-2.003000
+tarball: XML-LibXSLT-2.003000.tar.gz
+url: https://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-2.003000.tar.gz
+md5: 632dce587b3c405edd4e622364750191
+summary: XML-LibXSLT provides an interface to libxslt-1.1.45
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - libxslt
+  - xml-libxml
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 339000

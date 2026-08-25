@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: extutils-libbuilder
+version: '0.09'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: ExtUtils::LibBuilder-0.09
+tarball: ExtUtils-LibBuilder-0.09.tar.gz
+url: https://cpan.metacpan.org/authors/id/A/AM/AMBS/ExtUtils-LibBuilder-0.09.tar.gz
+md5: 16115f941df504f65b0f94b7f29e8fbc
+summary: ExtUtils::LibBuilder is a tool to build C libraries.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required:
+  - module-build
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

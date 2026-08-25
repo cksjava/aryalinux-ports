@@ -1,0 +1,25 @@
+format: alps-port-v1
+name: x265
+version: '4.2'
+page_kind: single_package
+section: multimedia
+page: x265
+title: x265-4.2
+tarball: x265_4.2.tar.gz
+url: https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.2.tar.gz
+md5: 0a7edcf495aba9f320047d61647d610b
+summary: x265 package provides a library for encoding video streams into the H.265/HEVC
+  format.
+download_size: 1.8 MB
+disk_space: 49 MB
+sbu: 0.4 SBU (using parallelism=4)
+depends:
+  required:
+  - cmake
+  recommended:
+  - nasm
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 807000

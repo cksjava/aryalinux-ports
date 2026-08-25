@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: glu
+version: 9.0.3
+page_kind: single_package
+section: x
+page: glu
+title: GLU-9.0.3
+tarball: glu-9.0.3.tar.xz
+url: https://archive.mesa3d.org/glu/glu-9.0.3.tar.xz
+md5: 06a4fff9179a98ea32ef41b6d83f6b19
+summary: This package provides the Mesa OpenGL Utility library.
+download_size: 216 KB
+disk_space: 5.9 MB
+sbu: 0.2 SBU
+depends:
+  required:
+  - mesa
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 483000

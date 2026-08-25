@@ -1,0 +1,23 @@
+format: alps-port-v1
+name: test-deep
+version: '1.205'
+page_kind: perl_module
+section: general
+page: perl-deps
+title: Test::Deep-1.205
+tarball: Test-Deep-1.205.tar.gz
+url: https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Test-Deep-1.205.tar.gz
+md5: 02a83480ffeaf93e7498c4dbd5b507b1
+summary: Test::Deep gives you very flexible ways to check that the result you got
+  is the result you were expecting.
+download_size: ''
+disk_space: ''
+sbu: ''
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+book_order: 340000

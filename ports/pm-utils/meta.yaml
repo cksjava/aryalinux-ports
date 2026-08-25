@@ -1,0 +1,28 @@
+format: alps-port-v1
+name: pm-utils
+version: 1.4.1
+page_kind: single_package
+section: general
+page: pm-utils
+title: pm-utils-1.4.1
+tarball: pm-utils-1.4.1.tar.gz
+url: https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+md5: 1742a556089c36c3a89eb1b957da5a60
+summary: The Power Management Utilities provide simple shell command line tools to
+  suspend and hibernate the computer. They can be used to run user supplied scripts
+  on suspend and resume.
+download_size: 204 KB
+disk_space: 1.6 MB
+sbu: 0.1 SBU
+depends:
+  required: []
+  recommended: []
+bootscripts: []
+systemd_units: []
+provides: []
+conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/pm-utils-1.4.1-bugfixes-1.patch
+  filename: pm-utils-1.4.1-bugfixes-1.patch
+book_order: 299000
