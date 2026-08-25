@@ -8,8 +8,8 @@ title: meta-x
 tarball: ''
 url: ''
 md5: ''
-summary: "Slim X Window System: Xorg libs/server/drivers, twm, xterm, xinit (not GTK/Qt/GNOME/Wayland\
-  \ DEs \u2014 see meta-x-all / meta-gnome)"
+summary: 'Slim X Window System: Xorg libs/server/drivers, twm, xterm, xinit (not GTK/Qt/GNOME/Wayland
+  DEs — see meta-x-all / meta-gnome)'
 depends:
   required: []
   recommended: []
@@ -49,3 +49,4 @@ members:
 bootscripts: []
 provides: []
 conflicts: []
+book_order: 10000588

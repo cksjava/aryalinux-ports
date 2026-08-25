@@ -20,17 +20,11 @@ sed '/mktemp/s/-t //' -i make-ca
 make install
 install -vdm755 /etc/ssl/local
 
-# Drop leftover BLFS *example* override certs from earlier broken installs
-# (Makebelieve is documentation-only; empty PEMs also break p11-kit anchors).
-rm -f /etc/ssl/local/Disabled_Makebelieve_CA_Root.pem
-rm -f /etc/pki/anchors/.p11-kit
-
-# Populate system trust store from Mozilla CERTdata (needs network once).
 /usr/sbin/make-ca -g
 
-if command -v systemctl >/dev/null 2>&1; then
-  systemctl enable update-pki.timer 2>/dev/null || true
-fi
+systemctl enable update-pki.timer
+
+export _PIP_STANDALONE_CERT=/etc/pki/tls/certs/ca-bundle.crt
 
 mkdir -pv /etc/profile.d
 cat > /etc/profile.d/pythoncerts.sh << "EOF"

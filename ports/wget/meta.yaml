@@ -6,7 +6,7 @@ section: basicnet
 page: wget
 title: Wget-1.25.0
 tarball: wget-1.25.0.tar.gz
-url: https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.gz
+url: https://ftpmirror.gnu.org/wget/wget-1.25.0.tar.gz
 md5: c70ba58b36f944e8ba1d655ace552881
 summary: The Wget package contains a utility useful for non-interactive downloading
   of files from the Web.

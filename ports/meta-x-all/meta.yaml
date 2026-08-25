@@ -8,8 +8,8 @@ title: meta-x-all
 tarball: ''
 url: ''
 md5: ''
-summary: "Meta-package: all BLFS ports from section 'x' (GTK/Qt/DMs/WMs/\u2026 \u2014\
-  \ use meta-x for a slim Xorg set)"
+summary: 'Meta-package: all BLFS ports from section ''x'' (GTK/Qt/DMs/WMs/… — use
+  meta-x for a slim Xorg set)'
 depends:
   required: []
   recommended: []
@@ -108,3 +108,4 @@ members:
 bootscripts: []
 provides: []
 conflicts: []
+book_order: 10000946

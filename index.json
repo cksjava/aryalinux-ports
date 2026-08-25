@@ -3,7 +3,7 @@
   "git": "https://github.com/cksjava/aryalinux-ports.git",
   "branch": "main",
   "ports_subdir": "ports",
-  "generated_at": "2026-08-25T18:42:59Z",
+  "generated_at": "2026-08-25T18:44:59Z",
   "ports": [
     {
       "name": "TTF-and-OTF-fonts",
@@ -7093,10 +7093,13 @@
           "freetype",
           "glib",
           "graphite2",
+          "texlive",
+          "libreoffice",
           "icu"
         ],
         "ignore_for_order": [
-          "freetype"
+          "freetype",
+          "texlive"
         ]
       },
       "members": [],
@@ -14378,6 +14381,8 @@
           "libva",
           "llvm",
           "wayland-protocols",
+          "plasma",
+          "gtk",
           "libclc",
           "vulkan-loader",
           "cbindgen",
@@ -14385,6 +14390,7 @@
           "rust-bindgen"
         ],
         "ignore_for_order": [
+          "gtk",
           "libclc",
           "libva",
           "vulkan-loader"

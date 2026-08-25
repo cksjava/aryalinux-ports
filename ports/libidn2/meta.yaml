@@ -6,7 +6,7 @@ section: general
 page: libidn2
 title: libidn2-2.3.8
 tarball: libidn2-2.3.8.tar.gz
-url: https://ftp.gnu.org/gnu/libidn/libidn2-2.3.8.tar.gz
+url: https://ftpmirror.gnu.org/libidn/libidn2-2.3.8.tar.gz
 md5: a8e113e040d57a523684e141970eea7a
 summary: libidn2 is a package designed for internationalized string handling based
   on standards from the Internet Engineering Task Force (IETF)'s IDN working group,

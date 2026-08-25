@@ -24,12 +24,15 @@ depends:
   - libva
   - llvm
   - wayland-protocols
+  - plasma
+  - gtk
   - libclc
   - vulkan-loader
   - cbindgen
   - make-ca
   - rust-bindgen
   ignore_for_order:
+  - gtk
   - libclc
   - libva
   - vulkan-loader
@@ -40,6 +43,7 @@ conflicts: []
 book_order: 451000
 cycle_policy:
   install_before:
+  - gtk
   - libclc
   - libva
   - vulkan-loader

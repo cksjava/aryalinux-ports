@@ -6,7 +6,7 @@ section: general
 page: libunistring
 title: libunistring-1.4.2
 tarball: libunistring-1.4.2.tar.xz
-url: https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.2.tar.xz
+url: https://ftpmirror.gnu.org/libunistring/libunistring-1.4.2.tar.xz
 md5: e033195d90d0803063f3fecc77148124
 summary: libunistring is a library that provides functions for manipulating Unicode
   strings and for manipulating C strings according to the Unicode standard.

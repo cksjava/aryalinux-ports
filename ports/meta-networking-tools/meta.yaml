@@ -8,7 +8,7 @@ title: meta-networking-tools
 tarball: ''
 url: ''
 md5: ''
-summary: "Common networking clients/tools (wget, curl, \u2026)"
+summary: Common networking clients/tools (wget, curl, …)
 depends:
   required: []
   recommended: []
@@ -24,3 +24,4 @@ members:
 bootscripts: []
 provides: []
 conflicts: []
+book_order: 10002170

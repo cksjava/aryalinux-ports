@@ -18,9 +18,12 @@ depends:
   - freetype
   - glib
   - graphite2
+  - texlive
+  - libreoffice
   - icu
   ignore_for_order:
   - freetype
+  - texlive
 bootscripts: []
 systemd_units: []
 provides: []
@@ -29,3 +32,4 @@ book_order: 221000
 cycle_policy:
   install_before:
   - freetype
+  - texlive
