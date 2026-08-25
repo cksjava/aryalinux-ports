@@ -34,8 +34,6 @@ depends:
   - nasm
   - alsa-lib
   - libva
-  ignore_for_order:
-  - libva
 bootscripts: []
 systemd_units: []
 provides: []
@@ -45,6 +43,3 @@ patches:
   url: https://www.linuxfromscratch.org/patches/blfs/svn/ffmpeg-9.0.1-chromium_method-1.patch
   filename: ffmpeg-9.0.1-chromium_method-1.patch
 book_order: 820000
-cycle_policy:
-  install_before:
-  - libva

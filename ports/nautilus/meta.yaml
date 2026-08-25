@@ -30,7 +30,6 @@ depends:
   - adwaita-icon-theme
   ignore_for_order:
   - adwaita-icon-theme
-  - gst-plugins-base
   - localsearch
 bootscripts: []
 systemd_units: []
@@ -40,5 +39,4 @@ book_order: 610000
 cycle_policy:
   install_before:
   - adwaita-icon-theme
-  - gst-plugins-base
   - localsearch

@@ -20,8 +20,6 @@ depends:
   - libxcb
   - wayland
   - wayland-protocols
-  ignore_for_order:
-  - libxcb
 bootscripts: []
 systemd_units: []
 provides: []
@@ -31,6 +29,3 @@ patches:
   url: https://www.linuxfromscratch.org/patches/blfs/svn/libxkbcommon-1.13.2-upstream_fix-1.patch
   filename: libxkbcommon-1.13.2-upstream_fix-1.patch
 book_order: 173000
-cycle_policy:
-  install_before:
-  - libxcb

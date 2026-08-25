@@ -24,8 +24,6 @@ depends:
   - v4l-utils
   - wireplumber
   ignore_for_order:
-  - gst-plugins-base
-  - v4l-utils
   - wireplumber
 bootscripts: []
 systemd_units: []
@@ -34,6 +32,4 @@ conflicts: []
 book_order: 794000
 cycle_policy:
   install_before:
-  - gst-plugins-base
-  - v4l-utils
   - wireplumber

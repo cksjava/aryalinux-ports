@@ -29,13 +29,8 @@ depends:
   - libvorbis
   - mesa
   - pango
-  ignore_for_order:
-  - mesa
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 761000
-cycle_policy:
-  install_before:
-  - mesa

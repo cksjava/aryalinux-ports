@@ -25,13 +25,8 @@ depends:
   - libva
   - svt-av1
   - soundtouch
-  ignore_for_order:
-  - libva
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 763000
-cycle_policy:
-  install_before:
-  - libva

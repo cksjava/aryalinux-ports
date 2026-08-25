@@ -21,13 +21,8 @@ depends:
   - mesa
   recommended:
   - glu
-  ignore_for_order:
-  - glu
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 479000
-cycle_policy:
-  install_before:
-  - glu

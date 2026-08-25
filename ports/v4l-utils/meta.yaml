@@ -19,13 +19,8 @@ depends:
   recommended:
   - alsa-lib
   - glu
-  ignore_for_order:
-  - glu
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 804000
-cycle_policy:
-  install_before:
-  - glu

@@ -3,7 +3,7 @@
   "git": "https://github.com/cksjava/aryalinux-ports.git",
   "branch": "main",
   "ports_subdir": "ports",
-  "generated_at": "2026-08-25T18:44:59Z",
+  "generated_at": "2026-08-25T18:53:35Z",
   "ports": [
     {
       "name": "TTF-and-OTF-fonts",
@@ -4169,9 +4169,6 @@
           "nasm",
           "alsa-lib",
           "libva"
-        ],
-        "ignore_for_order": [
-          "libva"
         ]
       },
       "members": [],
@@ -4642,9 +4639,6 @@
           "mesa"
         ],
         "recommended": [
-          "glu"
-        ],
-        "ignore_for_order": [
           "glu"
         ]
       },
@@ -6632,9 +6626,6 @@
           "libva",
           "svt-av1",
           "soundtouch"
-        ],
-        "ignore_for_order": [
-          "libva"
         ]
       },
       "members": [],
@@ -6665,9 +6656,6 @@
           "libvorbis",
           "mesa",
           "pango"
-        ],
-        "ignore_for_order": [
-          "mesa"
         ]
       },
       "members": [],
@@ -6799,9 +6787,6 @@
         ],
         "ignore_for_order": [
           "adwaita-icon-theme",
-          "gst-plugins-bad",
-          "gst-plugins-good",
-          "vulkan-loader",
           "xdg-desktop-portal",
           "xdg-desktop-portal-gnome"
         ]
@@ -7093,13 +7078,10 @@
           "freetype",
           "glib",
           "graphite2",
-          "texlive",
-          "libreoffice",
           "icu"
         ],
         "ignore_for_order": [
-          "freetype",
-          "texlive"
+          "freetype"
         ]
       },
       "members": [],
@@ -12563,9 +12545,6 @@
           "libpng",
           "tiff",
           "sdl2-compat"
-        ],
-        "ignore_for_order": [
-          "sdl2-compat"
         ]
       },
       "members": [],
@@ -12629,9 +12608,6 @@
         ],
         "recommended": [
           "libxdmcp",
-          "mesa"
-        ],
-        "ignore_for_order": [
           "mesa"
         ]
       },
@@ -12759,9 +12735,6 @@
           "libxcb",
           "wayland",
           "wayland-protocols"
-        ],
-        "ignore_for_order": [
-          "libxcb"
         ]
       },
       "members": [],
@@ -13185,10 +13158,7 @@
           "upower"
         ],
         "ignore_for_order": [
-          "ffmpeg",
-          "libgxps",
-          "libwebp",
-          "poppler"
+          "libgxps"
         ]
       },
       "members": [],
@@ -14381,8 +14351,6 @@
           "libva",
           "llvm",
           "wayland-protocols",
-          "plasma",
-          "gtk",
           "libclc",
           "vulkan-loader",
           "cbindgen",
@@ -14390,7 +14358,6 @@
           "rust-bindgen"
         ],
         "ignore_for_order": [
-          "gtk",
           "libclc",
           "libva",
           "vulkan-loader"
@@ -16815,9 +16782,6 @@
           "libjpeg-turbo",
           "openjpeg",
           "curl"
-        ],
-        "ignore_for_order": [
-          "freeglut"
         ]
       },
       "members": [],
@@ -17000,7 +16964,6 @@
         ],
         "ignore_for_order": [
           "adwaita-icon-theme",
-          "gst-plugins-base",
           "localsearch"
         ]
       },
@@ -18547,8 +18510,6 @@
           "wireplumber"
         ],
         "ignore_for_order": [
-          "gst-plugins-base",
-          "v4l-utils",
           "wireplumber"
         ]
       },
@@ -19982,13 +19943,7 @@
           "xcb-utilities"
         ],
         "ignore_for_order": [
-          "cups",
-          "ffmpeg",
-          "gst-plugins-bad",
-          "gst-plugins-base",
-          "libxkbcommon",
-          "mesa",
-          "xcb-utilities"
+          "cups"
         ]
       },
       "members": [],
@@ -20723,12 +20678,6 @@
           "mesa",
           "pipewire",
           "pulseaudio",
-          "vulkan-loader"
-        ],
-        "ignore_for_order": [
-          "libxkbcommon",
-          "mesa",
-          "pipewire",
           "vulkan-loader"
         ]
       },
@@ -22512,11 +22461,6 @@
           "libpaper",
           "libpng",
           "setting-the-path-for-tex-live"
-        ],
-        "ignore_for_order": [
-          "fontconfig",
-          "freetype",
-          "harfbuzz"
         ]
       },
       "members": [],
@@ -23515,9 +23459,6 @@
         "required": [],
         "recommended": [
           "alsa-lib",
-          "glu"
-        ],
-        "ignore_for_order": [
           "glu"
         ]
       },

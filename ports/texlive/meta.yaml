@@ -24,10 +24,6 @@ depends:
   - libpaper
   - libpng
   - setting-the-path-for-tex-live
-  ignore_for_order:
-  - fontconfig
-  - freetype
-  - harfbuzz
 bootscripts: []
 systemd_units: []
 provides: []
@@ -37,8 +33,3 @@ patches:
   url: https://www.linuxfromscratch.org/patches/blfs/svn/texlive-20250308-source-upstream_fixes-1.patch
   filename: texlive-20250308-source-upstream_fixes-1.patch
 book_order: 867000
-cycle_policy:
-  install_before:
-  - fontconfig
-  - freetype
-  - harfbuzz

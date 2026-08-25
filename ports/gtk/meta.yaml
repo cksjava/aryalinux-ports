@@ -35,9 +35,6 @@ depends:
   - glib
   ignore_for_order:
   - adwaita-icon-theme
-  - gst-plugins-bad
-  - gst-plugins-good
-  - vulkan-loader
   - xdg-desktop-portal
   - xdg-desktop-portal-gnome
 bootscripts: []
@@ -48,8 +45,5 @@ book_order: 487000
 cycle_policy:
   install_before:
   - adwaita-icon-theme
-  - gst-plugins-bad
-  - gst-plugins-good
-  - vulkan-loader
   - xdg-desktop-portal
   - xdg-desktop-portal-gnome

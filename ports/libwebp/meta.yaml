@@ -20,13 +20,8 @@ depends:
   - libpng
   - tiff
   - sdl2-compat
-  ignore_for_order:
-  - sdl2-compat
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 239000
-cycle_policy:
-  install_before:
-  - sdl2-compat

@@ -25,11 +25,6 @@ depends:
   - pipewire
   - pulseaudio
   - vulkan-loader
-  ignore_for_order:
-  - libxkbcommon
-  - mesa
-  - pipewire
-  - vulkan-loader
 bootscripts: []
 systemd_units: []
 provides: []
@@ -39,9 +34,3 @@ patches:
   url: https://www.linuxfromscratch.org/patches/blfs/svn/SDL3-3.4.14-upstream_fixes-1.patch
   filename: SDL3-3.4.14-upstream_fixes-1.patch
 book_order: 798000
-cycle_policy:
-  install_before:
-  - libxkbcommon
-  - mesa
-  - pipewire
-  - vulkan-loader

@@ -38,12 +38,6 @@ depends:
   - xcb-utilities
   ignore_for_order:
   - cups
-  - ffmpeg
-  - gst-plugins-bad
-  - gst-plugins-base
-  - libxkbcommon
-  - mesa
-  - xcb-utilities
 bootscripts: []
 systemd_units: []
 provides: []
@@ -52,9 +46,3 @@ book_order: 508000
 cycle_policy:
   install_before:
   - cups
-  - ffmpeg
-  - gst-plugins-bad
-  - gst-plugins-base
-  - libxkbcommon
-  - mesa
-  - xcb-utilities

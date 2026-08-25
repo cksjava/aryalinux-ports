@@ -23,13 +23,8 @@ depends:
   - libjpeg-turbo
   - openjpeg
   - curl
-  ignore_for_order:
-  - freeglut
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 862000
-cycle_policy:
-  install_before:
-  - freeglut
