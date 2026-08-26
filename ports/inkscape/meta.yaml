@@ -37,7 +37,7 @@ systemd_units: []
 provides: []
 conflicts: []
 patches:
-- label: Required patch for poppler-26.05 and later
+- label: Required patch
   url: https://www.linuxfromscratch.org/patches/blfs/svn/inkscape-1.4.4-poppler_fixes-3.patch
   filename: inkscape-1.4.4-poppler_fixes-3.patch
 book_order: 736000

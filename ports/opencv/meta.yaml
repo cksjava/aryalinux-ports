@@ -36,4 +36,7 @@ patches:
 - label: Required patch
   url: https://www.linuxfromscratch.org/patches/blfs/svn/opencv-4.13.0-ffmpeg-9.0.patch
   filename: opencv-4.13.0-ffmpeg-9.0.patch
+- label: patch (from build commands)
+  url: https://github.com/opencv/opencv_contrib/archive/4.13.0/opencv_contrib-4.13.0.tar.gz
+  filename: opencv_contrib-4.13.0.tar.gz
 book_order: 242000

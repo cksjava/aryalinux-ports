@@ -23,11 +23,4 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
-patches:
-- label: Download
-  url: https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Alien-Build-Plugin-Download-GitLab-0.01.tar.gz
-  filename: Alien-Build-Plugin-Download-GitLab-0.01.tar.gz
-- label: Download
-  url: perl-deps.html#perl-alien-build
-  filename: perl-deps.html
 book_order: 340000

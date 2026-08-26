@@ -23,4 +23,8 @@ systemd_units:
 - ntpd
 provides: []
 conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/ntp-4.2.8p18-openssl_4-1.patch
+  filename: ntp-4.2.8p18-openssl_4-1.patch
 book_order: 371000

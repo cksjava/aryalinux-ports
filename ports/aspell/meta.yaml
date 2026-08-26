@@ -25,6 +25,10 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://ftpmirror.gnu.org/aspell/dict/en/aspell6-en-2020.12.07-0.tar.bz2
+  filename: aspell6-en-2020.12.07-0.tar.bz2
 book_order: 105000
 cycle_policy:
   install_before:

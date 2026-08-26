@@ -26,6 +26,10 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.2-docs.tar.xz
+  filename: Linux-PAM-1.7.2-docs.tar.xz
 book_order: 50000
 cycle_policy:
   install_before:

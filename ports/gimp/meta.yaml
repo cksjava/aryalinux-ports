@@ -36,4 +36,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://download.gimp.org/pub/gimp/help/gimp-help-3.0.2.tar.bz2
+  filename: gimp-help-3.0.2.tar.bz2
 book_order: 734000

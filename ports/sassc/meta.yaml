@@ -19,4 +19,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
+  filename: libsass-3.6.6.tar.gz
 book_order: 248000

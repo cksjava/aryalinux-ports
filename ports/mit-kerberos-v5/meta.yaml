@@ -30,7 +30,7 @@ patches:
 - label: Required patch
   url: https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-security_fix-1.patch
   filename: mitkrb-1.22.2-security_fix-1.patch
-- label: Required patch for OpenSSL-4
+- label: Required patch
   url: https://www.linuxfromscratch.org/patches/blfs/svn/mitkrb-1.22.2-openssl_4_fixes-1.patch
   filename: mitkrb-1.22.2-openssl_4_fixes-1.patch
 book_order: 53000

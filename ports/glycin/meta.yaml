@@ -29,6 +29,10 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: Recommended patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/glycin-2.1.5-xorg_prefix-1.patch
+  filename: glycin-2.1.5-xorg_prefix-1.patch
 book_order: 218000
 cycle_policy:
   install_before:

@@ -25,4 +25,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: Recommended patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/requests-use_system_certs-2.patch
+  filename: requests-use_system_certs-2.patch
 book_order: 344000

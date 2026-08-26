@@ -20,4 +20,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://www.nasm.us/pub/nasm/releasebuilds/3.02/nasm-3.02-xdoc.tar.xz
+  filename: nasm-3.02-xdoc.tar.xz
 book_order: 337000

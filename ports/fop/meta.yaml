@@ -24,4 +24,11 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://downloads.sourceforge.net/offo/2.2/offo-hyphenation.zip
+  filename: offo-hyphenation.zip
+- label: patch (from build commands)
+  url: https://archive.apache.org/dist/maven/maven-3/3.9.12/binaries/apache-maven-3.9.12-bin.tar.gz
+  filename: apache-maven-3.9.12-bin.tar.gz
 book_order: 861000

@@ -32,4 +32,10 @@ patches:
 - label: Required patch
   url: https://www.linuxfromscratch.org/patches/blfs/svn/texlive-20250308-source-upstream_fixes-1.patch
   filename: texlive-20250308-source-upstream_fixes-1.patch
+- label: patch (from build commands)
+  url: https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-extra.tar.xz
+  filename: texlive-20250308-extra.tar.xz
+- label: patch (from build commands)
+  url: https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2025/texlive-20250308-texmf.tar.xz
+  filename: texlive-20250308-texmf.tar.xz
 book_order: 867000

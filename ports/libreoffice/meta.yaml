@@ -22,4 +22,14 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-dictionaries-26.2.5.2.tar.xz
+  filename: libreoffice-dictionaries-26.2.5.2.tar.xz
+- label: patch (from build commands)
+  url: https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-help-26.2.5.2.tar.xz
+  filename: libreoffice-help-26.2.5.2.tar.xz
+- label: patch (from build commands)
+  url: https://download.documentfoundation.org/libreoffice/src/26.2.5/libreoffice-translations-26.2.5.2.tar.xz
+  filename: libreoffice-translations-26.2.5.2.tar.xz
 book_order: 723000

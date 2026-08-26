@@ -20,4 +20,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/jfsutils-1.1.15-gcc10_fix-1.patch
+  filename: jfsutils-1.1.15-gcc10_fix-1.patch
 book_order: 70000

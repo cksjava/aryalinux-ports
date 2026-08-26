@@ -20,4 +20,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/id3lib-3.8.3-consolidated_patches-1.patch
+  filename: id3lib-3.8.3-consolidated_patches-1.patch
 book_order: 767000

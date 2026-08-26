@@ -24,4 +24,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: Recommended patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/gptfdisk-1.0.10-convenience-1.patch
+  filename: gptfdisk-1.0.10-convenience-1.patch
 book_order: 76000

@@ -30,6 +30,13 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://downloads.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz
+  filename: ghostscript-fonts-std-8.11.tar.gz
+- label: patch (from build commands)
+  url: https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
+  filename: gnu-gs-fonts-other-6.0.tar.gz
 book_order: 836000
 cycle_policy:
   install_before:

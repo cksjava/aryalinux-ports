@@ -19,4 +19,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/Net-SSLeay-1.96-openssl4_fixes-2.patch
+  filename: Net-SSLeay-1.96-openssl4_fixes-2.patch
 book_order: 340000

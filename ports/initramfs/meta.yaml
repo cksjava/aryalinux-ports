@@ -22,8 +22,4 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
-patches:
-- label: required file
-  url: ../general/cpio.html
-  filename: cpio.html
 book_order: 66000

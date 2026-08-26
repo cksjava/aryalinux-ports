@@ -24,7 +24,7 @@ systemd_units: []
 provides: []
 conflicts: []
 patches:
-- label: Required patch for use with openssl
+- label: Required patch
   url: https://www.linuxfromscratch.org/patches/blfs/svn/liboauth-1.0.3-openssl-1.1.0-3.patch
   filename: liboauth-1.0.3-openssl-1.1.0-3.patch
 book_order: 51000

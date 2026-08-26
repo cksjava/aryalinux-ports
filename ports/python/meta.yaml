@@ -22,7 +22,7 @@ systemd_units: []
 provides: []
 conflicts: []
 patches:
-- label: Required patch for OpenSSL-4
+- label: Required patch
   url: https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.11.1-openssl_4_fixes-1.patch
   filename: Python-3.11.1-openssl_4_fixes-1.patch
 book_order: 343000

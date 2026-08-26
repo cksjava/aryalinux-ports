@@ -27,12 +27,12 @@ systemd_units: []
 provides: []
 conflicts: []
 patches:
-- label: Download
-  url: https://download.gnome.org/sources/gobject-introspection/1.86/gobject-introspection-1.86.0.tar.xz
-  filename: gobject-introspection-1.86.0.tar.xz
 - label: Optional patch
   url: https://www.linuxfromscratch.org/patches/blfs/svn/glib-skip_warnings-1.patch
   filename: glib-skip_warnings-1.patch
+- label: patch (from build commands)
+  url: https://download.gnome.org/sources/gobject-introspection/1.86/gobject-introspection-1.86.0.tar.xz
+  filename: gobject-introspection-1.86.0.tar.xz
 book_order: 117000
 cycle_policy:
   install_before:

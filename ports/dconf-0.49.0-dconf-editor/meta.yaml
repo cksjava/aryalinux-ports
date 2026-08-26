@@ -27,4 +27,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://download.gnome.org/sources/dconf-editor/49/dconf-editor-49.0.tar.xz
+  filename: dconf-editor-49.0.tar.xz
 book_order: 606000

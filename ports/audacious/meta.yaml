@@ -24,4 +24,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://distfiles.audacious-media-player.org/audacious-plugins-4.6.1.tar.bz2
+  filename: audacious-plugins-4.6.1.tar.bz2
 book_order: 811000

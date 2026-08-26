@@ -28,4 +28,11 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://www.unicode.org/Public/17.0.0/ucd/UCD.zip
+  filename: UCD.zip
+- label: patch (from build commands)
+  url: https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip
+  filename: Unihan.zip
 book_order: 640000

@@ -37,6 +37,10 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: Recommended patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/mesa-add_xdemos-5.patch
+  filename: mesa-add_xdemos-5.patch
 cycle_policy:
   install_before:
   - libclc

@@ -22,4 +22,9 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: Recommended patch
+  url: https://downloads.sourceforge.net/sourceforge/libpng-apng/libpng-1.6.58-apng.patch.gz
+  filename: libpng-1.6.58-apng.patch.gz
+  md5: 1eef1ddd6def88814d1a65ce1f4dceb9
 book_order: 234000

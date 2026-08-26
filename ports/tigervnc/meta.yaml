@@ -35,4 +35,10 @@ patches:
 - label: Required file
   url: https://www.x.org/pub/individual/xserver/xorg-server-21.1.24.tar.xz
   filename: xorg-server-21.1.24.tar.xz
+- label: Required patch
+  url: https://www.linuxfromscratch.org/patches/blfs/svn/tigervnc-1.16.2-configuration_fixes-1.patch
+  filename: tigervnc-1.16.2-configuration_fixes-1.patch
+- label: Optional file
+  url: https://anduin.linuxfromscratch.org/BLFS/tigervnc/Xsession
+  filename: Xsession
 book_order: 739000

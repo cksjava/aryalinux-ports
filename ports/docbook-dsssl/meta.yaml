@@ -25,4 +25,8 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://downloads.sourceforge.net/docbook/docbook-dsssl-doc-1.79.tar.bz2
+  filename: docbook-dsssl-doc-1.79.tar.bz2
 book_order: 849000

@@ -37,6 +37,10 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: patch (from build commands)
+  url: https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+  filename: poppler-data-0.4.12.tar.gz
 book_order: 246000
 cycle_policy:
   install_before:
