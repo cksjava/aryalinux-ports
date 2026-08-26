@@ -17,15 +17,13 @@ sbu: 0.1 SBU
 depends:
   required:
   - cracklib
-  recommended:
   - linux-pam
-  ignore_for_order:
-  - linux-pam
+  recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
-book_order: 52000
 cycle_policy:
-  install_before:
-  - linux-pam
+  install_before: []
+book_order: 52000

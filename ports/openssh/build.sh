@@ -6,6 +6,7 @@ export MAKEFLAGS="-j$ALPS_JOBS"
 export CMAKE_BUILD_PARALLEL_LEVEL="${CMAKE_BUILD_PARALLEL_LEVEL:-$ALPS_JOBS}"
 export CARGO_BUILD_JOBS="${CARGO_BUILD_JOBS:-$ALPS_JOBS}"
 export SCONSFLAGS="${SCONSFLAGS:--j$ALPS_JOBS}"
+export PIP_ROOT_USER_ACTION="${PIP_ROOT_USER_ACTION:-ignore}"
 # Ninja/meson ignore MAKEFLAGS — wrap so bare invocations use all cores.
 ninja() {
   local _a _has_j=0
@@ -90,6 +91,8 @@ ssh-keygen
 ssh-copy-id -i ~/.ssh/id_ed25519.pub REMOTE_USERNAME@REMOTE_HOSTNAME
 echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
 echo "KbdInteractiveAuthentication no" >> /etc/ssh/sshd_config
-sed 's@d/login@d/sshd@g' /etc/pam.d/login > /etc/pam.d/sshd
-chmod 644 /etc/pam.d/sshd
+if [ -e /etc/pam.d/login ]; then
+  sed 's@d/login@d/sshd@g' /etc/pam.d/login > /etc/pam.d/sshd
+  chmod 644 /etc/pam.d/sshd
+fi
 echo "UsePAM yes" >> /etc/ssh/sshd_config

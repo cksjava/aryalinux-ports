@@ -6,6 +6,7 @@ export MAKEFLAGS="-j$ALPS_JOBS"
 export CMAKE_BUILD_PARALLEL_LEVEL="${CMAKE_BUILD_PARALLEL_LEVEL:-$ALPS_JOBS}"
 export CARGO_BUILD_JOBS="${CARGO_BUILD_JOBS:-$ALPS_JOBS}"
 export SCONSFLAGS="${SCONSFLAGS:--j$ALPS_JOBS}"
+export PIP_ROOT_USER_ACTION="${PIP_ROOT_USER_ACTION:-ignore}"
 # Ninja/meson ignore MAKEFLAGS — wrap so bare invocations use all cores.
 ninja() {
   local _a _has_j=0
@@ -72,9 +73,19 @@ fi
 make -C pam_cap
 install -v -m755 pam_cap/pam_cap.so      /usr/lib/security
 install -v -m644 pam_cap/capability.conf /etc/security
-mv -v /etc/pam.d/system-auth{,.bak}
-cat > /etc/pam.d/system-auth << "EOF"
+install -vdm755 /etc/pam.d
+if [ -e /etc/pam.d/system-auth ]; then
+  mv -v /etc/pam.d/system-auth{,.bak}
+  cat > /etc/pam.d/system-auth << "EOF"
 # Begin /etc/pam.d/system-auth
 auth      optional    pam_cap.so
 EOF
-tail -n +3 /etc/pam.d/system-auth.bak >> /etc/pam.d/system-auth
+  tail -n +3 /etc/pam.d/system-auth.bak >> /etc/pam.d/system-auth
+else
+  cat > /etc/pam.d/system-auth << "EOF"
+# Begin /etc/pam.d/system-auth
+auth      optional    pam_cap.so
+auth      required    pam_unix.so
+# End /etc/pam.d/system-auth
+EOF
+fi

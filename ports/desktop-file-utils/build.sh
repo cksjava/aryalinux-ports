@@ -6,6 +6,7 @@ export MAKEFLAGS="-j$ALPS_JOBS"
 export CMAKE_BUILD_PARALLEL_LEVEL="${CMAKE_BUILD_PARALLEL_LEVEL:-$ALPS_JOBS}"
 export CARGO_BUILD_JOBS="${CARGO_BUILD_JOBS:-$ALPS_JOBS}"
 export SCONSFLAGS="${SCONSFLAGS:--j$ALPS_JOBS}"
+export PIP_ROOT_USER_ACTION="${PIP_ROOT_USER_ACTION:-ignore}"
 # Ninja/meson ignore MAKEFLAGS — wrap so bare invocations use all cores.
 ninja() {
   local _a _has_j=0

@@ -6,6 +6,7 @@ export MAKEFLAGS="-j$ALPS_JOBS"
 export CMAKE_BUILD_PARALLEL_LEVEL="${CMAKE_BUILD_PARALLEL_LEVEL:-$ALPS_JOBS}"
 export CARGO_BUILD_JOBS="${CARGO_BUILD_JOBS:-$ALPS_JOBS}"
 export SCONSFLAGS="${SCONSFLAGS:--j$ALPS_JOBS}"
+export PIP_ROOT_USER_ACTION="${PIP_ROOT_USER_ACTION:-ignore}"
 # Ninja/meson ignore MAKEFLAGS — wrap so bare invocations use all cores.
 ninja() {
   local _a _has_j=0
@@ -77,7 +78,10 @@ make
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD/python
 make install
 pip3 install --no-index --find-links dist --no-user pwquality
-mv /etc/pam.d/system-password{,.orig}
+install -vdm755 /etc/pam.d
+if [ -e /etc/pam.d/system-password ]; then
+  mv -v /etc/pam.d/system-password{,.orig}
+fi
 cat > /etc/pam.d/system-password << "EOF"
 # Begin /etc/pam.d/system-password
 # check new passwords for strength (man pam_pwquality)
