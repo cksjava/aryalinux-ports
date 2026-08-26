@@ -37,7 +37,7 @@ link-shared = true
 # instead of all the targets supported by LLVM.
 targets = "X86"
 [build]
-description = "for BLFS r13.0-1344"
+description = "for ${DISTRO_NAME:-AryaLinux} ${DISTRO_VERSION:-2026}"
 # Omit the documentation to save time and space (the default is to build them).
 docs = false
 # Only install these extended tools. Cargo, clippy, rustdoc, and rustfmt
@@ -64,11 +64,6 @@ EOF
 export LIBSSH2_SYS_USE_PKG_CONFIG=1
 export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
 ./x.py build
-mkdir fake-git && ln -sv /usr/bin/false fake-git
-PATH+=:$PWD/fake-git \
-./x.py test --no-fail-fast | tee rustc-testlog
-grep '^test result:' rustc-testlog |
- awk '{sum1 += $4; sum2 += $6} END { print sum1 " passed; " sum2 " failed" }'
 ./x.py install
 rm -fv /opt/rustc-1.97.1/share/doc/rustc-1.97.1/*.old
 install -vm644 README.md \
