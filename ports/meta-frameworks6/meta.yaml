@@ -12,7 +12,6 @@ summary: 'Meta-package: all packages from frameworks6.html (book order)'
 depends:
   required: []
   recommended: []
-  ignore_for_order: []
 members:
 - kf6-prefix
 - attica

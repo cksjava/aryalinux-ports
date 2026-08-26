@@ -19,7 +19,6 @@ depends:
   - commonmark
   - sphinx
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

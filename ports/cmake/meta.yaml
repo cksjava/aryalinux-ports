@@ -21,7 +21,6 @@ depends:
   - libarchive
   - libuv
   - nghttp2
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

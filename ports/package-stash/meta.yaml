@@ -21,7 +21,6 @@ depends:
   recommended:
   - cpan-meta-check
   - test-needs
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

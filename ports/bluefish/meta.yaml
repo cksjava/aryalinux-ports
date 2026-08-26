@@ -20,7 +20,6 @@ depends:
   - gtk
   recommended:
   - desktop-file-utils
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

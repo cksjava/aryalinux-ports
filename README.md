@@ -2,7 +2,7 @@
 
 Public ALPS port recipes for [AryaLinux](https://github.com/cksjava) (BLFS-derived).
 
-- **1224** ports under `ports/`
+- **1223** ports under `ports/`
 - Index: [`index.json`](./index.json) (`alps-index-v1`)
 
 ## Use with ALPS

@@ -21,7 +21,6 @@ depends:
   - test-fatal
   - test-file
   - test-warnings
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

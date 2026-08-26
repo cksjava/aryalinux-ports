@@ -23,7 +23,6 @@ depends:
   - qt
   recommended:
   - libpcap
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

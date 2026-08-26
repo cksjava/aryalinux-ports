@@ -20,7 +20,6 @@ depends:
   - kde-frameworks
   - qtwebengine
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

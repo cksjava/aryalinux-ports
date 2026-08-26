@@ -31,7 +31,6 @@ depends:
   recommended:
   - xorg-libraries
   - yyjson
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

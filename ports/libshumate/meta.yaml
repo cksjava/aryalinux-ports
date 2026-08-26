@@ -19,7 +19,6 @@ depends:
   - protobuf-c
   recommended:
   - glib
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

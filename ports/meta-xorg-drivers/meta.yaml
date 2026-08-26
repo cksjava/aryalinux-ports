@@ -12,7 +12,6 @@ summary: Xorg input drivers from BLFS
 depends:
   required: []
   recommended: []
-  ignore_for_order: []
 members:
 - libevdev
 - libinput

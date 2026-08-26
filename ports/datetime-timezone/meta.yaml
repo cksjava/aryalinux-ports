@@ -22,7 +22,6 @@ depends:
   - test-fatal
   - test-requires
   - datetime
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

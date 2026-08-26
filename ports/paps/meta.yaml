@@ -20,7 +20,6 @@ depends:
   - intltool
   - pango
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

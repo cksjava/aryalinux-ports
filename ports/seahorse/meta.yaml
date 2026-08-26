@@ -27,7 +27,6 @@ depends:
   recommended:
   - libsoup
   - openssh
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

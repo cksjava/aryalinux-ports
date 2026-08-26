@@ -18,7 +18,6 @@ depends:
   - talloc
   recommended:
   - mit-kerberos-v5
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

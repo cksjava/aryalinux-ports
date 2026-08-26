@@ -33,7 +33,6 @@ depends:
   - modemmanager
   - nss
   - wayland
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

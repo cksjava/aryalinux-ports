@@ -19,7 +19,6 @@ depends:
   - libxcb
   - xcb-util
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

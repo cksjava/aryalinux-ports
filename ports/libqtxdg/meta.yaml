@@ -18,7 +18,6 @@ depends:
   - cmake
   - lxqt-build-tools
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

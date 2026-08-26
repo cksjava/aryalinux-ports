@@ -34,7 +34,6 @@ depends:
   - xcb-utilities
   - xorg-libraries
   - xwayland
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

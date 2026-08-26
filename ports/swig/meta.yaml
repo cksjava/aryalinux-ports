@@ -19,7 +19,6 @@ sbu: 0.2 SBU (add up to 50 SBU for tests depending on languages installed; both 
 depends:
   required: []
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

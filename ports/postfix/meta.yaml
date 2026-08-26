@@ -21,7 +21,6 @@ depends:
   - cyrus-sasl
   - libnsl
   - lmdb
-  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - postfix

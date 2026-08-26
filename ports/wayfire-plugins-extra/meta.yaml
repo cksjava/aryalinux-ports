@@ -23,7 +23,6 @@ depends:
   recommended:
   - boost
   - glibmm
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

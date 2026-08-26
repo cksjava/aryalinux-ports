@@ -18,7 +18,6 @@ depends:
   recommended:
   - glib
   - startup-notification
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

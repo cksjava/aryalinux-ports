@@ -17,7 +17,6 @@ depends:
   required: []
   recommended:
   - popt
-  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - rsyncd

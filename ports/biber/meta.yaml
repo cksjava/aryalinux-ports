@@ -46,7 +46,6 @@ depends:
   recommended:
   - file-which
   - test-differences
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

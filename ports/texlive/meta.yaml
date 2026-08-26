@@ -24,7 +24,6 @@ depends:
   - libpaper
   - libpng
   - setting-the-path-for-tex-live
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

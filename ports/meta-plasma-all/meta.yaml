@@ -12,7 +12,6 @@ summary: 'Meta-package: all packages from plasma-all.html (book order)'
 depends:
   required: []
   recommended: []
-  ignore_for_order: []
 members:
 - kdecoration
 - libkscreen

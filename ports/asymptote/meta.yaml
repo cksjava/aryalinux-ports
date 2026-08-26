@@ -27,7 +27,6 @@ depends:
   - glew
   - glm
   - dvisvgm
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

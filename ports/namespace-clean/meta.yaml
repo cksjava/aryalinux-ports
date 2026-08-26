@@ -17,7 +17,6 @@ depends:
   - b-hooks-endofscope
   - package-stash
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

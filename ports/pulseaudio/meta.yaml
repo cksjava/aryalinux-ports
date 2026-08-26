@@ -26,7 +26,6 @@ depends:
   - speex
   - xml-parser
   - xorg-libraries
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

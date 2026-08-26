@@ -21,7 +21,6 @@ depends:
   - gnutls
   - jansson
   - tiff
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

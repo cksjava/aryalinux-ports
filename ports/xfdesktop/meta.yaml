@@ -23,7 +23,6 @@ depends:
   - libnotify
   - startup-notification
   - thunar
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

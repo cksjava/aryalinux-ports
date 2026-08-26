@@ -17,7 +17,6 @@ depends:
   - cmake
   recommended:
   - boost
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

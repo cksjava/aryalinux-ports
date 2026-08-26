@@ -22,7 +22,6 @@ depends:
   recommended:
   - liba52
   - x264
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -19,7 +19,6 @@ depends:
   - svt-av1
   recommended:
   - libaom
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

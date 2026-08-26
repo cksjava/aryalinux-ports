@@ -18,7 +18,6 @@ sbu: 0.3 SBU (Using parallelism=4; running the tests takes about 11 minutes, irr
 depends:
   required: []
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - sshd

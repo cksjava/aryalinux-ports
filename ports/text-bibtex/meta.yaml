@@ -16,7 +16,6 @@ depends:
   required:
   - config-autoconf
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

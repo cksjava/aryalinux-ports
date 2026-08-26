@@ -28,7 +28,6 @@ depends:
   - libwebp
   - v4l-utils
   - xine-lib
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

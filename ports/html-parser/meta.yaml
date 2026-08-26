@@ -18,7 +18,6 @@ depends:
   - html-tagset
   - http-message
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

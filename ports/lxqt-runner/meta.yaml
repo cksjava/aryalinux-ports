@@ -19,7 +19,6 @@ depends:
   - kwindowsystem-6.29.0-for-lxqt
   - muparser
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -20,7 +20,6 @@ depends:
   - ffi-checklib
   - file-chdir
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

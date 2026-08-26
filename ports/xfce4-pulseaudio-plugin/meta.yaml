@@ -25,7 +25,6 @@ depends:
   - libcanberra
   - libxfce4windowing
   - pavucontrol
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

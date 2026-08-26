@@ -31,7 +31,6 @@ depends:
   - gnome-bluetooth
   - gst-plugins-base
   - gnome-menus
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

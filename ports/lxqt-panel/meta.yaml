@@ -26,7 +26,6 @@ depends:
   - libsysstat
   - libxkbcommon
   - lm-sensors-3-6
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

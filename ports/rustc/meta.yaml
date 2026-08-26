@@ -21,7 +21,6 @@ depends:
   - libssh2
   - llvm
   - the-bash-shell-startup-files
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

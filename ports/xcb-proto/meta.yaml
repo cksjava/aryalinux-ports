@@ -15,9 +15,7 @@ disk_space: 1.3 MB
 sbu: less than 0.1 SBU
 depends:
   required: []
-  recommended:
-  - xorg7
-  ignore_for_order: []
+  recommended: []
 bootscripts: []
 systemd_units: []
 provides: []

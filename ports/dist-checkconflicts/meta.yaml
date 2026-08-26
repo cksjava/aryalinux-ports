@@ -18,7 +18,6 @@ depends:
   - module-runtime
   recommended:
   - test-fatal
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -20,7 +20,6 @@ depends:
   - libpng
   - tiff
   - sdl2-compat
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

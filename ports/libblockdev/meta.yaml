@@ -25,7 +25,6 @@ depends:
   - libbytesize
   - libnvme
   - lvm2
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

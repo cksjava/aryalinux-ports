@@ -30,7 +30,6 @@ depends:
   - libjpeg-turbo
   - libpng
   - wget
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

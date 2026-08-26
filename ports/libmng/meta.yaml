@@ -18,7 +18,6 @@ depends:
   - libjpeg-turbo
   - little-cms
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

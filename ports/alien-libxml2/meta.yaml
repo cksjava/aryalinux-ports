@@ -21,7 +21,6 @@ depends:
   - path-tiny
   recommended:
   - test-simple
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

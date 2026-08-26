@@ -18,7 +18,6 @@ depends:
   recommended:
   - test-without-module
   - test2-plugin-nowarnings
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

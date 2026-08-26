@@ -39,7 +39,6 @@ depends:
   - libjxl
   - libseccomp
   - xdg-dbus-proxy
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

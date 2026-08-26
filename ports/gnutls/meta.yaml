@@ -23,7 +23,6 @@ depends:
   - libunistring
   - libtasn1
   - p11-kit
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

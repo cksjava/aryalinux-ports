@@ -22,7 +22,6 @@ depends:
   - dav1d
   - gtk
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

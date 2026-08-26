@@ -20,7 +20,6 @@ depends:
   required: []
   recommended:
   - lmdb
-  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - saslauthd

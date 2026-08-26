@@ -19,7 +19,6 @@ depends:
   - pygobject
   recommended:
   - at-spi2-core
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

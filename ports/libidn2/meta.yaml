@@ -18,7 +18,6 @@ depends:
   required: []
   recommended:
   - libunistring
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

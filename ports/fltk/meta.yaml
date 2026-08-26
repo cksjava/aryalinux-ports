@@ -20,7 +20,6 @@ depends:
   recommended:
   - hicolor-icon-theme
   - libpng
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

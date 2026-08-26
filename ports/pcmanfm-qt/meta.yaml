@@ -22,7 +22,6 @@ depends:
   recommended:
   - gvfs
   - oxygen-icons
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

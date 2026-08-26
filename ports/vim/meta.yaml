@@ -18,7 +18,6 @@ depends:
   recommended:
   - a-graphical-environment
   - gtk
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

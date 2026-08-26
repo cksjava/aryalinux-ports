@@ -13,10 +13,8 @@ download_size: 84 KB
 disk_space: 524 KB
 sbu: less than 0.1 SBU
 depends:
-  required:
-  - xorg7
+  required: []
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

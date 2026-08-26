@@ -27,7 +27,6 @@ depends:
   - xorg-legacy-fonts
   recommended:
   - imagemagick-7.1.2
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

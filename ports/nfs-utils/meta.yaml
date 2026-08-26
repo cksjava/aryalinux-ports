@@ -23,7 +23,6 @@ depends:
   - rpcsvc-proto
   - rpcbind
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - nfsv4-server

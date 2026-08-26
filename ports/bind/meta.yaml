@@ -22,7 +22,6 @@ depends:
   - json-c
   - libcap-2.78-with-pam
   - nghttp2
-  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - named

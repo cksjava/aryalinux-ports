@@ -21,7 +21,6 @@ depends:
   - lwp-mediatypes
   recommended:
   - test-needs
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

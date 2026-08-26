@@ -18,7 +18,6 @@ depends:
   - glib
   recommended:
   - vala
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

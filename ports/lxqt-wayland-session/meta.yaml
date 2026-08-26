@@ -23,7 +23,6 @@ depends:
   recommended:
   - wayfire
   - lxqt-post-install
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

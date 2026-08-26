@@ -18,7 +18,6 @@ sbu: 25 SBU with parallelism=8 (will vary due to download time)
 depends:
   required: []
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

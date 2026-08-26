@@ -12,7 +12,6 @@ summary: 'Meta-package: applications linked from kf-apps.html'
 depends:
   required: []
   recommended: []
-  ignore_for_order: []
 members:
 - ark
 - dolphin

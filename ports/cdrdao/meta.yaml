@@ -21,7 +21,6 @@ depends:
   - libvorbis
   - libmad
   - lame
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

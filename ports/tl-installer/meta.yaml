@@ -26,7 +26,6 @@ depends:
   - a-graphical-environment
   - epdfview-gtk3
   - freeglut
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

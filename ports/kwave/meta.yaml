@@ -23,7 +23,6 @@ depends:
   - flac
   - libogg
   - pulseaudio
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

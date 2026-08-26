@@ -19,7 +19,6 @@ depends:
   - libxml2
   - llvm
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

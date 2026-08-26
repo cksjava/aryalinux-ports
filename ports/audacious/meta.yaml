@@ -20,7 +20,6 @@ depends:
   - libarchive
   - mpg123
   - ffmpeg
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -12,7 +12,6 @@ summary: 'Meta-package: install BLFS ports from section ''kde'''
 depends:
   required: []
   recommended: []
-  ignore_for_order: []
 members:
 - ark
 - attica

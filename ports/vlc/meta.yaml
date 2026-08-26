@@ -26,7 +26,6 @@ depends:
   - libmad
   - qt
   - a-graphical-environment
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -21,7 +21,6 @@ depends:
   - gstreamer
   - gtk
   - sound-theme-freedesktop
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

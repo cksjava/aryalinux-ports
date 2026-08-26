@@ -17,7 +17,6 @@ depends:
   - glib
   recommended:
   - pycairo
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

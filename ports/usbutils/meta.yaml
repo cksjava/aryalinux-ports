@@ -18,7 +18,6 @@ depends:
   - libusb
   recommended:
   - hwdata
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -18,7 +18,6 @@ disk_space: 4.6 MB
 sbu: less than 0.1 SBU
 depends:
   required:
-  - xorg7
   - libdrm
   recommended:
   - mesa

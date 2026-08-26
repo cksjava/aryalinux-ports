@@ -19,7 +19,6 @@ depends:
   - twm
   - xclock
   - xterm
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

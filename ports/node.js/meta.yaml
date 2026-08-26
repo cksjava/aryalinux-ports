@@ -23,7 +23,6 @@ depends:
   - libuv
   - nghttp2
   - simdutf
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

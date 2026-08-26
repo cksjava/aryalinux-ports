@@ -29,7 +29,6 @@ depends:
   - libjpeg-turbo
   - libpng
   - tiff
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

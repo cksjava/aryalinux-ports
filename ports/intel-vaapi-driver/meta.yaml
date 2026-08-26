@@ -16,9 +16,7 @@ sbu: 0.3 SBU
 depends:
   required:
   - libva
-  - xorg7
   recommended: []
-  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

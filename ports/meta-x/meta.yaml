@@ -13,7 +13,6 @@ summary: 'Slim X Window System: Xorg libs/server/drivers, twm, xterm, xinit (not
 depends:
   required: []
   recommended: []
-  ignore_for_order: []
 members:
 - util-macros
 - xorgproto
