@@ -19,6 +19,7 @@ sbu: 0.2 SBU (add 1.7 SBU for tests)
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

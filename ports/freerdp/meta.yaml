@@ -26,6 +26,7 @@ depends:
   - mit-kerberos-v5
   - libxkbcommon
   - wayland
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

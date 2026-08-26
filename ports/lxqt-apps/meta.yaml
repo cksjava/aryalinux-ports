@@ -12,6 +12,7 @@ summary: ''
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 provides: []
 conflicts: []

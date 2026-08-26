@@ -18,6 +18,7 @@ depends:
   - libnsl
   - file-fcntllock
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - exim

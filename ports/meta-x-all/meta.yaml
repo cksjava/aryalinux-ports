@@ -13,6 +13,7 @@ summary: 'Meta-package: all BLFS ports from section ''x'' (GTK/Qt/DMs/WMs/â€¦ â€
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 members:
 - adwaita-icon-theme
 - at-spi2-core

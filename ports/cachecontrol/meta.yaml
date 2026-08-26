@@ -21,6 +21,7 @@ depends:
   - requests
   - uv_build
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

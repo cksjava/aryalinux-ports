@@ -18,6 +18,7 @@ depends:
   - libxfce4ui
   recommended:
   - gspell
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

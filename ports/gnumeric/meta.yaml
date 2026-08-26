@@ -21,6 +21,7 @@ depends:
   - adwaita-icon-theme
   - gnome-icon-theme
   - yelp
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

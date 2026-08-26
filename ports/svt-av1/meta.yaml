@@ -17,6 +17,7 @@ depends:
   - cmake
   recommended:
   - nasm
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

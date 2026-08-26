@@ -19,6 +19,7 @@ depends:
   recommended:
   - ipc-run3
   - module-pluggable
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

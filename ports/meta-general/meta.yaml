@@ -12,6 +12,7 @@ summary: 'Meta-package: install BLFS ports from section ''general'''
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 members:
 - aalib
 - abseil-cpp

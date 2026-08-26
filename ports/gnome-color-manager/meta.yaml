@@ -20,6 +20,7 @@ depends:
   - little-cms
   recommended:
   - desktop-file-utils
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

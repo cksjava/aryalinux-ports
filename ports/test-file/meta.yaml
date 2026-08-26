@@ -16,6 +16,7 @@ depends:
   required: []
   recommended:
   - test-utf8
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

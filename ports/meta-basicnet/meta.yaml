@@ -12,6 +12,7 @@ summary: 'Meta-package: install BLFS ports from section ''basicnet'''
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 members:
 - avahi
 - bind-utilities

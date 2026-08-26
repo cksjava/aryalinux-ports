@@ -18,6 +18,7 @@ depends:
   - cmake
   recommended:
   - qt
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

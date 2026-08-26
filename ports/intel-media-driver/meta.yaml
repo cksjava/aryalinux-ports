@@ -19,9 +19,10 @@ depends:
   - cmake
   - gmmlib
   - libva
-  - xorg-build-environment
+  - xorg7
   - mesa-kernel-configuration
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -19,6 +19,7 @@ depends:
   recommended:
   - boost
   - numpy
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

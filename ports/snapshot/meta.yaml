@@ -22,6 +22,7 @@ depends:
   - xdg-desktop-portal-gnome
   - xdg-user-dirs
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

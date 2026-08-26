@@ -25,6 +25,7 @@ depends:
   - scope-guard
   recommended:
   - test-fatal
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

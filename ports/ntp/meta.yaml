@@ -18,6 +18,7 @@ depends:
   required:
   - io-socket-ssl
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - ntpd

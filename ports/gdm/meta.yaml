@@ -21,6 +21,7 @@ depends:
   - gnome-shell
   - systemd
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

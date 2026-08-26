@@ -29,6 +29,7 @@ depends:
   - libarchive
   - libsecret
   - poppler
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -16,7 +16,8 @@ sbu: less than 0.1 SBU
 depends:
   required: []
   recommended:
-  - xorg-build-environment
+  - xorg7
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

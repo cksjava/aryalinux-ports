@@ -20,6 +20,7 @@ depends:
   - net-ssleay
   recommended:
   - uri
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

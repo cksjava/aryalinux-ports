@@ -16,6 +16,7 @@ sbu: 0.3 SBU
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - proftpd

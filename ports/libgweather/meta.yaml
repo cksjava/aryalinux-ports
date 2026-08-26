@@ -23,6 +23,7 @@ depends:
   - glib
   - libxml2
   - vala
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

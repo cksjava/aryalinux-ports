@@ -12,6 +12,7 @@ summary: 'Meta-package: install BLFS ports from section ''lxqt'''
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 members:
 - libdbusmenu-lxqt
 - libfm-extra

@@ -21,6 +21,7 @@ depends:
   - libgcrypt
   - gnutls
   - vala
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

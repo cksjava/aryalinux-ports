@@ -16,6 +16,7 @@ sbu: 0.6 SBU (Using parallelism=4)
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

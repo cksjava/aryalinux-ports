@@ -17,6 +17,7 @@ depends:
   required:
   - cmake
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -12,6 +12,7 @@ summary: 'Meta-package: all ports from BLFS perl-modules.html'
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 members:
 - archive-zip
 - autovivification

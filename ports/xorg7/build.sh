@@ -3,12 +3,47 @@ set -euo pipefail
 : "${ALPS_SOURCES:?}" "${ALPS_WORK:?}"
 export ALPS_JOBS="${ALPS_JOBS:-$(nproc)}"
 export MAKEFLAGS="-j$ALPS_JOBS"
+export CMAKE_BUILD_PARALLEL_LEVEL="${CMAKE_BUILD_PARALLEL_LEVEL:-$ALPS_JOBS}"
+export CARGO_BUILD_JOBS="${CARGO_BUILD_JOBS:-$ALPS_JOBS}"
+export SCONSFLAGS="${SCONSFLAGS:--j$ALPS_JOBS}"
+# Ninja/meson ignore MAKEFLAGS — wrap so bare invocations use all cores.
+ninja -j "$ALPS_JOBS"() {
+  local _a _has_j=0
+  for _a in "$@"; do
+    case "$_a" in -j|-j*) _has_j=1; break ;; esac
+  done
+  if ((_has_j)); then command ninja "$@"
+  else command ninja -j "$ALPS_JOBS" "$@"
+  fi
+}
+samu -j "$ALPS_JOBS"() {
+  local _a _has_j=0
+  for _a in "$@"; do
+    case "$_a" in -j|-j*) _has_j=1; break ;; esac
+  done
+  if ((_has_j)); then command samu "$@"
+  else command samu -j "$ALPS_JOBS" "$@"
+  fi
+}
+meson() {
+  if [[ "${1:-}" == "compile" ]]; then
+    shift
+    local _a _has_j=0
+    for _a in "$@"; do
+      case "$_a" in -j|-j*) _has_j=1; break ;; esac
+    done
+    if ((_has_j)); then command meson compile "$@"
+    else command meson compile -j "$ALPS_JOBS" "$@"
+    fi
+  else
+    command meson "$@"
+  fi
+}
 # config / no-tarball port — book commands only
 # --- commands from BLFS ---
-export XORG_PREFIX="<PREFIX>"
+export XORG_PREFIX="/usr"
 export XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc \
     --localstatedir=/var --disable-static"
-set -o shwordsplit
 cat > /etc/profile.d/xorg.sh << EOF
 XORG_PREFIX="$XORG_PREFIX"
 XORG_CONFIG="--prefix=\$XORG_PREFIX --sysconfdir=/etc --localstatedir=/var --disable-static"
@@ -19,20 +54,4 @@ cat > /etc/sudoers.d/xorg << EOF
 Defaults env_keep += XORG_PREFIX
 Defaults env_keep += XORG_CONFIG
 EOF
-cat >> /etc/profile.d/xorg.sh << "EOF"
-pathappend $XORG_PREFIX/bin             PATH
-pathappend $XORG_PREFIX/lib/pkgconfig   PKG_CONFIG_PATH
-pathappend $XORG_PREFIX/share/pkgconfig PKG_CONFIG_PATH
-pathappend $XORG_PREFIX/lib             LIBRARY_PATH
-pathappend $XORG_PREFIX/include         C_INCLUDE_PATH
-pathappend $XORG_PREFIX/include         CPLUS_INCLUDE_PATH
-ACLOCAL="aclocal -I $XORG_PREFIX/share/aclocal"
-export PATH PKG_CONFIG_PATH ACLOCAL LIBRARY_PATH C_INCLUDE_PATH CPLUS_INCLUDE_PATH
-EOF
 source /etc/profile.d/xorg.sh
-echo "$XORG_PREFIX/lib" >> /etc/ld.so.conf
-sed -e "s@X11R6/man@X11R6/share/man@g" \
-    -e "s@/usr/X11R6@$XORG_PREFIX@g" \
-    -i /etc/man_db.conf
-ln -svf $XORG_PREFIX/share/X11 /usr/share/X11
-ln -svf $XORG_PREFIX /usr/X11R6

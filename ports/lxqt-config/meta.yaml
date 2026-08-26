@@ -19,6 +19,7 @@ depends:
   - libkscreen-6.7.4-for-lxqt
   - xorg-libinput
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

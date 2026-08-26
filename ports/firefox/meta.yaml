@@ -30,6 +30,7 @@ depends:
   - libwebp
   - nasm
   - nss
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

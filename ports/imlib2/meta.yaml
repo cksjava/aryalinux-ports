@@ -19,6 +19,7 @@ depends:
   recommended:
   - giflib
   - librsvg
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

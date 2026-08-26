@@ -25,6 +25,7 @@ depends:
   - libva
   - svt-av1
   - soundtouch
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

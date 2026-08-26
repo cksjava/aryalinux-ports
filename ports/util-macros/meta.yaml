@@ -14,8 +14,9 @@ disk_space: 524 KB
 sbu: less than 0.1 SBU
 depends:
   required:
-  - xorg-build-environment
+  - xorg7
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -26,6 +26,7 @@ depends:
   recommended:
   - gnutls
   - pinentry
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -16,6 +16,7 @@ sbu: ''
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - git-daemon

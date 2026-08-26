@@ -17,6 +17,7 @@ depends:
   required: []
   recommended:
   - cyrus-sasl
+  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - slapd

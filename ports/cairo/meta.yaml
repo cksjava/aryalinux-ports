@@ -24,6 +24,7 @@ depends:
   - fontconfig
   - glib
   - xorg-libraries
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -23,6 +23,7 @@ depends:
   - xorg-applications
   recommended:
   - glu
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

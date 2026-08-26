@@ -19,6 +19,7 @@ depends:
   - glib
   - libarchive
   - libgcrypt
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
