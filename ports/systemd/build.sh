@@ -92,7 +92,8 @@ meson setup .. \
       -D dev-kvm-mode=0660 \
       -D nobody-group=nogroup \
       -D sysupdate=disabled \
-      -D ukify=disabled
+      -D ukify=disabled \
+  -D docs=disabled
 ninja -j "$ALPS_JOBS"
 ninja -j "$ALPS_JOBS" install
 grep 'pam_systemd' /etc/pam.d/system-session ||

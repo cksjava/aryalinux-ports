@@ -73,6 +73,7 @@ fi
 mkdir build
 cd    build
 meson setup --prefix=/usr \
-            --buildtype=release
+            --buildtype=release \
+  -D docs=disabled
 ninja -j "$ALPS_JOBS"
 ninja -j "$ALPS_JOBS" install
