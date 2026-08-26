@@ -73,5 +73,4 @@ fi
 sh autogen.sh
 ./configure --prefix=/usr
 make
-doxygen
 make install

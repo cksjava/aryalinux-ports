@@ -76,7 +76,6 @@ cd    build
 meson setup --prefix=/usr --buildtype=release ..
 ninja -j "$ALPS_JOBS"
 pushd ..
-  doxygen doc/Doxyfile
 popd
 ninja -j "$ALPS_JOBS" install
 chmod u+s /usr/bin/fusermount3

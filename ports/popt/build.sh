@@ -73,5 +73,4 @@ fi
 ./configure --prefix=/usr --disable-static
 make
 sed -i 's@\./@src/@' Doxyfile
-doxygen
 make install

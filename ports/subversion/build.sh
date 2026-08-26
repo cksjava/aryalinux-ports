@@ -76,7 +76,6 @@ patch -Np1 -i ../subversion-1.14.5-upstream_fixes-1.patch
             --with-apache-libexecdir \
             --with-utf8proc=internal
 make
-doxygen doc/doxygen.conf
 make -j1 javahl
 sed -i 's/Wno-int-to-pointer-cast/std=gnu17/' Makefile
 make swig-pl # for Perl

@@ -72,5 +72,4 @@ fi
 # --- commands from BLFS ---
 ./configure --prefix=/usr --disable-static
 make
-doxygen doc/doxygen.conf
 make install

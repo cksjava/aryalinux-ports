@@ -79,9 +79,5 @@ meson setup .. \
       -D python=disabled
 ninja -j "$ALPS_JOBS"
 ninja -j "$ALPS_JOBS" install
-pushd ../Documentation
-  latexmk -bibtex --pdf dtc-paper
-  latexmk -bibtex --pdf dtc-paper -c
-popd
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir ..
 pip3 install --no-index --find-links dist --no-user libfdt

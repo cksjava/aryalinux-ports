@@ -72,7 +72,4 @@ fi
 # --- commands from BLFS ---
 ./configure --prefix=/usr --disable-static
 make
-pushd doc
-  doxygen -u doxygen.cfg
-popd
 make install

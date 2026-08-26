@@ -77,7 +77,6 @@ useradd -c "rsyncd Daemon" -m -d /home/rsync -g rsyncd \
             --disable-xxhash \
             --without-included-zlib
 make
-doxygen
 make install
 cat > /etc/rsyncd.conf << "EOF"
 # This is a basic rsync configuration file

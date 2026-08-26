@@ -77,5 +77,4 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D BUILD_STATIC_LIBS=OFF \
       ..
 make
-doxygen doc/Doxyfile
 make install

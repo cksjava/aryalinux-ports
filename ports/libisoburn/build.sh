@@ -74,5 +74,4 @@ fi
             --disable-static \
             --enable-pkg-check-modules
 make
-doxygen doc/doxygen.conf
 make install

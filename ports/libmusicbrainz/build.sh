@@ -79,5 +79,4 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D CMAKE_BUILD_TYPE=Release \
       -D CMAKE_POLICY_VERSION_MINIMUM=3.5 ..
 make
-doxygen ../Doxyfile
 make install
