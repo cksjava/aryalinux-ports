@@ -82,7 +82,7 @@ meson setup .. \
       -D firstboot=false \
       -D install-tests=false \
       -D ldconfig=false \
-      -D man=auto \
+      -D man=disabled \
       -D sysusers=false \
       -D rpmmacrosdir=no \
       -D homed=disabled \
@@ -92,8 +92,7 @@ meson setup .. \
       -D dev-kvm-mode=0660 \
       -D nobody-group=nogroup \
       -D sysupdate=disabled \
-      -D ukify=disabled \
-  -D docs=disabled
+      -D ukify=disabled
 ninja -j "$ALPS_JOBS"
 ninja -j "$ALPS_JOBS" install
 grep 'pam_systemd' /etc/pam.d/system-session ||
