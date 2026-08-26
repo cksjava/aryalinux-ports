@@ -47,13 +47,27 @@ for _f in ${ALPS_PATCH_FILES:-}; do
   ln -f "$ALPS_SOURCES/$_f" "$ALPS_WORK/$ALPS_NAME/$_f" 2>/dev/null \
     || cp -a "$ALPS_SOURCES/$_f" "$ALPS_WORK/$ALPS_NAME/$_f"
 done
-tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+case "$ALPS_TARBALL" in
+  *.zip)
+    unzip -q "$ALPS_SOURCES/$ALPS_TARBALL" -d "$ALPS_WORK/$ALPS_NAME"
+    ;;
+  *.tar.lz|*.tlz)
+    tar --lzip -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+    ;;
+  *)
+    tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
+    ;;
+esac
 mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
-if [[ ${#_tops[@]} -ne 1 ]]; then
+if [[ ${#_tops[@]} -eq 1 ]]; then
+  cd "${_tops[0]}"
+elif [[ ${#_tops[@]} -eq 0 ]]; then
+  # Flat zip/tar (no wrapper directory)
+  cd "$ALPS_WORK/$ALPS_NAME"
+else
   echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
   exit 1
 fi
-cd "${_tops[0]}"
 # --- commands from BLFS ---
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD
 pip3 install --no-index --find-links dist --no-user pluggy
