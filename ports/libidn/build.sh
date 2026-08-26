@@ -72,8 +72,6 @@ fi
 # --- commands from BLFS ---
 ./configure --prefix=/usr --disable-static
 make
-pushd tests
-popd
 make install
 find doc -name "Makefile*" -delete
 rm -rf -v doc/{gdoc,idn.1,stamp-vti,man,texi}

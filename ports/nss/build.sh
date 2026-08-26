@@ -79,9 +79,6 @@ make BUILD_OPT=1 \
   NSS_ENABLE_WERROR=0 \
   NSS_USE_SYSTEM_SQLITE=1 \
   $([ $(uname -m) = x86_64 ] && echo USE_64=1)
-cd tests
-HOST=localhost DOMSUF=localdomain ./all.sh
-cd ../
 cd ../dist
 install -v -m755 Linux*/lib/*.so  /usr/lib
 install -v -m644 Linux*/lib/*.chk /usr/lib

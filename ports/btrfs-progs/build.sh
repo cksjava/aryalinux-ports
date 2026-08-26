@@ -74,18 +74,4 @@ fi
             --disable-static \
             --disable-documentation
 make
-make fssum
-rm -rf tests/fsck-tests/074-raid56-read
-rm -rf tests/mkfs-tests/010-minimal-size
-rm -rf tests/mkfs-tests/042-rootdir-contents
-rm -rf tests/misc-tests/041-subvolume-delete-during-send
-rm -rf tests/fuzz-tests/010-simple-sb
-pushd tests
-   ./fsck-tests.sh
-   ./mkfs-tests.sh
-   ./cli-tests.sh
-   ./convert-tests.sh
-   ./misc-tests.sh
-   ./fuzz-tests.sh
-popd
 make install

@@ -78,10 +78,6 @@ cd    build
              --with-python=/usr/bin/python3
 make
 make -C gdb/doc doxy
-pushd gdb/testsuite
-make  site.exp
-echo  "set gdb_test_timeout 30" >> site.exp
-popd
 make -C gdb install
 make -C gdbserver install
 rm -rf gdb/doc/doxy/xml

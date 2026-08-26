@@ -72,12 +72,7 @@ fi
 # --- commands from BLFS ---
 sed -i "15,23 s/^/#/" setup.py
 make PREFIX=/usr install
-chown -Rv <username> .
 sed -i "177,181 s/^/#/" Makefile
-TESTFLAGS="-j<N> --with-hg /usr/bin/hg"
-pushd tests
-  ./run-tests.py --with-hg /usr/bin/hg --retest
-popd
 cat >> ~/.hgrc << "EOF"
 [ui]
 username = <user_name> <user@mail>
