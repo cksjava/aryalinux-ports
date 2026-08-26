@@ -14,14 +14,11 @@ download_size: 500 KB
 disk_space: 16 MB (with tests)
 sbu: 0.3 SBU (with tests)
 depends:
-  required:
-  - shadow
-  - systemd
+  required: []
   recommended:
   - libpwquality
   ignore_for_order:
   - libpwquality
-  - shadow
 bootscripts: []
 systemd_units: []
 provides: []
@@ -31,8 +28,7 @@ patches:
   url: https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.2-docs.tar.xz
   filename: Linux-PAM-1.7.2-docs.tar.xz
   md5: 8b0c69931e4805ee5c297192c46d0e28
-book_order: 50000
 cycle_policy:
   install_before:
   - libpwquality
-  - shadow
+book_order: 50000

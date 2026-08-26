@@ -16,19 +16,17 @@ download_size: 18 MB
 disk_space: 396 MB (with tests)
 sbu: 1.2 SBU (with tests using 4 cores)
 depends:
-  required: []
-  recommended:
+  required:
   - linux-pam
+  recommended:
   - polkit
   ignore_for_order:
-  - linux-pam
   - polkit
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
-book_order: 306000
 cycle_policy:
   install_before:
-  - linux-pam
   - polkit
+book_order: 306000

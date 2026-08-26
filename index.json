@@ -3,7 +3,7 @@
   "git": "https://github.com/cksjava/aryalinux-ports.git",
   "branch": "main",
   "ports_subdir": "ports",
-  "generated_at": "2026-08-26T16:58:09Z",
+  "generated_at": "2026-08-26T17:13:12Z",
   "ports": [
     {
       "name": "TTF-and-OTF-fonts",
@@ -13527,16 +13527,12 @@
       "sbu": "0.3 SBU (with tests)",
       "disk_space": "16 MB (with tests)",
       "depends": {
-        "required": [
-          "shadow",
-          "systemd"
-        ],
+        "required": [],
         "recommended": [
           "libpwquality"
         ],
         "ignore_for_order": [
-          "libpwquality",
-          "shadow"
+          "libpwquality"
         ]
       },
       "members": [],
@@ -19764,9 +19760,7 @@
           "libxslt",
           "linux-pam"
         ],
-        "ignore_for_order": [
-          "linux-pam"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],
@@ -22921,13 +22915,13 @@
       "sbu": "1.2 SBU (with tests using 4 cores)",
       "disk_space": "396 MB (with tests)",
       "depends": {
-        "required": [],
+        "required": [
+          "linux-pam"
+        ],
         "recommended": [
-          "linux-pam",
           "polkit"
         ],
         "ignore_for_order": [
-          "linux-pam",
           "polkit"
         ]
       },
