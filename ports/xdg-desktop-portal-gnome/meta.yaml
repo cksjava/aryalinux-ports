@@ -22,13 +22,9 @@ depends:
   - xdg-desktop-portal-gtk
   recommended:
   - nautilus
-  ignore_for_order:
-  - nautilus
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 605000
-cycle_policy:
-  install_before:
-  - nautilus

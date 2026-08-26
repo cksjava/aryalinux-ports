@@ -31,7 +31,8 @@ systemd_units:
 provides: []
 conflicts: []
 patches:
-- label: patch (from build commands)
+- label: additional download
   url: https://github.com/Xubuntu/lightdm-gtk-greeter/releases/download/lightdm-gtk-greeter-2.0.9/lightdm-gtk-greeter-2.0.9.tar.gz
   filename: lightdm-gtk-greeter-2.0.9.tar.gz
+  md5: 35752d730f39293c2bbe884ef6963830
 book_order: 520000

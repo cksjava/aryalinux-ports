@@ -31,6 +31,6 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
-book_order: 515000
 cycle_policy:
   install_before: []
+book_order: 515000

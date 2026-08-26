@@ -19,9 +19,7 @@ depends:
   recommended:
   - gtk
   - xdg-desktop-portal
-  ignore_for_order:
-  - gtk
-  - xdg-desktop-portal
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
@@ -30,8 +28,6 @@ patches:
 - label: Required patch
   url: https://www.linuxfromscratch.org/patches/blfs/svn/libportal-0.9.1-qt6.9_fixes-1.patch
   filename: libportal-0.9.1-qt6.9_fixes-1.patch
-book_order: 156000
 cycle_policy:
-  install_before:
-  - gtk
-  - xdg-desktop-portal
+  install_before: []
+book_order: 156000

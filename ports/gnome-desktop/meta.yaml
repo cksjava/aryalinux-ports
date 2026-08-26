@@ -23,13 +23,9 @@ depends:
   - gtk
   - bubblewrap
   - glib
-  ignore_for_order:
-  - gtk
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 592000
-cycle_policy:
-  install_before:
-  - gtk

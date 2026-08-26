@@ -3,7 +3,7 @@
   "git": "https://github.com/cksjava/aryalinux-ports.git",
   "branch": "main",
   "ports_subdir": "ports",
-  "generated_at": "2026-08-26T16:32:34Z",
+  "generated_at": "2026-08-26T16:48:58Z",
   "ports": [
     {
       "name": "TTF-and-OTF-fonts",
@@ -5983,9 +5983,7 @@
           "bubblewrap",
           "glib"
         ],
-        "ignore_for_order": [
-          "gtk"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],
@@ -7103,8 +7101,7 @@
           "glib"
         ],
         "ignore_for_order": [
-          "adwaita-icon-theme",
-          "xdg-desktop-portal"
+          "adwaita-icon-theme"
         ]
       },
       "members": [],
@@ -12353,10 +12350,7 @@
           "gtk",
           "xdg-desktop-portal"
         ],
-        "ignore_for_order": [
-          "gtk",
-          "xdg-desktop-portal"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],
@@ -13788,9 +13782,7 @@
           "poppler",
           "upower"
         ],
-        "ignore_for_order": [
-          "libgxps"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],
@@ -17697,10 +17689,7 @@
           "localsearch",
           "adwaita-icon-theme"
         ],
-        "ignore_for_order": [
-          "adwaita-icon-theme",
-          "localsearch"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],
@@ -25676,9 +25665,7 @@
         "recommended": [
           "nautilus"
         ],
-        "ignore_for_order": [
-          "nautilus"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],
@@ -25701,9 +25688,7 @@
         "recommended": [
           "gnome-desktop"
         ],
-        "ignore_for_order": [
-          "gnome-desktop"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],
@@ -25771,9 +25756,7 @@
         "recommended": [
           "xdg-desktop-portal-gtk"
         ],
-        "ignore_for_order": [
-          "xdg-desktop-portal-gtk"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],

@@ -19,13 +19,9 @@ depends:
   - xdg-desktop-portal
   recommended:
   - gnome-desktop
-  ignore_for_order:
-  - gnome-desktop
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 516000
-cycle_policy:
-  install_before:
-  - gnome-desktop

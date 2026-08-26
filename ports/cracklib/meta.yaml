@@ -21,4 +21,9 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: additional download
+  url: https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-words-2.10.3.xz
+  filename: cracklib-words-2.10.3.xz
+  md5: f27804022dbf2682a7f7c353317f9a53
 book_order: 40000

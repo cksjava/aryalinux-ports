@@ -29,13 +29,9 @@ depends:
   - libwebp
   - poppler
   - upower
-  ignore_for_order:
-  - libgxps
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 603000
-cycle_policy:
-  install_before:
-  - libgxps

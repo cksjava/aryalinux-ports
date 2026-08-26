@@ -28,15 +28,9 @@ depends:
   - gst-plugins-base
   - localsearch
   - adwaita-icon-theme
-  ignore_for_order:
-  - adwaita-icon-theme
-  - localsearch
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 610000
-cycle_policy:
-  install_before:
-  - adwaita-icon-theme
-  - localsearch

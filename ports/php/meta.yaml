@@ -27,6 +27,9 @@ provides: []
 conflicts: []
 patches:
 - label: patch (from build commands)
+  url: https://www.php.net/distributions/manual/php_manual_en.html.gz
+  filename: php_manual_en.html.gz
+- label: patch (from build commands)
   url: https://www.php.net/distributions/manual/php_manual_en.tar.gz
   filename: php_manual_en.tar.gz
 book_order: 341000

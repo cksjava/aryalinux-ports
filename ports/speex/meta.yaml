@@ -23,4 +23,9 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+patches:
+- label: additional download
+  url: https://downloads.xiph.org/releases/speex/speexdsp-1.2.1.tar.gz
+  filename: speexdsp-1.2.1.tar.gz
+  md5: e6eb5ddef743a362c8018f260b91dca5
 book_order: 801000

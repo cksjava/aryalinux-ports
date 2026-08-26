@@ -31,12 +31,14 @@ systemd_units: []
 provides: []
 conflicts: []
 patches:
-- label: patch (from build commands)
+- label: additional download
   url: https://downloads.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz
   filename: ghostscript-fonts-std-8.11.tar.gz
-- label: patch (from build commands)
+  md5: 6865682b095f8c4500c54b285ff05ef6
+- label: additional download
   url: https://downloads.sourceforge.net/gs-fonts/gnu-gs-fonts-other-6.0.tar.gz
   filename: gnu-gs-fonts-other-6.0.tar.gz
+  md5: 33457d3f37de7ef03d2eea05a9e6aa4f
 book_order: 836000
 cycle_policy:
   install_before:

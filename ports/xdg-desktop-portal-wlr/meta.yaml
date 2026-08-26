@@ -26,13 +26,9 @@ depends:
   - wayland-protocols
   recommended:
   - xdg-desktop-portal-gtk
-  ignore_for_order:
-  - xdg-desktop-portal-gtk
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 517000
-cycle_policy:
-  install_before:
-  - xdg-desktop-portal-gtk

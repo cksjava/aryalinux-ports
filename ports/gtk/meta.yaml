@@ -34,13 +34,11 @@ depends:
   - glib
   ignore_for_order:
   - adwaita-icon-theme
-  - xdg-desktop-portal
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
-book_order: 487000
 cycle_policy:
   install_before:
   - adwaita-icon-theme
-  - xdg-desktop-portal
+book_order: 487000
