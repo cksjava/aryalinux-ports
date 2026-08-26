@@ -14,7 +14,7 @@ disk_space: 295 MB
 sbu: 0.2 SBU (Using parallelism=4)
 depends:
   required:
-  - xorg-libraries
+  - x7lib
   - a-graphical-environment
   recommended:
   - brotli
@@ -23,6 +23,7 @@ depends:
   - libjpeg-turbo
   - openjpeg
   - curl
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

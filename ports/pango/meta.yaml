@@ -25,7 +25,8 @@ depends:
   recommended:
   - cairo
   - harfbuzz
-  - xorg-libraries
+  - x7lib
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

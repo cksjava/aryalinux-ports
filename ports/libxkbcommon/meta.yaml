@@ -20,6 +20,7 @@ depends:
   - libxcb
   - wayland
   - wayland-protocols
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -18,6 +18,7 @@ depends:
   - libaom
   - libde265
   - x265
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

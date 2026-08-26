@@ -20,6 +20,7 @@ depends:
   - mtdev
   - xorg-server
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

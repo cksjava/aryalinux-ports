@@ -23,6 +23,7 @@ depends:
   - xfce4-panel
   recommended:
   - polkit
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -14,11 +14,12 @@ disk_space: 1.4 MB
 sbu: less than 0.1 SBU
 depends:
   required:
-  - xorg-libraries
+  - x7lib
   recommended:
   - twm
   - xclock
   - xterm
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

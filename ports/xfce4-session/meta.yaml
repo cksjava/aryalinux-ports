@@ -25,6 +25,7 @@ depends:
   - desktop-file-utils
   - xscreensaver
   - shared-mime-info
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

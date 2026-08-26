@@ -22,6 +22,7 @@ depends:
   - which
   recommended:
   - llvm
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

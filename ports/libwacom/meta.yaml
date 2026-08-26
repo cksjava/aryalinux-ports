@@ -19,6 +19,7 @@ depends:
   - libgudev
   recommended:
   - libxml2
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

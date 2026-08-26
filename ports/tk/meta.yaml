@@ -14,8 +14,9 @@ disk_space: 32 MB
 sbu: 0.3 SBU (add 5.6 SBU for tests)
 depends:
   required:
-  - xorg-libraries
+  - x7lib
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

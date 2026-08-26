@@ -18,6 +18,7 @@ depends:
   recommended:
   - libpsl
   - make-ca
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

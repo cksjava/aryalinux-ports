@@ -12,6 +12,7 @@ summary: 'Meta-package: applications linked from lxqt-apps.html'
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 members:
 - post-install
 - lximage-qt

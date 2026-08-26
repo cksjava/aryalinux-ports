@@ -30,6 +30,7 @@ depends:
   - cdrtools
   - dvd+rw-tools
   - cdrdao
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

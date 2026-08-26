@@ -24,6 +24,7 @@ depends:
   - libpsl
   - nghttp2
   - make-ca
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

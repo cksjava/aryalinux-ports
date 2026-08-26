@@ -19,8 +19,9 @@ depends:
   - xmlto
   - lynx
   - links
-  - xorg-applications
+  - x7app
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

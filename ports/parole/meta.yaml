@@ -20,6 +20,7 @@ depends:
   recommended:
   - libnotify
   - taglib
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

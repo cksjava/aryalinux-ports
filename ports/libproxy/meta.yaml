@@ -23,6 +23,7 @@ depends:
   - gi-docgen
   - gsettings-desktop-schemas
   - vala
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

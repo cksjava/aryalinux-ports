@@ -22,11 +22,12 @@ depends:
   - libjpeg-turbo
   - pixman
   - linux-pam
-  - xorg-applications
+  - x7app
   - xinit
-  - xorg-legacy-fonts
+  - x7legacy
   recommended:
   - imagemagick-7.1.2
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

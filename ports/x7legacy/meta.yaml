@@ -18,8 +18,9 @@ disk_space: 30 MB
 sbu: 0.3 SBU
 depends:
   required:
-  - xorg-fonts
+  - x7font
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

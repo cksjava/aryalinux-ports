@@ -17,8 +17,9 @@ depends:
   - glib
   - iso-codes
   - libxml2
-  - xorg-libraries
+  - x7lib
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

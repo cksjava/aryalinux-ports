@@ -21,11 +21,12 @@ depends:
   recommended:
   - gnupg
   - ghostscript
-  - xorg-libraries
+  - x7lib
   - libxcb
   - a-graphical-environment
   - epdfview-gtk3
   - freeglut
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

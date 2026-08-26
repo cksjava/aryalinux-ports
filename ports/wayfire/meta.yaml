@@ -29,8 +29,9 @@ depends:
   - wayland
   - wayland-protocols
   recommended:
-  - xorg-libraries
+  - x7lib
   - yyjson
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

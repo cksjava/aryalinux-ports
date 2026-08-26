@@ -22,6 +22,7 @@ depends:
   - glib
   - hwdata
   - vala
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

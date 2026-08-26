@@ -21,7 +21,7 @@ depends:
   - cpio
   - cups
   - which
-  - xorg-libraries
+  - x7lib
   - zip
   recommended:
   - make-ca
@@ -30,6 +30,7 @@ depends:
   - libjpeg-turbo
   - libpng
   - wget
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

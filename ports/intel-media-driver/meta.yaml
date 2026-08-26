@@ -21,6 +21,7 @@ depends:
   - libva
   - mesa-kernel-configuration
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

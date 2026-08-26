@@ -32,8 +32,9 @@ depends:
   - vulkan-loader
   - glslang
   - xcb-utilities
-  - xorg-libraries
+  - x7lib
   - xwayland
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

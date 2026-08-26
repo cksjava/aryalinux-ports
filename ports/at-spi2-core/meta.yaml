@@ -19,8 +19,9 @@ depends:
   - dbus
   - glib
   - gsettings-desktop-schemas
-  - xorg-libraries
+  - x7lib
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

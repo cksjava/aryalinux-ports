@@ -16,9 +16,10 @@ disk_space: 4 MB
 sbu: less than 0.1 SBU
 depends:
   required:
-  - xorg-libraries
+  - x7lib
   - xcb-util
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

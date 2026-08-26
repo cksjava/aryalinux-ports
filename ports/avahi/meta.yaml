@@ -19,6 +19,7 @@ depends:
   recommended:
   - gtk
   - libdaemon
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

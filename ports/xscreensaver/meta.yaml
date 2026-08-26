@@ -20,9 +20,10 @@ depends:
   required:
   - gtk
   - intltool
-  - xorg-applications
+  - x7app
   recommended:
   - glu
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

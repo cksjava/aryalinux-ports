@@ -29,6 +29,7 @@ depends:
   - systemd
   - vala
   - wpa_supplicant
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -19,6 +19,7 @@ depends:
   - xfconf
   recommended:
   - startup-notification
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

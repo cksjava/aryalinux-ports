@@ -19,8 +19,9 @@ depends:
   - extra-cmake-modules
   - plasma-wayland-protocols
   - qt
-  - xorg-libraries
+  - x7lib
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

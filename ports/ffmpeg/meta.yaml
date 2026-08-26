@@ -34,6 +34,7 @@ depends:
   - nasm
   - alsa-lib
   - libva
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

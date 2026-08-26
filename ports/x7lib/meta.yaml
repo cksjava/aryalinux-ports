@@ -19,8 +19,13 @@ depends:
   - libxcb
   recommended:
   - dbus
+  ignore_for_order:
+  - dbus
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 447000
+cycle_policy:
+  install_before:
+  - dbus

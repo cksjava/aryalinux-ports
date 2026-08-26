@@ -15,7 +15,7 @@ disk_space: 1.2 GB (with docs; add 570 MB for tests)
 sbu: 3.4 SBU (with docs; add 1.6 SBU for tests; both with parallelism=4)
 depends:
   required:
-  - xorg-libraries
+  - x7lib
   - libdrm
   - mako
   - pyyaml

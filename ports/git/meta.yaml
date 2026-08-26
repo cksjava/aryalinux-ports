@@ -22,6 +22,7 @@ depends:
   required: []
   recommended:
   - curl
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -21,6 +21,7 @@ depends:
   recommended:
   - cpan-meta-check
   - test-file-sharedir
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -18,9 +18,14 @@ sbu: 0.1 SBU (with tests)
 depends:
   required: []
   recommended:
-  - xorg-libraries
+  - x7lib
+  ignore_for_order:
+  - x7lib
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 501000
+cycle_policy:
+  install_before:
+  - x7lib

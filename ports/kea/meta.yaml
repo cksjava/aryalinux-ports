@@ -18,6 +18,7 @@ depends:
   - boost
   - log4cplus
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - kea-dhcpd

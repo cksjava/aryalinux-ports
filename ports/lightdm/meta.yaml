@@ -24,6 +24,7 @@ depends:
   - glib
   - libxklavier
   - vala
+  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - lightdm

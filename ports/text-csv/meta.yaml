@@ -17,6 +17,7 @@ depends:
   required: []
   recommended:
   - text-csv_xs
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

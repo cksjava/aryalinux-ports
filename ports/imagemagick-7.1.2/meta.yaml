@@ -17,7 +17,8 @@ sbu: 1.6 SBU (with typical dependencies; add 0.5 SBU for checks, both using para
 depends:
   required: []
   recommended:
-  - xorg-libraries
+  - x7lib
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

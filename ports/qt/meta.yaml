@@ -17,7 +17,7 @@ disk_space: 48 GB (504 MB installed)
 sbu: 14 SBU (using parallelism=8)
 depends:
   required:
-  - xorg-libraries
+  - x7lib
   recommended:
   - alsa-lib
   - make-ca

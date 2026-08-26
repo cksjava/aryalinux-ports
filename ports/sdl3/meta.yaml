@@ -25,6 +25,7 @@ depends:
   - pipewire
   - pulseaudio
   - vulkan-loader
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

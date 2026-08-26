@@ -19,11 +19,12 @@ depends:
   - libxcvt
   - pixman
   - wayland-protocols
-  - xorg-fonts
+  - x7font
   recommended:
   - libepoxy
   - libtirpc
   - mesa
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

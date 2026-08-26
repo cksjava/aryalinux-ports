@@ -21,6 +21,7 @@ depends:
   recommended:
   - make-ca
   - p11-kit
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

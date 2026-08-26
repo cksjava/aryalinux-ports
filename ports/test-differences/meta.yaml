@@ -18,6 +18,7 @@ depends:
   - text-diff
   recommended:
   - capture-tiny
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

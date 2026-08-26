@@ -25,6 +25,7 @@ depends:
   - sgmlspm
   - lynx
   - links
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

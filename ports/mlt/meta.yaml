@@ -23,6 +23,7 @@ depends:
   - frei0r
   - libsamplerate
   - qt
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

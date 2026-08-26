@@ -12,6 +12,7 @@ summary: 'Meta-package: all ports from BLFS python-dependencies.html'
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 members:
 - alabaster
 - babel

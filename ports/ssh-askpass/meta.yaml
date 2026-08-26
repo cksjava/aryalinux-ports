@@ -20,9 +20,10 @@ depends:
   required:
   - gtk
   - sudo
-  - xorg-libraries
+  - x7lib
   - a-graphical-environment
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

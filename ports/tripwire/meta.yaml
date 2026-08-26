@@ -16,6 +16,7 @@ sbu: 1.6 SBU (scripting install)
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

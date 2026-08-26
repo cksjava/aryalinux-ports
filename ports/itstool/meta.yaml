@@ -20,6 +20,7 @@ depends:
   - docbook-xml
   - lxml
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -32,6 +32,7 @@ depends:
   - libgudev
   - pygobject
   - xdg-utils
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

@@ -12,6 +12,7 @@ summary: Common networking clients/tools (wget, curl, …)
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 members:
 - curl
 - iw

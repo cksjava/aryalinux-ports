@@ -16,10 +16,11 @@ disk_space: 73 MB
 sbu: 0.2 SBU (Using parallelism=4)
 depends:
   required:
-  - xorg-libraries
+  - x7lib
   recommended:
   - hicolor-icon-theme
   - libpng
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

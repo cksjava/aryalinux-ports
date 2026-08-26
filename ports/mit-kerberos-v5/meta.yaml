@@ -18,6 +18,7 @@ sbu: 0.4 SBU (Using parallelism=4; add 3.8 SBU for tests)
 depends:
   required: []
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units:
 - krb5

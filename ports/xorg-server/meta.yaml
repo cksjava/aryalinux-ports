@@ -16,11 +16,12 @@ depends:
   required:
   - libxcvt
   - pixman
-  - xorg-fonts
+  - x7font
   - xkeyboard-config
   recommended:
   - libepoxy
   - libtirpc
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []

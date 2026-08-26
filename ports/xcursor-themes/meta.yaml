@@ -15,8 +15,9 @@ disk_space: 15 MB
 sbu: less than 0.1 SBU
 depends:
   required:
-  - xorg-applications
+  - x7app
   recommended: []
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
