@@ -7,7 +7,7 @@ export CMAKE_BUILD_PARALLEL_LEVEL="${CMAKE_BUILD_PARALLEL_LEVEL:-$ALPS_JOBS}"
 export CARGO_BUILD_JOBS="${CARGO_BUILD_JOBS:-$ALPS_JOBS}"
 export SCONSFLAGS="${SCONSFLAGS:--j$ALPS_JOBS}"
 # Ninja/meson ignore MAKEFLAGS — wrap so bare invocations use all cores.
-ninja -j "$ALPS_JOBS"() {
+ninja() {
   local _a _has_j=0
   for _a in "$@"; do
     case "$_a" in -j|-j*) _has_j=1; break ;; esac
@@ -16,7 +16,7 @@ ninja -j "$ALPS_JOBS"() {
   else command ninja -j "$ALPS_JOBS" "$@"
   fi
 }
-samu -j "$ALPS_JOBS"() {
+samu() {
   local _a _has_j=0
   for _a in "$@"; do
     case "$_a" in -j|-j*) _has_j=1; break ;; esac
