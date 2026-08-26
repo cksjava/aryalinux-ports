@@ -72,7 +72,15 @@ fi
 # --- commands from BLFS ---
 sed -e 's|/etc/z|/etc/zsh/z|g' \
     -i Doc/*.*
-texi2pdf  Doc/zsh.texi -o Doc/zsh.pdf
+./configure --prefix=/usr \
+            --sysconfdir=/etc/zsh \
+            --enable-etcdir=/etc/zsh \
+            --enable-cap \
+            --enable-gdbm \
+            --enable-pcre
+make
+make install
+make infodir=/usr/share/info install.info
 install -vdm755 /etc/zsh
 cat > /etc/zsh/zprofile << "EOF"
 # Begin /etc/zsh/zprofile

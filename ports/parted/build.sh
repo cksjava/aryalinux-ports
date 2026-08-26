@@ -70,8 +70,6 @@ else
   exit 1
 fi
 # --- commands from BLFS ---
-cp build-aux/texinfo.tex doc
-texi2pdf -o doc/parted.pdf doc/parted.texi
-texi2dvi -o doc/parted.dvi doc/parted.texi
-dvips    -o doc/parted.ps  doc/parted.dvi
+./configure --prefix=/usr --disable-static
+make
 make install

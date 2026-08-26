@@ -77,5 +77,6 @@ cmake -D CMAKE_BUILD_TYPE=Release \
       -D BUILD_STATIC_LIBS=OFF ..
 make
 git clone https://github.com/uclouvain/openjpeg-data.git --depth 1
+OPJ_DATA_ROOT=$PWD/openjpeg-data cmake -D BUILD_TESTING=OFF ..
 make
 make install

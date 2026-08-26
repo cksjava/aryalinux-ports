@@ -70,4 +70,10 @@ else
   exit 1
 fi
 # --- commands from BLFS ---
+mkdir build
+cd    build
+../configure --prefix=/usr \
+             --localstatedir=/var \
+             --sysconfdir=/etc
+make
 make install

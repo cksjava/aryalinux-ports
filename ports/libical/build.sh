@@ -81,5 +81,6 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D LIBICAL_GOBJECT_INTROSPECTION=true \
       ..
 make -j1
+cmake .. -D LIBICAL_BUILD_TESTING=ON
 make
 make install

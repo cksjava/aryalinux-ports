@@ -70,6 +70,9 @@ else
   exit 1
 fi
 # --- commands from BLFS ---
+./configure --prefix=/usr \
+            --disable-static
+make
 make install
 mkdir -p                       /usr/share/gdb/auto-load/usr/lib
 mv /usr/lib/libguile-*-gdb.scm /usr/share/gdb/auto-load/usr/lib

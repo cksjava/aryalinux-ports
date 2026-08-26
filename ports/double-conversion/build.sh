@@ -70,4 +70,12 @@ else
   exit 1
 fi
 # --- commands from BLFS ---
+mkdir build
+cd    build
+cmake -D CMAKE_INSTALL_PREFIX=/usr \
+      -D CMAKE_POLICY_VERSION_MINIMUM=3.5 \
+      -D BUILD_SHARED_LIBS=ON \
+      -D BUILD_TESTING=OFF \
+      ..
+make
 make install

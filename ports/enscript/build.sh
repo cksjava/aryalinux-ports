@@ -70,4 +70,9 @@ else
   exit 1
 fi
 # --- commands from BLFS ---
+./configure --prefix=/usr \
+            --sysconfdir=/etc/enscript \
+            --localstatedir=/var \
+            --with-media=Letter
+make CC="gcc -std=gnu17"
 make install

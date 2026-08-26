@@ -94,7 +94,6 @@ patch -Np1 -i ../ffmpeg-9.0.1-chromium_method-1.patch
             --ignore-tests=enhanced-flv-av1,enhanced-flv-multitrack
 make
 gcc tools/qt-faststart.c -o tools/qt-faststart
-unset DOCNAME
 make install
 install -v -m755    tools/qt-faststart /usr/bin
 make fate-rsync SAMPLES=fate-suite/

@@ -78,4 +78,6 @@ cmake -D CMAKE_INSTALL_PREFIX=/usr \
       -D BUILD_SHARED_LIBS=ON \
       -W no-author -G Ninja ..
 ninja -j "$ALPS_JOBS"
+cmake .. -D BUILD_TESTING=OFF
+ninja -j "$ALPS_JOBS"
 ninja -j "$ALPS_JOBS" install

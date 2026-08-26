@@ -70,4 +70,6 @@ else
   exit 1
 fi
 # --- commands from BLFS ---
+./configure --prefix=/usr
+make
 make install
