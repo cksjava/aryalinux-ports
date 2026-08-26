@@ -60,7 +60,6 @@ cd "${_tops[0]}"
 export XORG_PREFIX XORG_CONFIG
 
 # --- commands from BLFS ---
-lspci | grep VGA
 patch -Np1 -i ../mesa-add_xdemos-5.patch
 mkdir build
 cd    build
