@@ -23,24 +23,14 @@ depends:
   - json-glib
   - pipewire
   - dbus
-  - xdg-desktop-portal-gtk
-  - xdg-desktop-portal-wlr
-  - xdg-desktop-portal-gnome
-  - xdg-desktop-portal-lxqt
   recommended:
   - bubblewrap
   - docutils
-  ignore_for_order:
-  - xdg-desktop-portal-gnome
-  - xdg-desktop-portal-gtk
-  - xdg-desktop-portal-lxqt
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 515000
 cycle_policy:
-  install_before:
-  - xdg-desktop-portal-gnome
-  - xdg-desktop-portal-gtk
-  - xdg-desktop-portal-lxqt
+  install_before: []

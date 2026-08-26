@@ -19,15 +19,12 @@ depends:
   - extra-cmake-modules
   - glib
   - qt
-  - phonon-backend-vlc
   recommended: []
-  ignore_for_order:
-  - phonon-backend-vlc
+  ignore_for_order: []
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 541000
 cycle_policy:
-  install_before:
-  - phonon-backend-vlc
+  install_before: []

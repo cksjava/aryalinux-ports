@@ -3,7 +3,7 @@
   "git": "https://github.com/cksjava/aryalinux-ports.git",
   "branch": "main",
   "ports_subdir": "ports",
-  "generated_at": "2026-08-26T09:20:29Z",
+  "generated_at": "2026-08-26T16:32:34Z",
   "ports": [
     {
       "name": "TTF-and-OTF-fonts",
@@ -7100,13 +7100,11 @@
           "hicolor-icon-theme",
           "vulkan-loader",
           "xdg-desktop-portal",
-          "xdg-desktop-portal-gnome",
           "glib"
         ],
         "ignore_for_order": [
           "adwaita-icon-theme",
-          "xdg-desktop-portal",
-          "xdg-desktop-portal-gnome"
+          "xdg-desktop-portal"
         ]
       },
       "members": [],
@@ -12353,17 +12351,11 @@
         ],
         "recommended": [
           "gtk",
-          "xdg-desktop-portal",
-          "xdg-desktop-portal-gtk",
-          "xdg-desktop-portal-gnome",
-          "xdg-desktop-portal-lxqt"
+          "xdg-desktop-portal"
         ],
         "ignore_for_order": [
           "gtk",
-          "xdg-desktop-portal",
-          "xdg-desktop-portal-gnome",
-          "xdg-desktop-portal-gtk",
-          "xdg-desktop-portal-lxqt"
+          "xdg-desktop-portal"
         ]
       },
       "members": [],
@@ -15841,16 +15833,13 @@
         "bolt",
         "breeze",
         "breeze-gtk",
-        "corrosion",
         "dolphin",
         "dolphin-plugins",
         "drkonqi",
         "extra-cmake-modules",
         "frameworkintegration",
         "gwenview",
-        "k3b",
         "kactivitymanagerd",
-        "kapidox",
         "karchive",
         "kauth",
         "kbookmarks",
@@ -15872,7 +15861,6 @@
         "kdeclarative",
         "kdecoration",
         "kded",
-        "kdenlive",
         "kdeplasma-addons",
         "kdesu",
         "kdnssd",
@@ -15882,7 +15870,6 @@
         "kglobalaccel",
         "kglobalacceld",
         "kguiaddons",
-        "khelpcenter",
         "kholidays",
         "ki18n",
         "kiconthemes",
@@ -15936,9 +15923,7 @@
         "kwrited",
         "kxmlgui",
         "layer-shell-qt",
-        "leptonica",
         "libdmtx",
-        "libkcddb",
         "libkdcraw",
         "libkexiv2",
         "libkscreen",
@@ -15952,7 +15937,6 @@
         "oxygen",
         "oxygen-sounds",
         "phonon",
-        "phonon-backend-vlc",
         "plasma-activities",
         "plasma-activities-stats",
         "plasma-desktop",
@@ -15988,7 +15972,6 @@
         "syndication",
         "syntax-highlighting",
         "systemsettings",
-        "tesseract",
         "threadweaver",
         "wacomtablet",
         "xdg-desktop-portal-kde"
@@ -19236,13 +19219,10 @@
           "cmake",
           "extra-cmake-modules",
           "glib",
-          "qt",
-          "phonon-backend-vlc"
+          "qt"
         ],
         "recommended": [],
-        "ignore_for_order": [
-          "phonon-backend-vlc"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],
@@ -25664,21 +25644,13 @@
           "gdk-pixbuf",
           "json-glib",
           "pipewire",
-          "dbus",
-          "xdg-desktop-portal-gtk",
-          "xdg-desktop-portal-wlr",
-          "xdg-desktop-portal-gnome",
-          "xdg-desktop-portal-lxqt"
+          "dbus"
         ],
         "recommended": [
           "bubblewrap",
           "docutils"
         ],
-        "ignore_for_order": [
-          "xdg-desktop-portal-gnome",
-          "xdg-desktop-portal-gtk",
-          "xdg-desktop-portal-lxqt"
-        ]
+        "ignore_for_order": []
       },
       "members": [],
       "systemd_units": [],
@@ -25836,9 +25808,6 @@
       "disk_space": "3.3 MB (with tests)",
       "depends": {
         "required": [
-          "xmlto",
-          "lynx",
-          "links",
           "x7app"
         ],
         "recommended": [],

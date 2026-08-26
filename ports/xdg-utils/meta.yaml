@@ -16,9 +16,6 @@ disk_space: 3.3 MB (with tests)
 sbu: 2.5 SBU (with tests)
 depends:
   required:
-  - xmlto
-  - lynx
-  - links
   - x7app
   recommended: []
   ignore_for_order: []

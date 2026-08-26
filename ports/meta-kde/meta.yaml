@@ -23,16 +23,13 @@ members:
 - bolt
 - breeze
 - breeze-gtk
-- corrosion
 - dolphin
 - dolphin-plugins
 - drkonqi
 - extra-cmake-modules
 - frameworkintegration
 - gwenview
-- k3b
 - kactivitymanagerd
-- kapidox
 - karchive
 - kauth
 - kbookmarks
@@ -54,7 +51,6 @@ members:
 - kdeclarative
 - kdecoration
 - kded
-- kdenlive
 - kdeplasma-addons
 - kdesu
 - kdnssd
@@ -64,7 +60,6 @@ members:
 - kglobalaccel
 - kglobalacceld
 - kguiaddons
-- khelpcenter
 - kholidays
 - ki18n
 - kiconthemes
@@ -118,9 +113,7 @@ members:
 - kwrited
 - kxmlgui
 - layer-shell-qt
-- leptonica
 - libdmtx
-- libkcddb
 - libkdcraw
 - libkexiv2
 - libkscreen
@@ -134,7 +127,6 @@ members:
 - oxygen
 - oxygen-sounds
 - phonon
-- phonon-backend-vlc
 - plasma-activities
 - plasma-activities-stats
 - plasma-desktop
@@ -170,7 +162,6 @@ members:
 - syndication
 - syntax-highlighting
 - systemsettings
-- tesseract
 - threadweaver
 - wacomtablet
 - xdg-desktop-portal-kde

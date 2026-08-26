@@ -19,15 +19,9 @@ depends:
   recommended:
   - gtk
   - xdg-desktop-portal
-  - xdg-desktop-portal-gtk
-  - xdg-desktop-portal-gnome
-  - xdg-desktop-portal-lxqt
   ignore_for_order:
   - gtk
   - xdg-desktop-portal
-  - xdg-desktop-portal-gnome
-  - xdg-desktop-portal-gtk
-  - xdg-desktop-portal-lxqt
 bootscripts: []
 systemd_units: []
 provides: []
@@ -41,6 +35,3 @@ cycle_policy:
   install_before:
   - gtk
   - xdg-desktop-portal
-  - xdg-desktop-portal-gnome
-  - xdg-desktop-portal-gtk
-  - xdg-desktop-portal-lxqt

@@ -31,12 +31,10 @@ depends:
   - hicolor-icon-theme
   - vulkan-loader
   - xdg-desktop-portal
-  - xdg-desktop-portal-gnome
   - glib
   ignore_for_order:
   - adwaita-icon-theme
   - xdg-desktop-portal
-  - xdg-desktop-portal-gnome
 bootscripts: []
 systemd_units: []
 provides: []
@@ -46,4 +44,3 @@ cycle_policy:
   install_before:
   - adwaita-icon-theme
   - xdg-desktop-portal
-  - xdg-desktop-portal-gnome

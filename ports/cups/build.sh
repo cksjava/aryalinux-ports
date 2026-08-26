@@ -71,7 +71,6 @@ fi
 # --- commands from BLFS ---
 useradd -c "Print Service User" -d /var/spool/cups -g lp -s /bin/false -u 9 lp
 groupadd -g 19 lpadmin
-usermod -a -G lpadmin <username>
 sed -i 's#@CUPS_HTMLVIEW@#firefox#' desktop/cups.desktop.in
 sed -i '/& ipp->prev)/s/prev/& \&\& ipp->prev->next == *attr/' cups/ipp.c
 ./configure --libdir=/usr/lib \
