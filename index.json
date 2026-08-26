@@ -3,7 +3,7 @@
   "git": "https://github.com/cksjava/aryalinux-ports.git",
   "branch": "main",
   "ports_subdir": "ports",
-  "generated_at": "2026-08-26T17:19:38Z",
+  "generated_at": "2026-08-26T17:24:40Z",
   "ports": [
     {
       "name": "TTF-and-OTF-fonts",

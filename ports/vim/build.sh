@@ -81,5 +81,3 @@ make install
 rsync -avzcP --exclude="/dos/" --exclude="/spell/" \
     ftp.nluug.nl::Vim/runtime/ ./runtime/
 make -C src installruntime
-:setlocal spell spelllang=ru
-:help version-9.2.0954

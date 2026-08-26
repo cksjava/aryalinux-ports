@@ -116,18 +116,3 @@ chmod   -v    640     /etc/openldap/slapd.{conf,ldif}
 chown   -v  root:ldap /etc/openldap/slapd.{conf,ldif}
 systemctl start slapd
 ldapsearch -x -b '' -s base '(objectclass=*)' namingContexts
-# extended LDIF
-#
-# LDAPv3
-# base <> with scope baseObject
-# filter: (objectclass=*)
-# requesting: namingContexts
-#
-#
-dn:
-namingContexts: dc=my-domain,dc=com
-# search result
-search: 2
-result: 0 Success
-# numResponses: 2
-# numEntries: 1

@@ -77,4 +77,3 @@ ninja -j "$ALPS_JOBS"
 ninja -j "$ALPS_JOBS" install
 sshfs example.com:/home/userid ~/examplepath
 fusermount3 -u ~/examplepath
-userid@example.com:/path /media/path fuse.sshfs _netdev,IdentityFile=/home/userid/.ssh/id_rsa 0 0

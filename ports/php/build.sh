@@ -102,7 +102,6 @@ if [ -f /etc/php-fpm.conf.default ]; then
 fi
 wget https://pear.php.net/go-pear.phar
 php ./go-pear.phar
-You may want to add: /usr/lib/php to your php.ini include_path
 sed -i 's@php/includes"@&\ninclude_path = ".:/usr/lib/php"@' \
     /etc/php.ini
 sed -i -e '/proxy_module/s/^#//' \
@@ -111,4 +110,3 @@ sed -i -e '/proxy_module/s/^#//' \
 echo \
 'ProxyPassMatch ^/(.*\.php)$ fcgi://127.0.0.1:9000/srv/www/$1' >> \
 /etc/httpd/httpd.conf
-AddType application/x-httpd-php-source .phps

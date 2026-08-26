@@ -75,7 +75,6 @@ fi
 export XORG_PREFIX XORG_CONFIG
 
 # --- commands from BLFS ---
-set gfxpayload=1024x768x32
 patch -Np1 -i ../xorg-server-21.1.24-tearfree_backport-1.patch
 mkdir build
 cd    build

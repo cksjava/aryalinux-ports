@@ -91,12 +91,6 @@ EOF
 rm -fv /etc/pam.d/other
 ninja -j "$ALPS_JOBS" install
 chmod -v 4755 /usr/sbin/unix_chkpwd
-# Begin /etc/pam.d/other
-auth            required        pam_unix.so     nullok
-account         required        pam_unix.so
-session         required        pam_unix.so
-password        required        pam_unix.so     nullok
-# End /etc/pam.d/other
 install -vdm755 /etc/pam.d
 cat > /etc/pam.d/system-account << "EOF"
 # Begin /etc/pam.d/system-account

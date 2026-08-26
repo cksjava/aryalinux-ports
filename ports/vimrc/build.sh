@@ -42,8 +42,5 @@ meson() {
 }
 # config / no-tarball port — book commands only
 # --- commands from BLFS ---
-" Begin .vimrc
-set columns=80
-set wrapmargin=8
-set ruler
-" End .vimrc
+# no build commands extracted
+true

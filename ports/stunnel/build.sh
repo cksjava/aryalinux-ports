@@ -73,22 +73,12 @@ fi
 groupadd -g 51 stunnel
 useradd -c "stunnel Daemon" -d /var/lib/stunnel \
         -g stunnel -s /bin/false -u 51 stunnel
------BEGIN PRIVATE KEY-----
-<many encrypted lines of private key>
------END PRIVATE KEY-----
------BEGIN CERTIFICATE-----
-<many encrypted lines of certificate>
------END CERTIFICATE-----
------BEGIN DH PARAMETERS-----
-<encrypted lines of dh parms>
------END DH PARAMETERS-----
 ./configure --prefix=/usr \
             --sysconfdir=/etc \
             --localstatedir=/var
 make
 make install
 install -v -m644 tools/stunnel.service /usr/lib/systemd/system
-Common Name (FQDN of your server) [localhost]:
 make cert
 install -v -m750 -o stunnel -g stunnel -d /var/lib/stunnel/run
 chown stunnel:stunnel /var/lib/stunnel
@@ -111,7 +101,4 @@ cert   = /etc/stunnel/stunnel.pem
 ;; they are vulnerable to truncation attacks
 ;TIMEOUTclose = 0
 EOF
-[<service>]
-accept  = <hostname:portnumber>
-connect = <hostname:portnumber>
 systemctl enable stunnel

@@ -113,11 +113,5 @@ install -v -m644 dbus/dbus-wpa_supplicant.conf \
                  /etc/dbus-1/system.d/wpa_supplicant.conf
 install -v -dm755 /etc/wpa_supplicant
 wpa_passphrase SSID | sed '/^\t#/d' > /etc/wpa_supplicant/wpa_supplicant-wifi0.conf
-network={
-  ssid="Some-SSID"
-  key_mgmt=NONE
-}
-ctrl_interface=DIR=/run/wpa_supplicant GROUP=<privileged group>
-update_config=1
 systemctl start wpa_supplicant@wlan0
 systemctl enable wpa_supplicant@wlan0

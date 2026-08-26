@@ -79,7 +79,6 @@ echo /usr/bin/proftpdshell >> /etc/shells
 ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/run
 make
 make install
-RequireValidShell off
 cat > /etc/proftpd.conf << "EOF"
 # This is a basic ProFTPD configuration file
 # It establishes a single server and a single anonymous login.

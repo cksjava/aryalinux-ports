@@ -62,15 +62,6 @@ chmod 0755 /usr/bin/svn{,serve}
 install -v -m 0755 -d /srv/svn
 install -v -m 0755 -o svn -g svn -d /srv/svn/repositories
 svnadmin create /srv/svn/repositories/svntest
-svntest/            # The name of the repository
-   trunk/           # Contains the existing source tree
-      BOOK/
-      bootscripts/
-      edguide/
-      patches/
-      scripts/
-   branches/        # Needed for additional branches
-   tags/            # Needed for tagging release points
 svn import -m "Initial import." \
     </path/to/source/tree> \
     file:///srv/svn/repositories/svntest

@@ -87,5 +87,4 @@ cat > /etc/autofs/auto.master << "EOF"
 # End /etc/autofs/auto.master
 EOF
 cd   -fstype=iso9660,ro,nosuid,nodev :/dev/cdrom
-joe  example.org:/export/home/joe
 systemctl enable autofs

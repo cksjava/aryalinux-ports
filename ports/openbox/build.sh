@@ -85,7 +85,6 @@ make
 make install
 rm -v /usr/share/xsessions/openbox-{gnome,kde}.desktop
 cp -rf /etc/xdg/openbox ~/.config
-<item label="Mplayer" icon="/usr/share/pixmaps/mplayer.png">
 ls -d /usr/share/themes/*/openbox-3 | sed 's#.*es/##;s#/o.*##'
 echo openbox > ~/.xinitrc
 cat > ~/.xinitrc << "EOF"

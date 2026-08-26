@@ -70,6 +70,5 @@ else
   exit 1
 fi
 # --- commands from BLFS ---
-fatal: not a git repository (or any of the parent directories): .git
 gem build asciidoctor.gemspec
 gem install asciidoctor-2.0.26.gem

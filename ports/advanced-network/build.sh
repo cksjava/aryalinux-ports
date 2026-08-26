@@ -42,9 +42,6 @@ meson() {
 }
 # config / no-tarball port — book commands only
 # --- commands from BLFS ---
-Networking support: Y
-  Networking options:
-    802.1d Ethernet Bridging: M or Y
 cat > /etc/systemd/network/50-br0.netdev << EOF
 [NetDev]
 Name=br0

@@ -108,4 +108,3 @@ restrict 127.0.0.1
 restrict ::1
 EOF
 systemctl disable systemd-timesyncd.service
-ntpd -q

@@ -75,12 +75,3 @@ fi
             --enable-utf8
 make
 make install
-set autoindent
-set constantshow
-set fill 72
-set historylog
-set multibuffer
-set nohelp
-set positionlog
-set quickblank
-set regexp

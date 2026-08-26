@@ -77,6 +77,4 @@ fi
 make
 make install
 ln -svf ../bin/ntfs-3g /usr/sbin/mount.ntfs
-/dev/sda1 /mnt/windows auto defaults 0 0
-/dev/sdc1 /mnt/usb auto user,noauto,umask=0,utf8 0 0
 chmod -v 777 /mnt/usb
