@@ -56,15 +56,13 @@ fi
 cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
-            --disable-static \
-            --
+            --disable-static
 make
 make install
 cd ..
 tar -xf speexdsp-1.2.1.tar.gz
 cd speexdsp-1.2.1
 ./configure --prefix=/usr \
-            --disable-static \
-            --
+            --disable-static
 make
 make install

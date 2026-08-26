@@ -57,7 +57,6 @@ cd "${_tops[0]}"
 # --- commands from BLFS ---
 patch -Np1 -i ../pm-utils-1.4.1-bugfixes-1.patch
 ./configure --prefix=/usr \
-            --sysconfdir=/etc \
-            --
+            --sysconfdir=/etc
 make
 make install

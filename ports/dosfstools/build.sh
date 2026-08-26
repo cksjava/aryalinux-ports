@@ -57,7 +57,6 @@ cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
             --enable-compat-symlinks \
-            --mandir=/usr/share/man \
-            --
+            --mandir=/usr/share/man
 make
 make install

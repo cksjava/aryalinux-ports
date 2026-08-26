@@ -56,7 +56,6 @@ fi
 cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
-            -- \
             --with-default-trust-store-pkcs11="pkcs11:"
 make
 make install

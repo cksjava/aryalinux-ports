@@ -57,8 +57,7 @@ cd "${_tops[0]}"
 # --- commands from BLFS ---
 sed '/TOGGLE.*prefer_unzip/s/TRUE/FALSE/' -i src/pref_dialog.c
 ./configure  --prefix=/usr \
-             --libexecdir=/usr/lib/xfce4 \
-             --
+             --libexecdir=/usr/lib/xfce4
 make
 make install
 gtk-update-icon-cache -qtf /usr/share/icons/hicolor

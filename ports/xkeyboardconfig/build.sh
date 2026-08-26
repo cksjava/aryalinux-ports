@@ -66,7 +66,6 @@ meson setup --prefix=$XORG_PREFIX --buildtype=release ..
 ninja -j "$ALPS_JOBS"
 if [ -d $XORG_PREFIX/share/X11/xkb ]; then
   rm -rf $XORG_PREFIX/share/X11/xkb
-  rm -f  $XORG_PREFIX/share/man/man7/xkeyboard-config.7
   rm -f  $XORG_PREFIX/share/pkgconfig/xkeyboard-config.pc
 fi
 ninja -j "$ALPS_JOBS" install

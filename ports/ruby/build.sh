@@ -60,8 +60,7 @@ cd "${_tops[0]}"
             --enable-shared \
             --without-valgrind \
             --without-baseruby \
-            ac_cv_func_qsort_r=no \
-            --
+            ac_cv_func_qsort_r=no
 make
 make capi
 XDG_DATA_HOME=/tmp make install

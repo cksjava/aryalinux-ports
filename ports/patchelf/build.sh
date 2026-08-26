@@ -55,7 +55,6 @@ if [[ ${#_tops[@]} -ne 1 ]]; then
 fi
 cd "${_tops[0]}"
 # --- commands from BLFS ---
-./configure --prefix=/usr \
-            --
+./configure --prefix=/usr
 make
 make install

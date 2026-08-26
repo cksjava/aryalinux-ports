@@ -58,7 +58,6 @@ cd "${_tops[0]}"
 sed -i '/proc_func)()/s/()/(FILE*, FILE*, void*)/' filter/foomatic-rip/process.h
 patch -Np1 -i ../cups-filters-2.0.1-security_fix-1.patch
 ./configure --prefix=/usr \
-            --disable-static \
-            --
+            --disable-static
 make
 make install

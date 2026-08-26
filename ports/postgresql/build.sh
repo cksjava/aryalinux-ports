@@ -60,8 +60,7 @@ useradd -c "PostgreSQL Server" -g postgres -d /srv/pgsql/data \
         -u 41 postgres
 sed -e '/DEFAULT_PGSOCKET_DIR/s@/tmp@/run/postgresql@' \
     -i src/include/pg_config_manual.h
-./configure --prefix=/usr \
-            --
+./configure --prefix=/usr
 make
 make DESTDIR=$(pwd)/DESTDIR install
 install -d -o postgres $(pwd)/DESTDIR/tmp

@@ -56,8 +56,7 @@ fi
 cd "${_tops[0]}"
 # --- commands from BLFS ---
 sed -i '/typedef enum/,/bool ;/d' src/ALAC/alac_{en,de}coder.c
-./configure --prefix=/usr \
-            --
+./configure --prefix=/usr
 make
 sed '/ogg_opus/,+1s/HAVE_[A-Z_]*/0/' -i tests/lossy_comp_test.c
 make install

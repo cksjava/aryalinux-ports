@@ -63,7 +63,6 @@ sed  -e 's/ -with_backspaces//' \
      -i doc/Makefile.in
 ./configure --prefix=/usr \
             --sysconfdir=/etc \
-            --with- \
             --with-ssl \
             --enable-external-dotlock \
             --enable-pop \

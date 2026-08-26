@@ -57,7 +57,6 @@ cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
             --enable-cplusplus \
-            --disable-static \
-            --
+            --disable-static
 make
 make install

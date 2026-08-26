@@ -58,8 +58,7 @@ cd "${_tops[0]}"
 ./configure --prefix=/usr \
             --sysconfdir=/etc \
             --localstatedir=/var \
-            --disable-docs \
-            --
+            --disable-docs
 make
 make install
 install -v -dm755 \

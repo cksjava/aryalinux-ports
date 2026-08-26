@@ -57,8 +57,7 @@ cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
             --sysconfdir=/etc \
-            --disable-static \
-            --
+            --disable-static
 make
 make install
 cat > /tmp/test-enchant.txt << "EOF"

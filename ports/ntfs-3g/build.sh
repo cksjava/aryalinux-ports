@@ -58,8 +58,7 @@ cd "${_tops[0]}"
 ./autogen.sh
 ./configure --prefix=/usr \
             --disable-static \
-            --with-fuse=internal \
-            --
+            --with-fuse=internal
 make
 make install
 ln -svf ../bin/ntfs-3g /usr/sbin/mount.ntfs

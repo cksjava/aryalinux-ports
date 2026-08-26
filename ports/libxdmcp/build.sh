@@ -60,6 +60,6 @@ cd "${_tops[0]}"
 export XORG_PREFIX XORG_CONFIG
 
 # --- commands from BLFS ---
-./configure $XORG_CONFIG --
+./configure $XORG_CONFIG
 make
 make install

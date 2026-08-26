@@ -58,8 +58,7 @@ cd "${_tops[0]}"
 ./configure --prefix=/usr \
             --with-cups-rundir=/run/cups \
             --without-rcdir \
-            --disable-static \
-            --
+            --disable-static
 make
 make install
 install -v -m644 daemon/cups-browsed.service /lib/systemd/system/cups-browsed.service

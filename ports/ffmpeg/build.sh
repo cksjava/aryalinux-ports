@@ -76,8 +76,7 @@ patch -Np1 -i ../ffmpeg-9.0.1-chromium_method-1.patch
             --enable-openssl \
             --enable-libdav1d \
             --enable-libsvtav1 \
-            --ignore-tests=enhanced-flv-av1,enhanced-flv-multitrack \
-            --
+            --ignore-tests=enhanced-flv-av1,enhanced-flv-multitrack
 make
 gcc tools/qt-faststart.c -o tools/qt-faststart
 pushd doc

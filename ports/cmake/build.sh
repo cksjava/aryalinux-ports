@@ -61,7 +61,6 @@ sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
             --mandir=/share/man \
             --no-system-jsoncpp \
             --no-system-cppdap \
-            --no-system-librhash \
-            --
+            --no-system-librhash
 make
 make install

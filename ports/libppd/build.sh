@@ -58,7 +58,6 @@ cd "${_tops[0]}"
 ./configure --prefix=/usr \
             --disable-static \
             --with-cups-rundir=/run/cups \
-            --enable-ppdc-utils \
-            --
+            --enable-ppdc-utils
 make
 make install

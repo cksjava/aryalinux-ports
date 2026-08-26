@@ -59,7 +59,6 @@ cd "${_tops[0]}"
             --enable-jpeg \
             --enable-jasper \
             --enable-lcms \
-            --disable-static \
-            --
+            --disable-static
 make
 make install

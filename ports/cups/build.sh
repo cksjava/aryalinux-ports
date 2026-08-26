@@ -62,8 +62,7 @@ sed -i 's#@CUPS_HTMLVIEW@#firefox#' desktop/cups.desktop.in
 sed -i '/& ipp->prev)/s/prev/& \&\& ipp->prev->next == *attr/' cups/ipp.c
 ./configure --libdir=/usr/lib \
             --with-rundir=/run/cups \
-            --with-system-groups=lpadmin \
-            --with-
+            --with-system-groups=lpadmin
 make
 make install
 echo "ServerName /run/cups/cups.sock" > /etc/cups/client.conf

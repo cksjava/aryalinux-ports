@@ -65,8 +65,7 @@ patch -Np1 -i ../openbox-3.6.1-py3-1.patch
 autoreconf -fi
 ./configure --prefix=/usr \
             --sysconfdir=/etc \
-            --disable-static \
-            --
+            --disable-static
 make
 make install
 rm -v /usr/share/xsessions/openbox-{gnome,kde}.desktop

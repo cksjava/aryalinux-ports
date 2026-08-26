@@ -57,7 +57,6 @@ cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
             --disable-static \
-            -- \
             --enable-a4 \
             --enable-metric \
             --with-libpotrace

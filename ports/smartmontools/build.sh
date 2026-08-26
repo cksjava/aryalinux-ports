@@ -56,8 +56,7 @@ fi
 cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
-            --sysconfdir=/etc \
-            --
+            --sysconfdir=/etc
 make
 make install
 systemctl enable smartd

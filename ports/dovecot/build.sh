@@ -64,7 +64,6 @@ useradd -c "Dovecot login user" -d /dev/null -u 43 \
 ./configure --prefix=/usr \
             --sysconfdir=/etc \
             --localstatedir=/var \
-            -- \
             --disable-static \
             CXX="g++ -std=gnu++17"
 make

@@ -70,8 +70,7 @@ cd        build
              --target-list=$QEMU_ARCH \
              --audio-drv-list=alsa \
              --disable-pa \
-             --enable-slirp \
-             --
+             --enable-slirp
 unset QEMU_ARCH
 make
 make install

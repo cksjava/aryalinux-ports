@@ -59,7 +59,6 @@ sed -i "/stdio/a #include <string.h>" src/fill_test.c
 LIBS=-lm \
 ./configure --prefix=/usr \
             --without-doxygen \
-            --with-cpuflags=none \
-            --
+            --with-cpuflags=none
 make
 make install

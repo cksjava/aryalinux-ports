@@ -67,8 +67,7 @@ patch -Np1 -i ../ntp-4.2.8p18-openssl_4-1.patch
             --bindir=/usr/sbin \
             --sysconfdir=/etc \
             --enable-linuxcaps \
-            --with-lineeditlibs=readline \
-            --
+            --with-lineeditlibs=readline
 make
 make install
 install -v -o ntp -g ntp -d /var/lib/ntp

@@ -57,7 +57,6 @@ cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
             --disable-static \
-            --enable-lib-only \
-            --
+            --enable-lib-only
 make
 make install

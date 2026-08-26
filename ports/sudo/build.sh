@@ -61,7 +61,6 @@ sed -e 's/\([->.a-zA-Z_]*\)->length/ASN1_STRING_length(\1)/' \
             --libexecdir=/usr/lib \
             --with-secure-path \
             --with-env-editor \
-            -- \
             --with-passprompt="[sudo] password for %p: "
 make
 make install

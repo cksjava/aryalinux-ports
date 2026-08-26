@@ -61,8 +61,6 @@ export XORG_PREFIX XORG_CONFIG
 
 # --- commands from BLFS ---
 ./configure $XORG_CONFIG \
-            --without-doxygen \
-            --
+            --without-doxygen
 LC_ALL=en_US.UTF-8 make
 make install
-chown -Rv root:root $XORG_PREFIX/share/doc/libxcb-1.17.0

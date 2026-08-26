@@ -57,8 +57,7 @@ cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
             --sysconfdir=/etc \
-            --enable-utf8 \
-            --
+            --enable-utf8
 make
 make install
 set autoindent

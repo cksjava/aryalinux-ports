@@ -61,8 +61,7 @@ patch -Np1 -i ../xine-lib-1.2.13-ffmpeg8.patch
 ./configure --prefix=/usr \
             --disable-vcd \
             --disable-w32dll \
-            --with-external-dvdnav \
-            --
+            --with-external-dvdnav
 make
 doxygen doc/Doxyfile
 make install

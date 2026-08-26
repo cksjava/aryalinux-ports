@@ -65,4 +65,3 @@ cd    build
 meson setup --prefix=$XORG_PREFIX ..
 ninja -j "$ALPS_JOBS"
 ninja -j "$ALPS_JOBS" install
-mv -v $XORG_PREFIX/share/doc/xorgproto{,-2025.1}

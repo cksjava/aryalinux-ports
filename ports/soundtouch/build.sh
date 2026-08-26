@@ -56,7 +56,6 @@ fi
 cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./bootstrap
-./configure --prefix=/usr \
-            --
+./configure --prefix=/usr
 make
 make install

@@ -61,8 +61,7 @@ sg scanner -c " \
 PYTHON=python3 ./configure --prefix=/usr \
                            --sysconfdir=/etc \
                            --localstatedir=/var \
-                           --with-lockdir=/run/lock \
-                           --
+                           --with-lockdir=/run/lock
 make
 make install
 install -m 644 -v tools/udev/libsane.rules \

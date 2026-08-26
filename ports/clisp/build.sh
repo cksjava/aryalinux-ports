@@ -58,7 +58,6 @@ cd "${_tops[0]}"
 mkdir build
 cd    build
 ../configure --srcdir=../ \
-             --prefix=/usr \
-             --
+             --prefix=/usr
 make
 make install

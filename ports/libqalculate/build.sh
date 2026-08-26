@@ -56,8 +56,7 @@ fi
 cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
-            --disable-static \
-            --
+            --disable-static
 make
 make install
 rm -v /usr/lib/libqalculate.la

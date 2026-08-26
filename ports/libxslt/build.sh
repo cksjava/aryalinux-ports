@@ -57,7 +57,6 @@ cd "${_tops[0]}"
 # --- commands from BLFS ---
 ./configure --prefix=/usr \
             --disable-static \
-            --without-python \
-            --
+            --without-python
 make
 make install
