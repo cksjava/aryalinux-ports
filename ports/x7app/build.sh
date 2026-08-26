@@ -39,27 +39,16 @@ meson() {
     command meson "$@"
   fi
 }
-rm -rf "$ALPS_WORK/$ALPS_NAME"
-mkdir -p "$ALPS_WORK/$ALPS_NAME"
-# BLFS ../file convention: stage patches/extra downloads beside the extracted tree
-for _f in ${ALPS_PATCH_FILES:-}; do
-  [[ -n "$_f" && -e "$ALPS_SOURCES/$_f" ]] || continue
-  ln -f "$ALPS_SOURCES/$_f" "$ALPS_WORK/$ALPS_NAME/$_f" 2>/dev/null \
-    || cp -a "$ALPS_SOURCES/$_f" "$ALPS_WORK/$ALPS_NAME/$_f"
-done
-tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
-mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
-if [[ ${#_tops[@]} -ne 1 ]]; then
-  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
-  exit 1
-fi
-cd "${_tops[0]}"
+# xorg_batch — multi-tarball list (no single ALPS_TARBALL unpack)
 # BLFS Xorg build environment (recommended /usr prefix)
 : "${XORG_PREFIX:=/usr}"
 : "${XORG_CONFIG:=--prefix=$XORG_PREFIX --sysconfdir=/etc --localstatedir=/var --disable-static}"
 export XORG_PREFIX XORG_CONFIG
 
 # --- commands from BLFS ---
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+cd "$ALPS_WORK/$ALPS_NAME"
 cat > app-7.md5 << "EOF"
 36936e5bcf04b982ea87b4556d082061  iceauth-1.0.11.tar.xz
 83d943bbb0e3ab868cb0a7438e135544  mkfontscale-1.2.4.tar.xz
@@ -95,20 +84,20 @@ ee94a7722c8b9e37a28f1ac0fc371454  xwd-1.0.10.tar.xz
 e24406c671ab09a7ab0e13a7d1ef2752  xwininfo-1.1.7.tar.xz
 53d99fe7077b162b0cb87189f7ed71ce  xwud-1.0.8.tar.xz
 EOF
-mkdir app
+mkdir -p app
 cd app
-grep -v '^#' ../app-7.md5 | awk '{print $2}' | wget -i- -c \
-    -B https://www.x.org/pub/individual/app/
-md5sum -c ../app-7.md5
-as_root()
-{
-  if   [ $EUID = 0 ];        then $*
-  elif [ -x /usr/bin/sudo ]; then sudo $*
-  else                            su -c \\"$*\\"
+BASE_URL="https://www.x.org/pub/individual/app/"
+while read -r sum file; do
+  [[ -z "${file:-}" || "$sum" =~ ^# ]] && continue
+  if [[ ! -f "$file" ]]; then
+    if [[ -f "$ALPS_SOURCES/$file" ]]; then
+      ln -f "$ALPS_SOURCES/$file" "$file" 2>/dev/null || cp -a "$ALPS_SOURCES/$file" "$file"
+    else
+      wget -c -O "$file" "${BASE_URL}${file}"
+    fi
   fi
-}
-export -f as_root
-bash -e
+done < <(grep -v '^#' ../app-7.md5)
+md5sum -c ../app-7.md5
 for package in $(grep -v '^#' ../app-7.md5 | awk '{print $2}')
 do
   packagedir=${package%.tar.?z*}
@@ -116,9 +105,7 @@ do
   pushd $packagedir
      ./configure $XORG_CONFIG
      make
-     as_root make install
+     make install
   popd
   rm -rf $packagedir
 done
-exit
-as_root rm -f $XORG_PREFIX/bin/xkeystone

@@ -39,27 +39,16 @@ meson() {
     command meson "$@"
   fi
 }
-rm -rf "$ALPS_WORK/$ALPS_NAME"
-mkdir -p "$ALPS_WORK/$ALPS_NAME"
-# BLFS ../file convention: stage patches/extra downloads beside the extracted tree
-for _f in ${ALPS_PATCH_FILES:-}; do
-  [[ -n "$_f" && -e "$ALPS_SOURCES/$_f" ]] || continue
-  ln -f "$ALPS_SOURCES/$_f" "$ALPS_WORK/$ALPS_NAME/$_f" 2>/dev/null \
-    || cp -a "$ALPS_SOURCES/$_f" "$ALPS_WORK/$ALPS_NAME/$_f"
-done
-tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
-mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
-if [[ ${#_tops[@]} -ne 1 ]]; then
-  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
-  exit 1
-fi
-cd "${_tops[0]}"
+# xorg_batch — multi-tarball list (no single ALPS_TARBALL unpack)
 # BLFS Xorg build environment (recommended /usr prefix)
 : "${XORG_PREFIX:=/usr}"
 : "${XORG_CONFIG:=--prefix=$XORG_PREFIX --sysconfdir=/etc --localstatedir=/var --disable-static}"
 export XORG_PREFIX XORG_CONFIG
 
 # --- commands from BLFS ---
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+cd "$ALPS_WORK/$ALPS_NAME"
 cat > font-7.md5 << "EOF"
 42ea8cc91549e43e9251ccbd664e7864  font-util-1.4.2.tar.xz
 a56b1a7f2c14173f71f010225fa131f1  encodings-1.1.0.tar.xz
@@ -71,20 +60,20 @@ dd1a744b97eb6d388d4e78b17011193e  font-alias-1.0.6.tar.xz
 fe972eaf13176fa9aa7e74a12ecc801a  font-misc-ethiopic-1.0.5.tar.xz
 3b47fed2c032af3a32aad9acc1d25150  font-xfree86-type1-1.0.5.tar.xz
 EOF
-mkdir font
+mkdir -p font
 cd font
-grep -v '^#' ../font-7.md5 | awk '{print $2}' | wget -i- -c \
-    -B https://www.x.org/pub/individual/font/
-md5sum -c ../font-7.md5
-as_root()
-{
-  if   [ $EUID = 0 ];        then $*
-  elif [ -x /usr/bin/sudo ]; then sudo $*
-  else                            su -c \\"$*\\"
+BASE_URL="https://www.x.org/pub/individual/font/"
+while read -r sum file; do
+  [[ -z "${file:-}" || "$sum" =~ ^# ]] && continue
+  if [[ ! -f "$file" ]]; then
+    if [[ -f "$ALPS_SOURCES/$file" ]]; then
+      ln -f "$ALPS_SOURCES/$file" "$file" 2>/dev/null || cp -a "$ALPS_SOURCES/$file" "$file"
+    else
+      wget -c -O "$file" "${BASE_URL}${file}"
+    fi
   fi
-}
-export -f as_root
-bash -e
+done < <(grep -v '^#' ../font-7.md5)
+md5sum -c ../font-7.md5
 for package in $(grep -v '^#' ../font-7.md5 | awk '{print $2}')
 do
   packagedir=${package%.tar.?z*}
@@ -92,11 +81,7 @@ do
   pushd $packagedir
     ./configure $XORG_CONFIG
     make
-    as_root make install
+    make install
   popd
-  as_root rm -rf $packagedir
+  rm -rf $packagedir
 done
-exit
-install -v -d -m755 /usr/share/fonts
-ln -svfn $XORG_PREFIX/share/fonts/X11/OTF /usr/share/fonts/X11-OTF
-ln -svfn $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF

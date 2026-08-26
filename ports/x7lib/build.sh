@@ -39,27 +39,16 @@ meson() {
     command meson "$@"
   fi
 }
-rm -rf "$ALPS_WORK/$ALPS_NAME"
-mkdir -p "$ALPS_WORK/$ALPS_NAME"
-# BLFS ../file convention: stage patches/extra downloads beside the extracted tree
-for _f in ${ALPS_PATCH_FILES:-}; do
-  [[ -n "$_f" && -e "$ALPS_SOURCES/$_f" ]] || continue
-  ln -f "$ALPS_SOURCES/$_f" "$ALPS_WORK/$ALPS_NAME/$_f" 2>/dev/null \
-    || cp -a "$ALPS_SOURCES/$_f" "$ALPS_WORK/$ALPS_NAME/$_f"
-done
-tar -xf "$ALPS_SOURCES/$ALPS_TARBALL" -C "$ALPS_WORK/$ALPS_NAME"
-mapfile -t _tops < <(find "$ALPS_WORK/$ALPS_NAME" -mindepth 1 -maxdepth 1 -type d | sort)
-if [[ ${#_tops[@]} -ne 1 ]]; then
-  echo "error: expected one source dir in $ALPS_WORK/$ALPS_NAME" >&2
-  exit 1
-fi
-cd "${_tops[0]}"
+# xorg_batch — multi-tarball list (no single ALPS_TARBALL unpack)
 # BLFS Xorg build environment (recommended /usr prefix)
 : "${XORG_PREFIX:=/usr}"
 : "${XORG_CONFIG:=--prefix=$XORG_PREFIX --sysconfdir=/etc --localstatedir=/var --disable-static}"
 export XORG_PREFIX XORG_CONFIG
 
 # --- commands from BLFS ---
+rm -rf "$ALPS_WORK/$ALPS_NAME"
+mkdir -p "$ALPS_WORK/$ALPS_NAME"
+cd "$ALPS_WORK/$ALPS_NAME"
 cat > lib-7.md5 << "EOF"
 6ad67d4858814ac24e618b8072900664  xtrans-1.6.0.tar.xz
 b617a053d2003cc81309f4e13d01379c  libX11-1.8.13.tar.xz
@@ -94,21 +83,52 @@ fa0faa5b6a8e726186c535d73712ccea  libxkbfile-1.2.0.tar.xz
 9805be7e18f858bed9938542ed2905dc  libxshmfence-1.3.3.tar.xz
 53b72ce969745f8d3e41175d6549ce0b  libXpresent-1.0.2.tar.xz
 EOF
-mkdir lib
+mkdir -p lib
 cd lib
-grep -v '^#' ../lib-7.md5 | awk '{print $2}' | wget -i- -c \
-    -B https://www.x.org/pub/individual/lib/
-md5sum -c ../lib-7.md5
-as_root()
-{
-  if   [ $EUID = 0 ];        then $*
-  elif [ -x /usr/bin/sudo ]; then sudo $*
-  else                            su -c \\"$*\\"
+BASE_URL="https://www.x.org/pub/individual/lib/"
+while read -r sum file; do
+  [[ -z "${file:-}" || "$sum" =~ ^# ]] && continue
+  if [[ ! -f "$file" ]]; then
+    if [[ -f "$ALPS_SOURCES/$file" ]]; then
+      ln -f "$ALPS_SOURCES/$file" "$file" 2>/dev/null || cp -a "$ALPS_SOURCES/$file" "$file"
+    else
+      wget -c -O "$file" "${BASE_URL}${file}"
+    fi
   fi
-}
-export -f as_root
-grep -A9 summary *make_check.log
-bash -e
-exit
-ln -sv $XORG_PREFIX/lib/X11 /usr/lib/X11
-ln -sv $XORG_PREFIX/include/X11 /usr/include/X11
+done < <(grep -v '^#' ../lib-7.md5)
+md5sum -c ../lib-7.md5
+for package in $(grep -v '^#' ../lib-7.md5 | awk '{print $2}')
+do
+  packagedir=${package%.tar.?z*}
+  echo "Building $packagedir"
+  tar -xf $package
+  pushd $packagedir
+  do_build() { make; }
+  do_install() { make install; }
+  case $packagedir in
+    libXfont2-[0-9]* )
+      ./configure $XORG_CONFIG --disable-devel-docs
+    ;;
+    libXt-[0-9]* )
+      ./configure $XORG_CONFIG \
+                  --with-appdefaultdir=/etc/X11/app-defaults
+    ;;
+    libXpm-[0-9]* )
+      ./configure $XORG_CONFIG --disable-open-zfile
+    ;;
+    libpciaccess* | libxkbfile* )
+      meson setup --prefix=$XORG_PREFIX --buildtype=release build
+      do_build()  { ninja -C build; }
+      do_install() { ninja -C build install; }
+    ;;
+    * )
+      ./configure $XORG_CONFIG
+    ;;
+  esac
+  do_build
+  do_install
+  unset do_build do_install
+  popd
+  rm -rf $packagedir
+  /sbin/ldconfig
+done

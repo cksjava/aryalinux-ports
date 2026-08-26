@@ -3,7 +3,7 @@
   "git": "https://github.com/cksjava/aryalinux-ports.git",
   "branch": "main",
   "ports_subdir": "ports",
-  "generated_at": "2026-08-26T08:00:19Z",
+  "generated_at": "2026-08-26T08:11:42Z",
   "ports": [
     {
       "name": "TTF-and-OTF-fonts",
@@ -25387,7 +25387,7 @@
     {
       "name": "x7app",
       "version": "0",
-      "page_kind": "x11_driver",
+      "page_kind": "xorg_batch",
       "section": "x",
       "summary": "The Xorg applications provide the expected applications available in previous X Window implementations.",
       "sbu": "1.5 SBU (ignoring the time to download)",
@@ -25410,7 +25410,7 @@
     {
       "name": "x7font",
       "version": "0",
-      "page_kind": "x11_driver",
+      "page_kind": "xorg_batch",
       "section": "x",
       "summary": "The Xorg font packages provide some scalable fonts and supporting packages for Xorg applications. Many people will want to install other TTF or OTF fonts in addition to, or instead of, these. Some are listed at the section called “TTF and OTF fonts”.",
       "sbu": "0.1 SBU",
@@ -25430,7 +25430,7 @@
     {
       "name": "x7legacy",
       "version": "0",
-      "page_kind": "x11_driver",
+      "page_kind": "xorg_batch",
       "section": "x",
       "summary": "Xorg's ancestor (X11R1, in 1987) at first only provided bitmap fonts, with a tool (bdftopcf) to assist in their installation. With the introduction of xorg-server-1.19.0 and libXfont2 many people will not need them. There are still a few old packages which might require, or benefit from, these deprecated fonts and so the following packages are shown here.",
       "sbu": "0.3 SBU",
@@ -25450,7 +25450,7 @@
     {
       "name": "x7lib",
       "version": "0",
-      "page_kind": "x11_driver",
+      "page_kind": "xorg_batch",
       "section": "x",
       "summary": "The Xorg libraries provide library routines that are used within all X Window applications.",
       "sbu": "1.8 SBU",

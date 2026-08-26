@@ -1,11 +1,11 @@
 format: alps-port-v1
 name: x7app
 version: '0'
-page_kind: x11_driver
+page_kind: xorg_batch
 section: x
 page: x7app
 title: Xorg Applications
-tarball: app
+tarball: ''
 url: https://www.x.org/pub/individual/app/
 md5: ''
 summary: The Xorg applications provide the expected applications available in previous
@@ -25,4 +25,104 @@ bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
+sources:
+- filename: iceauth-1.0.11.tar.xz
+  md5: 36936e5bcf04b982ea87b4556d082061
+  url: https://www.x.org/pub/individual/app/iceauth-1.0.11.tar.xz
+- filename: mkfontscale-1.2.4.tar.xz
+  md5: 83d943bbb0e3ab868cb0a7438e135544
+  url: https://www.x.org/pub/individual/app/mkfontscale-1.2.4.tar.xz
+- filename: sessreg-1.1.4.tar.xz
+  md5: b9efe1d21615c474b22439d41981beef
+  url: https://www.x.org/pub/individual/app/sessreg-1.1.4.tar.xz
+- filename: setxkbmap-1.3.5.tar.xz
+  md5: 5a10223c3305f48bfb3b09e0a7a139d1
+  url: https://www.x.org/pub/individual/app/setxkbmap-1.3.5.tar.xz
+- filename: smproxy-1.0.8.tar.xz
+  md5: 6484cd8ee30354aaaf8f490988f5f6ef
+  url: https://www.x.org/pub/individual/app/smproxy-1.0.8.tar.xz
+- filename: xauth-1.1.5.tar.xz
+  md5: 9cfdec89ad7bd86bcdfda150ae995955
+  url: https://www.x.org/pub/individual/app/xauth-1.1.5.tar.xz
+- filename: xcmsdb-1.0.7.tar.xz
+  md5: 37063ccf902fe3d55a90f387ed62fe1f
+  url: https://www.x.org/pub/individual/app/xcmsdb-1.0.7.tar.xz
+- filename: xcursorgen-1.0.9.tar.xz
+  md5: f97e81b2c063f6ae9b18d4b4be7543f6
+  url: https://www.x.org/pub/individual/app/xcursorgen-1.0.9.tar.xz
+- filename: xdpyinfo-1.4.0.tar.xz
+  md5: 700556957773d378fa16a65a4406be0a
+  url: https://www.x.org/pub/individual/app/xdpyinfo-1.4.0.tar.xz
+- filename: xdriinfo-1.0.8.tar.xz
+  md5: 830a54ef3ba338013e06a1b5b012b4bd
+  url: https://www.x.org/pub/individual/app/xdriinfo-1.0.8.tar.xz
+- filename: xev-1.2.7.tar.xz
+  md5: 6d2309b05267e31923b11ed2b83f33ae
+  url: https://www.x.org/pub/individual/app/xev-1.2.7.tar.xz
+- filename: xgamma-1.0.8.tar.xz
+  md5: 687e42aa5afaec37f14da3072651c635
+  url: https://www.x.org/pub/individual/app/xgamma-1.0.8.tar.xz
+- filename: xhost-1.0.10.tar.xz
+  md5: 45c7e956941194e5f06a9c7307f5f971
+  url: https://www.x.org/pub/individual/app/xhost-1.0.10.tar.xz
+- filename: xinput-1.6.4.tar.xz
+  md5: 8e4d14823b7cbefe1581c398c6ab0035
+  url: https://www.x.org/pub/individual/app/xinput-1.6.4.tar.xz
+- filename: xkbcomp-1.5.0.tar.xz
+  md5: b8128ff6816897bd385ca437cd2886ee
+  url: https://www.x.org/pub/individual/app/xkbcomp-1.5.0.tar.xz
+- filename: xkbevd-1.1.6.tar.xz
+  md5: 543c0535367ca30e0b0dbcfa90fefdf9
+  url: https://www.x.org/pub/individual/app/xkbevd-1.1.6.tar.xz
+- filename: xkbutils-1.0.7.tar.xz
+  md5: c572508053297094995f1fc4bc681624
+  url: https://www.x.org/pub/individual/app/xkbutils-1.0.7.tar.xz
+- filename: xkill-1.0.7.tar.xz
+  md5: 294db9393a9d8e6613e1e3dd4fe0273f
+  url: https://www.x.org/pub/individual/app/xkill-1.0.7.tar.xz
+- filename: xlsatoms-1.1.5.tar.xz
+  md5: a98d83568d19cc606b114b133d6ed8be
+  url: https://www.x.org/pub/individual/app/xlsatoms-1.1.5.tar.xz
+- filename: xlsclients-1.1.6.tar.xz
+  md5: cf2fc9e9d298c149253cfc77faaa475e
+  url: https://www.x.org/pub/individual/app/xlsclients-1.1.6.tar.xz
+- filename: xmessage-1.0.7.tar.xz
+  md5: ba2dd3db3361e374fefe2b1c797c46eb
+  url: https://www.x.org/pub/individual/app/xmessage-1.0.7.tar.xz
+- filename: xmodmap-1.0.12.tar.xz
+  md5: 4e6b8655260cca88252e86f5431041c0
+  url: https://www.x.org/pub/individual/app/xmodmap-1.0.12.tar.xz
+- filename: xpr-1.2.0.tar.xz
+  md5: ab6c9d17eb1940afcfb80a72319270ae
+  url: https://www.x.org/pub/individual/app/xpr-1.2.0.tar.xz
+- filename: xprop-1.2.8.tar.xz
+  md5: 5ef4784b406d11bed0fdf07cc6fba16c
+  url: https://www.x.org/pub/individual/app/xprop-1.2.8.tar.xz
+- filename: xrandr-1.5.4.tar.xz
+  md5: 211abd989eef11708cc0a4978d101014
+  url: https://www.x.org/pub/individual/app/xrandr-1.5.4.tar.xz
+- filename: xrdb-1.2.3.tar.xz
+  md5: 44894ebd60a40c54ccc44c67ad3b7de8
+  url: https://www.x.org/pub/individual/app/xrdb-1.2.3.tar.xz
+- filename: xrefresh-1.1.1.tar.xz
+  md5: af26f2a7f128f27e0df30ef246687726
+  url: https://www.x.org/pub/individual/app/xrefresh-1.1.1.tar.xz
+- filename: xset-1.2.6.tar.xz
+  md5: 95fcb2ae70ee7e7ef7fe70b096b3d254
+  url: https://www.x.org/pub/individual/app/xset-1.2.6.tar.xz
+- filename: xsetroot-1.1.4.tar.xz
+  md5: 33c80b7744f9a452bf9e39ea7303650e
+  url: https://www.x.org/pub/individual/app/xsetroot-1.1.4.tar.xz
+- filename: xvinfo-1.1.6.tar.xz
+  md5: 5076c46fe4f6da29377e462ad25c893d
+  url: https://www.x.org/pub/individual/app/xvinfo-1.1.6.tar.xz
+- filename: xwd-1.0.10.tar.xz
+  md5: ee94a7722c8b9e37a28f1ac0fc371454
+  url: https://www.x.org/pub/individual/app/xwd-1.0.10.tar.xz
+- filename: xwininfo-1.1.7.tar.xz
+  md5: e24406c671ab09a7ab0e13a7d1ef2752
+  url: https://www.x.org/pub/individual/app/xwininfo-1.1.7.tar.xz
+- filename: xwud-1.0.8.tar.xz
+  md5: 53d99fe7077b162b0cb87189f7ed71ce
+  url: https://www.x.org/pub/individual/app/xwud-1.0.8.tar.xz
 book_order: 453000
