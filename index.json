@@ -3,7 +3,7 @@
   "git": "https://github.com/cksjava/aryalinux-ports.git",
   "branch": "main",
   "ports_subdir": "ports",
-  "generated_at": "2026-08-27T02:29:30Z",
+  "generated_at": "2026-08-27T05:11:13Z",
   "ports": [
     {
       "name": "TTF-and-OTF-fonts",
@@ -749,7 +749,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -833,7 +836,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -999,7 +1006,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -1229,7 +1239,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -1313,7 +1327,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -1445,7 +1462,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -1463,7 +1484,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -3483,7 +3508,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -4893,7 +4922,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8624,7 +8656,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8642,7 +8678,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8660,7 +8699,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8698,7 +8740,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8716,7 +8761,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8734,7 +8782,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8752,7 +8803,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8770,7 +8824,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8809,7 +8866,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8827,7 +8887,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8845,7 +8908,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8863,7 +8929,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8881,7 +8950,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8899,7 +8971,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8917,7 +8992,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8935,7 +9013,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -8953,7 +9034,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9011,7 +9095,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9029,7 +9117,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9047,7 +9139,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9065,7 +9160,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9083,7 +9182,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9128,7 +9230,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9146,7 +9252,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9164,7 +9273,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9182,7 +9294,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9341,7 +9456,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9359,7 +9477,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9377,7 +9498,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9395,7 +9520,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9413,7 +9541,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9431,7 +9563,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9473,7 +9608,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9491,7 +9629,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9509,7 +9650,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9527,7 +9671,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9565,7 +9712,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9583,7 +9733,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9601,7 +9755,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9645,7 +9802,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9685,7 +9845,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9703,7 +9866,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9721,7 +9887,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9739,7 +9908,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9757,7 +9930,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9797,7 +9973,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9815,7 +9994,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9833,7 +10016,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9851,7 +10037,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9909,7 +10098,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9927,7 +10119,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9945,7 +10140,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9963,7 +10161,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9981,7 +10183,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -9999,7 +10204,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10017,7 +10225,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10055,7 +10266,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10073,7 +10287,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10091,7 +10309,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10109,7 +10331,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10127,7 +10352,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10145,7 +10374,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10163,7 +10395,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10181,7 +10416,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10199,7 +10438,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10217,7 +10459,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10235,7 +10480,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10253,7 +10501,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10271,7 +10522,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10289,7 +10543,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10307,7 +10564,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10353,7 +10614,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10371,7 +10636,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10389,7 +10657,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10407,7 +10679,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10425,7 +10701,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10443,7 +10722,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10461,7 +10744,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -10515,7 +10801,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -11925,7 +12215,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -11943,7 +12237,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -12408,7 +12706,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -15256,7 +15558,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -16528,7 +16833,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -17166,7 +17475,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -17318,7 +17631,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -18066,7 +18382,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -18432,7 +18751,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -18784,7 +19107,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -18823,7 +19150,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19496,7 +19827,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19514,7 +19849,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19532,7 +19871,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19550,7 +19893,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19568,7 +19915,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19586,7 +19937,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19604,7 +19959,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19622,7 +19981,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19640,7 +20003,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19658,7 +20025,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19676,7 +20047,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19694,7 +20069,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19712,7 +20091,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19750,7 +20133,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19768,7 +20155,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19786,7 +20177,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19804,7 +20199,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -19948,7 +20347,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -20183,7 +20586,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -20219,7 +20626,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -20255,7 +20666,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -20492,7 +20906,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -20894,7 +21311,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -20912,7 +21333,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -21686,7 +22110,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -22327,7 +22755,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -22345,7 +22776,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -22450,7 +22884,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -22996,7 +23434,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -23014,7 +23455,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -23115,7 +23559,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -23774,7 +24222,10 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -25011,7 +25462,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },
@@ -25899,7 +26354,11 @@
       "sbu": "",
       "disk_space": "",
       "depends": {
-        "required": [],
+        "required": [
+          "extra-cmake-modules",
+          "qt",
+          "meta-frameworks6"
+        ],
         "recommended": [],
         "ignore_for_order": []
       },

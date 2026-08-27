@@ -3,8 +3,8 @@ set -euo pipefail
 
 export KF6_PREFIX="${KF6_PREFIX:-/opt/kf6}"
 export QT6DIR="${QT6DIR:-/opt/qt6}"
-export PATH="$KF6_PREFIX/bin:${PATH}"
-export PKG_CONFIG_PATH="$KF6_PREFIX/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
+export PATH="$QT6DIR/bin:$KF6_PREFIX/bin:${PATH}"
+export PKG_CONFIG_PATH="$QT6DIR/lib/pkgconfig:$KF6_PREFIX/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
 
 # Setup xsessions (X11 sessions)
 install -dvm 755 /usr/share/xsessions

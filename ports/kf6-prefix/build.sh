@@ -44,8 +44,8 @@ meson() {
 # --- commands from BLFS ---
 export KF6_PREFIX="${KF6_PREFIX:-/opt/kf6}"
 export QT6DIR="${QT6DIR:-/opt/qt6}"
-export PATH="$KF6_PREFIX/bin:${PATH}"
-export PKG_CONFIG_PATH="$KF6_PREFIX/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
+export PATH="$QT6DIR/bin:$KF6_PREFIX/bin:${PATH}"
+export PKG_CONFIG_PATH="$QT6DIR/lib/pkgconfig:$KF6_PREFIX/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
 mv -v /opt/kf6 /opt/kf6.old
 install -v -dm755           $KF6_PREFIX/{etc,share}
 ln -sfv /etc/dbus-1         $KF6_PREFIX/etc

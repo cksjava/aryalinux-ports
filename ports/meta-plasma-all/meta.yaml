@@ -10,7 +10,10 @@ url: ''
 md5: ''
 summary: 'Meta-package: all packages from plasma-all.html (book order)'
 depends:
-  required: []
+  required:
+  - extra-cmake-modules
+  - qt
+  - meta-frameworks6
   recommended: []
   ignore_for_order: []
 members:

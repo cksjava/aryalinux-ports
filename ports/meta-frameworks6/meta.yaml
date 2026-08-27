@@ -10,7 +10,9 @@ url: ''
 md5: ''
 summary: 'Meta-package: all packages from frameworks6.html (book order)'
 depends:
-  required: []
+  required:
+  - extra-cmake-modules
+  - qt
   recommended: []
   ignore_for_order: []
 members:

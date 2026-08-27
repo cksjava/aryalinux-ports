@@ -13,7 +13,9 @@ download_size: ''
 disk_space: ''
 sbu: ''
 depends:
-  required: []
+  required:
+  - extra-cmake-modules
+  - qt
   recommended: []
   ignore_for_order: []
 bootscripts: []

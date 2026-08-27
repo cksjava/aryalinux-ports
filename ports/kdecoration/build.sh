@@ -72,8 +72,8 @@ fi
 # --- commands from BLFS ---
 export KF6_PREFIX="${KF6_PREFIX:-/opt/kf6}"
 export QT6DIR="${QT6DIR:-/opt/qt6}"
-export PATH="$KF6_PREFIX/bin:${PATH}"
-export PKG_CONFIG_PATH="$KF6_PREFIX/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
+export PATH="$QT6DIR/bin:$KF6_PREFIX/bin:${PATH}"
+export PKG_CONFIG_PATH="$QT6DIR/lib/pkgconfig:$KF6_PREFIX/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
 mkdir build
 cd build
 cmake -D CMAKE_INSTALL_PREFIX=$KF6_PREFIX \

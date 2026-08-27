@@ -13,7 +13,10 @@ download_size: ''
 disk_space: ''
 sbu: ''
 depends:
-  required: []
+  required:
+  - extra-cmake-modules
+  - qt
+  - meta-frameworks6
   recommended: []
   ignore_for_order: []
 bootscripts: []
