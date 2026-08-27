@@ -27,8 +27,8 @@ conflicts: []
 patches:
 - label: additional download
   url: https://downloads.sourceforge.net/freetype/freetype-doc-2.14.3.tar.xz
-  filename: freetype-doc-2.14.3.tar.xz
   md5: a9a92aa403d7c1b4eed6ee452dc23305
+  filename: freetype-doc-2.14.3.tar.xz
 book_order: 211000
 cycle_policy:
   install_before:

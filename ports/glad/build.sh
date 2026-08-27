@@ -72,4 +72,4 @@ fi
 # --- commands from BLFS ---
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD
 PYTHON=python3 utility/test.sh
-pip3 install --no-index --find-links dist --no-user glad2
+pip3 install --no-deps --no-index --find-links dist --no-user glad2

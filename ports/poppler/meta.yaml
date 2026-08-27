@@ -41,8 +41,8 @@ conflicts: []
 patches:
 - label: additional download
   url: https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
-  filename: poppler-data-0.4.12.tar.gz
   md5: 67ee4a40aa830b1f6e2560ce5f6471ba
+  filename: poppler-data-0.4.12.tar.gz
 book_order: 246000
 cycle_policy:
   install_before:

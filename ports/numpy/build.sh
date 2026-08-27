@@ -72,4 +72,4 @@ fi
 # --- commands from BLFS ---
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir \
            -C setup-args=-Dallow-noblas=true $PWD
-pip3 install --no-index --find-links dist --no-user numpy
+pip3 install --no-deps --no-index --find-links dist --no-user numpy

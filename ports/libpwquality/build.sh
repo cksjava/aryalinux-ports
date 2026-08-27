@@ -77,7 +77,7 @@ fi
 make
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD/python
 make install
-pip3 install --no-index --find-links dist --no-user pwquality
+pip3 install --no-deps --no-index --find-links dist --no-user pwquality
 install -vdm755 /etc/pam.d
 if [ -e /etc/pam.d/system-password ]; then
   mv -v /etc/pam.d/system-password{,.orig}

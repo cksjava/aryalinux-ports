@@ -80,4 +80,4 @@ meson setup .. \
 ninja -j "$ALPS_JOBS"
 ninja -j "$ALPS_JOBS" install
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir ..
-pip3 install --no-index --find-links dist --no-user libfdt
+pip3 install --no-deps --no-index --find-links dist --no-user libfdt

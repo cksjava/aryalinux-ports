@@ -26,8 +26,8 @@ conflicts: []
 patches:
 - label: additional download
   url: https://anduin.linuxfromscratch.org/BLFS/Linux-PAM/Linux-PAM-1.7.2-docs.tar.xz
-  filename: Linux-PAM-1.7.2-docs.tar.xz
   md5: 8b0c69931e4805ee5c297192c46d0e28
+  filename: Linux-PAM-1.7.2-docs.tar.xz
 cycle_policy:
   install_before:
   - libpwquality

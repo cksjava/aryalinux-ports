@@ -72,4 +72,4 @@ fi
 # --- commands from BLFS ---
 sed -i '/calver/s/^/#/;$iversion="2026.6.1.19"' setup.py
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD
-pip3 install --no-index --find-links dist --no-user trove-classifiers
+pip3 install --no-deps --no-index --find-links dist --no-user trove-classifiers

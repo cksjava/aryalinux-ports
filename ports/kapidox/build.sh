@@ -75,4 +75,4 @@ export QT6DIR="${QT6DIR:-/opt/qt6}"
 export PATH="$KF6_PREFIX/bin:${PATH}"
 export PKG_CONFIG_PATH="$KF6_PREFIX/lib/pkgconfig:${PKG_CONFIG_PATH:-}"
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD
-pip3 install --no-index --find-links dist --no-user kapidox
+pip3 install --no-deps --no-index --find-links dist --no-user kapidox

@@ -72,4 +72,4 @@ fi
 # --- commands from BLFS ---
 sed -i 's/0.23/0.24/' setup.cfg
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD
-pip3 install --no-index --find-links dist --no-user sphinx_rtd_theme
+pip3 install --no-deps --no-index --find-links dist --no-user sphinx_rtd_theme

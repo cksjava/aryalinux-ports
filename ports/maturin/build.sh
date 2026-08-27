@@ -71,7 +71,7 @@ else
 fi
 # --- commands from BLFS ---
 pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir $PWD
-pip3 install --no-index --find-links dist --no-user maturin
+pip3 install --no-deps --no-index --find-links dist --no-user maturin
 python3 -m venv --system-site-packages testenv
 testenv/bin/pip3 install cffi pycparser virtualenv
 PATH=$PWD/testenv/bin:$PATH cargo test

@@ -23,6 +23,6 @@ conflicts: []
 patches:
 - label: additional download
   url: https://github.com/sass/libsass/archive/3.6.6/libsass-3.6.6.tar.gz
-  filename: libsass-3.6.6.tar.gz
   md5: afda97284d75a030cabadf5b9f998a3b
+  filename: libsass-3.6.6.tar.gz
 book_order: 248000
