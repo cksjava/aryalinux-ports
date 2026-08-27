@@ -17,6 +17,7 @@ depends:
   required:
   - gtk
   - hicolor-icon-theme
+  - icon-naming-utils
   - intltool
   recommended: []
   ignore_for_order: []

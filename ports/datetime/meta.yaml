@@ -15,9 +15,12 @@ sbu: ''
 depends:
   required:
   - datetime-locale
+  - datetime-timezone
   recommended:
   - cpan-meta-check
+  - test-fatal
   - test-warnings
+  - test-without-module
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

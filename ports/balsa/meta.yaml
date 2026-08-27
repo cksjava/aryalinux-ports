@@ -18,6 +18,7 @@ depends:
   - gmime
   - gpgme
   - gtk
+  - libical
   - libnotify
   - libsecret
   - mta

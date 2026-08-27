@@ -17,6 +17,7 @@ depends:
   required:
   - brotli
   - ghostscript
+  - potrace
   - texlive
   recommended:
   - woff2

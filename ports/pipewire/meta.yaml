@@ -20,6 +20,7 @@ depends:
   - bluez
   - gstreamer
   - gst-plugins-base
+  - pulseaudio
   - sbc
   - v4l-utils
   - wireplumber

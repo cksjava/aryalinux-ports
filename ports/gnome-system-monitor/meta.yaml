@@ -15,6 +15,7 @@ sbu: 0.1 SBU (with parallelism=4)
 depends:
   required:
   - adwaita-icon-theme
+  - gtkmm
   - itstool
   - libgtop
   - libadwaita

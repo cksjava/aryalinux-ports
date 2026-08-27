@@ -19,6 +19,7 @@ depends:
   - itstool
   - libfyaml
   - libxml2
+  - libxmlb
   - libxslt
   - wayland
   recommended:

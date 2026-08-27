@@ -26,6 +26,7 @@ depends:
   - gc
   - glew
   - glm
+  - libtirpc
   - dvisvgm
   ignore_for_order: []
 bootscripts: []

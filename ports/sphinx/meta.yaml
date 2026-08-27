@@ -23,6 +23,7 @@ depends:
   - requests
   - roman-numerals
   - snowballstemmer
+  - sphinxcontrib-applehelp
   - sphinxcontrib-devhelp
   - sphinxcontrib-htmlhelp
   - sphinxcontrib-jsmath

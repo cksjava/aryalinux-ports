@@ -24,6 +24,7 @@ depends:
   - pipewire
   - wayland
   - wayland-protocols
+  - xdg-desktop-portal
   recommended:
   - xdg-desktop-portal-gtk
   ignore_for_order: []

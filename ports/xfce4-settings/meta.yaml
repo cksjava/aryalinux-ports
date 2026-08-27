@@ -18,6 +18,7 @@ depends:
   - exo
   - garcon
   - gnome-icon-theme
+  - lxde-icon-theme
   recommended:
   - libcanberra
   - libnotify

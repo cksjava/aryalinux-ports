@@ -16,6 +16,7 @@ sbu: 0.1 SBU
 depends:
   required:
   - accountsservice
+  - gtk
   - intltool
   - polkit
   recommended: []

@@ -18,6 +18,7 @@ depends:
   recommended:
   - fast_float
   - fmt
+  - icu
   - gnutls
   - glib
   - gtk

@@ -20,6 +20,7 @@ depends:
   required: []
   recommended:
   - gnupg
+  - libwww-perl
   - ghostscript
   - x7lib
   - libxcb

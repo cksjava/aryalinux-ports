@@ -16,6 +16,8 @@ sbu: ''
 depends:
   required:
   - io-socket-ssl
+  - libwww-perl
+  - make-ca
   recommended: []
   ignore_for_order: []
 bootscripts: []

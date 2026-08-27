@@ -26,9 +26,12 @@ depends:
   - libgudev
   - libjpeg-turbo
   - libogg
+  - libpng
   - libvorbis
   - mesa
   - pango
+  - wayland-protocols
+  - x7lib
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

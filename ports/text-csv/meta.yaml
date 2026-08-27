@@ -17,9 +17,14 @@ depends:
   required: []
   recommended:
   - text-csv_xs
-  ignore_for_order: []
+  - biber
+  ignore_for_order:
+  - biber
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 339000
+cycle_policy:
+  install_before:
+  - biber

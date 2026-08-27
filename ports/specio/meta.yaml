@@ -18,6 +18,7 @@ depends:
   - clone
   - clone-pp
   - devel-stacktrace
+  - eval-closure
   - module-runtime
   - role-tiny
   - sub-quote

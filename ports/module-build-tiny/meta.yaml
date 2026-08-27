@@ -15,6 +15,7 @@ sbu: ''
 depends:
   required:
   - extutils-config
+  - extutils-helpers
   - extutils-installpaths
   recommended: []
   ignore_for_order: []

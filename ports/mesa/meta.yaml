@@ -25,6 +25,7 @@ depends:
   - llvm
   - wayland-protocols
   - libclc
+  - spirv-llvm-translator
   - vulkan-loader
   - cbindgen
   - make-ca

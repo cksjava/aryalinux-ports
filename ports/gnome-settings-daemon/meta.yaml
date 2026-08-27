@@ -30,6 +30,7 @@ depends:
   recommended:
   - colord
   - cups
+  - networkmanager
   - modemmanager
   - nss
   - wayland

@@ -24,7 +24,9 @@ depends:
   - glib
   - iptables
   - libpsl
+  - newt
   - nss
+  - polkit
   - pygobject
   - systemd
   - vala

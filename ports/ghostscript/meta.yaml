@@ -22,6 +22,7 @@ depends:
   - freetype
   - little-cms
   - libjpeg-turbo
+  - libpng
   - tiff
   - openjpeg
   ignore_for_order:

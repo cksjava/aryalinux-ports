@@ -24,6 +24,7 @@ depends:
   - giflib
   - ffmpeg
   - icu
+  - libexif
   - libgxps
   - libseccomp
   - libwebp

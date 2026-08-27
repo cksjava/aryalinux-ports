@@ -19,6 +19,7 @@ depends:
   - x7lib
   recommended:
   - hicolor-icon-theme
+  - libjpeg-turbo
   - libpng
   ignore_for_order: []
 bootscripts: []

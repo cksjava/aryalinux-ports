@@ -24,6 +24,7 @@ depends:
   - libaom
   - libass
   - fdk-aac
+  - freetype
   - lame
   - libvorbis
   - libvpx
@@ -34,6 +35,7 @@ depends:
   - nasm
   - alsa-lib
   - libva
+  - sdl2-compat
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

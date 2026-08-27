@@ -18,6 +18,7 @@ depends:
   - qtxdg-tools
   - xdg-user-dirs
   - openbox
+  - xfwm4
   - icewm
   - lxqt-config
   - fluxbox

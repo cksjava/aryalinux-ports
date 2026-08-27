@@ -20,6 +20,7 @@ depends:
   - glib
   - gtk
   - libhandy
+  - libxml2
   recommended:
   - libxslt
   - vala

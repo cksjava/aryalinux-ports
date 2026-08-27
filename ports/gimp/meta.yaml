@@ -19,12 +19,15 @@ depends:
   - gegl
   - gexiv2
   - glib-networking
+  - gtk
   - harfbuzz
   - libmypaint
   - librsvg
   - tiff
+  - libxml2
   - little-cms
   - mypaint-brushes
+  - poppler
   recommended:
   - graphviz
   - ghostscript

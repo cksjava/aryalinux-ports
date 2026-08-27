@@ -17,6 +17,7 @@ depends:
   - cairo
   - exo
   - garcon
+  - libwnck
   - libxfce4windowing
   recommended: []
   ignore_for_order: []

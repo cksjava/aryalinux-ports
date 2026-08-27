@@ -22,6 +22,7 @@ depends:
   - glib
   - libmbim
   - libqmi
+  - polkit
   - vala
   ignore_for_order: []
 bootscripts: []

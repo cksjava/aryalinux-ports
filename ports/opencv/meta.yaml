@@ -20,12 +20,15 @@ depends:
   recommended:
   - ffmpeg
   - gst-plugins-base
+  - gtk
   - jasper
   - libavif
+  - libexif
   - libjpeg-turbo
   - libpng
   - tiff
   - libwebp
+  - openjpeg
   - v4l-utils
   - xine-lib
   ignore_for_order: []

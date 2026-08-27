@@ -16,14 +16,21 @@ sbu: 0.2 SBU
 depends:
   required:
   - accountsservice
+  - dconf
+  - libcanberra
+  - gtk
   - linux-pam
   - gnome-session
   - gnome-shell
   - systemd
   recommended: []
-  ignore_for_order: []
+  ignore_for_order:
+  - gnome-shell
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 519000
+cycle_policy:
+  install_before:
+  - gnome-shell

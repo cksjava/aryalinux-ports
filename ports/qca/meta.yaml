@@ -19,6 +19,7 @@ depends:
   - make-ca
   - cmake
   - qt
+  - which
   recommended: []
   ignore_for_order: []
 bootscripts: []

@@ -23,13 +23,18 @@ depends:
   - polkit
   - startup-notification
   - adwaita-icon-theme
+  - dconf
+  - gdm
   - libgweather
   - libnma
   - systemd
   recommended:
   - desktop-file-utils
+  - gnome-autoar
   - gnome-bluetooth
   - gst-plugins-base
+  - networkmanager
+  - power-profiles-daemon
   - gnome-menus
   ignore_for_order: []
 bootscripts: []

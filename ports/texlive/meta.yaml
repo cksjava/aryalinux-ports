@@ -16,6 +16,7 @@ depends:
   required: []
   recommended:
   - a-graphical-environment
+  - cairo
   - fontconfig
   - freetype
   - graphite2

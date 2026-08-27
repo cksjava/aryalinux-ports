@@ -17,15 +17,18 @@ depends:
   required:
   - cbindgen
   - gtk
+  - libarchive
   - python
   - nasm
   - zip
   recommended:
   - dbus-glib
   - icu
+  - libevent
   - libwebp
   - llvm
   - nspr
+  - nss
   - pulseaudio
   ignore_for_order: []
 bootscripts: []

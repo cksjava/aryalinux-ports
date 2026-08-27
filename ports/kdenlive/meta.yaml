@@ -20,6 +20,7 @@ depends:
   - kde-frameworks
   - mlt
   - opentimelineio
+  - v4l-utils
   recommended:
   - breeze-icons
   ignore_for_order: []

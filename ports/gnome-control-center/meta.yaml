@@ -15,18 +15,22 @@ sbu: 0.6 SBU (Using parallelism=4; with tests)
 depends:
   required:
   - accountsservice
+  - blueprint-compiler
   - colord-gtk
   - cups
+  - gnome-bluetooth
   - gnome-online-accounts
   - gnome-settings-daemon
   - gsound
   - libadwaita
   - libgtop
+  - libnma
   - libpwquality
   - mit-kerberos-v5
   - modemmanager
   - samba
   - shared-mime-info
+  - tecla
   - udisks
   recommended:
   - bolt

@@ -21,6 +21,7 @@ depends:
   - glib
   - libgcrypt
   - qt
+  - speex
   recommended:
   - libpcap
   ignore_for_order: []

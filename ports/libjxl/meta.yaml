@@ -18,6 +18,7 @@ depends:
   - brotli
   - cmake
   - giflib
+  - highway
   - little-cms
   - libjpeg-turbo
   - libpng

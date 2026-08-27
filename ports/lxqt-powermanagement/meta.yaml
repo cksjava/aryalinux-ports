@@ -18,6 +18,7 @@ depends:
   - liblxqt
   - kidletime-6.29.0-for-lxqt
   - solid-6.29.0-for-lxqt
+  - upower
   recommended: []
   ignore_for_order: []
 bootscripts: []

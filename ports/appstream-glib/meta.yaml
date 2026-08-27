@@ -20,6 +20,7 @@ depends:
   - curl
   - gdk-pixbuf
   - gtk
+  - json-glib
   - libarchive
   - libyaml
   recommended: []

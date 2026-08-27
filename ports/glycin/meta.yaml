@@ -15,6 +15,7 @@ sbu: 3.3 SBU (with documentation, add 2.5 SBU for tests)
 depends:
   required:
   - bubblewrap
+  - fontconfig
   - glib
   - little-cms
   - libseccomp
@@ -22,8 +23,10 @@ depends:
   recommended:
   - libheif
   - libjxl
+  - librsvg
   - vala
   ignore_for_order:
+  - librsvg
   - vala
 bootscripts: []
 systemd_units: []
@@ -36,4 +39,5 @@ patches:
 book_order: 218000
 cycle_policy:
   install_before:
+  - librsvg
   - vala

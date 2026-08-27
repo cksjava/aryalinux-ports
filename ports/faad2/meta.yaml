@@ -16,6 +16,7 @@ sbu: 0.2 SBU
 depends:
   required:
   - cmake
+  - alsa-utils
   recommended: []
   ignore_for_order: []
 bootscripts: []

@@ -16,6 +16,7 @@ sbu: ''
 depends:
   required:
   - number-compare
+  - text-glob
   recommended: []
   ignore_for_order: []
 bootscripts: []

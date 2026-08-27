@@ -17,6 +17,7 @@ sbu: ''
 depends:
   required:
   - module-runtime
+  - try-tiny
   recommended:
   - test-fatal
   - test-requires

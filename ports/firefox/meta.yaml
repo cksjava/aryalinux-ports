@@ -16,6 +16,7 @@ depends:
   required:
   - cbindgen
   - gtk
+  - libnotify
   - libarchive
   - llvm
   - nodejs
@@ -25,6 +26,7 @@ depends:
   recommended:
   - dav1d
   - icu
+  - libaom
   - libevent
   - libvpx
   - libwebp

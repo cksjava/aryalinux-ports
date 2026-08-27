@@ -17,6 +17,7 @@ depends:
   required: []
   recommended:
   - test-leaktrace
+  - test-warnings
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

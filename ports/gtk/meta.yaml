@@ -22,10 +22,12 @@ depends:
   - librsvg
   - libxkbcommon
   - pango
+  - pygobject
   - wayland-protocols
   recommended:
   - adwaita-icon-theme
   - gst-plugins-bad
+  - glslc-from-shaderc
   - gst-plugins-good
   - libvpx
   - hicolor-icon-theme

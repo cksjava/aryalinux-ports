@@ -16,6 +16,7 @@ depends:
   required:
   - alsa-utils
   - gtk
+  - libnotify
   recommended: []
   ignore_for_order: []
 bootscripts: []

@@ -30,6 +30,7 @@ depends:
   recommended:
   - test-fatal
   - test-needs
+  - test-requiresinternet
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

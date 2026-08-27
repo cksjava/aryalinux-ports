@@ -19,6 +19,7 @@ depends:
   recommended:
   - curl
   - icu
+  - libarchive
   - pango
   ignore_for_order:
   - tesseract

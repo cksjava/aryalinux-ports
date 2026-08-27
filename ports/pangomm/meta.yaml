@@ -16,6 +16,7 @@ sbu: 0.2 SBU
 depends:
   required:
   - libcairomm
+  - glibmm
   - pango
   recommended: []
   ignore_for_order: []

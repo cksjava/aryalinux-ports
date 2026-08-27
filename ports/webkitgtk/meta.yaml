@@ -18,6 +18,7 @@ depends:
   - cairo
   - cmake
   - gst-plugins-base
+  - gst-plugins-bad
   - gtk
   - icu
   - little-cms
@@ -29,6 +30,7 @@ depends:
   - mesa
   - openjpeg
   - ruby
+  - unifdef
   - which
   recommended:
   - bubblewrap
@@ -36,6 +38,7 @@ depends:
   - geoclue
   - glib
   - hicolor-icon-theme
+  - libavif
   - libjxl
   - libseccomp
   - xdg-dbus-proxy

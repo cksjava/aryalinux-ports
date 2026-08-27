@@ -21,6 +21,8 @@ depends:
   recommended:
   - libepoxy
   - libtirpc
+  - systemd
+  - xorg-libinput
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

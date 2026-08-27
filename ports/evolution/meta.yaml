@@ -16,10 +16,12 @@ sbu: 0.7 SBU (Using parallelism=4)
 depends:
   required:
   - adwaita-icon-theme
+  - evolution-data-server
   - gcr
   - gnome-autoar
   - intltool
   - shared-mime-info
+  - webkitgtk
   recommended:
   - bogofilter
   - enchant

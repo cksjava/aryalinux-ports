@@ -26,10 +26,13 @@ depends:
   - pipewire
   recommended:
   - desktop-file-utils
+  - glib
   - libdisplay-info
+  - startup-notification
   - libinput
   - wayland
   - wayland-protocols
+  - xwayland
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

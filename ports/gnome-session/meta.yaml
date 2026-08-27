@@ -18,6 +18,7 @@ depends:
   - json-glib
   - mesa
   - systemd
+  - upower
   recommended: []
   ignore_for_order: []
 bootscripts: []

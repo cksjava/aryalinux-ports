@@ -22,6 +22,7 @@ depends:
   recommended:
   - boost
   - cairo
+  - gpgmepp
   - little-cms
   - libjpeg-turbo
   - libpng

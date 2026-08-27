@@ -15,6 +15,7 @@ sbu: ''
 depends:
   required:
   - config-autoconf
+  - extutils-libbuilder
   recommended: []
   ignore_for_order: []
 bootscripts: []

@@ -18,6 +18,7 @@ depends:
   required:
   - a-graphical-environment
   - ffmpeg
+  - alsa-lib
   - pulseaudio
   recommended:
   - libdvdnav

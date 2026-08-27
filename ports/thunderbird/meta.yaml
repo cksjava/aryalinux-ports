@@ -17,10 +17,12 @@ depends:
   required:
   - cbindgen
   - gtk
+  - libarchive
   - llvm
   - nodejs
   - pulseaudio
   - alsa-lib
+  - startup-notification
   recommended:
   - dav1d
   - libaom

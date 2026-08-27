@@ -15,6 +15,7 @@ sbu: ''
 depends:
   required:
   - mime-charset
+  - wget
   recommended: []
   ignore_for_order: []
 bootscripts: []

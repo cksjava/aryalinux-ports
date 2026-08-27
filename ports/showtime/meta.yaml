@@ -17,6 +17,7 @@ depends:
   required:
   - blueprint-compiler
   - gst-plugins-base
+  - libadwaita
   - pygobject
   recommended: []
   ignore_for_order: []

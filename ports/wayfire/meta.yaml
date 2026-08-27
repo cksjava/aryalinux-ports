@@ -20,14 +20,18 @@ depends:
   - glm
   - freetype
   - libdrm
+  - libevdev
   - libinput
   - libjpeg-turbo
   - libpng
   - libxkbcommon
   - mesa
+  - nlohmann-json
+  - pango
   - pixman
   - wayland
   - wayland-protocols
+  - wlroots
   recommended:
   - x7lib
   - yyjson

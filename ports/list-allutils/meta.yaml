@@ -16,6 +16,7 @@ sbu: ''
 depends:
   required:
   - list-someutils
+  - list-utilsby
   recommended: []
   ignore_for_order: []
 bootscripts: []

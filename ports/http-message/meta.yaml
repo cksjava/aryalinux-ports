@@ -19,8 +19,10 @@ depends:
   - http-date
   - io-html
   - lwp-mediatypes
+  - uri
   recommended:
   - test-needs
+  - try-tiny
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

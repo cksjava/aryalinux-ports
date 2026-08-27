@@ -21,6 +21,7 @@ depends:
   recommended:
   - pango
   - cairo
+  - x7lib
   - fontconfig
   - libpng
   - gegl

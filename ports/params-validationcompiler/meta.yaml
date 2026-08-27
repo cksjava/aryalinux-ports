@@ -15,6 +15,7 @@ sbu: ''
 depends:
   required:
   - exception-class
+  - specio
   recommended:
   - test-without-module
   - test2-plugin-nowarnings

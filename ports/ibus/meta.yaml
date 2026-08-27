@@ -19,7 +19,9 @@ depends:
   - vala
   recommended:
   - dconf
+  - glib
   - gtk
+  - libnotify
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

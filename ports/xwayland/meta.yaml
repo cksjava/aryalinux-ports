@@ -19,6 +19,7 @@ depends:
   - libxcvt
   - pixman
   - wayland-protocols
+  - x7app
   - x7font
   recommended:
   - libepoxy

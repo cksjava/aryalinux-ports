@@ -17,6 +17,7 @@ depends:
   - dbus
   - glib
   - meson_python
+  - patchelf
   recommended: []
   ignore_for_order: []
 bootscripts: []

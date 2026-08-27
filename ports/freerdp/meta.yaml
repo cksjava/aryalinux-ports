@@ -19,11 +19,14 @@ depends:
   required:
   - ffmpeg
   - icu
+  - x7lib
   recommended:
   - cairo
   - docbook-xsl-nons
+  - fuse
   - json-c
   - mit-kerberos-v5
+  - libusb
   - libxkbcommon
   - wayland
   ignore_for_order: []

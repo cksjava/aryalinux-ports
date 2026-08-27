@@ -17,6 +17,7 @@ depends:
   required:
   - colord
   - gtk
+  - itstool
   - little-cms
   recommended:
   - desktop-file-utils

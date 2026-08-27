@@ -17,15 +17,18 @@ sbu: 3.8 SBU with 4 jobs (add 25 SBU for tests with 4 jobs)
 depends:
   required:
   - java
+  - configuring-the-java-environment
   - alsa-lib
   - cpio
   - cups
+  - libarchive
   - which
   - x7lib
   - zip
   recommended:
   - make-ca
   - giflib
+  - harfbuzz
   - little-cms
   - libjpeg-turbo
   - libpng

@@ -16,6 +16,7 @@ sbu: ''
 depends:
   required:
   - module-build
+  - module-implementation
   recommended:
   - test-fatal
   - test-requires

@@ -25,6 +25,7 @@ depends:
   - desktop-file-utils
   - xscreensaver
   - shared-mime-info
+  - polkit-gnome
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

@@ -20,8 +20,10 @@ depends:
   recommended:
   - libkexiv2
   - tiff
+  - phonon
   - poppler
   ignore_for_order:
+  - phonon
   - poppler
 bootscripts: []
 systemd_units: []
@@ -30,4 +32,5 @@ conflicts: []
 book_order: 563000
 cycle_policy:
   install_before:
+  - phonon
   - poppler

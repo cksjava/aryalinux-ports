@@ -24,6 +24,7 @@ depends:
   - glib
   - gtk
   - icu
+  - libcanberra
   - libgweather
   - vala
   - webkitgtk

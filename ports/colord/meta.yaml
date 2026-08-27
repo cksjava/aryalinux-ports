@@ -20,9 +20,11 @@ depends:
   - glib
   - little-cms
   - libgudev
+  - libgusb
   - polkit
   recommended:
   - systemd
+  - vala
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

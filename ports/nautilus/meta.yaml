@@ -25,9 +25,12 @@ depends:
   - tinysparql
   recommended:
   - desktop-file-utils
+  - glib
   - gst-plugins-base
+  - libcloudproviders
   - localsearch
   - adwaita-icon-theme
+  - gvfs
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

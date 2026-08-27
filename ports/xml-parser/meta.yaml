@@ -18,6 +18,7 @@ sbu: ''
 depends:
   required:
   - file-sharedir
+  - file-sharedir-install
   recommended: []
   ignore_for_order: []
 bootscripts: []

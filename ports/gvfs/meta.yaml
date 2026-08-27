@@ -25,6 +25,8 @@ depends:
   - libcdio
   - libgudev
   - libsoup
+  - systemd
+  - udisks
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

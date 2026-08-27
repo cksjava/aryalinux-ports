@@ -19,6 +19,7 @@ depends:
   - cairo
   - libevdev
   - wayfire
+  - wayland
   - wayland-protocols
   recommended:
   - boost

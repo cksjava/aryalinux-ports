@@ -19,6 +19,7 @@ depends:
   required:
   - docbook-xml
   - lxml
+  - libxml2
   recommended: []
   ignore_for_order: []
 bootscripts: []

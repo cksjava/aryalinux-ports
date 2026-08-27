@@ -26,6 +26,8 @@ depends:
   - datetime-calendar-julian
   - datetime-format-builder
   - encode-eucjpascii
+  - encode-hanextra
+  - encode-jis2k
   - file-slurper
   - io-string
   - ipc-run3
@@ -34,8 +36,10 @@ depends:
   - list-moreutils
   - log-log4perl
   - lwp-protocol-https
+  - module-build
   - parse-recdescent
   - perlio-utf8_strict
+  - regexp-common
   - sort-key
   - text-bibtex
   - text-csv
@@ -43,6 +47,8 @@ depends:
   - unicode-collate
   - unicode-linebreak
   - xml-libxml-simple
+  - xml-libxslt
+  - xml-writer
   recommended:
   - file-which
   - test-differences

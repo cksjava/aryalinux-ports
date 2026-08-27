@@ -19,7 +19,9 @@ depends:
   - itstool
   recommended:
   - adwaita-icon-theme
+  - oxygen-icons
   - gnome-icon-theme
+  - a-graphical-environment
   - yelp
   ignore_for_order: []
 bootscripts: []

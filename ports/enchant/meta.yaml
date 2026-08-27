@@ -17,6 +17,7 @@ depends:
   required:
   - aspell
   - glib
+  - vala
   recommended: []
   ignore_for_order: []
 bootscripts: []

@@ -16,6 +16,7 @@ depends:
   required:
   - layer-shell-qt-6.7.4-for-lxqt
   - libdbusmenu-lxqt
+  - liblxqt
   - lxqt-globalkeys
   - lxqt-menu-data
   - solid-6.29.0-for-lxqt

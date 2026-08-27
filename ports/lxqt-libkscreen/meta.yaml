@@ -15,6 +15,7 @@ sbu: 0.3 SBU (using parallelism=4)
 depends:
   required:
   - kwayland-6.7.4-for-lxqt
+  - plasma-wayland-protocols
   - qt
   recommended: []
   ignore_for_order: []

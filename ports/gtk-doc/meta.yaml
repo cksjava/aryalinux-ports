@@ -20,6 +20,7 @@ depends:
   required:
   - docbook-xml
   - docbook-xsl-nons
+  - glib
   - itstool
   - libxslt
   - pygments

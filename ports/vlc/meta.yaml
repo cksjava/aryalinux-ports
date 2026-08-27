@@ -21,9 +21,11 @@ depends:
   recommended:
   - alsa-lib
   - desktop-file-utils
+  - ffmpeg
   - liba52
   - libgcrypt
   - libmad
+  - lua
   - qt
   - a-graphical-environment
   ignore_for_order: []

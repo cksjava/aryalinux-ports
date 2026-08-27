@@ -20,6 +20,7 @@ depends:
   - params-validationcompiler
   recommended:
   - cpan-meta-check
+  - ipc-system-simple
   - test-file-sharedir
   ignore_for_order: []
 bootscripts: []

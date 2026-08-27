@@ -18,9 +18,11 @@ depends:
   required:
   - cmake
   - fltk
+  - gnutls
   - libgcrypt
   - libjpeg-turbo
   - pixman
+  - systemd
   - linux-pam
   - x7app
   - xinit

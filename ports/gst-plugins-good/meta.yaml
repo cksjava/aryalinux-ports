@@ -25,6 +25,7 @@ depends:
   - lame
   - libsoup
   - libvpx
+  - mpg123
   - nasm
   - pulseaudio
   ignore_for_order: []

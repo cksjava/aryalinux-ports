@@ -16,6 +16,7 @@ sbu: ''
 depends:
   required:
   - class-inspector
+  - file-sharedir-install
   recommended: []
   ignore_for_order: []
 bootscripts: []

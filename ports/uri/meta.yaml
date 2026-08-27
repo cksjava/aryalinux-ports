@@ -22,6 +22,7 @@ depends:
   recommended:
   - test-fatal
   - test-needs
+  - test-warnings
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

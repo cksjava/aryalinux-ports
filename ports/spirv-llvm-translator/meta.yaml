@@ -18,6 +18,7 @@ depends:
   required:
   - libxml2
   - llvm
+  - spirv-tools
   recommended: []
   ignore_for_order: []
 bootscripts: []

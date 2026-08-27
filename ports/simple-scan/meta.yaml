@@ -18,6 +18,7 @@ depends:
   required:
   - colord
   - itstool
+  - libgusb
   - libadwaita
   - libwebp
   - sane

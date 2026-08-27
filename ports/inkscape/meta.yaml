@@ -17,6 +17,7 @@ depends:
   required:
   - boost
   - double-conversion
+  - gc
   - gsl
   - gtkmm
   - libxslt
@@ -28,6 +29,7 @@ depends:
   - libcanberra
   - potrace
   - cachecontrol
+  - cssselect
   - lxml
   - numpy
   - pyserial

@@ -16,6 +16,7 @@ sbu: 1.2 SBU (with parallelism=4)
 depends:
   required:
   - abseil-cpp
+  - cmake
   recommended: []
   ignore_for_order: []
 bootscripts: []

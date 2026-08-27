@@ -16,6 +16,7 @@ depends:
   required:
   - blueprint-compiler
   - desktop-file-utils
+  - geoclue
   - geocode-glib
   - gjs
   - libadwaita

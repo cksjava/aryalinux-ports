@@ -21,6 +21,7 @@ depends:
   - poppler
   recommended:
   - cups
+  - desktop-file-utils
   - hicolor-icon-theme
   ignore_for_order: []
 bootscripts: []

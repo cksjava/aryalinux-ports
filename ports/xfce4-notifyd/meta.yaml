@@ -22,6 +22,7 @@ depends:
   - libxfce4ui
   - libcanberra
   - xfce4-dev-tools
+  - xfce4-panel
   recommended: []
   ignore_for_order: []
 bootscripts: []

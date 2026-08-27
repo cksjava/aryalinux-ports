@@ -17,6 +17,7 @@ sbu: 1.0 SBU
 depends:
   required:
   - gst-plugins-base
+  - intltool
   - itstool
   - libcanberra
   - libnotify
@@ -24,6 +25,7 @@ depends:
   - glib
   - libburn
   - libisoburn
+  - libisofs
   - nautilus
   - tinysparql
   - totem-pl-parser

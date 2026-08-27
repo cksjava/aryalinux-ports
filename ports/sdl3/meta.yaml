@@ -25,6 +25,8 @@ depends:
   - pipewire
   - pulseaudio
   - vulkan-loader
+  - wayland-protocols
+  - x7lib
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

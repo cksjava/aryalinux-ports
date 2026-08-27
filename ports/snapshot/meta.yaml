@@ -17,6 +17,7 @@ depends:
   required:
   - libadwaita
   - gst-plugins-bad
+  - rustc
   - gst-plugins-rs
   - pipewire
   - xdg-desktop-portal-gnome

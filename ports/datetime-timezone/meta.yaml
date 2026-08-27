@@ -18,13 +18,18 @@ depends:
   required:
   - class-singleton
   - module-runtime
+  - params-validationcompiler
   recommended:
   - test-fatal
   - test-requires
   - datetime
-  ignore_for_order: []
+  ignore_for_order:
+  - datetime
 bootscripts: []
 systemd_units: []
 provides: []
 conflicts: []
 book_order: 340000
+cycle_policy:
+  install_before:
+  - datetime

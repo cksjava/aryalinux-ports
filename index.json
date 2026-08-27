@@ -3,7 +3,7 @@
   "git": "https://github.com/cksjava/aryalinux-ports.git",
   "branch": "main",
   "ports_subdir": "ports",
-  "generated_at": "2026-08-26T18:02:46Z",
+  "generated_at": "2026-08-27T01:29:44Z",
   "ports": [
     {
       "name": "TTF-and-OTF-fonts",
@@ -75,7 +75,8 @@
         ],
         "recommended": [
           "glib",
-          "systemd"
+          "systemd",
+          "vala"
         ],
         "ignore_for_order": []
       },
@@ -462,6 +463,7 @@
           "itstool",
           "libfyaml",
           "libxml2",
+          "libxmlb",
           "libxslt",
           "wayland"
         ],
@@ -488,6 +490,7 @@
           "curl",
           "gdk-pixbuf",
           "gtk",
+          "json-glib",
           "libarchive",
           "libyaml"
         ],
@@ -573,6 +576,7 @@
         "recommended": [
           "7zip",
           "cpio",
+          "unrar",
           "zip"
         ],
         "ignore_for_order": []
@@ -662,6 +666,7 @@
           "gc",
           "glew",
           "glm",
+          "libtirpc",
           "dvisvgm"
         ],
         "ignore_for_order": []
@@ -769,7 +774,8 @@
         "recommended": [
           "libarchive",
           "mpg123",
-          "ffmpeg"
+          "ffmpeg",
+          "neon"
         ],
         "ignore_for_order": []
       },
@@ -1016,6 +1022,7 @@
           "gmime",
           "gpgme",
           "gtk",
+          "libical",
           "libnotify",
           "libsecret",
           "mta"
@@ -1039,6 +1046,7 @@
       "depends": {
         "required": [
           "adwaita-icon-theme",
+          "gtk",
           "itstool",
           "libadwaita",
           "vala"
@@ -1108,6 +1116,8 @@
           "datetime-calendar-julian",
           "datetime-format-builder",
           "encode-eucjpascii",
+          "encode-hanextra",
+          "encode-jis2k",
           "file-slurper",
           "io-string",
           "ipc-run3",
@@ -1116,15 +1126,19 @@
           "list-moreutils",
           "log-log4perl",
           "lwp-protocol-https",
+          "module-build",
           "parse-recdescent",
           "perlio-utf8_strict",
+          "regexp-common",
           "sort-key",
           "text-bibtex",
           "text-csv",
           "text-roman",
           "unicode-collate",
           "unicode-linebreak",
-          "xml-libxml-simple"
+          "xml-libxml-simple",
+          "xml-libxslt",
+          "xml-writer"
         ],
         "recommended": [
           "file-which",
@@ -1399,6 +1413,7 @@
       "depends": {
         "required": [
           "gst-plugins-base",
+          "intltool",
           "itstool",
           "libcanberra",
           "libnotify"
@@ -1407,6 +1422,7 @@
           "glib",
           "libburn",
           "libisoburn",
+          "libisofs",
           "nautilus",
           "tinysparql",
           "totem-pl-parser",
@@ -2169,10 +2185,12 @@
           "glib",
           "little-cms",
           "libgudev",
+          "libgusb",
           "polkit"
         ],
         "recommended": [
-          "systemd"
+          "systemd",
+          "vala"
         ],
         "ignore_for_order": []
       },
@@ -2745,11 +2763,14 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "datetime-locale"
+          "datetime-locale",
+          "datetime-timezone"
         ],
         "recommended": [
           "cpan-meta-check",
-          "test-warnings"
+          "test-fatal",
+          "test-warnings",
+          "test-without-module"
         ],
         "ignore_for_order": []
       },
@@ -2836,6 +2857,7 @@
         ],
         "recommended": [
           "cpan-meta-check",
+          "ipc-system-simple",
           "test-file-sharedir"
         ],
         "ignore_for_order": []
@@ -2856,14 +2878,17 @@
       "depends": {
         "required": [
           "class-singleton",
-          "module-runtime"
+          "module-runtime",
+          "params-validationcompiler"
         ],
         "recommended": [
           "test-fatal",
           "test-requires",
           "datetime"
         ],
-        "ignore_for_order": []
+        "ignore_for_order": [
+          "datetime"
+        ]
       },
       "members": [],
       "systemd_units": [],
@@ -2945,7 +2970,8 @@
         "required": [
           "dbus",
           "glib",
-          "meson_python"
+          "meson_python",
+          "patchelf"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -2988,7 +3014,8 @@
           "dbus",
           "glib",
           "gtk",
-          "libhandy"
+          "libhandy",
+          "libxml2"
         ],
         "recommended": [
           "libxslt",
@@ -3533,6 +3560,7 @@
         "required": [
           "brotli",
           "ghostscript",
+          "potrace",
           "texlive"
         ],
         "recommended": [
@@ -3675,7 +3703,8 @@
       "depends": {
         "required": [
           "aspell",
-          "glib"
+          "glib",
+          "vala"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -3790,6 +3819,7 @@
         ],
         "recommended": [
           "cups",
+          "desktop-file-utils",
           "hicolor-icon-theme"
         ],
         "ignore_for_order": []
@@ -3859,6 +3889,7 @@
       "depends": {
         "required": [
           "adwaita-icon-theme",
+          "gsettings-desktop-schemas",
           "gtk",
           "itstool",
           "libhandy",
@@ -3890,10 +3921,12 @@
       "depends": {
         "required": [
           "adwaita-icon-theme",
+          "evolution-data-server",
           "gcr",
           "gnome-autoar",
           "intltool",
-          "shared-mime-info"
+          "shared-mime-info",
+          "webkitgtk"
         ],
         "recommended": [
           "bogofilter",
@@ -3934,6 +3967,7 @@
           "glib",
           "gtk",
           "icu",
+          "libcanberra",
           "libgweather",
           "vala",
           "webkitgtk"
@@ -4088,7 +4122,9 @@
         "recommended": [
           "qt"
         ],
-        "ignore_for_order": []
+        "ignore_for_order": [
+          "qt"
+        ]
       },
       "members": [],
       "systemd_units": [],
@@ -4197,7 +4233,8 @@
       "disk_space": "11 MB",
       "depends": {
         "required": [
-          "cmake"
+          "cmake",
+          "alsa-utils"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -4367,6 +4404,7 @@
           "libaom",
           "libass",
           "fdk-aac",
+          "freetype",
           "lame",
           "libvorbis",
           "libvpx",
@@ -4376,7 +4414,8 @@
           "x265",
           "nasm",
           "alsa-lib",
-          "libva"
+          "libva",
+          "sdl2-compat"
         ],
         "ignore_for_order": []
       },
@@ -4473,7 +4512,8 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "number-compare"
+          "number-compare",
+          "text-glob"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -4519,6 +4559,7 @@
         "recommended": [
           "cpio",
           "desktop-file-utils",
+          "json-glib",
           "libarchive",
           "libadwaita",
           "libportal",
@@ -4541,7 +4582,8 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "class-inspector"
+          "class-inspector",
+          "file-sharedir-install"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -4637,6 +4679,7 @@
         "required": [
           "cbindgen",
           "gtk",
+          "libnotify",
           "libarchive",
           "llvm",
           "nodejs",
@@ -4647,6 +4690,7 @@
         "recommended": [
           "dav1d",
           "icu",
+          "libaom",
           "libevent",
           "libvpx",
           "libwebp",
@@ -4728,6 +4772,7 @@
         ],
         "recommended": [
           "hicolor-icon-theme",
+          "libjpeg-turbo",
           "libpng"
         ],
         "ignore_for_order": []
@@ -4891,13 +4936,16 @@
       "depends": {
         "required": [
           "ffmpeg",
-          "icu"
+          "icu",
+          "x7lib"
         ],
         "recommended": [
           "cairo",
           "docbook-xsl-nons",
+          "fuse",
           "json-c",
           "mit-kerberos-v5",
+          "libusb",
           "libxkbcommon",
           "wayland"
         ],
@@ -5152,13 +5200,18 @@
       "depends": {
         "required": [
           "accountsservice",
+          "dconf",
+          "libcanberra",
+          "gtk",
           "linux-pam",
           "gnome-session",
           "gnome-shell",
           "systemd"
         ],
         "recommended": [],
-        "ignore_for_order": []
+        "ignore_for_order": [
+          "gnome-shell"
+        ]
       },
       "members": [],
       "systemd_units": [],
@@ -5333,6 +5386,7 @@
           "freetype",
           "little-cms",
           "libjpeg-turbo",
+          "libpng",
           "tiff",
           "openjpeg"
         ],
@@ -5399,12 +5453,15 @@
           "gegl",
           "gexiv2",
           "glib-networking",
+          "gtk",
           "harfbuzz",
           "libmypaint",
           "librsvg",
           "tiff",
+          "libxml2",
           "little-cms",
-          "mypaint-brushes"
+          "mypaint-brushes",
+          "poppler"
         ],
         "recommended": [
           "graphviz",
@@ -5477,7 +5534,8 @@
           "spidermonkey-from-firefox"
         ],
         "recommended": [
-          "gtk"
+          "gtk",
+          "valgrind"
         ],
         "ignore_for_order": []
       },
@@ -5537,9 +5595,11 @@
         "recommended": [
           "docutils",
           "libxslt",
-          "shared-mime-info"
+          "shared-mime-info",
+          "desktop-file-utils"
         ],
         "ignore_for_order": [
+          "desktop-file-utils",
           "shared-mime-info"
         ]
       },
@@ -5703,6 +5763,7 @@
       "depends": {
         "required": [
           "bubblewrap",
+          "fontconfig",
           "glib",
           "little-cms",
           "libseccomp",
@@ -5711,9 +5772,11 @@
         "recommended": [
           "libheif",
           "libjxl",
+          "librsvg",
           "vala"
         ],
         "ignore_for_order": [
+          "librsvg",
           "vala"
         ]
       },
@@ -5889,6 +5952,7 @@
         "required": [
           "colord",
           "gtk",
+          "itstool",
           "little-cms"
         ],
         "recommended": [
@@ -5938,18 +6002,22 @@
       "depends": {
         "required": [
           "accountsservice",
+          "blueprint-compiler",
           "colord-gtk",
           "cups",
+          "gnome-bluetooth",
           "gnome-online-accounts",
           "gnome-settings-daemon",
           "gsound",
           "libadwaita",
           "libgtop",
+          "libnma",
           "libpwquality",
           "mit-kerberos-v5",
           "modemmanager",
           "samba",
           "shared-mime-info",
+          "tecla",
           "udisks"
         ],
         "recommended": [
@@ -6028,6 +6096,7 @@
         "required": [
           "gtk",
           "hicolor-icon-theme",
+          "icon-naming-utils",
           "intltool"
         ],
         "recommended": [],
@@ -6138,6 +6207,7 @@
         "required": [
           "blueprint-compiler",
           "desktop-file-utils",
+          "geoclue",
           "geocode-glib",
           "gjs",
           "libadwaita",
@@ -6256,7 +6326,8 @@
           "gnome-desktop",
           "json-glib",
           "mesa",
-          "systemd"
+          "systemd",
+          "upower"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -6292,6 +6363,7 @@
         "recommended": [
           "colord",
           "cups",
+          "networkmanager",
           "modemmanager",
           "nss",
           "wayland"
@@ -6322,14 +6394,19 @@
           "polkit",
           "startup-notification",
           "adwaita-icon-theme",
+          "dconf",
+          "gdm",
           "libgweather",
           "libnma",
           "systemd"
         ],
         "recommended": [
           "desktop-file-utils",
+          "gnome-autoar",
           "gnome-bluetooth",
           "gst-plugins-base",
+          "networkmanager",
+          "power-profiles-daemon",
           "gnome-menus"
         ],
         "ignore_for_order": []
@@ -6370,6 +6447,7 @@
       "depends": {
         "required": [
           "adwaita-icon-theme",
+          "gtkmm",
           "itstool",
           "libgtop",
           "libadwaita",
@@ -6516,7 +6594,9 @@
         ],
         "recommended": [
           "adwaita-icon-theme",
+          "oxygen-icons",
           "gnome-icon-theme",
+          "a-graphical-environment",
           "yelp"
         ],
         "ignore_for_order": []
@@ -6780,6 +6860,7 @@
         "recommended": [
           "pango",
           "cairo",
+          "x7lib",
           "fontconfig",
           "libpng",
           "gegl"
@@ -6964,9 +7045,12 @@
           "libgudev",
           "libjpeg-turbo",
           "libogg",
+          "libpng",
           "libvorbis",
           "mesa",
-          "pango"
+          "pango",
+          "wayland-protocols",
+          "x7lib"
         ],
         "ignore_for_order": []
       },
@@ -6994,6 +7078,7 @@
           "lame",
           "libsoup",
           "libvpx",
+          "mpg123",
           "nasm",
           "pulseaudio"
         ],
@@ -7042,6 +7127,7 @@
         ],
         "recommended": [
           "liba52",
+          "libdvdread",
           "x264"
         ],
         "ignore_for_order": []
@@ -7088,11 +7174,13 @@
           "librsvg",
           "libxkbcommon",
           "pango",
+          "pygobject",
           "wayland-protocols"
         ],
         "recommended": [
           "adwaita-icon-theme",
           "gst-plugins-bad",
+          "glslc-from-shaderc",
           "gst-plugins-good",
           "libvpx",
           "hicolor-icon-theme",
@@ -7121,6 +7209,7 @@
         "required": [
           "docbook-xml",
           "docbook-xsl-nons",
+          "glib",
           "itstool",
           "libxslt",
           "pygments"
@@ -7259,6 +7348,7 @@
       "depends": {
         "required": [
           "desktop-file-utils",
+          "gsettings-desktop-schemas",
           "gtk",
           "itstool",
           "libarchive"
@@ -7335,7 +7425,9 @@
           "gtk",
           "libcdio",
           "libgudev",
-          "libsoup"
+          "libsoup",
+          "systemd",
+          "udisks"
         ],
         "ignore_for_order": []
       },
@@ -7714,10 +7806,12 @@
           "encode-locale",
           "http-date",
           "io-html",
-          "lwp-mediatypes"
+          "lwp-mediatypes",
+          "uri"
         ],
         "recommended": [
-          "test-needs"
+          "test-needs",
+          "try-tiny"
         ],
         "ignore_for_order": []
       },
@@ -7779,7 +7873,9 @@
         ],
         "recommended": [
           "dconf",
-          "gtk"
+          "glib",
+          "gtk",
+          "libnotify"
         ],
         "ignore_for_order": []
       },
@@ -8072,6 +8168,7 @@
         "required": [
           "boost",
           "double-conversion",
+          "gc",
           "gsl",
           "gtkmm",
           "libxslt",
@@ -8084,6 +8181,7 @@
           "libcanberra",
           "potrace",
           "cachecontrol",
+          "cssselect",
           "lxml",
           "numpy",
           "pyserial",
@@ -8321,7 +8419,8 @@
       "depends": {
         "required": [
           "docbook-xml",
-          "lxml"
+          "lxml",
+          "libxml2"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -9007,7 +9106,8 @@
           "kddockwidgets",
           "kde-frameworks",
           "mlt",
-          "opentimelineio"
+          "opentimelineio",
+          "v4l-utils"
         ],
         "recommended": [
           "breeze-icons"
@@ -11719,6 +11819,7 @@
           "brotli",
           "cmake",
           "giflib",
+          "highway",
           "little-cms",
           "libjpeg-turbo",
           "libpng"
@@ -12540,7 +12641,8 @@
       "depends": {
         "required": [
           "cmake",
-          "lxqt-build-tools"
+          "lxqt-build-tools",
+          "qt"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -12820,6 +12922,7 @@
       "depends": {
         "required": [
           "glib-networking",
+          "libpsl",
           "libxml2",
           "nghttp2"
         ],
@@ -13550,7 +13653,8 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "list-someutils"
+          "list-someutils",
+          "list-utilsby"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -13631,7 +13735,8 @@
       "depends": {
         "required": [],
         "recommended": [
-          "test-leaktrace"
+          "test-leaktrace",
+          "test-warnings"
         ],
         "ignore_for_order": []
       },
@@ -13769,6 +13874,7 @@
           "giflib",
           "ffmpeg",
           "icu",
+          "libexif",
           "libgxps",
           "libseccomp",
           "libwebp",
@@ -14025,7 +14131,9 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "io-socket-ssl"
+          "io-socket-ssl",
+          "libwww-perl",
+          "make-ca"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -14397,6 +14505,7 @@
       "depends": {
         "required": [
           "kwayland-6.7.4-for-lxqt",
+          "plasma-wayland-protocols",
           "qt"
         ],
         "recommended": [],
@@ -14479,6 +14588,7 @@
         "required": [
           "layer-shell-qt-6.7.4-for-lxqt",
           "libdbusmenu-lxqt",
+          "liblxqt",
           "lxqt-globalkeys",
           "lxqt-menu-data",
           "solid-6.29.0-for-lxqt",
@@ -14531,7 +14641,8 @@
         "required": [
           "liblxqt",
           "kidletime-6.29.0-for-lxqt",
-          "solid-6.29.0-for-lxqt"
+          "solid-6.29.0-for-lxqt",
+          "upower"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -14599,6 +14710,7 @@
           "qtxdg-tools",
           "xdg-user-dirs",
           "openbox",
+          "xfwm4",
           "icewm",
           "lxqt-config",
           "fluxbox"
@@ -14835,7 +14947,8 @@
       "disk_space": "164 KB (with all runtime deps)",
       "depends": {
         "required": [
-          "p11-kit"
+          "p11-kit",
+          "libtasn1"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -15028,6 +15141,7 @@
           "llvm",
           "wayland-protocols",
           "libclc",
+          "spirv-llvm-translator",
           "vulkan-loader",
           "cbindgen",
           "make-ca",
@@ -17158,7 +17272,8 @@
           "ffmpeg",
           "frei0r",
           "libsamplerate",
-          "qt"
+          "qt",
+          "rnnoise"
         ],
         "ignore_for_order": []
       },
@@ -17184,6 +17299,7 @@
           "glib",
           "libmbim",
           "libqmi",
+          "polkit",
           "vala"
         ],
         "ignore_for_order": []
@@ -17240,6 +17356,7 @@
       "depends": {
         "required": [
           "extutils-config",
+          "extutils-helpers",
           "extutils-installpaths"
         ],
         "recommended": [],
@@ -17260,7 +17377,8 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "module-runtime"
+          "module-runtime",
+          "try-tiny"
         ],
         "recommended": [
           "test-fatal",
@@ -17364,12 +17482,15 @@
         "required": [
           "alsa-lib",
           "ffmpeg",
+          "libass",
           "libplacebo",
-          "mesa"
+          "mesa",
+          "pulseaudio"
         ],
         "recommended": [
           "libjpeg-turbo",
           "libva",
+          "luajit",
           "uchardet",
           "vulkan-loader"
         ],
@@ -17545,10 +17666,13 @@
         ],
         "recommended": [
           "desktop-file-utils",
+          "glib",
           "libdisplay-info",
+          "startup-notification",
           "libinput",
           "wayland",
-          "wayland-protocols"
+          "wayland-protocols",
+          "xwayland"
         ],
         "ignore_for_order": []
       },
@@ -17678,9 +17802,12 @@
         ],
         "recommended": [
           "desktop-file-utils",
+          "glib",
           "gst-plugins-base",
+          "libcloudproviders",
           "localsearch",
-          "adwaita-icon-theme"
+          "adwaita-icon-theme",
+          "gvfs"
         ],
         "ignore_for_order": []
       },
@@ -17915,7 +18042,9 @@
           "glib",
           "iptables",
           "libpsl",
+          "newt",
           "nss",
+          "polkit",
           "pygobject",
           "systemd",
           "vala",
@@ -18053,6 +18182,7 @@
         "recommended": [
           "liblinear",
           "libpcap",
+          "libssh2",
           "lua",
           "pygobject"
         ],
@@ -18259,7 +18389,8 @@
       "depends": {
         "required": [
           "cython",
-          "meson_python"
+          "meson_python",
+          "pyproject-metadata"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -18280,6 +18411,8 @@
       "depends": {
         "required": [
           "hicolor-icon-theme",
+          "lxqt-build-tools",
+          "openbox",
           "qt"
         ],
         "recommended": [],
@@ -18360,9 +18493,11 @@
         "recommended": [
           "libkexiv2",
           "tiff",
+          "phonon",
           "poppler"
         ],
         "ignore_for_order": [
+          "phonon",
           "poppler"
         ]
       },
@@ -18408,12 +18543,15 @@
         "recommended": [
           "ffmpeg",
           "gst-plugins-base",
+          "gtk",
           "jasper",
           "libavif",
+          "libexif",
           "libjpeg-turbo",
           "libpng",
           "tiff",
           "libwebp",
+          "openjpeg",
           "v4l-utils",
           "xine-lib"
         ],
@@ -18455,9 +18593,11 @@
       "depends": {
         "required": [
           "java",
+          "configuring-the-java-environment",
           "alsa-lib",
           "cpio",
           "cups",
+          "libarchive",
           "which",
           "x7lib",
           "zip"
@@ -18465,6 +18605,7 @@
         "recommended": [
           "make-ca",
           "giflib",
+          "harfbuzz",
           "little-cms",
           "libjpeg-turbo",
           "libpng",
@@ -18729,6 +18870,7 @@
         ],
         "recommended": [
           "cpan-meta-check",
+          "test-fatal",
           "test-needs"
         ],
         "ignore_for_order": []
@@ -18777,6 +18919,7 @@
       "depends": {
         "required": [
           "libcairomm",
+          "glibmm",
           "pango"
         ],
         "recommended": [],
@@ -18819,7 +18962,8 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "module-build"
+          "module-build",
+          "module-implementation"
         ],
         "recommended": [
           "test-fatal",
@@ -18842,7 +18986,8 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "exception-class"
+          "exception-class",
+          "specio"
         ],
         "recommended": [
           "test-without-module",
@@ -18867,6 +19012,7 @@
         "required": [
           "dbus-glib",
           "gst-plugins-base",
+          "gst-plugins-good",
           "libxfce4ui"
         ],
         "recommended": [
@@ -19159,7 +19305,8 @@
         ],
         "recommended": [
           "test-fatal",
-          "test-needs"
+          "test-needs",
+          "test-requiresinternet"
         ],
         "ignore_for_order": []
       },
@@ -19290,6 +19437,7 @@
           "bluez",
           "gstreamer",
           "gst-plugins-base",
+          "pulseaudio",
           "sbc",
           "v4l-utils",
           "wireplumber"
@@ -19714,7 +19862,8 @@
       "depends": {
         "required": [
           "alsa-utils",
-          "gtk"
+          "gtk",
+          "libnotify"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -19778,6 +19927,7 @@
       "depends": {
         "required": [
           "accountsservice",
+          "gtk",
           "intltool",
           "polkit"
         ],
@@ -19846,6 +19996,7 @@
         "recommended": [
           "boost",
           "cairo",
+          "gpgmepp",
           "little-cms",
           "libjpeg-turbo",
           "libpng",
@@ -20199,7 +20350,8 @@
       "disk_space": "116 MB",
       "depends": {
         "required": [
-          "abseil-cpp"
+          "abseil-cpp",
+          "cmake"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -20655,7 +20807,8 @@
         "required": [
           "make-ca",
           "cmake",
-          "qt"
+          "qt",
+          "which"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -20701,6 +20854,7 @@
         "recommended": [
           "alsa-lib",
           "dtc",
+          "libslirp",
           "sdl2-compat"
         ],
         "ignore_for_order": []
@@ -20783,18 +20937,24 @@
           "alsa-lib",
           "make-ca",
           "cups",
+          "double-conversion",
+          "glib",
           "ffmpeg",
           "gst-plugins-base",
+          "gst-plugins-good",
           "gst-plugins-bad",
           "harfbuzz",
           "icu",
+          "jasper",
           "libjpeg-turbo",
           "libinput",
           "libmng",
           "libpng",
           "tiff",
+          "libwebp",
           "libxkbcommon",
           "mesa",
+          "mtdev",
           "wayland",
           "xcb-utilities"
         ],
@@ -20881,6 +21041,7 @@
           "html5lib",
           "nodejs",
           "nss",
+          "pciutils",
           "qt",
           "rust-bindgen"
         ],
@@ -20889,6 +21050,7 @@
           "pulseaudio",
           "ffmpeg",
           "icu",
+          "libwebp",
           "libxslt",
           "openjpeg",
           "opus",
@@ -21309,7 +21471,9 @@
           "libtasn1",
           "libxslt",
           "linux-pam",
-          "lmdb"
+          "lmdb",
+          "mit-kerberos-v5",
+          "openldap"
         ],
         "ignore_for_order": []
       },
@@ -21475,6 +21639,7 @@
       "depends": {
         "required": [
           "lxqt-build-tools",
+          "kwindowsystem-6.29.0-for-lxqt",
           "libqtxdg",
           "xdg-utils"
         ],
@@ -21570,7 +21735,9 @@
           "mesa",
           "pipewire",
           "pulseaudio",
-          "vulkan-loader"
+          "vulkan-loader",
+          "wayland-protocols",
+          "x7lib"
         ],
         "ignore_for_order": []
       },
@@ -21622,6 +21789,7 @@
         "required": [
           "cbindgen",
           "gtk",
+          "libarchive",
           "python",
           "nasm",
           "zip"
@@ -21629,9 +21797,11 @@
         "recommended": [
           "dbus-glib",
           "icu",
+          "libevent",
           "libwebp",
           "llvm",
           "nspr",
+          "nss",
           "pulseaudio"
         ],
         "ignore_for_order": []
@@ -21958,6 +22128,7 @@
         "required": [
           "blueprint-compiler",
           "gst-plugins-base",
+          "libadwaita",
           "pygobject"
         ],
         "recommended": [],
@@ -22000,6 +22171,7 @@
         "required": [
           "colord",
           "itstool",
+          "libgusb",
           "libadwaita",
           "libwebp",
           "sane"
@@ -22114,6 +22286,7 @@
         "required": [
           "libadwaita",
           "gst-plugins-bad",
+          "rustc",
           "gst-plugins-rs",
           "pipewire",
           "xdg-desktop-portal-gnome",
@@ -22250,6 +22423,7 @@
           "clone",
           "clone-pp",
           "devel-stacktrace",
+          "eval-closure",
           "module-runtime",
           "role-tiny",
           "sub-quote",
@@ -22323,6 +22497,7 @@
           "requests",
           "roman-numerals",
           "snowballstemmer",
+          "sphinxcontrib-applehelp",
           "sphinxcontrib-devhelp",
           "sphinxcontrib-htmlhelp",
           "sphinxcontrib-jsmath",
@@ -22541,7 +22716,8 @@
       "depends": {
         "required": [
           "libxml2",
-          "llvm"
+          "llvm",
+          "spirv-tools"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -23081,6 +23257,7 @@
         "recommended": [
           "curl",
           "icu",
+          "libarchive",
           "pango"
         ],
         "ignore_for_order": [
@@ -23435,6 +23612,7 @@
         "required": [],
         "recommended": [
           "a-graphical-environment",
+          "cairo",
           "fontconfig",
           "freetype",
           "graphite2",
@@ -23461,7 +23639,8 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "config-autoconf"
+          "config-autoconf",
+          "extutils-libbuilder"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -23482,9 +23661,12 @@
       "depends": {
         "required": [],
         "recommended": [
-          "text-csv_xs"
+          "text-csv_xs",
+          "biber"
         ],
-        "ignore_for_order": []
+        "ignore_for_order": [
+          "biber"
+        ]
       },
       "members": [],
       "systemd_units": [],
@@ -23661,10 +23843,12 @@
         "required": [
           "cbindgen",
           "gtk",
+          "libarchive",
           "llvm",
           "nodejs",
           "pulseaudio",
-          "alsa-lib"
+          "alsa-lib",
+          "startup-notification"
         ],
         "recommended": [
           "dav1d",
@@ -23755,9 +23939,11 @@
         "required": [
           "cmake",
           "fltk",
+          "gnutls",
           "libgcrypt",
           "libjpeg-turbo",
           "pixman",
+          "systemd",
           "linux-pam",
           "x7app",
           "xinit",
@@ -23869,6 +24055,7 @@
         "required": [],
         "recommended": [
           "gnupg",
+          "libwww-perl",
           "ghostscript",
           "x7lib",
           "libxcb",
@@ -23958,6 +24145,7 @@
         "recommended": [
           "libevent",
           "libpsl",
+          "librsvg",
           "gtkmm",
           "qt"
         ],
@@ -24231,7 +24419,8 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "mime-charset"
+          "mime-charset",
+          "wget"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -24350,7 +24539,8 @@
         ],
         "recommended": [
           "test-fatal",
-          "test-needs"
+          "test-needs",
+          "test-warnings"
         ],
         "ignore_for_order": []
       },
@@ -24489,7 +24679,8 @@
         "required": [],
         "recommended": [
           "alsa-lib",
-          "glu"
+          "glu",
+          "libjpeg-turbo"
         ],
         "ignore_for_order": []
       },
@@ -24682,9 +24873,11 @@
         "recommended": [
           "alsa-lib",
           "desktop-file-utils",
+          "ffmpeg",
           "liba52",
           "libgcrypt",
           "libmad",
+          "lua",
           "qt",
           "a-graphical-environment"
         ],
@@ -24730,6 +24923,7 @@
         "recommended": [
           "fast_float",
           "fmt",
+          "icu",
           "gnutls",
           "glib",
           "gtk",
@@ -24839,14 +25033,18 @@
           "glm",
           "freetype",
           "libdrm",
+          "libevdev",
           "libinput",
           "libjpeg-turbo",
           "libpng",
           "libxkbcommon",
           "mesa",
+          "nlohmann-json",
+          "pango",
           "pixman",
           "wayland",
-          "wayland-protocols"
+          "wayland-protocols",
+          "wlroots"
         ],
         "recommended": [
           "x7lib",
@@ -24872,6 +25070,7 @@
           "cairo",
           "libevdev",
           "wayfire",
+          "wayland",
           "wayland-protocols"
         ],
         "recommended": [
@@ -24956,6 +25155,7 @@
           "cairo",
           "cmake",
           "gst-plugins-base",
+          "gst-plugins-bad",
           "gtk",
           "icu",
           "little-cms",
@@ -24967,6 +25167,7 @@
           "mesa",
           "openjpeg",
           "ruby",
+          "unifdef",
           "which"
         ],
         "recommended": [
@@ -24975,6 +25176,7 @@
           "geoclue",
           "glib",
           "hicolor-icon-theme",
+          "libavif",
           "libjxl",
           "libseccomp",
           "xdg-dbus-proxy"
@@ -25109,7 +25311,8 @@
         "required": [
           "glib",
           "pipewire",
-          "systemd"
+          "systemd",
+          "linux-pam"
         ],
         "recommended": [
           "lua"
@@ -25135,7 +25338,8 @@
           "c-ares",
           "glib",
           "libgcrypt",
-          "qt"
+          "qt",
+          "speex"
         ],
         "recommended": [
           "libpcap"
@@ -25742,7 +25946,8 @@
           "systemd",
           "pipewire",
           "wayland",
-          "wayland-protocols"
+          "wayland-protocols",
+          "xdg-desktop-portal"
         ],
         "recommended": [
           "xdg-desktop-portal-gtk"
@@ -25941,7 +26146,8 @@
           "libnotify",
           "libxfce4ui",
           "libcanberra",
-          "xfce4-dev-tools"
+          "xfce4-dev-tools",
+          "xfce4-panel"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -25964,6 +26170,7 @@
           "cairo",
           "exo",
           "garcon",
+          "libwnck",
           "libxfce4windowing"
         ],
         "recommended": [],
@@ -26043,7 +26250,8 @@
         "recommended": [
           "desktop-file-utils",
           "xscreensaver",
-          "shared-mime-info"
+          "shared-mime-info",
+          "polkit-gnome"
         ],
         "ignore_for_order": []
       },
@@ -26064,7 +26272,8 @@
         "required": [
           "exo",
           "garcon",
-          "gnome-icon-theme"
+          "gnome-icon-theme",
+          "lxde-icon-theme"
         ],
         "recommended": [
           "libcanberra",
@@ -26222,6 +26431,7 @@
         "required": [
           "a-graphical-environment",
           "ffmpeg",
+          "alsa-lib",
           "pulseaudio"
         ],
         "recommended": [
@@ -26407,7 +26617,8 @@
       "disk_space": "",
       "depends": {
         "required": [
-          "file-sharedir"
+          "file-sharedir",
+          "file-sharedir-install"
         ],
         "recommended": [],
         "ignore_for_order": []
@@ -26595,7 +26806,9 @@
         ],
         "recommended": [
           "libepoxy",
-          "libtirpc"
+          "libtirpc",
+          "systemd",
+          "xorg-libinput"
         ],
         "ignore_for_order": []
       },
@@ -26759,6 +26972,7 @@
           "libxcvt",
           "pixman",
           "wayland-protocols",
+          "x7app",
           "x7font"
         ],
         "recommended": [

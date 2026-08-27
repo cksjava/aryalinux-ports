@@ -15,6 +15,7 @@ sbu: 0.4 SBU
 depends:
   required:
   - lxqt-build-tools
+  - kwindowsystem-6.29.0-for-lxqt
   - libqtxdg
   - xdg-utils
   recommended: []

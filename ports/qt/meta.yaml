@@ -22,18 +22,24 @@ depends:
   - alsa-lib
   - make-ca
   - cups
+  - double-conversion
+  - glib
   - ffmpeg
   - gst-plugins-base
+  - gst-plugins-good
   - gst-plugins-bad
   - harfbuzz
   - icu
+  - jasper
   - libjpeg-turbo
   - libinput
   - libmng
   - libpng
   - tiff
+  - libwebp
   - libxkbcommon
   - mesa
+  - mtdev
   - wayland
   - xcb-utilities
   ignore_for_order:

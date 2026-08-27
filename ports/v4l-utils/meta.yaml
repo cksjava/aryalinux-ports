@@ -19,6 +19,7 @@ depends:
   recommended:
   - alsa-lib
   - glu
+  - libjpeg-turbo
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

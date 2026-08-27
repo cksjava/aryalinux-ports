@@ -17,11 +17,14 @@ depends:
   required:
   - alsa-lib
   - ffmpeg
+  - libass
   - libplacebo
   - mesa
+  - pulseaudio
   recommended:
   - libjpeg-turbo
   - libva
+  - luajit
   - uchardet
   - vulkan-loader
   ignore_for_order: []

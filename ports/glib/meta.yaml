@@ -20,7 +20,9 @@ depends:
   - docutils
   - libxslt
   - shared-mime-info
+  - desktop-file-utils
   ignore_for_order:
+  - desktop-file-utils
   - shared-mime-info
 bootscripts: []
 systemd_units: []
@@ -36,4 +38,5 @@ patches:
 book_order: 117000
 cycle_policy:
   install_before:
+  - desktop-file-utils
   - shared-mime-info

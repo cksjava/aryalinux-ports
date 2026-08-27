@@ -31,6 +31,8 @@ depends:
   - libxslt
   - linux-pam
   - lmdb
+  - mit-kerberos-v5
+  - openldap
   ignore_for_order: []
 bootscripts: []
 systemd_units: []

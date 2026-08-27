@@ -21,6 +21,7 @@ depends:
   - gst-plugins-base
   recommended:
   - liba52
+  - libdvdread
   - x264
   ignore_for_order: []
 bootscripts: []
