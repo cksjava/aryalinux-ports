@@ -70,17 +70,6 @@ else
   exit 1
 fi
 # --- commands from BLFS ---
-patch -Np1 -i ../openldap-2.7.0-consolidated-1.patch
-autoconf
-./configure --prefix=/usr \
-            --sysconfdir=/etc \
-            --disable-static \
-            --enable-dynamic \
-            --disable-debug \
-            --disable-slapd
-make depend
-make
-make install
 groupadd -g 83 ldap
 useradd  -c "OpenLDAP Daemon Owner" \
          -d /var/lib/openldap -u 83 \
@@ -114,5 +103,3 @@ install -v -dm700 -o ldap -g ldap /var/lib/openldap
 install -v -dm700 -o ldap -g ldap /etc/openldap/slapd.d
 chmod   -v    640     /etc/openldap/slapd.{conf,ldif}
 chown   -v  root:ldap /etc/openldap/slapd.{conf,ldif}
-systemctl start slapd
-ldapsearch -x -b '' -s base '(objectclass=*)' namingContexts
